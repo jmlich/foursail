@@ -1,0 +1,35 @@
+Name: harbour-foursail
+Summary: Simple foursquare client with basic functions.
+Version: 0.1
+Release: 1
+Group: Qt/Qt
+URL: https://gitorious.org/foursail
+License: BSD Licence
+Sources:
+- '%{name}-%{version}.tar.bz2'
+Description: "The application is an native Foursquare(r) client for Sailfish OS. \n\nIt
+  have just basic features such as:\n- Browsing of nearby venues\n- Checkin with a
+  shout, and sharing to Facebook and Twitter.\n- Quick checkin via Press and Hold.\n-
+  Browsing of recent friend checkins.\n- Shows most recent chekin at the Cover Page."
+Configure: none
+Builder: qtc5
+PkgConfigBR:
+- Qt5Quick
+- Qt5Qml
+- Qt5Core
+- sailfishapp >= 0.0.10
+- Qt5Positioning
+Requires:
+- sailfishsilica-qt5 >= 0.10.9
+- qt5-qtdeclarative-import-positioning
+- qt5-qtdeclarative-import-location
+Files:
+- '%{_bindir}'
+- '%{_datadir}/%{name}/qml'
+- '%{_datadir}/applications/%{name}.desktop'
+- '%{_datadir}/icons/hicolor/86x86/apps/%{name}.png'
+- /usr/bin
+- /usr/share/harbour-foursail
+- /usr/share/applications
+- /usr/share/icons/hicolor/86x86/apps
+PkgBR: []
