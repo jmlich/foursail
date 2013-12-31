@@ -26,7 +26,7 @@ Page {
         model: model
         anchors.fill: parent
         header: PageHeader {
-            title: (outputType === "nearby") ? qsTr("Nearby Venues") : qsTr("Search result")
+            title: (outputType === "nearby") ? qsTr("Nearby Venues") : qsTr("Search results")
         }
         spacing: 10;
 
