@@ -8,6 +8,8 @@ Page {
     property alias m: model
     property bool loading;
 
+    property string outputType: "nearby"
+
     signal refresh();
     signal switchToRecentCheckins();
     signal switchToSearchVenue();
@@ -24,18 +26,18 @@ Page {
         model: model
         anchors.fill: parent
         header: PageHeader {
-            title: qsTr("Nearby Venues")
+            title: (outputType === "nearby") ? qsTr("Nearby Venues") : qsTr("Search result")
         }
         spacing: 10;
 
         PullDownMenu {
             MenuItem {
-                text: qsTr("Refresh")
-                onClicked: refresh()
-            }
-            MenuItem {
                 text: qsTr("Recent Checkins")
                 onClicked: switchToRecentCheckins()
+            }
+            MenuItem {
+                text: (outputType === "nearby") ? qsTr("Refresh") : qsTr("Nearby Venues")
+                onClicked: refresh()
             }
         }
 

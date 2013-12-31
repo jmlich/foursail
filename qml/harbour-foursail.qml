@@ -41,6 +41,8 @@ ApplicationWindow {
         onRefresh: {
             data.posReady = false;
             positionSource.active = true
+            m.clear()
+            outputType = "nearby"
             data.refresh();
         }
 
@@ -69,6 +71,7 @@ ApplicationWindow {
         id: searchVenuePage;
         onAccepted: {
             nearbyVeneuesPage.m.clear()
+            nearbyVeneuesPage.outputType = "search"
             data.search(searchString)
             console.log("search: " + searchString)
         }
@@ -82,7 +85,7 @@ ApplicationWindow {
         id: checkinDetailPage;
         onAccepted: {
             data.checkin(venue_id, comment, twitter, facebook)
-//            pageStack.push(checkinResultPage)
+            //            pageStack.push(checkinResultPage)
         }
         acceptDestination: checkinResultPage
         acceptDestinationAction: PageStackAction.Replace
@@ -112,17 +115,19 @@ ApplicationWindow {
 
     PositionSource {
         id: positionSource
-        updateInterval: 0
+        updateInterval: 1000
         active: true
         onPositionChanged: {
-            var coord = positionSource.position.coordinate;
-            //            console.log("Coordinate:", coord.longitude, coord.latitude);
-            data.lat = coord.latitude;
-            data.lon = coord.longitude;
+            if (position.latitudeValid) {
+                var coord = position.coordinate;
+                //            console.log("Coordinate:", coord.longitude, coord.latitude);
+                data.lat = coord.latitude;
+                data.lon = coord.longitude;
 
-            data.posReady = true;
-//            data.nearbyVenues();
-            positionSource.active = false;
+                data.posReady = true;
+                //            data.nearbyVenues();
+                active = false;
+            }
         }
     }
 

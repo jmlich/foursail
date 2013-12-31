@@ -27,12 +27,12 @@ Page {
 
         PullDownMenu {
             MenuItem {
-                text: qsTr("Refresh")
-                onClicked: refresh();
-            }
-            MenuItem {
                 text: qsTr("Nearby Venues")
                 onClicked: switchToNearbyVenues();
+            }
+            MenuItem {
+                text: qsTr("Refresh")
+                onClicked: refresh();
             }
         }
 
