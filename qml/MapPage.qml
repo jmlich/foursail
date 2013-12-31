@@ -9,16 +9,20 @@ Page {
 
 
     PageHeader {
+        id: pageHeader;
         title: qsTr("Map")
     }
 
 
 
     PinchMap {
+        id: map
+        anchors.top: pageHeader.bottom;
+        anchors.left: parent.left;
+        anchors.right: parent.right;
+        anchors.bottom: parent.bottom;
         clip: true;
         pageActive: (page.status === PageStatus.Active)
-        id: map
-        anchors.fill: parent;
 
     }
 }
