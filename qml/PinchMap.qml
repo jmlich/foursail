@@ -33,7 +33,7 @@ Rectangle {
     property double currentPositionSpeed: 0;
     property double currentPositionAltitude: 0;
 
-    property bool rotationEnabled: true
+    property bool rotationEnabled: false
 
     property bool pageActive: true;
 
@@ -418,10 +418,10 @@ Rectangle {
 
     PinchArea {
         id: pincharea;
+        anchors.fill: parent;
 
         property double __oldZoom;
 
-        anchors.fill: parent;
 
         function calcZoomDelta(p) {
             pinchmap.setZoomLevelPoint(Math.round((Math.log(p.scale)/Math.log(2)) + __oldZoom), p.center.x, p.center.y);
@@ -442,96 +442,98 @@ Rectangle {
         onPinchFinished: {
             calcZoomDelta(pinch);
         }
-    }
-    MouseArea {
-        id: mousearea;
 
-        preventStealing: true;
-        property bool __isPanning: false;
-        property int __lastX: -1;
-        property int __lastY: -1;
-        property int __firstX: -1;
-        property int __firstY: -1;
-        property bool __wasClick: false;
-        property int maxClickDistance: 100;
+        MouseArea {
+            id: mousearea;
 
-        anchors.fill : parent;
-//        preventStealing: true;
+            property bool __isPanning: false;
+            property int __lastX: -1;
+            property int __lastY: -1;
+            property int __firstX: -1;
+            property int __firstY: -1;
+            property bool __wasClick: false;
+            property int maxClickDistance: 100;
 
-        onWheel:  {
-            if (wheel.angleDelta.y > 0) {
-                setZoomLevelPoint(pinchmap.zoomLevel + 1, wheel.x, wheel.y);
-            } else {
-                setZoomLevelPoint(pinchmap.zoomLevel - 1, wheel.x, wheel.y);
-            }
-        }
+            anchors.fill : parent;
+            preventStealing: true;
 
-
-        onPressed: {
-            pannedManually()
-            __isPanning = true;
-            __lastX = mouse.x;
-            __lastY = mouse.y;
-            __firstX = mouse.x;
-            __firstY = mouse.y;
-            __wasClick = true;
-        }
-
-        onReleased: {
-            __isPanning = false;
-            if (! __wasClick) {
-                panEnd();
-            } else {
-                //                var n = mousearea.mapToItem(geocacheDisplayContainer, mouse.x, mouse.y)
-                //                var geocaches = new Array();
-                //                var g;
-                //                while ((g = geocacheDisplayContainer.childAt(n.x, n.y)) != null) {
-                //                    geocaches.push(g);
-                //                    g.visible = false;
-                //                }
-                //                if (geocaches.length == 1) {
-                //                    geocaches[0].visible = true;
-                //                    showAndResetDetailsPage();
-                //                    controller.geocacheSelected(geocaches[0].cache);
-                //                } else if (geocaches.length > 1) {
-                //                    var m = new Array();
-                //                    var i;
-                //                    for (i in geocaches) {
-                //                        console.debug("Found geocache: " + geocaches[i].cache.name);
-                //                        geocaches[i].visible = true;
-                //                        m.push(geocaches[i].cache.title);
-                //                    }
-                //                    // show selection window
-                //                    geocacheSelectionDialog.model = m;
-                //                    geocacheSelectionDialog.fullList = geocaches;
-                //                    geocacheSelectionDialog.open();
-
-                //                }
-            }
-
-        }
-
-        onPositionChanged: {
-            if (__isPanning) {
-                var dx = mouse.x - __lastX;
-                var dy = mouse.y - __lastY;
-                pan(-dx, -dy);
-                __lastX = mouse.x;
-                __lastY = mouse.y;
-                /*
-                once the pan threshold is reached, additional checking is unnecessary
-                for the press duration as nothing sets __wasClick back to true
-                */
-                if (__wasClick && Math.pow(mouse.x - __firstX, 2) + Math.pow(mouse.y - __firstY, 2) > maxClickDistance) {
-                    __wasClick = false;
+            onWheel:  {
+                if (wheel.angleDelta.y > 0) {
+                    setZoomLevelPoint(pinchmap.zoomLevel + 1, wheel.x, wheel.y);
+                } else {
+                    setZoomLevelPoint(pinchmap.zoomLevel - 1, wheel.x, wheel.y);
                 }
             }
+
+
+            onPressed: {
+                pannedManually()
+                __isPanning = true;
+                __lastX = mouse.x;
+                __lastY = mouse.y;
+                __firstX = mouse.x;
+                __firstY = mouse.y;
+                __wasClick = true;
+            }
+
+            onReleased: {
+                __isPanning = false;
+                if (! __wasClick) {
+                    panEnd();
+                } else {
+                    //                var n = mousearea.mapToItem(geocacheDisplayContainer, mouse.x, mouse.y)
+                    //                var geocaches = new Array();
+                    //                var g;
+                    //                while ((g = geocacheDisplayContainer.childAt(n.x, n.y)) != null) {
+                    //                    geocaches.push(g);
+                    //                    g.visible = false;
+                    //                }
+                    //                if (geocaches.length == 1) {
+                    //                    geocaches[0].visible = true;
+                    //                    showAndResetDetailsPage();
+                    //                    controller.geocacheSelected(geocaches[0].cache);
+                    //                } else if (geocaches.length > 1) {
+                    //                    var m = new Array();
+                    //                    var i;
+                    //                    for (i in geocaches) {
+                    //                        console.debug("Found geocache: " + geocaches[i].cache.name);
+                    //                        geocaches[i].visible = true;
+                    //                        m.push(geocaches[i].cache.title);
+                    //                    }
+                    //                    // show selection window
+                    //                    geocacheSelectionDialog.model = m;
+                    //                    geocacheSelectionDialog.fullList = geocaches;
+                    //                    geocacheSelectionDialog.open();
+
+                    //                }
+                }
+
+            }
+
+            onPositionChanged: {
+                if (__isPanning) {
+                    var dx = mouse.x - __lastX;
+                    var dy = mouse.y - __lastY;
+                    pan(-dx, -dy);
+                    __lastX = mouse.x;
+                    __lastY = mouse.y;
+                    /*
+                    once the pan threshold is reached, additional checking is unnecessary
+                    for the press duration as nothing sets __wasClick back to true
+                    */
+                    if (__wasClick && Math.pow(mouse.x - __firstX, 2) + Math.pow(mouse.y - __firstY, 2) > maxClickDistance) {
+                        __wasClick = false;
+                    }
+                }
+            }
+
+            onCanceled: {
+                __isPanning = false;
+            }
         }
 
-        onCanceled: {
-            __isPanning = false;
-        }
     }
+
 
     //    SelectionDialog {
     //        id: geocacheSelectionDialog
