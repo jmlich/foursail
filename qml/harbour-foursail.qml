@@ -67,6 +67,11 @@ ApplicationWindow {
 
     SearchVenuePage {
         id: searchVenuePage;
+        onAccepted: {
+            nearbyVeneuesPage.m.clear()
+            data.search(searchString)
+            console.log("search: " + searchString)
+        }
     }
 
     CheckinResultPage {

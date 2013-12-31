@@ -177,6 +177,13 @@ Rectangle {
         foursquareDownload(source, params, "GET");
     }
 
+    function search(query) {
+        var source = "https://api.foursquare.com/v2/venues/search"
+        var params = "oauth_token=" + accessToken+"&ll="+lat+","+lon+"&intent=checkin" + "&v="+foursquare_api_version + "&locale="+locale
+                +"&query="+encodeURIComponent(query);
+        foursquareDownload(source, params, "GET");
+    }
+
     function recentCheckins() {
         var source = "https://api.foursquare.com/v2/checkins/recent"
         var params = "oauth_token=" + accessToken + "&v=" +foursquare_api_version + "&locale="+locale;
