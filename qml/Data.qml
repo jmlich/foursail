@@ -200,8 +200,8 @@ Rectangle {
         foursquareDownload(source, params, "GET");
     }
 
-    function selfCheckins() {
-        var source = "https://api.foursquare.com/v2/users/self/checkins"
+    function checkinHistory(uid) {
+        var source = "https://api.foursquare.com/v2/users/"+uid+"/checkins"
         var params = "oauth_token=" + accessToken + "&v=" +foursquare_api_version + "&locale="+locale;
         foursquareDownload(source, params, "GET");
     }

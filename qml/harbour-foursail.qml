@@ -134,6 +134,7 @@ ApplicationWindow {
         id: myProfilePage
 
         onSwitchToHistory: {
+            data.checkinHistory("self")
             pageStack.push(selfCheckinsPage)
         }
 
@@ -150,11 +151,10 @@ ApplicationWindow {
             pageStack.push(badgesPage)
         }
 
-        onStatusChanged: {
-            if ((status === PageStatus.Activating) && (selfCheckinsPage.m.count === 0)) {
-                data.selfCheckins()
-            }
-        }
+//        onStatusChanged: {
+//            if ((status === PageStatus.Activating) && (selfCheckinsPage.m.count === 0)) {
+//            }
+//        }
 
         SelfCheckinsPage {
             id: selfCheckinsPage;
@@ -184,6 +184,10 @@ ApplicationWindow {
         onSwitchToBadges: {
             data.badges(uid)
             pageStack.push(badgesPage)
+        }
+        onSwitchToCheckinHistory: {
+            data.checkinHistory(uid);
+            pageStack.push(selfCheckinsPage)
         }
     }
 
