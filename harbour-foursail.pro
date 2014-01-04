@@ -18,7 +18,6 @@ OTHER_FILES += qml/harbour-foursail.qml \
     rpm/harbour-foursail.yaml \
     harbour-foursail.desktop \
     qml/Data.qml \
-    qml/Controls.qml \
     qml/RecentCheckinsPage.qml \
     qml/functions.js \
     qml/NearbyVenuesPage.qml \
@@ -29,6 +28,7 @@ OTHER_FILES += qml/harbour-foursail.qml \
     qml/PinchMap.qml \
     qml/SelfCheckinsPage.qml \
     qml/MyProfilePage.qml \
-    qml/SearchVenueDialog.qml
+    qml/SearchVenueDialog.qml \
+    qml/FriendDetailPage.qml
 
 QT += webkit

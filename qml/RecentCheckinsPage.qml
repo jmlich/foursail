@@ -6,20 +6,22 @@ Page {
     id: page
 
 
-    property alias m: model
+    property alias m: listmodel
     property bool loading;
 
     signal refresh();
     signal switchToNearbyVenues();
     signal switchToMyProfile();
+    signal checkinDetail(string venue_id, string name, string address, url icon, double lat, double lon)
+    signal friendDetail(variant model);
 
     ListModel {
-        id: model;
+        id: listmodel;
     }
 
     SilicaListView {
         id: listView
-        model: model
+        model: listmodel
         anchors.fill: parent
         header: PageHeader {
             title: qsTr("Recent Checkins")
@@ -62,12 +64,22 @@ Page {
                 anchors.right: parent.right
                 anchors.leftMargin: 10;
                 anchors.rightMargin: 10
-                text: firstName + " " + lastName + " @ " + venueName
+                textFormat: Text.RichText
+                text: "<style type='text/css'>a:link{color:"+Theme.primaryColor+"; text-decoration: none;} a:visited{color:"+Theme.primaryColor+"}</style> <a href=\"name\">" + firstName +" " + lastName + "</a> @ <a href=\"venue\">" + venueName + "</a>"
                 color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
                 wrapMode: Text.Wrap
+                onLinkActivated: {
+                    if (link == "venue") {
+                        checkinDetail(vid, venueName, address, venuePhoto, lat, lon)
+                    }
+                    if (link == "name") {
+                        friendDetail(listmodel.get(index))
+                    }
+                }
             }
 
             Label {
+                id: addressLabel
                 anchors.top: personNameLabel.bottom;
                 anchors.left: personPhoto.right
                 anchors.right: parent.right
@@ -80,6 +92,24 @@ Page {
 
             }
 
+            Label {
+                id: shoutLabel;
+                anchors.top: addressLabel.bottom;
+                anchors.left: personPhoto.right
+                anchors.right: parent.right
+                anchors.leftMargin: 10;
+                anchors.rightMargin: 10
+                wrapMode: Text.Wrap
+                color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+                font.pixelSize: Theme.fontSizeMedium
+                font.bold: true
+                text: shout
+                visible: (shout !== "")
+                height: visible ? paintedHeight : 0
+
+            }
+
+
             onClicked: console.log("Clicked " + index)
         }
         VerticalScrollDecorator {}
@@ -87,13 +117,13 @@ Page {
 
     BusyIndicator {
         anchors.centerIn: parent;
-        visible: loading && (model.count === 0)
+        visible: loading && (listmodel.count === 0)
         running: visible;
     }
 
     Label {
         anchors.centerIn: parent;
-        visible: !loading && (model.count === 0)
+        visible: !loading && (listmodel.count === 0)
         text: qsTr("Offline")
     }
 

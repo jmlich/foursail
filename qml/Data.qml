@@ -219,7 +219,7 @@ Rectangle {
 
         console.log(source + "?"+params)
         // FIXME
-//        source = "http://pcmlich.fit.vutbr.cz/checkin.json"
+        //        source = "http://pcmlich.fit.vutbr.cz/checkin.json"
 
         foursquareDownload(source, params, "POST");
 
@@ -234,7 +234,7 @@ Rectangle {
         var http = new XMLHttpRequest()
         http.open(method, source+"?"+params, true);
         http.onreadystatechange = function() {
-//            console.log("http.status: " + http.readyState + " " + http.status + " " + http.statusText)
+            //            console.log("http.status: " + http.readyState + " " + http.status + " " + http.statusText)
             var maxValue = 0;
 
             if (http.readyState === XMLHttpRequest.DONE) {
@@ -255,6 +255,7 @@ Rectangle {
                                 item = array[i];
                                 if (item.venue !== undefined) {
                                     var uid = item.user.id;
+                                    var vid = item.venue.id
                                     var photo = item.user.photo;
                                     var firstName = (item.user.firstName !== undefined) ? item.user.firstName : "";
                                     var lastName = (item.user.lastName !== undefined) ? item.user.lastName : "";
@@ -267,7 +268,27 @@ Rectangle {
                                     var city   = (item.venue.location.city !== undefined) ? item.venue.location.city : "";
                                     var address = (street !== "") ? (street + ", " + city) : city;
 
-                                    data = {'uid': uid, 'photo': photo.prefix + "86x86" + photo.suffix, 'firstName': firstName, 'lastName': lastName, 'venueName': venueName, 'createdAt': createdAt, 'createdDate': createdDate, 'updated': (createdAt > lastUpdate), 'address': address };
+                                    var shout = (item.shout !== undefined) ? item.shout : ""
+
+                                    var venue_icon = (item.venue.categories[0] !== undefined) ? item.venue.categories[0].icon : ""
+
+
+                                    data = {
+                                        'uid': item.user.id,
+                                        'photo': item.user.photo.prefix + "86x86" + item.user.photo.suffix,
+                                        'firstName': ((item.user.firstName !== undefined) ? item.user.firstName : ""),
+                                        'lastName': ((item.user.lastName !== undefined) ? item.user.lastName : ""),
+                                        'createdAt': createdAt,
+                                        'createdDate': createdDate,
+                                        'updated': (createdAt > lastUpdate),
+                                        'address': address,
+                                        'shout': shout,
+                                        "vid": item.venue.id,
+                                        'venueName': ((item.venue.name !== undefined) ? item.venue.name : ""),
+                                        'venuePhoto': venue_icon.prefix + "64" + venue_icon.suffix,
+                                        'lat': ((item.venue.location.lat !== undefined) ? item.venue.location.lat : 0),
+                                        'lon': ((item.venue.location.lng) ? item.venue.location.lng : 0),
+                                    };
 
                                     recentCheckinsPage.m.append(data)
 
@@ -278,7 +299,7 @@ Rectangle {
 
                                     if (i === 0) {
                                         lastCheckinDate = createdDate
-                                        lastCheckinPhoto = photo.prefix + "256x256" + photo.suffix;
+                                        lastCheckinPhoto = photo.prefix + "86x86" + photo.suffix;
                                         lastCheckin = firstName + " " + lastName + "\n@ " + venueName
                                         lastCheckinId = item.id;
                                         //                                    console.log("TO COVER: " + lastCheckin + " " + lastCheckinPhoto + " " + lastCheckinDate)
