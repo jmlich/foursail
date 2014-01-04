@@ -69,7 +69,8 @@ CoverBackground {
 
 
     CoverActionList {
-        id: coverAction
+        id: firstCoverActionList
+        enabled: (checkinLabel.text !== "")
 
         CoverAction {
             iconSource: "image://theme/icon-cover-refresh"
@@ -81,9 +82,16 @@ CoverBackground {
             onTriggered: like();
         }
 
-        //        CoverAction {
-        //            iconSource: "image://theme/icon-cover-pause"
-        //        }
+    }
+
+    CoverActionList {
+        enabled: !firstCoverActionList.enabled;
+
+        CoverAction {
+            iconSource: "image://theme/icon-cover-refresh"
+            onTriggered: refresh();
+        }
+
     }
 
     onStatusChanged: {
