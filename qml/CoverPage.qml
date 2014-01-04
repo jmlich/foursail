@@ -39,6 +39,7 @@ CoverBackground {
             anchors.right: parent.right
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.Wrap
+            font.pixelSize: Theme.fontSizeSmall;
         }
 
         Label {
@@ -46,24 +47,12 @@ CoverBackground {
             id: timestampLabel
             anchors.left: parent.left;
             anchors.right: parent.right
-            font.pixelSize: Theme.fontSizeSmall;
+            font.pixelSize: Theme.fontSizeExtraSmall
             color: Theme.secondaryColor
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.Wrap
-
         }
     }
-
-    //    Rectangle {
-    //        z: 1
-    //        visible: (checkinLabel.text !== "")
-    //        x: checkinLabel.x;
-    //        y: checkinLabel.y;
-    //        width: Math.max(checkinLabel.width, timestampLabel.width)
-    //        height: checkinLabel.height + timestampLabel.height
-    //        color: Theme.rgba(Theme.highlightBackgroundColor, Theme.highlightBackgroundOpacity)
-    ////        color: ""
-    //    }
 
     Label {
         visible: (checkinLabel.text === "") && loading
