@@ -5,6 +5,7 @@ Page {
     signal switchToHistory();
     signal switchToRecentCheckins();
     signal switchToNearbyVenues();
+    signal switchToBadges();
 
     SilicaFlickable {
 
@@ -53,16 +54,8 @@ Page {
                     text: qsTr("Badges")
                     color: parent.highlighted ? Theme.highlightColor : Theme.primaryColor
                 }
-                Label {
-                    anchors.right: parent.right
-                    anchors.verticalCenter: parent.verticalCenter;
-                    font.pixelSize: Theme.fontSizeMedium
-                    color: parent.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
-                    anchors.margins: Theme.paddingMedium;
-                    text: "N/A"
-                }
 
-                onClicked: console.log("Badges")
+                onClicked: switchToBadges();
             }
 
             BackgroundItem {

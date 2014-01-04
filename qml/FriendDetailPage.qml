@@ -4,8 +4,11 @@ import "functions.js" as F
 
 Page {
 
+    property string uid
     property alias name: userName.text
     property alias icon: userIcon.source
+
+    signal switchToBadges();
 
     SilicaFlickable {
         anchors.fill: parent;
@@ -32,6 +35,22 @@ Page {
                 }
                 Label {
                     id: userName
+                }
+            }
+
+            BackgroundItem {
+                width: parent.width;
+                Label {
+                    anchors {
+                        verticalCenter: parent.verticalCenter
+                        left: parent.left
+                        right: parent.right
+                        margins: Theme.paddingMedium
+                    }
+                    text: qsTr("Badges")
+                }
+                onClicked: {
+                    switchToBadges()
                 }
             }
 

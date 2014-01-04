@@ -166,19 +166,26 @@ Rectangle {
         }
     }
 
-    function likeCheckin(checkin_id) {
-        var source = "https://api.foursquare.com/v2/checkins/" + checkin_id + "/like"
-        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale + "&set=1";
-        foursquareDownload(source, params, "POST");
-    }
-
-
     function nearbyVenues_fetch() {
         requestNearbyVenues = false;
         var source = "https://api.foursquare.com/v2/venues/search"
         var params = "oauth_token=" + accessToken+"&ll="+lat+","+lon+"&intent=checkin" + "&v="+foursquare_api_version + "&locale="+locale;
         foursquareDownload(source, params, "GET");
     }
+
+    function likeCheckin(checkin_id) {
+        var source = "https://api.foursquare.com/v2/checkins/" + checkin_id + "/like"
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale + "&set=1";
+        foursquareDownload(source, params, "POST");
+    }
+
+    function badges(uid) {
+        var source = "https://api.foursquare.com/v2/users/"+uid+"/badges"
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale;
+        foursquareDownload(source, params, "GET");
+
+    }
+
 
     function search(query) {
         var source = "https://api.foursquare.com/v2/venues/search"
@@ -360,7 +367,16 @@ Rectangle {
                             }
                         }
 
+                        if (resultObject.response.badges !== undefined) {
+                            badgesPage.m.clear();
+                            array = resultObject.response.badges;
+                            for (var i in array) {
+                                item = array[i];
 
+                                data = {'photo': item.image.prefix + item.image.sizes[1] + item.image.name, 'size' : item.image.sizes[1], 'name': item.name}
+                                badgesPage.m.append(data);
+                            }
+                        }
 
                     } catch(e) {
                         console.log("foursquareDownload: parse failed: " + e)

@@ -41,6 +41,7 @@ Page {
                 anchors.rightMargin: 10
                 width: 22
                 height: 22
+                fillMode: Image.PreserveAspectFit
 
             }
 

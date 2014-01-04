@@ -46,6 +46,7 @@ ApplicationWindow {
         onFriendDetail: {
             friendDetailPage.name = model.firstName +" " + model.lastName
             friendDetailPage.icon = model.photo
+            friendDetailPage.uid = model.uid
             pageStack.push(friendDetailPage)
         }
 
@@ -144,6 +145,11 @@ ApplicationWindow {
             pageStack.replace(recentCheckinsPage)
         }
 
+        onSwitchToBadges: {
+            data.badges("self")
+            pageStack.push(badgesPage)
+        }
+
         onStatusChanged: {
             if ((status === PageStatus.Activating) && (selfCheckinsPage.m.count === 0)) {
                 data.selfCheckins()
@@ -175,6 +181,14 @@ ApplicationWindow {
 
     FriendDetailPage {
         id: friendDetailPage
+        onSwitchToBadges: {
+            data.badges(uid)
+            pageStack.push(badgesPage)
+        }
+    }
+
+    BadgesPage {
+        id: badgesPage
     }
 
 

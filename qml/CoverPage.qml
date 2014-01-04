@@ -19,7 +19,6 @@ CoverBackground {
         anchors.margins: Theme.paddingMedium;
         anchors.horizontalCenter: parent.horizontalCenter
         width: 96; height: 96
-        horizontalAlignment:Image.AlignLeft
         fillMode: Image.PreserveAspectFit
     }
 
