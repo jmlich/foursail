@@ -2,6 +2,7 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 Dialog {
+    id: page
     property string venue_id
     property alias venue_name: venue_name_label.text
     property alias venue_address: venue_address_label.text
@@ -9,6 +10,8 @@ Dialog {
 
     property double lat;
     property double lon;
+    property double deviceLat;
+    property double deviceLon;
 
     property alias comment: comment_textarea.text
     property alias twitter: twitter_switch.checked
@@ -16,6 +19,10 @@ Dialog {
 
     MapPage {
         id: mapPage;
+        lat: page.lat
+        lon: page.lon
+        deviceLat: page.deviceLat
+        deviceLon: page.deviceLon
     }
 
     SilicaFlickable {
@@ -90,8 +97,6 @@ Dialog {
                 text: qsTr("Show on Map")
                 anchors.horizontalCenter: parent.horizontalCenter
                 onClicked: {
-                    mapPage.lat = lat
-                    mapPage.lon = lon
                     pageStack.push(mapPage)
                 }
             }

@@ -11,6 +11,7 @@ Page {
     signal refresh();
     signal switchToRecentCheckins();
     signal switchToNearbyVenues();
+    signal checkinDetail(string venue_id, string name, string address, url icon, double lat, double lon)
 
     ListModel {
         id: model;
@@ -75,8 +76,7 @@ Page {
             }
 
             onClicked: {
-                console.log("clicked " + name)
-//                checkinDetail(vid, name, address, photo_prefix + "64" + photo_suffix, lat, lon)
+                checkinDetail(vid, name, address, photo_prefix + "64" + photo_suffix, lat, lon)
             }
 
             onPressAndHold: checkin(vid)

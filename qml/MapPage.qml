@@ -7,6 +7,10 @@ Page {
     property alias lat: map.targetLat
     property alias lon: map.targetLon
 
+    property alias deviceLat: map.currentPositionLat
+    property alias deviceLon: map.currentPositionLon
+
+
 
     PageHeader {
         id: pageHeader;

@@ -166,7 +166,7 @@ Rectangle {
         var l = getCenter()
         longitude = l[1]
         latitude = l[0]
-//        updateGeocaches();
+        //        updateGeocaches();
     }
 
     function requestUpdate() {
@@ -388,6 +388,22 @@ Rectangle {
             id: rotationTarget
             origin.x: targetIndicator.width/2
             origin.y: targetIndicator.height/2
+        }
+    }
+
+    Image {
+        id: positionIndicator
+        source: currentPositionValid ? "./images/position-circle.png" : "./images/position-circle-red.png"
+        property variant t: getMappointFromCoord(currentPositionLat, currentPositionLon)
+        x: map.x + t[0] - width/2
+        y: map.y + t[1] - height + positionIndicator.width/2
+        smooth: true
+
+        visible: showCurrentPosition
+        transform: Rotation {
+            origin.x: positionIndicator.width/2
+            origin.y: positionIndicator.height - positionIndicator.width/2
+            angle: currentPositionAzimuth
         }
     }
 

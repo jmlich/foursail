@@ -106,6 +106,9 @@ ApplicationWindow {
         }
         acceptDestination: checkinResultPage
         acceptDestinationAction: PageStackAction.Replace
+        deviceLat: positionSource.position.coordinate.latitude;
+        deviceLon: positionSource.position.coordinate.longitude;
+
     }
 
 
@@ -137,6 +140,17 @@ ApplicationWindow {
             onRefresh: {
                 m.clear();
                 data.selfCheckins();
+            }
+
+            onCheckinDetail: {
+                checkinDetailPage.venue_id = venue_id;
+                checkinDetailPage.venue_name = name;
+                checkinDetailPage.venue_address = address;
+                checkinDetailPage.icon = icon;
+                checkinDetailPage.comment = "";
+                checkinDetailPage.lat = lat;
+                checkinDetailPage.lon = lon;
+                pageStack.push(checkinDetailPage)
             }
         }
 
