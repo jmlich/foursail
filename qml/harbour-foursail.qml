@@ -73,6 +73,8 @@ ApplicationWindow {
             checkinDetailPage.venue_address = address;
             checkinDetailPage.icon = icon;
             checkinDetailPage.comment = "";
+            checkinDetailPage.lat = lat;
+            checkinDetailPage.lon = lon;
             pageStack.push(checkinDetailPage)
         }
     }
@@ -97,8 +99,6 @@ ApplicationWindow {
 
     CheckinDetailPage {
         id: checkinDetailPage;
-        lat: positionSource.position.coordinate.latitude;
-        lon: positionSource.position.coordinate.longitude;
 
         onAccepted: {
             data.checkin(venue_id, comment, twitter, facebook)

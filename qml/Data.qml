@@ -330,7 +330,7 @@ Rectangle {
                                     var address = (street !== "") ? (street + ", " + city) : city;
                                     photo = (item.venue.categories[0] !== undefined) ? item.venue.categories[0].icon : ""
 
-                                    data = {'vid': venueId, 'name': venueName, 'photo_prefix': photo.prefix, 'photo_suffix': photo.suffix, 'address': address, 'createdAt': createdAt, 'createdDate': createdDate };
+                                    data = {'vid': venueId, 'name': venueName, 'photo_prefix': photo.prefix, 'photo_suffix': photo.suffix, 'address': address, 'createdAt': createdAt, 'createdDate': createdDate, 'lat': item.venue.location.lat, 'lon': item.venue.location.lng};
 
                                     //                                    console.log(venueId + "@ " + venueName + " " + createdDate)
 
