@@ -24,9 +24,11 @@ OTHER_FILES += qml/harbour-foursail.qml \
     qml/NearbyVenuesPage.qml \
     qml/CheckinResultPage.qml \
     qml/CheckinDetailPage.qml \
-    qml/SearchVenuePage.qml \
     qml/AddVenuePage.qml \
     qml/MapPage.qml \
-    qml/PinchMap.qml
+    qml/PinchMap.qml \
+    qml/SelfCheckinsPage.qml \
+    qml/MyProfilePage.qml \
+    qml/SearchVenueDialog.qml
 
 QT += webkit

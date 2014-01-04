@@ -25,10 +25,12 @@ Rectangle {
     property real lat
     property real lon
     property bool posReady: false;
+    property bool requestNearbyVenues: false;
 
     property string lastCheckin
     property date lastCheckinDate
     property url lastCheckinPhoto
+    property string lastCheckinId
 
 
     property string foursquare_api_version: "20131016"
@@ -75,27 +77,11 @@ Rectangle {
         return result;
     }
 
-    function refresh() {
-        if (accessToken !== "") {
-
-            console.log("update all models")
-            recentCheckins();
-            if ( posReady ) {
-                nearbyVenues();
-            }
-
-        } else {
-            console.log("auth_refresh()")
-            auth_refresh();
-        }
-
-    }
-
-
     onPosReadyChanged: {
-        if ( posReady && (accessToken !== "") ) {
+        if ( posReady && requestNearbyVenues && (accessToken !== "") ) {
             nearbyVenues();
         }
+
     }
 
 
@@ -120,7 +106,7 @@ Rectangle {
         } catch (e) {
             console.log("exception: configSet()" + e);
         }
-        refresh();
+        nearbyVenues();
 
     }
 
@@ -170,8 +156,25 @@ Rectangle {
 
     }
 
-
     function nearbyVenues() {
+        if (posReady) {
+            nearbyVenues_fetch();
+            requestNearbyVenues = false;
+            posReady = false;
+        } else {
+            requestNearbyVenues = true;
+        }
+    }
+
+    function likeCheckin(checkin_id) {
+        var source = "https://api.foursquare.com/v2/checkins/" + checkin_id + "/like"
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale + "&set=1";
+        foursquareDownload(source, params, "POST");
+    }
+
+
+    function nearbyVenues_fetch() {
+        requestNearbyVenues = false;
         var source = "https://api.foursquare.com/v2/venues/search"
         var params = "oauth_token=" + accessToken+"&ll="+lat+","+lon+"&intent=checkin" + "&v="+foursquare_api_version + "&locale="+locale;
         foursquareDownload(source, params, "GET");
@@ -186,6 +189,12 @@ Rectangle {
 
     function recentCheckins() {
         var source = "https://api.foursquare.com/v2/checkins/recent"
+        var params = "oauth_token=" + accessToken + "&v=" +foursquare_api_version + "&locale="+locale;
+        foursquareDownload(source, params, "GET");
+    }
+
+    function selfCheckins() {
+        var source = "https://api.foursquare.com/v2/users/self/checkins"
         var params = "oauth_token=" + accessToken + "&v=" +foursquare_api_version + "&locale="+locale;
         foursquareDownload(source, params, "GET");
     }
@@ -271,6 +280,7 @@ Rectangle {
                                         lastCheckinDate = createdDate
                                         lastCheckinPhoto = photo.prefix + "256x256" + photo.suffix;
                                         lastCheckin = firstName + " " + lastName + "\n@ " + venueName
+                                        lastCheckinId = item.id;
                                         //                                    console.log("TO COVER: " + lastCheckin + " " + lastCheckinPhoto + " " + lastCheckinDate)
                                     }
                                     //                                          console.log(firstName + " " + lastName + "@ " + venueName + createdDate)
@@ -303,6 +313,33 @@ Rectangle {
                                 checkinResultPage.m.append(item)
                             }
                         }
+
+                        if (resultObject.response.checkins !== undefined) {
+                            selfCheckinsPage.m.clear();
+                            array = resultObject.response.checkins.items;
+                            for (i = 0; i < array.length; i++) {
+                                item = array[i];
+                                if (item.venue !== undefined) {
+                                    var venueName = (item.venue.name !== undefined) ? item.venue.name : ""
+                                    var createdAt = item.createdAt;
+                                    var createdDate = new Date(parseInt(createdAt*1000));
+                                    var venueId = (item.venue.id !== undefined) ? item.venue.id : 0;
+
+                                    var street = (item.venue.location.address !== undefined) ? item.venue.location.address : "";
+                                    var city   = (item.venue.location.city !== undefined) ? item.venue.location.city : "";
+                                    var address = (street !== "") ? (street + ", " + city) : city;
+                                    photo = (item.venue.categories[0] !== undefined) ? item.venue.categories[0].icon : ""
+
+                                    data = {'vid': venueId, 'name': venueName, 'photo_prefix': photo.prefix, 'photo_suffix': photo.suffix, 'address': address, 'createdAt': createdAt, 'createdDate': createdDate };
+
+                                    //                                    console.log(venueId + "@ " + venueName + " " + createdDate)
+
+                                    selfCheckinsPage.m.append(data)
+                                }
+                            }
+                        }
+
+
 
                     } catch(e) {
                         console.log("foursquareDownload: parse failed: " + e)

@@ -5,27 +5,39 @@ import "functions.js" as F
 CoverBackground {
     id: cover;
     signal refresh();
+    signal like();
     property alias labelText: checkinLabel.text
     property date updateDate
     property alias checkinPhotoSource: checkinPhoto.source
     property bool loading;
+    property string checkin_id;
 
 
     Image {
         id: checkinPhoto
-        anchors.fill: parent;
-        fillMode: Image.PreserveAspectCrop
+        anchors.top: parent.top
+        anchors.margins: Theme.paddingMedium;
+        anchors.horizontalCenter: parent.horizontalCenter
+        width: 96; height: 96
+        horizontalAlignment:Image.AlignLeft
+        fillMode: Image.PreserveAspectFit
     }
 
 
     Column {
-        anchors.fill: parent;
-        anchors.margins: 20;
+        anchors {
+            top: checkinPhoto.bottom
+            left: parent.left;
+            right: parent.right
+            margins: Theme.paddingMedium;
+
+        }
         Label {
             z: 2
             id: checkinLabel
             anchors.left: parent.left;
             anchors.right: parent.right
+            horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.Wrap
         }
 
@@ -36,21 +48,22 @@ CoverBackground {
             anchors.right: parent.right
             font.pixelSize: Theme.fontSizeSmall;
             color: Theme.secondaryColor
+            horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.Wrap
 
         }
     }
 
-//    Rectangle {
-//        z: 1
-//        visible: (checkinLabel.text !== "")
-//        x: checkinLabel.x;
-//        y: checkinLabel.y;
-//        width: Math.max(checkinLabel.width, timestampLabel.width)
-//        height: checkinLabel.height + timestampLabel.height
-//        color: Theme.rgba(Theme.highlightBackgroundColor, Theme.highlightBackgroundOpacity)
-////        color: ""
-//    }
+    //    Rectangle {
+    //        z: 1
+    //        visible: (checkinLabel.text !== "")
+    //        x: checkinLabel.x;
+    //        y: checkinLabel.y;
+    //        width: Math.max(checkinLabel.width, timestampLabel.width)
+    //        height: checkinLabel.height + timestampLabel.height
+    //        color: Theme.rgba(Theme.highlightBackgroundColor, Theme.highlightBackgroundOpacity)
+    ////        color: ""
+    //    }
 
     Label {
         visible: (checkinLabel.text === "") && loading
@@ -74,6 +87,11 @@ CoverBackground {
             onTriggered: refresh();
         }
 
+        CoverAction {
+            iconSource:  "./images/icon-cover-like.png"
+            onTriggered: like();
+        }
+
         //        CoverAction {
         //            iconSource: "image://theme/icon-cover-pause"
         //        }
@@ -83,6 +101,7 @@ CoverBackground {
         if (status === Cover.Active) {
             timestampLabel.text = F.formatDate(updateDate)
         }
+
     }
 
 

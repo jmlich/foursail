@@ -16,11 +16,22 @@ ApplicationWindow {
             pageStack.replace(nearbyVeneuesPage)
 
         }
-        onRefresh: {
-            data.posReady = false;
-            positionSource.active = true
-            data.refresh();
+
+        onSwitchToMyProfile: {
+            pageStack.replace(myProfilePage)
         }
+
+        onRefresh: {
+            m.clear()
+            data.recentCheckins()
+        }
+
+        onStatusChanged: {
+            if ((status === PageStatus.Activating) && (m.count === 0)) {
+                data.recentCheckins();
+            }
+        }
+
     }
 
     NearbyVenuesPage {
@@ -38,17 +49,22 @@ ApplicationWindow {
             pageStack.push(addVenuePage)
         }
 
-        onRefresh: {
-            data.posReady = false;
-            positionSource.active = true
-            m.clear()
-            outputType = "nearby"
-            data.refresh();
+        onSwitchToMyProfile: {
+            pageStack.replace(myProfilePage)
         }
 
-        onCheckin: {
-            data.checkin(venue_id)
-            pageStack.push(checkinResultPage)
+        onStatusChanged: {
+            if ((status === PageStatus.Activating) && (m.count === 0)) {
+                data.nearbyVenues();
+            }
+        }
+
+
+        onRefresh: {
+            m.clear()
+            data.nearbyVenues();
+            outputType = "nearby"
+
         }
 
         onCheckinDetail: {
@@ -57,8 +73,6 @@ ApplicationWindow {
             checkinDetailPage.venue_address = address;
             checkinDetailPage.icon = icon;
             checkinDetailPage.comment = "";
-            checkinDetailPage.lat = lat;
-            checkinDetailPage.lon = lon;
             pageStack.push(checkinDetailPage)
         }
     }
@@ -67,7 +81,7 @@ ApplicationWindow {
         id: addVenuePage;
     }
 
-    SearchVenuePage {
+    SearchVenueDialog {
         id: searchVenuePage;
         onAccepted: {
             nearbyVeneuesPage.m.clear()
@@ -83,6 +97,9 @@ ApplicationWindow {
 
     CheckinDetailPage {
         id: checkinDetailPage;
+        lat: positionSource.position.coordinate.latitude;
+        lon: positionSource.position.coordinate.longitude;
+
         onAccepted: {
             data.checkin(venue_id, comment, twitter, facebook)
             //            pageStack.push(checkinResultPage)
@@ -92,19 +109,61 @@ ApplicationWindow {
     }
 
 
+    MyProfilePage {
+        id: myProfilePage
+
+        onSwitchToHistory: {
+            pageStack.push(selfCheckinsPage)
+        }
+
+        onSwitchToNearbyVenues: {
+            pageStack.replace(nearbyVeneuesPage)
+        }
+
+        onSwitchToRecentCheckins: {
+            pageStack.replace(recentCheckinsPage)
+        }
+
+        onStatusChanged: {
+            if ((status === PageStatus.Activating) && (selfCheckinsPage.m.count === 0)) {
+                data.selfCheckins()
+            }
+        }
+
+        SelfCheckinsPage {
+            id: selfCheckinsPage;
+            loading: (data.countLoading > 0)
+
+            onRefresh: {
+                m.clear();
+                data.selfCheckins();
+            }
+        }
+
+    }
+
+
 
     CoverPage {
         id: coverPage
         onRefresh: {
-            data.posReady = false;
-            data.refresh()
-            //            data.recentCheckins();
-            positionSource.active = true; // novou polohu
+            data.nearbyVenues();
+            data.recentCheckins();
         }
+        onLike: {
+            data.likeCheckin(checkin_id);
+        }
+
         labelText: data.lastCheckin
         updateDate: data.lastCheckinDate
         checkinPhotoSource: data.lastCheckinPhoto
+        checkin_id: data.lastCheckinId
         loading: (data.countLoading > 0)
+
+        Component.onCompleted: {
+            data.recentCheckins();
+        }
+
     }
 
 
@@ -116,7 +175,7 @@ ApplicationWindow {
     PositionSource {
         id: positionSource
         updateInterval: 1000
-        active: true
+        active: !data.posReady
         onPositionChanged: {
             if (position.latitudeValid) {
                 var coord = position.coordinate;
@@ -125,9 +184,10 @@ ApplicationWindow {
                 data.lon = coord.longitude;
 
                 data.posReady = true;
-                //            data.nearbyVenues();
-                active = false;
             }
+        }
+        onActiveChanged: {
+            console.log("gps status: "+ active)
         }
     }
 

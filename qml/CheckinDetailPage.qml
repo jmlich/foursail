@@ -28,6 +28,7 @@ Dialog {
                 id: dialogHeader;
                 acceptText: qsTr("Checkin")
             }
+
             Item {
                 width: parent.width
                 height: Math.max(venue_category_icon.height, venue_name_label.height + venue_address_label.height)

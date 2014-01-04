@@ -11,6 +11,7 @@ Page {
 
     signal refresh();
     signal switchToNearbyVenues();
+    signal switchToMyProfile();
 
     ListModel {
         id: model;
@@ -26,6 +27,10 @@ Page {
         spacing: 10;
 
         PullDownMenu {
+            MenuItem {
+                text: qsTr("My Profile")
+                onClicked: switchToMyProfile();
+            }
             MenuItem {
                 text: qsTr("Nearby Venues")
                 onClicked: switchToNearbyVenues();

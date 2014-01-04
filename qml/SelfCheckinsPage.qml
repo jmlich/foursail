@@ -8,16 +8,9 @@ Page {
     property alias m: model
     property bool loading;
 
-    property string outputType: "nearby"
-
     signal refresh();
     signal switchToRecentCheckins();
-    signal switchToSearchVenue();
-    signal switchToAddVenue();
-    signal switchToMyProfile();
-
-    signal checkin(string venue_id);
-    signal checkinDetail(string venue_id, string name, string address, url icon, double lat, double lon)
+    signal switchToNearbyVenues();
 
     ListModel {
         id: model;
@@ -28,36 +21,16 @@ Page {
         model: model
         anchors.fill: parent
         header: PageHeader {
-            title: (outputType === "nearby") ? qsTr("Nearby Venues") : qsTr("Search results")
+            title: qsTr("History")
         }
         spacing: 10;
 
         PullDownMenu {
             MenuItem {
-                text: qsTr("My Profile")
-                onClicked: switchToMyProfile();
-            }
-            MenuItem {
-                text: qsTr("Recent Checkins")
-                onClicked: switchToRecentCheckins()
-            }
-            MenuItem {
-                text: (outputType === "nearby") ? qsTr("Refresh") : qsTr("Nearby Venues")
+                text: qsTr("Refresh")
                 onClicked: refresh()
             }
         }
-
-        PushUpMenu {
-            MenuItem {
-                text: qsTr("Search");
-                onClicked: switchToSearchVenue()
-            }
-            MenuItem {
-                text: qsTr("Add")
-                onClicked: switchToAddVenue();
-            }
-        }
-
 
         delegate: BackgroundItem {
             id: delegate
@@ -87,7 +60,6 @@ Page {
             }
 
 
-
             Label {
                 id: venue_address_label
                 anchors.top: venue_name_label.bottom;
@@ -97,34 +69,17 @@ Page {
                 anchors.rightMargin: 10
                 color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                 font.pixelSize: Theme.fontSizeSmall
-                text: address + ((address.length > 0) ? "\n" : "") + F.formatDistance(distance)
+                text: address + ((address.length > 0) ? "\n" : "") + F.formatDate(createdDate)
                 wrapMode: Text.Wrap
 
             }
 
-
-
             onClicked: {
-                checkinDetail(vid, name, address, photo_prefix + "64" + photo_suffix, lat, lon)
+                console.log("clicked " + name)
+//                checkinDetail(vid, name, address, photo_prefix + "64" + photo_suffix, lat, lon)
             }
 
-
-            // disabled for no reason (-;
-            // in my opinion it is just not necessary
-
-//            GlassItem {
-//                id: holdIndicator
-//                anchors.top: venue_name_label.bottom;
-//                x: down ?  (venue_name_label.x + venue_name_label.width - holdIndicator.width) : venue_name_label.x
-//                opacity: down ? 1 : 0
-//                width: 10;
-//                height: 10;
-//                dimmed: false;
-
-//                Behavior on x { NumberAnimation { duration: 800; }}
-//            }
-
-//            onPressAndHold: checkin(vid)
+            onPressAndHold: checkin(vid)
 
         }
         VerticalScrollDecorator {}
@@ -143,7 +98,6 @@ Page {
     }
 
 }
-
 
 
 
