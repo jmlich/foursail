@@ -213,7 +213,10 @@ Rectangle {
         if (url.length > 0) {
             params += "&url="+encodeURIComponent(url)
         }
-        console.log("POST: " + source+"?"+params)
+
+        source = "http://pcmlich.fit.vutbr.cz/checkin.json"
+
+        foursquareDownload(source, params, "POST");
     }
 
     function likeCheckin(checkin_id) {
@@ -274,7 +277,6 @@ Rectangle {
         foursquareDownload(source, params, "POST");
 
     }
-
 
     function foursquareDownload(source, params, method) {
         console.log(method + ": " + source + "?" + params)
