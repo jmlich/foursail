@@ -214,7 +214,7 @@ Rectangle {
             params += "&url="+encodeURIComponent(url)
         }
 
-        source = "http://pcmlich.fit.vutbr.cz/checkin.json"
+//        source = "http://pcmlich.fit.vutbr.cz/venueAdd.json"
 
         foursquareDownload(source, params, "POST");
     }
@@ -410,6 +410,19 @@ Rectangle {
                                     selfCheckinsPage.m.append(data)
                                 }
                             }
+                        }
+
+                        if (resultObject.response.venue !== undefined) {
+                            item = resultObject.response.venue;
+                            checkinDetailPage.venue_id = item.id
+                            checkinDetailPage.venue_name = item.name;
+                            street = (item.location.address !== undefined) ? item.location.address : "";
+                            city   = (item.location.city !== undefined) ? item.location.city : "";
+                            address = (street !== "") ? (street + ", " + city) : city;
+                            checkinDetailPage.venue_address = address;
+                            checkinDetailPage.lat = item.location.lat
+                            checkinDetailPage.lon = item.location.lng
+
                         }
 
                         if (resultObject.response.badges !== undefined) {

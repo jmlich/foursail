@@ -105,8 +105,7 @@ ApplicationWindow {
         }
         onAccepted: {
             data.addVenue(venueName, cid, address,crossStreet, city, state, zip, phone, twitter, description, url);
-
-
+            pageStack.replace(checkinDetailPage, PageStackAction.Immediate)
         }
     }
 
@@ -131,6 +130,7 @@ ApplicationWindow {
             data.checkin(venue_id, comment, twitter, facebook)
             //            pageStack.push(checkinResultPage)
         }
+
         acceptDestination: checkinResultPage
         acceptDestinationAction: PageStackAction.Replace
         deviceLat: positionSource.position.coordinate.latitude;
