@@ -27,6 +27,8 @@ Dialog {
 
     SilicaFlickable {
         anchors.fill: parent;
+        contentHeight: contentItem.childrenRect.height
+
 
         Column {
             width: parent.width

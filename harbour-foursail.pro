@@ -30,6 +30,7 @@ OTHER_FILES += qml/harbour-foursail.qml \
     qml/MyProfilePage.qml \
     qml/SearchVenueDialog.qml \
     qml/FriendDetailPage.qml \
-    qml/BadgesPage.qml
+    qml/BadgesPage.qml \
+    qml/CategoriesPage.qml
 
 QT += webkit

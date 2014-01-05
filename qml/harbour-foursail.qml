@@ -99,6 +99,10 @@ ApplicationWindow {
 
     AddVenuePage {
         id: addVenuePage;
+        onSwitchToCategoriesPage: {
+            data.venuesCategories()
+            pageStack.push(categoriesPage)
+        }
     }
 
     SearchVenueDialog {
@@ -188,6 +192,16 @@ ApplicationWindow {
         onSwitchToCheckinHistory: {
             data.checkinHistory(uid);
             pageStack.push(selfCheckinsPage)
+        }
+    }
+
+    CategoriesPage {
+        id: categoriesPage
+        onSelected: {
+            addVenuePage.cid = cid;
+            addVenuePage.category_icon = icon;
+            addVenuePage.category_name = name;
+            pageStack.pop(addVenuePage);
         }
     }
 

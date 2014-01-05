@@ -173,6 +173,12 @@ Rectangle {
         foursquareDownload(source, params, "GET");
     }
 
+    function venuesCategories() {
+        var source = "https://api.foursquare.com/v2/venues/categories"
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale;
+        foursquareDownload(source, params, "GET");
+    }
+
     function likeCheckin(checkin_id) {
         var source = "https://api.foursquare.com/v2/checkins/" + checkin_id + "/like"
         var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale + "&set=1";
@@ -375,6 +381,21 @@ Rectangle {
 
                                 data = {'photo': item.image.prefix + item.image.sizes[1] + item.image.name, 'size' : item.image.sizes[1], 'name': item.name}
                                 badgesPage.m.append(data);
+                            }
+                        }
+
+                        if (resultObject.response.categories !== undefined) {
+                            categoriesPage.m.clear()
+                            array = resultObject.response.categories ;
+                            for (i = 0; i < array.length; i++) {
+                                item = array[i];
+                                data = {
+                                    'cid': item.id,
+                                    'icon': item.icon,
+                                    'name': item.name,
+                                    'subcategories': ((item.categories !== undefined) ? JSON.stringify(item.categories) : "")
+                                }
+                                categoriesPage.m.append(data)
                             }
                         }
 
