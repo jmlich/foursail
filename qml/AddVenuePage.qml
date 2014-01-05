@@ -6,8 +6,21 @@ Dialog {
     signal switchToCategoriesPage();
 
     property string cid;
-    property alias category_name: category_name_label.text
-    property alias category_icon: categoryIcon.source
+    property alias category_name: categoryNameLabel.text
+    property alias category_icon: categoryIconImage.source
+
+    property alias venueName: venueNameTextfield.text
+    property alias address: addressTextfield.text
+    property alias crossStreet: crossStreetTextfield.text
+    property alias city: cityTextfield.text
+    property alias state: stateTextfield.text
+    property alias zip: zipTextfield.text
+    property alias phone: phoneTextfield.text
+    property alias twitter: twitterTextfield.text
+    property alias description: descriptionTextfield.text
+    property alias url: urlTextfield.text
+
+    canAccept: ( (!venueNameTextfield.errorHighlight) && (cid !== ""))
 
     SilicaFlickable {
         anchors.fill: parent;
@@ -25,15 +38,16 @@ Dialog {
 
 
             TextField {
-                id: name
+                id: venueNameTextfield
                 width: parent.width
+                validator: RegExpValidator { regExp: /^.{3,}$/ }
                 placeholderText: qsTr("Venue name")
             }
 
             BackgroundItem {
 
                 Image {
-                    id: categoryIcon
+                    id: categoryIconImage
                     width: 64;
                     height: 64;
                     anchors.left: parent.left
@@ -43,7 +57,7 @@ Dialog {
                 }
 
                 Label {
-                    id: category_name_label;
+                    id: categoryNameLabel;
                     anchors.left: categoryIcon.right
                     anchors.right: parent.right
                     anchors.verticalCenter: parent.verticalCenter
@@ -60,69 +74,63 @@ Dialog {
             }
 
             TextField {
-                id: address
+                id: addressTextfield
                 width: parent.width
                 placeholderText: qsTr("Address")
             }
 
             TextField {
-                id: crossStreet
+                id: crossStreetTextfield
                 width: parent.width
                 placeholderText: qsTr("Cross street")
 
             }
 
             TextField {
-                id: city
+                id: cityTextfield
                 width: parent.width
                 placeholderText: qsTr("City")
             }
 
             TextField {
-                id: state
+                id: stateTextfield
                 width: parent.width
                 placeholderText: qsTr("State")
             }
 
             TextField {
-                id: zip
+                id: zipTextfield
                 width: parent.width
                 placeholderText: qsTr("ZIP")
             }
 
             TextField {
-                id: phone
+                id: phoneTextfield
                 width: parent.width
+                inputMethodHints: Qt.ImhDialableCharactersOnly
                 placeholderText: qsTr("phone")
             }
 
             TextField {
-                id: twitter
+                id: twitterTextfield
                 width: parent.width
                 placeholderText: qsTr("twitter")
             }
 
             TextArea {
-                id: description
+                id: descriptionTextfield
                 width: parent.width
                 placeholderText: qsTr("description")
+                height: 350
             }
 
             TextField {
-                id: url
+                id: urlTextfield
                 width: parent.width
+//                validator: RegExpValidator { regExp: /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/ }
                 placeholderText: qsTr("http://")
             }
 
-            BackgroundItem {
-
-                Label {
-                    anchors.centerIn: parent;
-                    text: "not implemented, sorry"
-                    color: Theme.primaryColor
-                }
-
-            }
 
         }
     }

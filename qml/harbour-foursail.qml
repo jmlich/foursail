@@ -103,6 +103,11 @@ ApplicationWindow {
             data.venuesCategories()
             pageStack.push(categoriesPage)
         }
+        onAccepted: {
+            data.addVenue(venueName, cid, address,crossStreet, city, state, zip, phone, twitter, description, url);
+
+
+        }
     }
 
     SearchVenueDialog {

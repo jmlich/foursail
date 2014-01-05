@@ -179,6 +179,43 @@ Rectangle {
         foursquareDownload(source, params, "GET");
     }
 
+    function addVenue(venueName, cid, address,crossStreet, city, state, zip, phone, twitter, description, url) {
+        var source = "https://api.foursquare.com/v2/venues/add"
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale + "&name="+encodeURIComponent(venueName);
+        if (address.length > 0) {
+            params += "&address="+encodeURIComponent(address)
+        }
+        if (crossStreet.length > 0) {
+            params += "&crossStreet="+encodeURIComponent(crossStreet)
+        }
+        if (city.length > 0) {
+            params += "&city"+encodeURIComponent(city)
+        }
+        if (state.length > 0) {
+            params += "&state="+encodeURIComponent(state)
+        }
+        if (zip.length > 0) {
+            params += "&zip="+encodeURIComponent(zip)
+        }
+        if (phone.length > 0) {
+            params += "&phone="+encodeURIComponent(phone)
+        }
+        if (twitter.length > 0) {
+            params += "&twitter="+encodeURIComponent(twitter)
+        }
+        params += "&ll=" + lat + "," + lon
+        if (cid.length > 0) {
+            params += "&primaryCategoryId="+encodeURIComponent(cid)
+        }
+        if (description.length > 0) {
+            params += "&description="+encodeURIComponent(description)
+        }
+        if (url.length > 0) {
+            params += "&url="+encodeURIComponent(url)
+        }
+        console.log("POST: " + source+"?"+params)
+    }
+
     function likeCheckin(checkin_id) {
         var source = "https://api.foursquare.com/v2/checkins/" + checkin_id + "/like"
         var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale + "&set=1";
