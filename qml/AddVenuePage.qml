@@ -58,7 +58,7 @@ Dialog {
 
                 Label {
                     id: categoryNameLabel;
-                    anchors.left: categoryIcon.right
+                    anchors.left: categoryIconImage.right
                     anchors.right: parent.right
                     anchors.verticalCenter: parent.verticalCenter
 
