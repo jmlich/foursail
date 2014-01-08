@@ -104,6 +104,7 @@ CoverBackground {
     Timer {
         id: coverTimer
         interval: 10000
+        repeat: true
         running: (status === Cover.Active)
         onTriggered: {
             timestampLabel.text = F.formatDate(updateDate)
