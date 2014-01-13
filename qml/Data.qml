@@ -252,6 +252,18 @@ Rectangle {
         foursquareDownload(source, params, "GET");
     }
 
+    function notifications() {
+        var source = "https://api.foursquare.com/v2/updates/notifications"
+        var params = "oauth_token=" + accessToken + "&v=" +foursquare_api_version + "&locale="+locale;
+        foursquareDownload(source, params, "GET");
+    }
+
+    function notificationsMarkAsRead(timestamp) {
+        var source = "https://api.foursquare.com/v2/updates/marknotificationsread"
+        var params = "oauth_token=" + accessToken + "&v=" +foursquare_api_version + "&locale="+locale + "&highWatermark=" + timestamp
+        foursquareDownload(source, params, "POST");
+    }
+
     function checkin(vid, shout, twitter, facebook) {
         var source = "https://api.foursquare.com/v2/checkins/add";
         var params = "oauth_token=" + accessToken + "&v="+foursquare_api_version + "&locale="+locale + "&venueId=" + vid + "&ll=" + lat + "," + lon;
@@ -300,6 +312,14 @@ Rectangle {
                             accessToken = "";
                             return;
                         }
+
+                        if (resultObject.notifications[0].item !== undefined) {
+                            var unreadCount = resultObject.notifications[0].item.unreadCount;
+                            if (unreadCount > 0) {
+                                notificationPopup.show(qsTr("%1 Notifications").arg(unreadCount))
+                            }
+                        }
+
                         if (resultObject.response.recent !== undefined) {
                             recentCheckinsPage.m.clear();
                             array = resultObject.response.recent;
@@ -448,6 +468,15 @@ Rectangle {
                                     'subcategories': ((item.categories !== undefined) ? JSON.stringify(item.categories) : "")
                                 }
                                 categoriesPage.m.append(data)
+                            }
+                        }
+
+                        if (resultObject.response.notifications !== undefined) {
+                            notificationsPage.m.clear()
+                            array = resultObject.response.notifications.items;
+                            for (i = 0; i < array.length; i++) {
+                                item = array[i];
+                                notificationsPage.m.append(item)
                             }
                         }
 

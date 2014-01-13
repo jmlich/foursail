@@ -7,6 +7,37 @@ ApplicationWindow {
     initialPage: nearbyVeneuesPage
     cover: coverPage
 
+    NotificationPopup {
+        id: notificationPopup;
+
+        secondaryText: qsTr("Tap to show")
+
+        enabled: (notificationsPage.status === PageStatus.Inactive)
+
+        onCanceled: {
+            pageStack.push(notificationsPage)
+        }
+    }
+
+    NotificationsPage {
+        id: notificationsPage
+        loading: (data.countLoading > 0)
+        onStatusChanged: {
+            if (notificationsPage.status === PageStatus.Activating) {
+                data.notifications()
+            }
+            if (notificationsPage.status === PageStatus.Deactivating) {
+
+                var maxVal = notificationsPage.getMaxValue()
+                console.log("getMaxValue " + maxVal)
+                if (maxVal !== 0) {
+                    data.notificationsMarkAsRead(maxVal)
+                }
+
+            }
+
+        }
+    }
 
     RecentCheckinsPage {
         id: recentCheckinsPage;
@@ -155,15 +186,19 @@ ApplicationWindow {
             pageStack.replace(recentCheckinsPage)
         }
 
+        onSwitchToNotifications: {
+            pageStack.push(notificationsPage)
+        }
+
         onSwitchToBadges: {
             data.badges("self")
             pageStack.push(badgesPage)
         }
 
-//        onStatusChanged: {
-//            if ((status === PageStatus.Activating) && (selfCheckinsPage.m.count === 0)) {
-//            }
-//        }
+        //        onStatusChanged: {
+        //            if ((status === PageStatus.Activating) && (selfCheckinsPage.m.count === 0)) {
+        //            }
+        //        }
 
         SelfCheckinsPage {
             id: selfCheckinsPage;

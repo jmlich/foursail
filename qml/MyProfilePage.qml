@@ -6,6 +6,7 @@ Page {
     signal switchToRecentCheckins();
     signal switchToNearbyVenues();
     signal switchToBadges();
+    signal switchToNotifications();
 
     SilicaFlickable {
 
@@ -56,6 +57,19 @@ Page {
                 }
 
                 onClicked: switchToBadges();
+            }
+
+            BackgroundItem {
+                width: parent.width
+                Label {
+                    anchors.verticalCenter: parent.verticalCenter;
+                    anchors.left: parent.left;
+                    anchors.right: parent.right;
+                    anchors.margins: Theme.paddingMedium;
+                    text: qsTr("Notifications")
+                    color: parent.highlighted ? Theme.highlightColor : Theme.primaryColor
+                }
+                onClicked: switchToNotifications();
             }
 
             BackgroundItem {

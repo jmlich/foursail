@@ -31,6 +31,8 @@ OTHER_FILES += qml/harbour-foursail.qml \
     qml/SearchVenueDialog.qml \
     qml/FriendDetailPage.qml \
     qml/BadgesPage.qml \
-    qml/CategoriesPage.qml
+    qml/CategoriesPage.qml \
+    qml/NotificationPopup.qml \
+    qml/NotificationsPage.qml
 
 QT += webkit
