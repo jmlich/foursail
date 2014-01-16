@@ -20,7 +20,6 @@ License:    BSD Licence
 URL:        https://gitorious.org/foursail
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-foursail.yaml
-Requires:   qt5-qtdeclarative-import-location
 Requires:   qt5-qtdeclarative-import-positioning
 Requires:   sailfishsilica-qt5 >= 0.10.9
 BuildRequires:  pkgconfig(Qt5Positioning)
@@ -28,6 +27,7 @@ BuildRequires:  pkgconfig(sailfishapp) >= 0.0.10
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
+BuildRequires:  libqtwebkit5-devel
 BuildRequires:  desktop-file-utils
 
 %description
