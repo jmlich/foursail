@@ -35,7 +35,7 @@ Rectangle {
 
     property bool rotationEnabled: false
 
-    property bool pageActive; // true
+    property bool pageActive; // true (if no
 
     onTargetLatChanged: { latitude = targetLat;  }
     onTargetLonChanged: { longitude = targetLon; }
