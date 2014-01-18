@@ -33,6 +33,7 @@
 #endif
 
 #include <QGuiApplication>
+#include <QQmlEngine>
 #include <QQuickView>
 
 #include <sailfishapp.h>
