@@ -32,6 +32,9 @@
 #include <QtQuick>
 #endif
 
+#include <QGuiApplication>
+#include <QQuickView>
+
 #include <sailfishapp.h>
 #include "networkaccessmanagerfactory.h"
 
