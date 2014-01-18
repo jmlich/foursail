@@ -72,14 +72,15 @@ CoverBackground {
         enabled: (checkinLabel.text !== "")
 
         CoverAction {
+            iconSource:  "./images/icon-cover-like.png"
+            onTriggered: like();
+        }
+
+        CoverAction {
             iconSource: "image://theme/icon-cover-refresh"
             onTriggered: refresh();
         }
 
-        CoverAction {
-            iconSource:  "./images/icon-cover-like.png"
-            onTriggered: like();
-        }
 
     }
 

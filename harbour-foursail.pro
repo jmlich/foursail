@@ -10,7 +10,9 @@ TARGET = harbour-foursail
 
 CONFIG += sailfishapp
 
-SOURCES += src/harbour-foursail.cpp
+SOURCES += src/harbour-foursail.cpp \
+    src/networkaccessmanagerfactory.cpp \
+    src/customnetworkaccessmanager.cpp
 
 OTHER_FILES += qml/harbour-foursail.qml \
     qml/CoverPage.qml \
@@ -36,3 +38,7 @@ OTHER_FILES += qml/harbour-foursail.qml \
     qml/NotificationsPage.qml
 
 QT += webkit
+
+HEADERS += \
+    src/networkaccessmanagerfactory.h \
+    src/customnetworkaccessmanager.h

@@ -20,6 +20,7 @@ Page {
 
 
     PinchMap {
+
         id: map
         anchors.top: pageHeader.bottom;
         anchors.left: parent.left;
