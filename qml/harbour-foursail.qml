@@ -158,6 +158,7 @@ ApplicationWindow {
         id: checkinDetailPage;
 
         onAccepted: {
+            checkinResultPage.m.clear();
             data.checkin(venue_id, comment, twitter, facebook)
             //            pageStack.push(checkinResultPage)
         }
