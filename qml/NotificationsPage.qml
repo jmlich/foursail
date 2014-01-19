@@ -62,14 +62,14 @@ Page {
 
             Image {
                 id: notificationImage;
-                width: 44
-                height: 44
+                width: 88
+                height: 88
 
                 anchors.top: parent.top
                 anchors.left: parent.left
                 anchors.margins: Theme.paddingMedium
 
-                source:  ((model.image.fullPath !== undefined) ? model.image.fullPath : ((model.image.prefix !== undefined) ? (model.image.prefix + model.image.sizes[0] + model.image.name) : ""))
+                source:  ((model.image.fullPath !== undefined) ? model.image.fullPath : ((model.image.prefix !== undefined) ? (model.image.prefix + model.image.sizes[1] + model.image.name) : ""))
             }
 
 
