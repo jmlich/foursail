@@ -279,7 +279,7 @@ Rectangle {
         }
 
         if (facebook !== undefined && facebook === true) {
-            params += ",twitter";
+            params += ",facebook";
         }
 
         console.log(source + "?"+params)
