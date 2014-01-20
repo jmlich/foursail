@@ -97,7 +97,13 @@ Page {
                 anchors.rightMargin: 10
                 color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                 font.pixelSize: Theme.fontSizeSmall
-                text: address + ((address.length > 0) ? "\n" : "") + F.formatDistance(distance)
+                textFormat: Text.RichText
+                text: address + ((address.length > 0) ? "<br/>\n" : "") + F.formatDistance(distance)
+                      + " &nbsp; "
+                      + ((model.hereNow > 0) ? ("<img src=\"./images/icon-cover-people-16.png\"/> " + model.hereNow) : "")
+                      + ((model.stats_tipCount >0) ? (" " + "<img src=\"./images/icon-cover-message-16.png\"/> " + model.stats_tipCount) : "")
+                      + ((model.events > 0) ? (" " + "<img src=\"./images/icon-lock-calendar-16.png\"/> " + model.events) : "")
+                      + ((model.specials_count >0) ? (" " + "<img src=\"./images/icon-cover-favorite-16.png\"/> " + model.specials_count) : "")
                 wrapMode: Text.Wrap
 
             }
@@ -112,19 +118,19 @@ Page {
             // disabled for no reason (-;
             // in my opinion it is just not necessary
 
-//            GlassItem {
-//                id: holdIndicator
-//                anchors.top: venue_name_label.bottom;
-//                x: down ?  (venue_name_label.x + venue_name_label.width - holdIndicator.width) : venue_name_label.x
-//                opacity: down ? 1 : 0
-//                width: 10;
-//                height: 10;
-//                dimmed: false;
+            //            GlassItem {
+            //                id: holdIndicator
+            //                anchors.top: venue_name_label.bottom;
+            //                x: down ?  (venue_name_label.x + venue_name_label.width - holdIndicator.width) : venue_name_label.x
+            //                opacity: down ? 1 : 0
+            //                width: 10;
+            //                height: 10;
+            //                dimmed: false;
 
-//                Behavior on x { NumberAnimation { duration: 800; }}
-//            }
+            //                Behavior on x { NumberAnimation { duration: 800; }}
+            //            }
 
-//            onPressAndHold: checkin(vid)
+            //            onPressAndHold: checkin(vid)
 
         }
         VerticalScrollDecorator {}
