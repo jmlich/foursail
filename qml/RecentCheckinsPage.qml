@@ -97,8 +97,8 @@ Page {
                 anchors.top: addressLabel.bottom;
                 anchors.left: personPhoto.right
                 anchors.right: parent.right
-                anchors.leftMargin: 10;
-                anchors.rightMargin: 10
+                anchors.leftMargin: Theme.paddingMedium;
+                anchors.rightMargin: Theme.paddingMedium
                 wrapMode: Text.Wrap
                 color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                 font.pixelSize: Theme.fontSizeMedium
@@ -107,6 +107,18 @@ Page {
                 visible: (shout !== "")
                 height: visible ? paintedHeight : 0
 
+            }
+
+            Image {
+                id: shoutPhotoImage
+                anchors.top: shoutLabel.bottom
+                anchors.left: personPhoto.right
+                anchors.right: parent.right
+                anchors.leftMargin: Theme.paddingMedium;
+                anchors.rightMargin: Theme.paddingMedium
+                fillMode: Image.PreserveAspectFit
+                source: shoutPhoto
+                visible: (shoutPhoto !== "")
             }
 
 

@@ -360,6 +360,7 @@ Rectangle {
                                         'venuePhoto': venue_icon.prefix + "64" + venue_icon.suffix,
                                         'lat': ((item.venue.location.lat !== undefined) ? item.venue.location.lat : 0),
                                         'lon': ((item.venue.location.lng) ? item.venue.location.lng : 0),
+                                        'shoutPhoto' : ((item.photos.count > 0 ) && (item.photos.items[0] !== undefined)) ? (item.photos.items[0].prefix + "original" + item.photos.items[0].suffix) : ""
                                     };
 
                                     recentCheckinsPage.m.append(data)
