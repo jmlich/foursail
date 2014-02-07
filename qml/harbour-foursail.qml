@@ -148,11 +148,16 @@ ApplicationWindow {
 
     SearchVenueDialog {
         id: searchVenuePage;
-        onAccepted: {
+        onSearch: {
             nearbyVeneuesPage.m.clear()
             nearbyVeneuesPage.outputType = "search"
             data.search(searchString)
         }
+        onSaveHistory: {
+            data.saveSearchHistory(str)
+
+        }
+
     }
 
     CheckinResultPage {

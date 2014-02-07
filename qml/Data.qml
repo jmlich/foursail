@@ -40,6 +40,11 @@ Rectangle {
         id: recentCheckinsModel
     }
 
+    function saveSearchHistory(str) {
+        console.log("config set searchHistory " + str)
+        configSet("searchHistory", str)
+    }
+
     function configSet(key, value) {
         //        console.log(key + " = " + value)
 
@@ -89,6 +94,7 @@ Rectangle {
         try {
             accessToken = configGet("accessToken", "");
             lastUpdate = parseInt(configGet("lastUpdate", 0));
+            searchVenuePage.historyStr = configGet("searchHistory", "{}");
         } catch (e) {
             console.log("exception: configGet" + e)
         }
