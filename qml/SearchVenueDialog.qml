@@ -46,15 +46,28 @@ Dialog {
 
     onAccepted: {
         search(searchString);
-        searchHistory.insert(0, {"value": searchString})
+
+        var found = false;
+
+        for (var i = 0; i < searchHistory.count; i++) {
+            var item = searchDialog.get(i);
+            if (item.value === searchString) {
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            searchHistory.insert(0, {"value": searchString})
+
+            var arr = []
+            for (var i = 0; ((i < searchHistory.count) && (i < 10)); i++) {
+                arr.push(searchHistory.get(i).value);
+            }
+            saveHistory(JSON.stringify(arr));
+        }
+
         searchString = "";
 
-
-        var arr = []
-        for (var i = 0; ((i < searchHistory.count) && (i < 10)); i++) {
-            arr.push(searchHistory.get(i).value);
-        }
-        saveHistory(JSON.stringify(arr));
     }
 
     ListModel {
