@@ -270,6 +270,17 @@ Rectangle {
         foursquareDownload(source, params, "POST");
     }
 
+    function addEvent(venue_id,startAt, endAt, name)    {
+        var source = "https://api.foursquare.com/v2/events/add"
+        var params = "oauth_token=" + accessToken + "&v=" +foursquare_api_version + "&locale="+locale
+                + "&venueId=" + venue_id
+                + "&startAt="+ startAt
+                + "&endAt=" + endAt
+                + "&name=" + encodeURIComponent(name)
+        foursquareDownload(source, params, "POST");
+    }
+
+
     function checkin(vid, shout, twitter, facebook) {
         var source = "https://api.foursquare.com/v2/checkins/add";
         var params = "oauth_token=" + accessToken + "&v="+foursquare_api_version + "&locale="+locale + "&venueId=" + vid + "&ll=" + lat + "," + lon;

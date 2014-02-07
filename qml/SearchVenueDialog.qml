@@ -63,7 +63,6 @@ Dialog {
 
 
     onHistoryStrChanged: {
-        console.log("SearchVenueDialog - search changed")
         if (historyStr !== "") {
             var arr = JSON.parse(historyStr)
             for (var i = 0; i < arr.length; i++) {
@@ -73,11 +72,5 @@ Dialog {
 
         }
     }
-
-    //    Label {
-    //        anchors.centerIn: parent;
-    //        text: "not implemented, sorry"
-    //        color: Theme.primaryColor
-    //    }
 
 }
