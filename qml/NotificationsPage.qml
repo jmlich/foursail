@@ -20,14 +20,6 @@ Page {
 
     }
 
-    function getMaxValue() {
-        var maxVal = 0;
-        for (var i = 0; i < listmodel.count; i++) {
-            var item = listmodel.get(i);
-            maxVal = Math.max(maxVal, item.createdAt);
-        }
-        return maxVal;
-    }
 
     SilicaListView {
         id: listView

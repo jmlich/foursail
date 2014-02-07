@@ -28,10 +28,16 @@ ApplicationWindow {
             }
             if (notificationsPage.status === PageStatus.Deactivating) {
 
-                var maxVal = notificationsPage.getMaxValue()
-                console.log("getMaxValue " + maxVal)
-                if (maxVal !== 0) {
-                    data.notificationsMarkAsRead(maxVal)
+                var mark = false;
+                for (var i = 0; i < m.count; i++) {
+                    var item = m.get(i);
+                    if (item.unread) {
+                        mark = true;
+                    }
+                }
+
+                if (mark) {
+                    data.notificationsMarkAsRead(Math.ceil(new Date().getTime()/1000))
                 }
 
             }
