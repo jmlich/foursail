@@ -50,7 +50,7 @@ Dialog {
         var found = false;
 
         for (var i = 0; i < searchHistory.count; i++) {
-            var item = searchDialog.get(i);
+            var item = searchHistory.get(i);
             if (item.value === searchString) {
                 found = true;
                 break;
