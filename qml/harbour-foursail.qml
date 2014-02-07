@@ -109,9 +109,9 @@ ApplicationWindow {
         }
 
         onStatusChanged: {
-            if ((status === PageStatus.Activating) && (m.count === 0)) {
-                data.nearbyVenues();
-            }
+//            if ((status === PageStatus.Activating) && (m.count === 0) && (outputType !== "nearby")) {
+//                data.nearbyVenues();
+//            }
         }
 
 
@@ -152,7 +152,6 @@ ApplicationWindow {
             nearbyVeneuesPage.m.clear()
             nearbyVeneuesPage.outputType = "search"
             data.search(searchString)
-            console.log("search: " + searchString)
         }
     }
 
@@ -291,7 +290,8 @@ ApplicationWindow {
         updateInterval: 1000
         active: !data.posReady
         onPositionChanged: {
-            if (position.latitudeValid) {
+
+            if (position.latitudeValid && ((new Date().getTime()-position.timestamp.getTime()) < 60000)) { // position could be valid but very old
                 var coord = position.coordinate;
                 //            console.log("Coordinate:", coord.longitude, coord.latitude);
                 data.lat = coord.latitude;
