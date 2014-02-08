@@ -34,7 +34,7 @@ Rectangle {
 
 
     property string foursquare_api_version: "20131016"
-    property string locale: "en"
+//    property string locale: "en"
 
     ListModel {
         id: recentCheckinsModel

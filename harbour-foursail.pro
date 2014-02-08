@@ -42,3 +42,17 @@ QT += webkit
 HEADERS += \
     src/networkaccessmanagerfactory.h \
     src/customnetworkaccessmanager.h
+
+
+
+
+i18n.files = i18n
+i18n.path = /usr/share/$${TARGET}
+
+INSTALLS += i18n
+
+
+TRANSLATIONS +=  ./i18n/harbour-foursail_en_EN.ts
+
+CODECFORTR = UTF-8
+CODECFORSRC = UTF-8

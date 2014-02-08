@@ -35,6 +35,7 @@
 #include <QGuiApplication>
 #include <QQmlEngine>
 #include <QQuickView>
+#include <QQmlContext>
 
 #include <sailfishapp.h>
 #include "networkaccessmanagerfactory.h"
@@ -55,9 +56,23 @@ int main(int argc, char *argv[])
 
     QGuiApplication* app = SailfishApp::application(argc, argv);
     QQuickView* view = SailfishApp::createView();
+
+
+    QTranslator translator;
+
+    if (translator.load(QLatin1String("harbour-foursail_") + QLocale::system().name(), SailfishApp::pathTo(QString("i18n")).toLocalFile())) {
+        app->installTranslator(&translator);
+        view->rootContext()->setContextProperty("locale", QLocale::system().bcp47Name());
+    } else {
+        view->rootContext()->setContextProperty("locale","en");
+    }
+
+
     view->engine()->setNetworkAccessManagerFactory(&namFactory);
     view->setSource(SailfishApp::pathTo("qml/harbour-foursail.qml"));
     view->showFullScreen();
+
+
 
     return app->exec();
 }
