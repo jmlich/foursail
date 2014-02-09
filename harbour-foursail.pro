@@ -43,16 +43,17 @@ HEADERS += \
     src/networkaccessmanagerfactory.h \
     src/customnetworkaccessmanager.h
 
-
-
-
 i18n.files = i18n
 i18n.path = /usr/share/$${TARGET}
 
 INSTALLS += i18n
 
 
-TRANSLATIONS +=  ./i18n/harbour-foursail_en_EN.ts
+TRANSLATIONS +=  ./i18n/harbour-foursail_en_EN.ts \
+    ./i18n/harbour-foursail_nl_NL.ts \
+    ./i18n/harbour-foursail_it_IT.ts \
+    ./i18n/harbour-foursail_ru_RU.ts \
+    ./i18n/harbour-foursail_cs_CZ.ts
 
 CODECFORTR = UTF-8
 CODECFORSRC = UTF-8

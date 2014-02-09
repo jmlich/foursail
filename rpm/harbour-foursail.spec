@@ -13,20 +13,20 @@ Name:       harbour-foursail
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Simple foursquare client with basic functions.
-Version:    0.6
+Version:    0.6.1
 Release:    1
 Group:      Qt/Qt
 License:    BSD Licence
 URL:        https://gitorious.org/foursail
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-foursail.yaml
-Requires:   qt5-qtdeclarative-import-positioning
 Requires:   sailfishsilica-qt5 >= 0.10.9
-BuildRequires:  pkgconfig(Qt5Positioning)
-BuildRequires:  pkgconfig(sailfishapp) >= 0.0.10
-BuildRequires:  pkgconfig(Qt5Core)
-BuildRequires:  pkgconfig(Qt5Qml)
+Requires:   qt5-qtdeclarative-import-positioning
 BuildRequires:  pkgconfig(Qt5Quick)
+BuildRequires:  pkgconfig(Qt5Qml)
+BuildRequires:  pkgconfig(Qt5Core)
+BuildRequires:  pkgconfig(sailfishapp) >= 0.0.10
+BuildRequires:  pkgconfig(Qt5Positioning)
 BuildRequires:  libqtwebkit5-devel
 BuildRequires:  desktop-file-utils
 
@@ -72,13 +72,13 @@ desktop-file-install --delete-original       \
 
 %files
 %defattr(-,root,root,-)
-/usr/share/icons/hicolor/86x86/apps
-/usr/share/applications
-/usr/share/harbour-foursail
-/usr/bin
-%{_datadir}/icons/hicolor/86x86/apps/%{name}.png
-%{_datadir}/applications/%{name}.desktop
-%{_datadir}/%{name}/qml
 %{_bindir}
+%{_datadir}/%{name}/qml
+%{_datadir}/applications/%{name}.desktop
+%{_datadir}/icons/hicolor/86x86/apps/%{name}.png
+/usr/bin
+/usr/share/harbour-foursail
+/usr/share/applications
+/usr/share/icons/hicolor/86x86/apps
 # >> files
 # << files
