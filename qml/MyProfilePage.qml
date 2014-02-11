@@ -2,11 +2,17 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 Page {
+    property int friends_count: 0;
+    property string profile_photo_url;
+    property string user_name;
+    property string user_home_city;
+
     signal switchToHistory();
     signal switchToRecentCheckins();
     signal switchToNearbyVenues();
     signal switchToBadges();
     signal switchToNotifications();
+
 
     SilicaFlickable {
 
@@ -30,6 +36,53 @@ Page {
 
             PageHeader {
                 title: qsTr("My Profile")
+            }
+
+
+            Rectangle {
+                height: 158
+                width: parent.width
+
+                anchors.left: parent.left;
+                anchors.right: parent.right;
+                anchors.margins: Theme.paddingMedium;
+
+                radius: 5
+                color: "transparent"
+                border.color: Theme.highlightColor
+
+                Label {
+                    id: userName
+                    anchors.margins: Theme.paddingMedium;
+                    anchors.top: parent.top
+                    anchors.left: parent.left
+                    anchors.right: userPhoto.left
+
+                    font.bold: true
+                    color: Theme.primaryColor
+                    text: user_name
+                }
+
+                Label {
+                    anchors.top: userName.bottom
+                    anchors.topMargin: Theme.paddingSmall;
+                    anchors.left: parent.left
+                    anchors.leftMargin: Theme.paddingMedium;
+                    anchors.right: userPhoto.left
+                    anchors.rightMargin: Theme.paddingMedium;
+
+                    color: Theme.primaryColor
+                    text: user_home_city
+                }
+
+                Image {
+                    id: userPhoto
+                    anchors.margins: Theme.paddingMedium;
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.right: parent.right
+
+                    source: profile_photo_url
+                }
             }
 
             BackgroundItem {
@@ -109,7 +162,7 @@ Page {
                     font.pixelSize: Theme.fontSizeMedium
                     color: parent.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                     anchors.margins: Theme.paddingMedium;
-                    text: "N/A"
+                    text: friends_count
                 }
                 onClicked: console.log("Friends")
             }
