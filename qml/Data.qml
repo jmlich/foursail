@@ -238,6 +238,12 @@ Rectangle {
 
     }
 
+    function profile(uid) {
+        var source = "https://api.foursquare.com/v2/users/"+uid
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale;
+        foursquareDownload(source, params, "GET");
+    }
+
 
     function search(query) {
         var source = "https://api.foursquare.com/v2/venues/search"
@@ -310,7 +316,7 @@ Rectangle {
     function foursquareDownload(source, params, method) {
         console.log(method + ": " + source + "?" + params)
 
-        var array, item, i, data;
+        var array, item, i, data, user;
 
         var http = new XMLHttpRequest()
         http.open(method, source+"?"+params, true);
@@ -498,6 +504,15 @@ Rectangle {
                                 notificationsPage.m.append(item)
                             }
                         }
+
+                        if (resultObject.response.user !== undefined) {
+                            user = resultObject.response.user;
+                            myProfilePage.friends_count = user.friends.count;
+                            myProfilePage.profile_photo_url = user.photo.prefix + "128x128" + user.photo.suffix;
+                            myProfilePage.user_name = user.firstName + " " + user.lastName + " (" + user.gender + ")"
+                            myProfilePage.user_home_city = user.homeCity
+                        }
+
 
                     } catch(e) {
                         console.log("foursquareDownload: parse failed: " + e)
