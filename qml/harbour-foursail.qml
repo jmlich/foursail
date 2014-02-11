@@ -206,6 +206,13 @@ ApplicationWindow {
             pageStack.push(badgesPage)
         }
 
+        onStatusChanged: {
+            if (status === PageStatus.Activating) {
+                data.profile ("self")
+            }
+
+        }
+
         //        onStatusChanged: {
         //            if ((status === PageStatus.Activating) && (selfCheckinsPage.m.count === 0)) {
         //            }
