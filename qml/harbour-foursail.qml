@@ -210,7 +210,6 @@ ApplicationWindow {
             if (status === PageStatus.Activating) {
                 data.profile ("self")
             }
-
         }
 
         //        onStatusChanged: {
@@ -251,6 +250,13 @@ ApplicationWindow {
             data.checkinHistory(uid);
             pageStack.push(selfCheckinsPage)
         }
+
+        // TBD
+//        onStatusChanged: {
+//            if (status === PageStatus.Activating) {
+//                data.profile (uid)
+//            }
+//        }
     }
 
     CategoriesPage {

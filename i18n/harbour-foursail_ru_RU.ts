@@ -1,6 +1,8 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="ru" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="ru">
 <context>
-    <name/>
+    <name></name>
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="163"/>
         <source>Tap to cancel</source>
@@ -138,7 +140,7 @@
 <context>
     <name>Data</name>
     <message>
-        <location filename="../qml/Data.qml" line="336"/>
+        <location filename="../qml/Data.qml" line="342"/>
         <source>%1 Notifications</source>
         <translation>%1 Уведомления</translation>
     </message>
@@ -167,44 +169,63 @@
 <context>
     <name>MyProfilePage</name>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="21"/>
+        <location filename="../qml/MyProfilePage.qml" line="38"/>
         <source>Recent Checkins</source>
         <translation>История чекинов</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="25"/>
+        <location filename="../qml/MyProfilePage.qml" line="42"/>
         <source>Nearby Venues</source>
         <translation>Места поблизости</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="32"/>
+        <location filename="../qml/MyProfilePage.qml" line="49"/>
         <source>My Profile</source>
         <translation>Мой Профиль</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="42"/>
         <source>History</source>
-        <translation>История</translation>
+        <translation type="vanished">История</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="55"/>
+        <location filename="../qml/MyProfilePage.qml" line="184"/>
         <source>Badges</source>
         <translation>Бейджи</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="69"/>
+        <location filename="../qml/MyProfilePage.qml" line="161"/>
         <source>Notifications</source>
         <translation>Уведомления</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="82"/>
+        <location filename="../qml/MyProfilePage.qml" line="136"/>
+        <source>Checkins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/MyProfilePage.qml" line="207"/>
         <source>Mayorships</source>
         <translation>Мэрства</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="103"/>
+        <location filename="../qml/MyProfilePage.qml" line="229"/>
+        <source>Tips</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/MyProfilePage.qml" line="251"/>
         <source>Friends</source>
         <translation>Друзья</translation>
+    </message>
+    <message>
+        <location filename="../qml/MyProfilePage.qml" line="272"/>
+        <source>Lists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/MyProfilePage.qml" line="294"/>
+        <source>Photos</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
