@@ -23,6 +23,8 @@ Page {
     signal switchToNearbyVenues();
     signal switchToBadges();
     signal switchToNotifications();
+    signal switchToTips();
+    signal switchToFriends();
 
 
     SilicaFlickable {
@@ -72,10 +74,15 @@ Page {
                 }
 
                 Label {
+                    id: userHomeCity
+
+                    anchors.leftMargin: Theme.paddingMedium;
                     anchors.top: userName.bottom
                     anchors.left: parent.left
                     anchors.right: userPhoto.left
 
+                    font.bold: false
+                    font.pixelSize: Theme.fontSizeSmall
                     color: Theme.primaryColor
                     text: user_home_city
                 }
@@ -115,7 +122,6 @@ Page {
                     }
 
                 }
-
 
                 Image {
                     id: userPhoto
@@ -259,7 +265,7 @@ Page {
                     color: parent.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                     anchors.margins: Theme.paddingMedium;
                 }
-                onClicked: console.log("Friends")
+                onClicked: switchToFriends("self")
             }
 
             BackgroundItem {

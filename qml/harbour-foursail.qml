@@ -206,6 +206,11 @@ ApplicationWindow {
             pageStack.push(badgesPage)
         }
 
+        onSwitchToFriends: {
+            data.friends("self")
+            pageStack.push (friendPage)
+        }
+
         onStatusChanged: {
             if (status === PageStatus.Activating) {
                 data.profile ("self")
@@ -238,6 +243,19 @@ ApplicationWindow {
             }
         }
 
+    }
+
+    FriendsPage {
+        id: friendPage
+        onSwitchToNearbyVenues: {
+            pageStack.replace(nearbyVeneuesPage);
+        }
+        onRefresh: {
+            data.friends("self");
+        }
+        onRemoveFriend: {
+            data.removeFriend(uid);
+        }
     }
 
     FriendDetailPage {
