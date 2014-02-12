@@ -239,11 +239,23 @@ Rectangle {
     }
 
     function profile(uid) {
-        var source = "https://api.foursquare.com/v2/users/"+uid
+        var source = "https://api.foursquare.com/v2/users/" + uid
         var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale;
         foursquareDownload(source, params, "GET");
     }
 
+    function friends(uid) {
+        var source = "https://api.foursquare.com/v2/users/" + uid + "/friends"
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale;
+        foursquareDownload(source, params, "GET");
+    }
+
+    function removeFriend(uid) {
+        var source = "https://api.foursquare.com/v2/users/" + uid + "/unfriend"
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale;
+        //foursquareDownload(source, params, "POST");
+        console.log ("remove friend", uid)
+    }
 
     function search(query) {
         var source = "https://api.foursquare.com/v2/venues/search"
@@ -526,6 +538,30 @@ Rectangle {
                             }
                         }
 
+                        if (resultObject.response.friends !== undefined) {
+                            friendPage.m.clear();
+                            array = resultObject.response.friends.items;
+                            for (i = 0; i < array.length; ++i) {
+                                item = array[i];
+                                var uid = item.id;
+                                var photo = item.photo;
+                                var first_name = (item.firstName !== undefined) ? item.firstName : "";
+                                var last_name = (item.lastName !== undefined) ? item.lastName : "";
+                                var home_city   = (item.homeCity !== undefined) ? item.homeCity : "";
+                                var tips_count = item.tips.count;
+                                var contact = item.contact;
+
+                                data = {
+                                    'userId': uid,
+                                    'photo': photo.prefix + "86x86" + photo.suffix,
+                                    'name': first_name + " " + last_name,
+                                    'homeCity': home_city,
+                                    'tipsCount': tips_count,
+                                    'contact': contact
+                                };
+                                friendPage.m.append(data);
+                            }
+                        }
 
                     } catch(e) {
                         console.log("foursquareDownload: parse failed: " + e)

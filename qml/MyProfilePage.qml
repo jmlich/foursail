@@ -24,6 +24,7 @@ Page {
     signal switchToBadges();
     signal switchToNotifications();
     signal switchToTips();
+    signal switchToFriends();
 
 
     SilicaFlickable {
@@ -264,7 +265,7 @@ Page {
                     color: parent.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                     anchors.margins: Theme.paddingMedium;
                 }
-                onClicked: console.log("Friends")
+                onClicked: switchToFriends("self")
             }
 
             BackgroundItem {
