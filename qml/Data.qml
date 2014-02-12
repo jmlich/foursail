@@ -511,6 +511,8 @@ Rectangle {
                             myProfilePage.profile_photo_url = user.photo.prefix + "128x128" + user.photo.suffix;
                             myProfilePage.user_name = user.firstName + " " + user.lastName + " (" + user.gender + ")"
                             myProfilePage.user_home_city = user.homeCity
+                            myProfilePage.checkins_count = user.checkins.count
+                            myProfilePage.tips_count = user.tips.count
                         }
 
 
