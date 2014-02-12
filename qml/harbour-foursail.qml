@@ -247,9 +247,8 @@ ApplicationWindow {
 
     FriendsPage {
         id: friendPage
-        onSwitchToNearbyVenues: {
-            pageStack.replace(nearbyVeneuesPage);
-        }
+        loading: (data.countLoading > 0)
+
         onRefresh: {
             data.friends("self");
         }

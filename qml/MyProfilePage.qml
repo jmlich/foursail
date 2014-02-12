@@ -107,9 +107,6 @@ Page {
                         color: Theme.rgba(Theme.highlightBackgroundColor, 0.3)
 
                         width: (scores_recent*parent.width/scores_max)
-                        onWidthChanged: {
-                            console.log("score width: " + width)
-                        }
 
                         Label {
 
@@ -265,7 +262,7 @@ Page {
                     color: parent.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                     anchors.margins: Theme.paddingMedium;
                 }
-                onClicked: switchToFriends("self")
+                onClicked: switchToFriends()
             }
 
             BackgroundItem {

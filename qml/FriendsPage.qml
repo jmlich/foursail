@@ -10,7 +10,6 @@ Page {
     property bool loading;
 
     signal refresh();
-    signal switchToNearbyVenues();
     signal removeFriend(string uid);
 
     ListModel {
@@ -27,17 +26,6 @@ Page {
         spacing: 10;
 
         property Item contextMenu
-
-        PullDownMenu {
-            MenuItem {
-                text: qsTr("Nearby Venues")
-                onClicked: switchToNearbyVenues();
-            }
-            MenuItem {
-                text: qsTr("Refresh")
-                onClicked: refresh();
-            }
-        }
 
         delegate: BackgroundItem {
             id: delegate
