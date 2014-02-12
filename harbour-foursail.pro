@@ -36,7 +36,8 @@ OTHER_FILES += qml/harbour-foursail.qml \
     qml/CategoriesPage.qml \
     qml/NotificationPopup.qml \
     qml/NotificationsPage.qml \
-    qml/FriendsPage.qml
+    qml/FriendsPage.qml \
+    qml/TipsPage.qml
 
 QT += webkit
 

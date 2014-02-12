@@ -208,7 +208,12 @@ ApplicationWindow {
 
         onSwitchToFriends: {
             data.friends("self")
-            pageStack.push (friendPage)
+            pageStack.push(friendPage)
+        }
+
+        onSwitchToTips: {
+            data.tips("self");
+            PageStack.push(tipsPage)
         }
 
         onStatusChanged: {
@@ -290,7 +295,9 @@ ApplicationWindow {
         id: badgesPage
     }
 
-
+    TipsPage {
+        id: tipsPage
+    }
 
     CoverPage {
         id: coverPage

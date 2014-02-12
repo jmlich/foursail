@@ -298,6 +298,11 @@ Rectangle {
         foursquareDownload(source, params, "POST");
     }
 
+    function tips(uid) {
+        var source = "https://api.foursquare.com/v2/users/" + uid + "/tips"
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale + "&sort=recent";
+        foursquareDownload(source, params, "GET");
+    }
 
     function checkin(vid, shout, twitter, facebook) {
         var source = "https://api.foursquare.com/v2/checkins/add";
@@ -535,6 +540,28 @@ Rectangle {
                                 myProfilePage.notifications_count = (resultObject.notifications[0].item !== undefined) ? resultObject.notifications[0].item.unreadCount : 0 ;
                             } else {
                                 console.log("friend " + user.homeCity + user.friends.count + " " + user.tips.count + " "  + user.badges.count + " " + user.mayorships.count + " " +user.checkins.count + " " + user.lists.count + " " + user.photos.count + " " + user.scores.recent + " " + user.scores.max)
+                            }
+                        }
+
+                        if (resultObject.response.tips !== undefined) {
+                            tipsPage.m.clear();
+                            array = resultObject.response.tips.items;
+                            for (i = 0; i < array.length; ++i) {
+                                item = array[i];
+                                var uid = item.id;
+                                var text = item.text;
+                                var date = item.createdAt;
+                                var isPhotoExists = item.photo !== undefined;
+
+
+                                data = {
+                                    'tipId': uid,
+                                    'photo': isPhotoExists ? photo.prefix + "86x86" + photo.suffix : "",
+                                    'text': text,
+                                    'date': date
+
+                                };
+                                tipsPage.m.append(data);
                             }
                         }
 
