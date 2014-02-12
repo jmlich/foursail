@@ -3,6 +3,8 @@ import Sailfish.Silica 1.0
 
 Page {
     property int friends_count: 0;
+    property int checkins_count: 0;
+    property int tips_count: 0;
     property string profile_photo_url;
     property string user_name;
     property string user_home_city;
@@ -12,6 +14,7 @@ Page {
     signal switchToNearbyVenues();
     signal switchToBadges();
     signal switchToNotifications();
+    signal switchToTips();
 
 
     SilicaFlickable {
@@ -40,6 +43,7 @@ Page {
 
 
             Rectangle {
+                id: parentRect
                 height: 158
                 width: parent.width
 
@@ -53,6 +57,7 @@ Page {
 
                 Label {
                     id: userName
+
                     anchors.margins: Theme.paddingMedium;
                     anchors.top: parent.top
                     anchors.left: parent.left
@@ -64,15 +69,65 @@ Page {
                 }
 
                 Label {
+                    id: userHomeCity
+
+                    anchors.leftMargin: Theme.paddingMedium;
                     anchors.top: userName.bottom
                     anchors.topMargin: Theme.paddingSmall;
                     anchors.left: parent.left
-                    anchors.leftMargin: Theme.paddingMedium;
                     anchors.right: userPhoto.left
-                    anchors.rightMargin: Theme.paddingMedium;
 
+                    font.bold: false
+                    font.pixelSize: Theme.fontSizeSmall
                     color: Theme.primaryColor
                     text: user_home_city
+                }
+
+                Row
+                {
+                    anchors.right: userPhoto.left
+                    anchors.left: parent.left
+                    anchors.margins: Theme.paddingMedium;
+                    anchors.bottom: parent.bottom
+                    spacing: 10
+
+                    BackgroundItem {
+                        width: (parentRect.width - userPhoto.width - 3 * Theme.paddingMedium - parent.spacing) / 2
+                        height: checkinsLabel.height
+                        Label {
+                            id: checkinsLabel
+
+                            anchors.verticalCenter: parent.verticalCenter;
+                            anchors.left: parent.left;
+                            anchors.right: parent.right;
+                            anchors.margins: Theme.paddingSmall;
+
+                            horizontalAlignment: Text.AlignHCenter
+
+                            color: parent.highlighted ? Theme.highlightColor : Theme.primaryColor;
+                            text: qsTr ("Checkins: ") + checkins_count;
+                        }
+                        onClicked: switchToHistory();
+                    }
+
+                    BackgroundItem {
+                        width: (parentRect.width - userPhoto.width - 3 * Theme.paddingMedium - parent.spacing) / 2
+                        height: tipsLabel.height
+                        Label {
+                            id: tipsLabel
+
+                            anchors.verticalCenter: parent.verticalCenter;
+                            anchors.left: parent.left;
+                            anchors.right: parent.right;
+                            anchors.margins: Theme.paddingSmall;
+
+                            horizontalAlignment: Text.AlignHCenter
+
+                            color: parent.highlighted ? Theme.highlightColor : Theme.primaryColor;
+                            text: qsTr ("Tips: ") + tips_count;
+                        }
+                        onClicked: switchToTips();
+                    }
                 }
 
                 Image {
