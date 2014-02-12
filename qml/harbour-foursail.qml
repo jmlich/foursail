@@ -221,27 +221,28 @@ ApplicationWindow {
         //            if ((status === PageStatus.Activating) && (selfCheckinsPage.m.count === 0)) {
         //            }
         //        }
-    }
 
-    SelfCheckinsPage {
-        id: selfCheckinsPage;
-        loading: (data.countLoading > 0)
+        SelfCheckinsPage {
+            id: selfCheckinsPage;
+            loading: (data.countLoading > 0)
 
-        onRefresh: {
-            m.clear();
-            data.selfCheckins();
+            onRefresh: {
+                m.clear();
+                data.selfCheckins();
+            }
+
+            onCheckinDetail: {
+                checkinDetailPage.venue_id = venue_id;
+                checkinDetailPage.venue_name = name;
+                checkinDetailPage.venue_address = address;
+                checkinDetailPage.icon = icon;
+                checkinDetailPage.comment = "";
+                checkinDetailPage.lat = lat;
+                checkinDetailPage.lon = lon;
+                pageStack.push(checkinDetailPage)
+            }
         }
 
-        onCheckinDetail: {
-            checkinDetailPage.venue_id = venue_id;
-            checkinDetailPage.venue_name = name;
-            checkinDetailPage.venue_address = address;
-            checkinDetailPage.icon = icon;
-            checkinDetailPage.comment = "";
-            checkinDetailPage.lat = lat;
-            checkinDetailPage.lon = lon;
-            pageStack.push(checkinDetailPage)
-        }
     }
 
     FriendsPage {
