@@ -520,7 +520,7 @@ Rectangle {
                                 myProfilePage.photos_count  = user.photos.count
                                 myProfilePage.scores_recent = user.scores.recent
                                 myProfilePage.scores_max = user.scores.max
-                                myProfilePage.notifications_count = (resultObject.notifications[0].item !== undefined) ? resultObject.notifications[0].item.unreadCount : 0;
+                                myProfilePage.notifications_count = (resultObject.notifications[0].item !== undefined) ? resultObject.notifications[0].item.unreadCount : 0 ;
                             } else {
                                 console.log("friend " + user.homeCity + user.friends.count + " " + user.tips.count + " "  + user.badges.count + " " + user.mayorships.count + " " +user.checkins.count + " " + user.lists.count + " " + user.photos.count + " " + user.scores.recent + " " + user.scores.max)
                             }
