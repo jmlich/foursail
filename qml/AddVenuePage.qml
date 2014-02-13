@@ -108,13 +108,13 @@ Dialog {
                 id: phoneTextfield
                 width: parent.width
                 inputMethodHints: Qt.ImhDialableCharactersOnly
-                placeholderText: qsTr("phone")
+                placeholderText: qsTr("Phone")
             }
 
             TextField {
                 id: twitterTextfield
                 width: parent.width
-                placeholderText: qsTr("twitter")
+                placeholderText: qsTr("Twitter")
             }
 
             TextArea {
@@ -128,7 +128,7 @@ Dialog {
                 id: urlTextfield
                 width: parent.width
 //                validator: RegExpValidator { regExp: /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/ }
-                placeholderText: qsTr("http://")
+                placeholderText: "http://"
             }
 
 
