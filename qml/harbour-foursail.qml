@@ -213,7 +213,8 @@ ApplicationWindow {
 
         onSwitchToTips: {
             data.tips("self");
-            pageStack.push(tipsPage, { "uid" : "self" })
+            tipsPage.uid = "self"
+            pageStack.push(tipsPage)
         }
 
         onStatusChanged: {
@@ -297,10 +298,11 @@ ApplicationWindow {
 
     TipsPage {
         id: tipsPage
+        loading: (data.countLoading > 0)
 
-        onRefresh: {
-            data.tips(uid)
-        }
+//        onRefresh: {
+//            data.tips(uid)
+//        }
     }
 
     CoverPage {

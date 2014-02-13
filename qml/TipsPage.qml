@@ -11,7 +11,7 @@ Page {
     property alias m: listmodel
     property bool loading;
 
-    signal refresh();
+//    signal refresh(string uid);
 
     ListModel {
         id: listmodel;
@@ -26,12 +26,12 @@ Page {
         }
         spacing: 10;
 
-        PullDownMenu {
-            MenuItem {
-                text: qsTr("Refresh")
-                onClicked: refresh(uid);
-            }
-        }
+//        PullDownMenu {
+//            MenuItem {
+//                text: qsTr("Refresh")
+//                onClicked: refresh(uid);
+//            }
+//        }
 
         delegate: BackgroundItem {
             id: delegate
@@ -40,34 +40,20 @@ Page {
             property string venueId : venueIdentifier
             property string tipId : tipIdentifier
 
-            Item {
-                id: tipPhotoItem
-                visible: tipPhoto.source != ""
-
-                Image {
-                    id: tipPhoto
-
-                    source: photo
-
-                    anchors.left: parent.left;
-                    anchors.top: parent.top;
-                    anchors.margins: Theme.paddingMedium
-
-                    width: 86;
-                    height: 86;
-                }
-            }
 
             Label {
                 id: venueNameLabel
 
                 anchors.top: parent.top
-                anchors.left: tipPhotoItem.right
-                anchors.leftMargin: 10
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.leftMargin: Theme.paddingMedium
+                anchors.rightMargin: Theme.paddingMedium
 
                 textFormat: Text.RichText
-                font.bold: true
-                text: "<style type='text/css'>a:link{color:"+Theme.primaryColor+"; text-decoration: none;} a:visited{color:"+Theme.primaryColor+"}</style> <a href=\"venue\">" + venueName + "</a>"
+                font.pixelSize: Theme.fontSizeLarge
+//                text: "<style type='text/css'>a:link{color:"+Theme.primaryColor+"; text-decoration: none;} a:visited{color:"+Theme.primaryColor+"}</style> <a href=\"venue\">" + venueName + "</a>"
+                text: venueName
                 color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
                 onLinkActivated: {
                     if (link == "venue") {
@@ -76,14 +62,28 @@ Page {
                 }
             }
 
+            Image {
+                id: tipPhotoImage
+                anchors.top: venueNameLabel.bottom
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.leftMargin: Theme.paddingMedium;
+                anchors.rightMargin: Theme.paddingMedium
+                fillMode: Image.PreserveAspectFit
+                source: photo
+                visible: (photo !== "")
+            }
+
+
             Label {
+
                 id: venueAddressLabel
 
-                anchors.left: tipPhotoItem.right
+                anchors.left: parent.left
                 anchors.right: parent.right
-                anchors.leftMargin: 10
-                anchors.rightMargin: 10
-                anchors.top: venueNameLabel.bottom
+                anchors.leftMargin: Theme.paddingMedium
+                anchors.rightMargin: Theme.paddingMedium
+                anchors.top: tipPhotoImage.bottom
                 verticalAlignment: Text.AlignBottom
                 color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                 font.pixelSize: Theme.fontSizeTiny
@@ -93,31 +93,33 @@ Page {
             }
 
             Label {
-                id: tipLabel
-
-                anchors.top: venueAddressLabel.bottom
-                anchors.left: tipPhotoItem.right
-                anchors.right: parent.right
-                anchors.leftMargin: 10
-                anchors.rightMargin: 10
-
-                text: tipText
-                wrapMode: Text.Wrap
-            }
-
-            Label {
                 id: dateLabel
 
-                anchors.top: tipLabel.bottom
-                anchors.left: tipPhotoItem.right
+                anchors.top: venueAddressLabel.bottom
+                anchors.left: parent.left
                 anchors.right: parent.right
-                anchors.leftMargin: 10
-                anchors.rightMargin: 10
+                anchors.leftMargin: Theme.paddingMedium
+                anchors.rightMargin: Theme.paddingMedium
 
                 color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                 font.pixelSize: Theme.fontSizeTiny
                 text: F.formatDate(date)
             }
+
+            Label {
+                id: tipLabel
+
+                anchors.top: dateLabel.bottom
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.leftMargin: Theme.paddingMedium
+                anchors.rightMargin: Theme.paddingMedium
+
+                text: tipText
+                wrapMode: Text.Wrap
+            }
+
+
 
 
             onClicked: console.log (venueId, tipId)
