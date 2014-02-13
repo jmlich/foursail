@@ -135,7 +135,7 @@
 <context>
     <name>Data</name>
     <message>
-        <location filename="../qml/Data.qml" line="354"/>
+        <location filename="../qml/Data.qml" line="359"/>
         <source>%1 Notifications</source>
         <translation type="unfinished"></translation>
     </message>
@@ -382,6 +382,24 @@
     </message>
     <message>
         <location filename="../qml/SelfCheckinsPage.qml" line="97"/>
+        <source>Offline</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TipsPage</name>
+    <message>
+        <location filename="../qml/TipsPage.qml" line="25"/>
+        <source>Tips</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TipsPage.qml" line="31"/>
+        <source>Refresh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TipsPage.qml" line="137"/>
         <source>Offline</source>
         <translation type="unfinished"></translation>
     </message>
