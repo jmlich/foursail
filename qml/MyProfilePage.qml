@@ -241,7 +241,7 @@ Page {
                     anchors.margins: Theme.paddingMedium;
 
                 }
-                onClicked: console.log("Tips")
+                onClicked: switchToTips()
             }
 
             BackgroundItem {
