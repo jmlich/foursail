@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="nl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl" version="2.1">
 <context>
-    <name></name>
+    <name/>
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="163"/>
         <source>Tap to cancel</source>
-        <translation>Tik om te annuleren</translation>
+        <translation>Tikken om te annuleren</translation>
     </message>
 </context>
 <context>
@@ -53,21 +51,13 @@
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="111"/>
-        <source>Phone</source>
-        <translation type="unfinished"></translation>
+        <source>phone</source>
+        <translation>telefoon</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="117"/>
-        <source>Twitter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>phone</source>
-        <translation type="vanished">telefoon</translation>
-    </message>
-    <message>
         <source>twitter</source>
-        <translation type="vanished">twitter</translation>
+        <translation>twitter</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="123"/>
@@ -75,8 +65,9 @@
         <translation>beschrijving</translation>
     </message>
     <message>
+        <location filename="../qml/AddVenuePage.qml" line="131"/>
         <source>http://</source>
-        <translation type="vanished">http://</translation>
+        <translation>http://</translation>
     </message>
 </context>
 <context>
@@ -100,7 +91,7 @@
     <message>
         <location filename="../qml/CheckinDetailPage.qml" line="38"/>
         <source>Checkin</source>
-        <translation>Check-in</translation>
+        <translation>Inchecken</translation>
     </message>
     <message>
         <location filename="../qml/CheckinDetailPage.qml" line="85"/>
@@ -128,7 +119,7 @@
     <message>
         <location filename="../qml/CheckinResultPage.qml" line="26"/>
         <source>Checkin</source>
-        <translation>Checkin</translation>
+        <translation>Inchecken</translation>
     </message>
 </context>
 <context>
@@ -147,7 +138,7 @@
 <context>
     <name>Data</name>
     <message>
-        <location filename="../qml/Data.qml" line="354"/>
+        <location filename="../qml/Data.qml" line="342"/>
         <source>%1 Notifications</source>
         <translation>%1 meldingen</translation>
     </message>
@@ -166,29 +157,6 @@
     </message>
 </context>
 <context>
-    <name>FriendsPage</name>
-    <message>
-        <location filename="../qml/FriendsPage.qml" line="24"/>
-        <source>Friends</source>
-        <translation type="unfinished">Vrienden</translation>
-    </message>
-    <message>
-        <location filename="../qml/FriendsPage.qml" line="75"/>
-        <source>Removing friend</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/FriendsPage.qml" line="98"/>
-        <source>Remove</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/FriendsPage.qml" line="114"/>
-        <source>Offline</source>
-        <translation type="unfinished">Off-line</translation>
-    </message>
-</context>
-<context>
     <name>MapPage</name>
     <message>
         <location filename="../qml/MapPage.qml" line="17"/>
@@ -199,63 +167,59 @@
 <context>
     <name>MyProfilePage</name>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="40"/>
+        <location filename="../qml/MyProfilePage.qml" line="38"/>
         <source>Recent Checkins</source>
-        <translation>Recente check-ins</translation>
+        <translation>Recente inchecks</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="44"/>
+        <location filename="../qml/MyProfilePage.qml" line="42"/>
         <source>Nearby Venues</source>
         <translation>Locaties dichtbij</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="51"/>
+        <location filename="../qml/MyProfilePage.qml" line="49"/>
         <source>My Profile</source>
         <translation>Mijn profiel</translation>
     </message>
     <message>
-        <source>History</source>
-        <translation type="vanished">Geschiedenis</translation>
-    </message>
-    <message>
-        <location filename="../qml/MyProfilePage.qml" line="187"/>
+        <location filename="../qml/MyProfilePage.qml" line="184"/>
         <source>Badges</source>
         <translation>Badges</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="164"/>
+        <location filename="../qml/MyProfilePage.qml" line="161"/>
         <source>Notifications</source>
         <translation>Meldingen</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="139"/>
+        <location filename="../qml/MyProfilePage.qml" line="136"/>
         <source>Checkins</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="210"/>
+        <location filename="../qml/MyProfilePage.qml" line="207"/>
         <source>Mayorships</source>
         <translation>Mayor-schappen</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="232"/>
+        <location filename="../qml/MyProfilePage.qml" line="229"/>
         <source>Tips</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="254"/>
+        <location filename="../qml/MyProfilePage.qml" line="251"/>
         <source>Friends</source>
         <translation>Vrienden</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="275"/>
+        <location filename="../qml/MyProfilePage.qml" line="272"/>
         <source>Lists</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="297"/>
+        <location filename="../qml/MyProfilePage.qml" line="294"/>
         <source>Photos</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -279,7 +243,7 @@
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="41"/>
         <source>Recent Checkins</source>
-        <translation>Recente check-ins</translation>
+        <translation>Recente inchecks</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="45"/>
@@ -348,7 +312,7 @@
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="27"/>
         <source>Recent Checkins</source>
-        <translation>Recente check-ins</translation>
+        <translation>Recente inchecks</translation>
     </message>
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="33"/>

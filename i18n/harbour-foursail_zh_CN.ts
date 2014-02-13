@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="zh_CN">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_CN" version="2.1">
 <context>
-    <name></name>
+    <name/>
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="163"/>
         <source>Tap to cancel</source>
@@ -53,21 +51,13 @@
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="111"/>
-        <source>Phone</source>
-        <translation type="unfinished"></translation>
+        <source>phone</source>
+        <translation>电话</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="117"/>
-        <source>Twitter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>phone</source>
-        <translation type="vanished">电话</translation>
-    </message>
-    <message>
         <source>twitter</source>
-        <translation type="vanished">Twitter</translation>
+        <translation>Twitter</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="123"/>
@@ -75,8 +65,9 @@
         <translation>简介</translation>
     </message>
     <message>
+        <location filename="../qml/AddVenuePage.qml" line="131"/>
         <source>http://</source>
-        <translation type="vanished">http://</translation>
+        <translation>http://</translation>
     </message>
 </context>
 <context>
@@ -147,7 +138,7 @@
 <context>
     <name>Data</name>
     <message>
-        <location filename="../qml/Data.qml" line="354"/>
+        <location filename="../qml/Data.qml" line="342"/>
         <source>%1 Notifications</source>
         <translation>%1条信息</translation>
     </message>
@@ -166,29 +157,6 @@
     </message>
 </context>
 <context>
-    <name>FriendsPage</name>
-    <message>
-        <location filename="../qml/FriendsPage.qml" line="24"/>
-        <source>Friends</source>
-        <translation type="unfinished">好友</translation>
-    </message>
-    <message>
-        <location filename="../qml/FriendsPage.qml" line="75"/>
-        <source>Removing friend</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/FriendsPage.qml" line="98"/>
-        <source>Remove</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/FriendsPage.qml" line="114"/>
-        <source>Offline</source>
-        <translation type="unfinished">离线</translation>
-    </message>
-</context>
-<context>
     <name>MapPage</name>
     <message>
         <location filename="../qml/MapPage.qml" line="17"/>
@@ -199,63 +167,59 @@
 <context>
     <name>MyProfilePage</name>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="40"/>
+        <location filename="../qml/MyProfilePage.qml" line="38"/>
         <source>Recent Checkins</source>
         <translation>近期签到</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="44"/>
+        <location filename="../qml/MyProfilePage.qml" line="42"/>
         <source>Nearby Venues</source>
         <translation>附近地点</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="51"/>
+        <location filename="../qml/MyProfilePage.qml" line="49"/>
         <source>My Profile</source>
         <translation>我的简介</translation>
     </message>
     <message>
-        <source>History</source>
-        <translation type="vanished">历史</translation>
-    </message>
-    <message>
-        <location filename="../qml/MyProfilePage.qml" line="187"/>
+        <location filename="../qml/MyProfilePage.qml" line="184"/>
         <source>Badges</source>
         <translation>徽章</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="164"/>
+        <location filename="../qml/MyProfilePage.qml" line="161"/>
         <source>Notifications</source>
         <translation>信息</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="139"/>
+        <location filename="../qml/MyProfilePage.qml" line="136"/>
         <source>Checkins</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="210"/>
+        <location filename="../qml/MyProfilePage.qml" line="207"/>
         <source>Mayorships</source>
         <translation>地点霸主</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="232"/>
+        <location filename="../qml/MyProfilePage.qml" line="229"/>
         <source>Tips</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="254"/>
+        <location filename="../qml/MyProfilePage.qml" line="251"/>
         <source>Friends</source>
         <translation>好友</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="275"/>
+        <location filename="../qml/MyProfilePage.qml" line="272"/>
         <source>Lists</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="297"/>
+        <location filename="../qml/MyProfilePage.qml" line="294"/>
         <source>Photos</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
