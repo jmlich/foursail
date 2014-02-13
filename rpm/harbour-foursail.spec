@@ -13,7 +13,7 @@ Name:       harbour-foursail
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Simple foursquare client with basic functions.
-Version:    0.6.4
+Version:    0.6.6
 Release:    1
 Group:      Qt/Qt
 License:    BSD Licence
