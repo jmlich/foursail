@@ -53,23 +53,26 @@
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="111"/>
-        <source>phone</source>
-        <translation>telefon</translation>
+        <source>Phone</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="117"/>
+        <source>Twitter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>phone</source>
+        <translation type="vanished">telefon</translation>
+    </message>
+    <message>
         <source>twitter</source>
-        <translation>twitter</translation>
+        <translation type="vanished">twitter</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="123"/>
         <source>description</source>
         <translation>popis</translation>
-    </message>
-    <message>
-        <location filename="../qml/AddVenuePage.qml" line="131"/>
-        <source>http://</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -140,7 +143,7 @@
 <context>
     <name>Data</name>
     <message>
-        <location filename="../qml/Data.qml" line="342"/>
+        <location filename="../qml/Data.qml" line="354"/>
         <source>%1 Notifications</source>
         <translation>%1 upozornění</translation>
     </message>
@@ -159,6 +162,29 @@
     </message>
 </context>
 <context>
+    <name>FriendsPage</name>
+    <message>
+        <location filename="../qml/FriendsPage.qml" line="24"/>
+        <source>Friends</source>
+        <translation type="unfinished">Přátelé</translation>
+    </message>
+    <message>
+        <location filename="../qml/FriendsPage.qml" line="75"/>
+        <source>Removing friend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/FriendsPage.qml" line="98"/>
+        <source>Remove</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/FriendsPage.qml" line="114"/>
+        <source>Offline</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MapPage</name>
     <message>
         <location filename="../qml/MapPage.qml" line="17"/>
@@ -169,57 +195,57 @@
 <context>
     <name>MyProfilePage</name>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="38"/>
+        <location filename="../qml/MyProfilePage.qml" line="40"/>
         <source>Recent Checkins</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="42"/>
+        <location filename="../qml/MyProfilePage.qml" line="44"/>
         <source>Nearby Venues</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="49"/>
+        <location filename="../qml/MyProfilePage.qml" line="51"/>
         <source>My Profile</source>
         <translation>Můj profil</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="184"/>
+        <location filename="../qml/MyProfilePage.qml" line="187"/>
         <source>Badges</source>
         <translation>Odznáčky</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="161"/>
+        <location filename="../qml/MyProfilePage.qml" line="164"/>
         <source>Notifications</source>
         <translation>Upozornění</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="136"/>
+        <location filename="../qml/MyProfilePage.qml" line="139"/>
         <source>Checkins</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="207"/>
+        <location filename="../qml/MyProfilePage.qml" line="210"/>
         <source>Mayorships</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="229"/>
+        <location filename="../qml/MyProfilePage.qml" line="232"/>
         <source>Tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="251"/>
+        <location filename="../qml/MyProfilePage.qml" line="254"/>
         <source>Friends</source>
         <translation>Přátelé</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="272"/>
+        <location filename="../qml/MyProfilePage.qml" line="275"/>
         <source>Lists</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="294"/>
+        <location filename="../qml/MyProfilePage.qml" line="297"/>
         <source>Photos</source>
         <translation type="unfinished"></translation>
     </message>
