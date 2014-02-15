@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ru">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ru" version="2.1">
 <context>
-    <name></name>
+    <name/>
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="163"/>
         <source>Tap to cancel</source>
@@ -54,29 +52,17 @@
     <message>
         <location filename="../qml/AddVenuePage.qml" line="111"/>
         <source>Phone</source>
-        <translation type="unfinished"></translation>
+        <translation>Телефон</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="117"/>
         <source>Twitter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>phone</source>
-        <translation type="vanished">телефон</translation>
-    </message>
-    <message>
-        <source>twitter</source>
-        <translation type="vanished">twitter</translation>
+        <translation>Twitter</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="123"/>
         <source>description</source>
         <translation>описание</translation>
-    </message>
-    <message>
-        <source>http://</source>
-        <translation type="vanished">http://</translation>
     </message>
 </context>
 <context>
@@ -170,22 +156,22 @@
     <message>
         <location filename="../qml/FriendsPage.qml" line="24"/>
         <source>Friends</source>
-        <translation type="unfinished">Друзья</translation>
+        <translation>Друзья</translation>
     </message>
     <message>
         <location filename="../qml/FriendsPage.qml" line="75"/>
         <source>Removing friend</source>
-        <translation type="unfinished"></translation>
+        <translation>Удаление друга</translation>
     </message>
     <message>
         <location filename="../qml/FriendsPage.qml" line="98"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить</translation>
     </message>
     <message>
         <location filename="../qml/FriendsPage.qml" line="114"/>
         <source>Offline</source>
-        <translation type="unfinished">Офлайн</translation>
+        <translation>Офлайн</translation>
     </message>
 </context>
 <context>
@@ -403,17 +389,17 @@
     <message>
         <location filename="../qml/TipsPage.qml" line="25"/>
         <source>Tips</source>
-        <translation type="unfinished">Подсказки</translation>
+        <translation>Подсказки</translation>
     </message>
     <message>
         <location filename="../qml/TipsPage.qml" line="31"/>
         <source>Refresh</source>
-        <translation type="unfinished">Обновить</translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <location filename="../qml/TipsPage.qml" line="137"/>
         <source>Offline</source>
-        <translation type="unfinished">Офлайн</translation>
+        <translation>Офлайн</translation>
     </message>
 </context>
 <context>
