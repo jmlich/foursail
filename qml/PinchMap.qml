@@ -3,8 +3,6 @@ import "functions.js" as F
 
 Rectangle {
     id: pinchmap;
-    property bool mapTileVisible:true;
-    property bool airspaceVisible: true;
 
     property int zoomLevel: 15;
     property int oldZoomLevel: 99
@@ -35,7 +33,7 @@ Rectangle {
 
     property bool rotationEnabled: false
 
-    property bool pageActive; // true (if no
+    property bool pageActive: false;
 
     onTargetLatChanged: { latitude = targetLat;  }
     onTargetLonChanged: { longitude = targetLon; }
@@ -93,16 +91,6 @@ Rectangle {
         }
     }
 
-    onMapTileVisibleChanged: {
-        if (!pageActive) {
-            needsUpdate = true;
-        }
-    }
-    onAirspaceVisibleChanged: {
-        if (!pageActive) {
-            needsUpdate = true;
-        }
-    }
 
 
     function setZoomLevel(z) {
@@ -350,8 +338,8 @@ Rectangle {
                     id: img;
                     anchors.fill: parent;
                     // onProgressChanged: { progressBar.p = progress }
-                    source: tileUrl(tileX, tileY);
-                    visible: mapTileVisible
+                    source: pageActive ? tileUrl(tileX, tileY) : "";
+                    visible: pageActive;
                 }
 
 
