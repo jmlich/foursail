@@ -1,6 +1,8 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="ru" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="ru">
 <context>
-    <name/>
+    <name></name>
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="163"/>
         <source>Tap to cancel</source>
@@ -392,12 +394,11 @@
         <translation>Подсказки</translation>
     </message>
     <message>
-        <location filename="../qml/TipsPage.qml" line="31"/>
         <source>Refresh</source>
-        <translation>Обновить</translation>
+        <translation type="vanished">Обновить</translation>
     </message>
     <message>
-        <location filename="../qml/TipsPage.qml" line="137"/>
+        <location filename="../qml/TipsPage.qml" line="139"/>
         <source>Offline</source>
         <translation>Офлайн</translation>
     </message>

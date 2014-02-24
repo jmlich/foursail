@@ -394,12 +394,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/TipsPage.qml" line="31"/>
-        <source>Refresh</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/TipsPage.qml" line="137"/>
+        <location filename="../qml/TipsPage.qml" line="139"/>
         <source>Offline</source>
         <translation type="unfinished"></translation>
     </message>

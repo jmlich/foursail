@@ -1,6 +1,8 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_CN" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="zh_CN">
 <context>
-    <name/>
+    <name></name>
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="163"/>
         <source>Tap to cancel</source>
@@ -52,12 +54,12 @@
     <message>
         <location filename="../qml/AddVenuePage.qml" line="111"/>
         <source>Phone</source>
-        <translation type="unfinished"/>
+        <translation>电话</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="117"/>
         <source>Twitter</source>
-        <translation type="unfinished"/>
+        <translation>Twitter</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="123"/>
@@ -156,22 +158,22 @@
     <message>
         <location filename="../qml/FriendsPage.qml" line="24"/>
         <source>Friends</source>
-        <translation type="unfinished"/>
+        <translation>好友</translation>
     </message>
     <message>
         <location filename="../qml/FriendsPage.qml" line="75"/>
         <source>Removing friend</source>
-        <translation type="unfinished"/>
+        <translation>正在移除好友</translation>
     </message>
     <message>
         <location filename="../qml/FriendsPage.qml" line="98"/>
         <source>Remove</source>
-        <translation type="unfinished"/>
+        <translation>移除</translation>
     </message>
     <message>
         <location filename="../qml/FriendsPage.qml" line="114"/>
         <source>Offline</source>
-        <translation type="unfinished"/>
+        <translation>离线</translation>
     </message>
 </context>
 <context>
@@ -389,17 +391,16 @@
     <message>
         <location filename="../qml/TipsPage.qml" line="25"/>
         <source>Tips</source>
-        <translation type="unfinished"/>
+        <translation>提示</translation>
     </message>
     <message>
-        <location filename="../qml/TipsPage.qml" line="31"/>
         <source>Refresh</source>
-        <translation type="unfinished"/>
+        <translation type="vanished">刷新</translation>
     </message>
     <message>
-        <location filename="../qml/TipsPage.qml" line="137"/>
+        <location filename="../qml/TipsPage.qml" line="139"/>
         <source>Offline</source>
-        <translation type="unfinished"/>
+        <translation>离线</translation>
     </message>
 </context>
 <context>
