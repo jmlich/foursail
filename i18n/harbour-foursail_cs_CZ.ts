@@ -129,13 +129,13 @@
     <message>
         <location filename="../qml/CoverPage.qml" line="65"/>
         <source>Offline</source>
-        <translation type="unfinished"></translation>
+        <translation>Offline</translation>
     </message>
 </context>
 <context>
     <name>Data</name>
     <message>
-        <location filename="../qml/Data.qml" line="359"/>
+        <location filename="../qml/Data.qml" line="371"/>
         <source>%1 Notifications</source>
         <translation>%1 upozornění</translation>
     </message>
@@ -173,7 +173,25 @@
     <message>
         <location filename="../qml/FriendsPage.qml" line="114"/>
         <source>Offline</source>
+        <translation type="unfinished">Offline</translation>
+    </message>
+</context>
+<context>
+    <name>LeaderboardPage</name>
+    <message>
+        <location filename="../qml/LeaderboardPage.qml" line="21"/>
+        <source>Leaderboard</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/LeaderboardPage.qml" line="59"/>
+        <source>%1 checkins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/LeaderboardPage.qml" line="89"/>
+        <source>Offline</source>
+        <translation type="unfinished">Offline</translation>
     </message>
 </context>
 <context>
@@ -187,57 +205,56 @@
 <context>
     <name>MyProfilePage</name>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="40"/>
+        <location filename="../qml/MyProfilePage.qml" line="41"/>
         <source>Recent Checkins</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="44"/>
+        <location filename="../qml/MyProfilePage.qml" line="45"/>
         <source>Nearby Venues</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="51"/>
         <source>My Profile</source>
-        <translation>Můj profil</translation>
+        <translation type="vanished">Můj profil</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="187"/>
+        <location filename="../qml/MyProfilePage.qml" line="183"/>
         <source>Badges</source>
         <translation>Odznáčky</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="164"/>
+        <location filename="../qml/MyProfilePage.qml" line="160"/>
         <source>Notifications</source>
         <translation>Upozornění</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="139"/>
+        <location filename="../qml/MyProfilePage.qml" line="135"/>
         <source>Checkins</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="210"/>
+        <location filename="../qml/MyProfilePage.qml" line="206"/>
         <source>Mayorships</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="232"/>
+        <location filename="../qml/MyProfilePage.qml" line="228"/>
         <source>Tips</source>
         <translation>Tipy</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="254"/>
+        <location filename="../qml/MyProfilePage.qml" line="250"/>
         <source>Friends</source>
         <translation>Přátelé</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="275"/>
+        <location filename="../qml/MyProfilePage.qml" line="271"/>
         <source>Lists</source>
         <translation>Seznamy</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="297"/>
+        <location filename="../qml/MyProfilePage.qml" line="293"/>
         <source>Photos</source>
         <translation>Fotky</translation>
     </message>
@@ -273,7 +290,7 @@
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="52"/>
         <source>Search</source>
-        <translation type="unfinished">Vyhledat</translation>
+        <translation>Hledat</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="56"/>
@@ -283,7 +300,7 @@
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="148"/>
         <source>Offline</source>
-        <translation type="unfinished"></translation>
+        <translation>Offline</translation>
     </message>
 </context>
 <context>
@@ -296,33 +313,33 @@
     <message>
         <location filename="../qml/NotificationsPage.qml" line="98"/>
         <source>Offline</source>
-        <translation type="unfinished"></translation>
+        <translation>Offline</translation>
     </message>
 </context>
 <context>
     <name>PinchMap</name>
     <message>
-        <location filename="../qml/PinchMap.qml" line="305"/>
+        <location filename="../qml/PinchMap.qml" line="293"/>
         <source>Ready</source>
-        <translation type="unfinished"></translation>
+        <translation>Připraveno</translation>
     </message>
     <message>
-        <location filename="../qml/PinchMap.qml" line="306"/>
+        <location filename="../qml/PinchMap.qml" line="294"/>
         <source>Not Set</source>
-        <translation type="unfinished"></translation>
+        <translation>Není nastaveno</translation>
     </message>
     <message>
-        <location filename="../qml/PinchMap.qml" line="307"/>
+        <location filename="../qml/PinchMap.qml" line="295"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="../qml/PinchMap.qml" line="308"/>
+        <location filename="../qml/PinchMap.qml" line="296"/>
         <source>Loading...</source>
-        <translation type="unfinished"></translation>
+        <translation>Stahuje se ...</translation>
     </message>
     <message>
-        <location filename="../qml/PinchMap.qml" line="309"/>
+        <location filename="../qml/PinchMap.qml" line="297"/>
         <source>Unknown</source>
         <translation type="unfinished"></translation>
     </message>
@@ -352,7 +369,7 @@
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="139"/>
         <source>Offline</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Offline</translation>
     </message>
 </context>
 <context>
@@ -383,7 +400,7 @@
     <message>
         <location filename="../qml/SelfCheckinsPage.qml" line="97"/>
         <source>Offline</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Offline</translation>
     </message>
 </context>
 <context>
@@ -394,13 +411,9 @@
         <translation type="unfinished">Tipy</translation>
     </message>
     <message>
-        <source>Refresh</source>
-        <translation type="vanished">Obnovit</translation>
-    </message>
-    <message>
         <location filename="../qml/TipsPage.qml" line="139"/>
         <source>Offline</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Offline</translation>
     </message>
 </context>
 <context>

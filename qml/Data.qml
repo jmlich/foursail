@@ -304,6 +304,18 @@ Rectangle {
         foursquareDownload(source, params, "GET");
     }
 
+    function likeTip(uid, like) {
+        var source = "https://api.foursquare.com/v2/tips/" + uid + "/like"
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale + "&set=" + (like ? "1" : "0");
+        foursquareDownload(source, params, "POST");
+    }
+
+    function leaderboard() {
+        var source = "https://api.foursquare.com/v2/users/leaderboard";
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale;
+        foursquareDownload(source, params, "GET");
+    }
+
     function checkin(vid, shout, twitter, facebook) {
         var source = "https://api.foursquare.com/v2/checkins/add";
         var params = "oauth_token=" + accessToken + "&v="+foursquare_api_version + "&locale="+locale + "&venueId=" + vid + "&ll=" + lat + "," + lon;
@@ -602,6 +614,33 @@ Rectangle {
                                     'contact': contact
                                 };
                                 friendPage.m.append(data);
+                            }
+                        }
+
+                        if (resultObject.response.leaderboard !== undefined) {
+                            leaderboardPage.m.clear();
+                            array = resultObject.response.leaderboard.items;
+                            for (i = 0; i < array.length; ++i) {
+                                item = array[i];
+                                var user = item.user;
+                                var uid = user.id;
+                                var first_name = (user.firstName !== undefined) ? user.firstName : "";
+                                var last_name = (user.lastName !== undefined) ? user.lastName : "";
+                                var photo = user.photo;
+                                var checkins_count = item.scores.checkinsCount;
+                                var score_max = item.scores.max;
+                                var score_recent = item.scores.recent;
+                                var rank = item.rank;
+                                data = {
+                                    'uid': uid,
+                                    'photo': photo.prefix + "86x86" + photo.suffix,
+                                    'name': first_name + " " + last_name,
+                                    'score_max': score_max,
+                                    'checkins_count' : checkins_count,
+                                    'score_recent': score_recent,
+                                    'rank': rank
+                                };
+                                leaderboardPage.m.append(data);
                             }
                         }
 

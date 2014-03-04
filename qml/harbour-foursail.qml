@@ -180,6 +180,11 @@ ApplicationWindow {
 
     }
 
+    LeaderboardPage {
+        id: leaderboardPage
+        loading: (data.countLoading > 0)
+    }
+
 
     MyProfilePage {
         id: myProfilePage
@@ -227,6 +232,11 @@ ApplicationWindow {
         //            if ((status === PageStatus.Activating) && (selfCheckinsPage.m.count === 0)) {
         //            }
         //        }
+
+    onSwitchToLeaderboard:  {
+        data.leaderboard()
+        pageStack.push(leaderboardPage)
+    }
 
         SelfCheckinsPage {
             id: selfCheckinsPage;

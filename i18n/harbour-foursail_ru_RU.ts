@@ -135,7 +135,7 @@
 <context>
     <name>Data</name>
     <message>
-        <location filename="../qml/Data.qml" line="359"/>
+        <location filename="../qml/Data.qml" line="371"/>
         <source>%1 Notifications</source>
         <translation>%1 Уведомления</translation>
     </message>
@@ -177,6 +177,24 @@
     </message>
 </context>
 <context>
+    <name>LeaderboardPage</name>
+    <message>
+        <location filename="../qml/LeaderboardPage.qml" line="21"/>
+        <source>Leaderboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/LeaderboardPage.qml" line="59"/>
+        <source>%1 checkins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/LeaderboardPage.qml" line="89"/>
+        <source>Offline</source>
+        <translation type="unfinished">Офлайн</translation>
+    </message>
+</context>
+<context>
     <name>MapPage</name>
     <message>
         <location filename="../qml/MapPage.qml" line="17"/>
@@ -187,57 +205,56 @@
 <context>
     <name>MyProfilePage</name>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="40"/>
+        <location filename="../qml/MyProfilePage.qml" line="41"/>
         <source>Recent Checkins</source>
         <translation>История чекинов</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="44"/>
+        <location filename="../qml/MyProfilePage.qml" line="45"/>
         <source>Nearby Venues</source>
         <translation>Места поблизости</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="51"/>
         <source>My Profile</source>
-        <translation>Мой Профиль</translation>
+        <translation type="vanished">Мой Профиль</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="187"/>
+        <location filename="../qml/MyProfilePage.qml" line="183"/>
         <source>Badges</source>
         <translation>Бейджи</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="164"/>
+        <location filename="../qml/MyProfilePage.qml" line="160"/>
         <source>Notifications</source>
         <translation>Уведомления</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="139"/>
+        <location filename="../qml/MyProfilePage.qml" line="135"/>
         <source>Checkins</source>
         <translation>Чекины</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="210"/>
+        <location filename="../qml/MyProfilePage.qml" line="206"/>
         <source>Mayorships</source>
         <translation>Мэрства</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="232"/>
+        <location filename="../qml/MyProfilePage.qml" line="228"/>
         <source>Tips</source>
         <translation>Подсказки</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="254"/>
+        <location filename="../qml/MyProfilePage.qml" line="250"/>
         <source>Friends</source>
         <translation>Друзья</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="275"/>
+        <location filename="../qml/MyProfilePage.qml" line="271"/>
         <source>Lists</source>
         <translation>Списки</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="297"/>
+        <location filename="../qml/MyProfilePage.qml" line="293"/>
         <source>Photos</source>
         <translation>Фото</translation>
     </message>
@@ -302,27 +319,27 @@
 <context>
     <name>PinchMap</name>
     <message>
-        <location filename="../qml/PinchMap.qml" line="305"/>
+        <location filename="../qml/PinchMap.qml" line="293"/>
         <source>Ready</source>
         <translation>Готово</translation>
     </message>
     <message>
-        <location filename="../qml/PinchMap.qml" line="306"/>
+        <location filename="../qml/PinchMap.qml" line="294"/>
         <source>Not Set</source>
         <translation>Не указано</translation>
     </message>
     <message>
-        <location filename="../qml/PinchMap.qml" line="307"/>
+        <location filename="../qml/PinchMap.qml" line="295"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../qml/PinchMap.qml" line="308"/>
+        <location filename="../qml/PinchMap.qml" line="296"/>
         <source>Loading...</source>
         <translation>Загрузка ...</translation>
     </message>
     <message>
-        <location filename="../qml/PinchMap.qml" line="309"/>
+        <location filename="../qml/PinchMap.qml" line="297"/>
         <source>Unknown</source>
         <translation>Неизвестно</translation>
     </message>
@@ -392,10 +409,6 @@
         <location filename="../qml/TipsPage.qml" line="25"/>
         <source>Tips</source>
         <translation>Подсказки</translation>
-    </message>
-    <message>
-        <source>Refresh</source>
-        <translation type="vanished">Обновить</translation>
     </message>
     <message>
         <location filename="../qml/TipsPage.qml" line="139"/>

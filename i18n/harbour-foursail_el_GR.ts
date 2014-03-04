@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="nl">
+<TS version="2.1" language="el">
 <context>
     <name></name>
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="163"/>
         <source>Tap to cancel</source>
-        <translation>Tikken om te annuleren</translation>
+        <translation>Πατήστε για ακύρωση</translation>
     </message>
 </context>
 <context>
@@ -14,47 +14,47 @@
     <message>
         <location filename="../qml/AddVenuePage.qml" line="36"/>
         <source>Create Venue</source>
-        <translation>Creëer locatie</translation>
+        <translation>Δημιουργία τοποθεσίας</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="44"/>
         <source>Venue name</source>
-        <translation>Locatienaam</translation>
+        <translation>Όνομα τοποθεσίας</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="65"/>
         <source>Choose category</source>
-        <translation>Kies categorie</translation>
+        <translation>Επιλέξτε κατηγορία</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="79"/>
         <source>Address</source>
-        <translation>Adres</translation>
+        <translation>Διεύθυνση</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="85"/>
         <source>Cross street</source>
-        <translation>Dwarsstraat</translation>
+        <translation>Διασταύρωση</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="92"/>
         <source>City</source>
-        <translation>Stad</translation>
+        <translation>Πόλη</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="98"/>
         <source>State</source>
-        <translation>Land</translation>
+        <translation>Νομός</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="104"/>
         <source>ZIP</source>
-        <translation>Postcode</translation>
+        <translation>Τ.Κ.</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="111"/>
         <source>Phone</source>
-        <translation>Telefoon</translation>
+        <translation>Τηλέφωνο</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="117"/>
@@ -64,7 +64,7 @@
     <message>
         <location filename="../qml/AddVenuePage.qml" line="123"/>
         <source>description</source>
-        <translation>beschrijving</translation>
+        <translation>Περιγραφή</translation>
     </message>
 </context>
 <context>
@@ -72,7 +72,7 @@
     <message>
         <location filename="../qml/BadgesPage.qml" line="30"/>
         <source>Badges</source>
-        <translation>Badges</translation>
+        <translation>Κονκάρδες</translation>
     </message>
 </context>
 <context>
@@ -80,7 +80,7 @@
     <message>
         <location filename="../qml/CategoriesPage.qml" line="30"/>
         <source>Select Category</source>
-        <translation>Selecteer categorie</translation>
+        <translation>Επιλέξτε κατηγορία</translation>
     </message>
 </context>
 <context>
@@ -88,27 +88,27 @@
     <message>
         <location filename="../qml/CheckinDetailPage.qml" line="38"/>
         <source>Checkin</source>
-        <translation>Inchecken</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/CheckinDetailPage.qml" line="85"/>
         <source>Write your comment here.</source>
-        <translation>Schrijf hier je commentaar.</translation>
+        <translation>Γράψτε το σχόλιο σας εδώ.</translation>
     </message>
     <message>
         <location filename="../qml/CheckinDetailPage.qml" line="90"/>
         <source>Share on Facebook</source>
-        <translation>Delen op facebook</translation>
+        <translation>Μοιραστείτε στο Facebook</translation>
     </message>
     <message>
         <location filename="../qml/CheckinDetailPage.qml" line="95"/>
         <source>Share on Twitter</source>
-        <translation>Delen op Twitter</translation>
+        <translation>Μοιραστείτε στο Twitter</translation>
     </message>
     <message>
         <location filename="../qml/CheckinDetailPage.qml" line="99"/>
         <source>Show on Map</source>
-        <translation>Toon op kaart</translation>
+        <translation>Εμφάνιση στο χάρτη</translation>
     </message>
 </context>
 <context>
@@ -116,7 +116,7 @@
     <message>
         <location filename="../qml/CheckinResultPage.qml" line="26"/>
         <source>Checkin</source>
-        <translation>Inchecken</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -124,12 +124,12 @@
     <message>
         <location filename="../qml/CoverPage.qml" line="59"/>
         <source>Loading ...</source>
-        <translation>Laden ...</translation>
+        <translation>Φόρτωση ...</translation>
     </message>
     <message>
         <location filename="../qml/CoverPage.qml" line="65"/>
         <source>Offline</source>
-        <translation>Off-line</translation>
+        <translation>Εκτός σύνδεσης</translation>
     </message>
 </context>
 <context>
@@ -137,7 +137,7 @@
     <message>
         <location filename="../qml/Data.qml" line="371"/>
         <source>%1 Notifications</source>
-        <translation>%1 meldingen</translation>
+        <translation>%1 Ειδοποιήσεις</translation>
     </message>
 </context>
 <context>
@@ -145,12 +145,12 @@
     <message>
         <location filename="../qml/FriendDetailPage.qml" line="21"/>
         <source>Friend Detail</source>
-        <translation>Vriendendetails</translation>
+        <translation>Λεπτομέρειες φίλου</translation>
     </message>
     <message>
         <location filename="../qml/FriendDetailPage.qml" line="70"/>
         <source>Badges</source>
-        <translation>Badges</translation>
+        <translation>Κονκάρδες</translation>
     </message>
 </context>
 <context>
@@ -158,22 +158,22 @@
     <message>
         <location filename="../qml/FriendsPage.qml" line="24"/>
         <source>Friends</source>
-        <translation>Vrienden</translation>
+        <translation>Φίλοι</translation>
     </message>
     <message>
         <location filename="../qml/FriendsPage.qml" line="75"/>
         <source>Removing friend</source>
-        <translation>Verwijderen vriend</translation>
+        <translation>Αφαίρεση από φίλους</translation>
     </message>
     <message>
         <location filename="../qml/FriendsPage.qml" line="98"/>
         <source>Remove</source>
-        <translation>Verwijderen</translation>
+        <translation>Αφαίρεση</translation>
     </message>
     <message>
         <location filename="../qml/FriendsPage.qml" line="114"/>
         <source>Offline</source>
-        <translation>Off-line</translation>
+        <translation>Εκτός σύνδεσης</translation>
     </message>
 </context>
 <context>
@@ -191,7 +191,7 @@
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="89"/>
         <source>Offline</source>
-        <translation type="unfinished">Off-line</translation>
+        <translation type="unfinished">Εκτός σύνδεσης</translation>
     </message>
 </context>
 <context>
@@ -199,7 +199,7 @@
     <message>
         <location filename="../qml/MapPage.qml" line="17"/>
         <source>Map</source>
-        <translation>Kaart</translation>
+        <translation>Χάρτης</translation>
     </message>
 </context>
 <context>
@@ -207,56 +207,56 @@
     <message>
         <location filename="../qml/MyProfilePage.qml" line="41"/>
         <source>Recent Checkins</source>
-        <translation>Recente inchecks</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="45"/>
         <source>Nearby Venues</source>
-        <translation>Locaties dichtbij</translation>
+        <translation>Κοντινές Τοποθεσίες</translation>
     </message>
     <message>
         <source>My Profile</source>
-        <translation type="vanished">Mijn profiel</translation>
+        <translation type="vanished">Προφίλ</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="183"/>
         <source>Badges</source>
-        <translation>Badges</translation>
+        <translation>Κονκάρδες</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="160"/>
         <source>Notifications</source>
-        <translation>Meldingen</translation>
+        <translation>Ειδοποιήσεις</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="135"/>
         <source>Checkins</source>
-        <translation>Inchecks</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="206"/>
         <source>Mayorships</source>
-        <translation>Mayor-schappen</translation>
+        <translation>Δημαρχίες</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="228"/>
         <source>Tips</source>
-        <translation>Tips</translation>
+        <translation>Συμβουλές</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="250"/>
         <source>Friends</source>
-        <translation>Vrienden</translation>
+        <translation>Φίλοι</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="271"/>
         <source>Lists</source>
-        <translation>Lijsten</translation>
+        <translation>Λίστες</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="293"/>
         <source>Photos</source>
-        <translation>Foto&apos;s</translation>
+        <translation>Φωτογραφίες</translation>
     </message>
 </context>
 <context>
@@ -265,42 +265,42 @@
         <location filename="../qml/NearbyVenuesPage.qml" line="31"/>
         <location filename="../qml/NearbyVenuesPage.qml" line="45"/>
         <source>Nearby Venues</source>
-        <translation>Locaties dichtbij</translation>
+        <translation>Κοντινές Τοποθεσίες</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="31"/>
         <source>Search results</source>
-        <translation>Zoekresultaten</translation>
+        <translation>Αποτελέσματα αναζήτησης</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="37"/>
         <source>My Profile</source>
-        <translation>Mijn profiel</translation>
+        <translation>Προφίλ</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="41"/>
         <source>Recent Checkins</source>
-        <translation>Recente inchecks</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="45"/>
         <source>Refresh</source>
-        <translation>Verversen</translation>
+        <translation>Ανανέωση</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="52"/>
         <source>Search</source>
-        <translation>Zoeken</translation>
+        <translation>Αναζήτηση</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="56"/>
         <source>Add</source>
-        <translation>Toevoegen</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="148"/>
         <source>Offline</source>
-        <translation>Off-line</translation>
+        <translation>Εκτός σύνδεσης</translation>
     </message>
 </context>
 <context>
@@ -308,12 +308,12 @@
     <message>
         <location filename="../qml/NotificationsPage.qml" line="29"/>
         <source>Notifications</source>
-        <translation>Meldingen</translation>
+        <translation>Ειδοποιήσεις</translation>
     </message>
     <message>
         <location filename="../qml/NotificationsPage.qml" line="98"/>
         <source>Offline</source>
-        <translation>Off-line</translation>
+        <translation>Εκτός σύνδεσης</translation>
     </message>
 </context>
 <context>
@@ -321,27 +321,27 @@
     <message>
         <location filename="../qml/PinchMap.qml" line="293"/>
         <source>Ready</source>
-        <translation>Klaar</translation>
+        <translation>Έτοιμο</translation>
     </message>
     <message>
         <location filename="../qml/PinchMap.qml" line="294"/>
         <source>Not Set</source>
-        <translation>Niet ingesteld</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/PinchMap.qml" line="295"/>
         <source>Error</source>
-        <translation>Fout</translation>
+        <translation>Σφάλμα</translation>
     </message>
     <message>
         <location filename="../qml/PinchMap.qml" line="296"/>
         <source>Loading...</source>
-        <translation>Laden ...</translation>
+        <translation>Φόρτωση...</translation>
     </message>
     <message>
         <location filename="../qml/PinchMap.qml" line="297"/>
         <source>Unknown</source>
-        <translation>Onbekend</translation>
+        <translation>Άγνωστο</translation>
     </message>
 </context>
 <context>
@@ -349,27 +349,27 @@
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="27"/>
         <source>Recent Checkins</source>
-        <translation>Recente inchecks</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="33"/>
         <source>My Profile</source>
-        <translation>Mijn profiel</translation>
+        <translation>Προφίλ</translation>
     </message>
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="37"/>
         <source>Nearby Venues</source>
-        <translation>Locaties dichtbij</translation>
+        <translation>Κοντινές τοποθεσίες</translation>
     </message>
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="41"/>
         <source>Refresh</source>
-        <translation>Verversen</translation>
+        <translation>Ανανέωση</translation>
     </message>
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="139"/>
         <source>Offline</source>
-        <translation>Off-line</translation>
+        <translation>Εκτός σύνδεσης</translation>
     </message>
 </context>
 <context>
@@ -377,12 +377,12 @@
     <message>
         <location filename="../qml/SearchVenueDialog.qml" line="15"/>
         <source>Search</source>
-        <translation>Zoeken</translation>
+        <translation>Αναζήτηση</translation>
     </message>
     <message>
         <location filename="../qml/SearchVenueDialog.qml" line="21"/>
         <source>Venue name</source>
-        <translation>Locatienaam</translation>
+        <translation>Όνομα τοποθεσίας</translation>
     </message>
 </context>
 <context>
@@ -390,17 +390,17 @@
     <message>
         <location filename="../qml/SelfCheckinsPage.qml" line="25"/>
         <source>History</source>
-        <translation>Geschiedenis</translation>
+        <translation>Ιστορικό</translation>
     </message>
     <message>
         <location filename="../qml/SelfCheckinsPage.qml" line="31"/>
         <source>Refresh</source>
-        <translation>Verversen</translation>
+        <translation>Ανανέωση</translation>
     </message>
     <message>
         <location filename="../qml/SelfCheckinsPage.qml" line="97"/>
         <source>Offline</source>
-        <translation>Off-line</translation>
+        <translation>Εκτός σύνδεσης</translation>
     </message>
 </context>
 <context>
@@ -408,12 +408,12 @@
     <message>
         <location filename="../qml/TipsPage.qml" line="25"/>
         <source>Tips</source>
-        <translation>Tips</translation>
+        <translation>Συμβουλές</translation>
     </message>
     <message>
         <location filename="../qml/TipsPage.qml" line="139"/>
         <source>Offline</source>
-        <translation>Off-line</translation>
+        <translation>Εκτός σύνδεσης</translation>
     </message>
 </context>
 <context>
@@ -421,32 +421,32 @@
     <message>
         <location filename="../qml/functions.js" line="19"/>
         <source>%1 years ago</source>
-        <translation>%1 jaar geleden</translation>
+        <translation>Πριν από %1 χρόνια</translation>
     </message>
     <message>
         <location filename="../qml/functions.js" line="23"/>
         <source>%1 months ago</source>
-        <translation>%1 maand(en) geleden</translation>
+        <translation>Πριν από %1 μήνες</translation>
     </message>
     <message>
         <location filename="../qml/functions.js" line="27"/>
         <source>%1 days ago</source>
-        <translation>%1 dag(en) geleden</translation>
+        <translation>Πριν από %1 ημέρες</translation>
     </message>
     <message>
         <location filename="../qml/functions.js" line="31"/>
         <source>%1 hours ago</source>
-        <translation>%1 uur geleden</translation>
+        <translation>Πριν από %1 ώρες</translation>
     </message>
     <message>
         <location filename="../qml/functions.js" line="35"/>
         <source>%1 minutes ago</source>
-        <translation>%1 min geleden</translation>
+        <translation>Πριν από %1 λεπτά</translation>
     </message>
     <message>
         <location filename="../qml/functions.js" line="37"/>
         <source>%1 seconds ago</source>
-        <translation>%1 seconden ago</translation>
+        <translation>Πριν από %1 δευτερόλεπτα</translation>
     </message>
 </context>
 <context>
@@ -454,7 +454,7 @@
     <message>
         <location filename="../qml/harbour-foursail.qml" line="13"/>
         <source>Tap to show</source>
-        <translation>Tikken om te tonen</translation>
+        <translation>Πιέστε για εμφάνιση</translation>
     </message>
 </context>
 </TS>

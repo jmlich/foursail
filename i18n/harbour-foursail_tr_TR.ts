@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="nl">
+<TS version="2.1" language="tr">
 <context>
     <name></name>
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="163"/>
         <source>Tap to cancel</source>
-        <translation>Tikken om te annuleren</translation>
+        <translation>İptal etmek için dokun</translation>
     </message>
 </context>
 <context>
@@ -14,17 +14,17 @@
     <message>
         <location filename="../qml/AddVenuePage.qml" line="36"/>
         <source>Create Venue</source>
-        <translation>Creëer locatie</translation>
+        <translation>Mekan oluştur</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="44"/>
         <source>Venue name</source>
-        <translation>Locatienaam</translation>
+        <translation>Mekan adı</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="65"/>
         <source>Choose category</source>
-        <translation>Kies categorie</translation>
+        <translation>Kategori seç</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="79"/>
@@ -34,27 +34,27 @@
     <message>
         <location filename="../qml/AddVenuePage.qml" line="85"/>
         <source>Cross street</source>
-        <translation>Dwarsstraat</translation>
+        <translation>Çapraz sokak</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="92"/>
         <source>City</source>
-        <translation>Stad</translation>
+        <translation>Şehir</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="98"/>
         <source>State</source>
-        <translation>Land</translation>
+        <translation>Eyalet</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="104"/>
         <source>ZIP</source>
-        <translation>Postcode</translation>
+        <translation>PK</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="111"/>
         <source>Phone</source>
-        <translation>Telefoon</translation>
+        <translation>Telefon</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="117"/>
@@ -64,7 +64,7 @@
     <message>
         <location filename="../qml/AddVenuePage.qml" line="123"/>
         <source>description</source>
-        <translation>beschrijving</translation>
+        <translation>açıklama</translation>
     </message>
 </context>
 <context>
@@ -72,7 +72,7 @@
     <message>
         <location filename="../qml/BadgesPage.qml" line="30"/>
         <source>Badges</source>
-        <translation>Badges</translation>
+        <translation>Rozetler</translation>
     </message>
 </context>
 <context>
@@ -80,7 +80,7 @@
     <message>
         <location filename="../qml/CategoriesPage.qml" line="30"/>
         <source>Select Category</source>
-        <translation>Selecteer categorie</translation>
+        <translation>Kategori seç</translation>
     </message>
 </context>
 <context>
@@ -88,27 +88,27 @@
     <message>
         <location filename="../qml/CheckinDetailPage.qml" line="38"/>
         <source>Checkin</source>
-        <translation>Inchecken</translation>
+        <translation>Checkin</translation>
     </message>
     <message>
         <location filename="../qml/CheckinDetailPage.qml" line="85"/>
         <source>Write your comment here.</source>
-        <translation>Schrijf hier je commentaar.</translation>
+        <translation>Yorumunu buraya yaz.</translation>
     </message>
     <message>
         <location filename="../qml/CheckinDetailPage.qml" line="90"/>
         <source>Share on Facebook</source>
-        <translation>Delen op facebook</translation>
+        <translation>Facebook&apos;ta paylaş</translation>
     </message>
     <message>
         <location filename="../qml/CheckinDetailPage.qml" line="95"/>
         <source>Share on Twitter</source>
-        <translation>Delen op Twitter</translation>
+        <translation>Twitter&apos;da paylaş</translation>
     </message>
     <message>
         <location filename="../qml/CheckinDetailPage.qml" line="99"/>
         <source>Show on Map</source>
-        <translation>Toon op kaart</translation>
+        <translation>Haritada göster</translation>
     </message>
 </context>
 <context>
@@ -116,7 +116,7 @@
     <message>
         <location filename="../qml/CheckinResultPage.qml" line="26"/>
         <source>Checkin</source>
-        <translation>Inchecken</translation>
+        <translation>Checkin</translation>
     </message>
 </context>
 <context>
@@ -124,12 +124,12 @@
     <message>
         <location filename="../qml/CoverPage.qml" line="59"/>
         <source>Loading ...</source>
-        <translation>Laden ...</translation>
+        <translation>Yükleniyor...</translation>
     </message>
     <message>
         <location filename="../qml/CoverPage.qml" line="65"/>
         <source>Offline</source>
-        <translation>Off-line</translation>
+        <translation>Çevrim dışı</translation>
     </message>
 </context>
 <context>
@@ -137,7 +137,7 @@
     <message>
         <location filename="../qml/Data.qml" line="371"/>
         <source>%1 Notifications</source>
-        <translation>%1 meldingen</translation>
+        <translation>%1 bildirim</translation>
     </message>
 </context>
 <context>
@@ -145,12 +145,12 @@
     <message>
         <location filename="../qml/FriendDetailPage.qml" line="21"/>
         <source>Friend Detail</source>
-        <translation>Vriendendetails</translation>
+        <translation>Arkadaş detayı</translation>
     </message>
     <message>
         <location filename="../qml/FriendDetailPage.qml" line="70"/>
         <source>Badges</source>
-        <translation>Badges</translation>
+        <translation>Rozetler</translation>
     </message>
 </context>
 <context>
@@ -158,22 +158,22 @@
     <message>
         <location filename="../qml/FriendsPage.qml" line="24"/>
         <source>Friends</source>
-        <translation>Vrienden</translation>
+        <translation>Arkadaşlar</translation>
     </message>
     <message>
         <location filename="../qml/FriendsPage.qml" line="75"/>
         <source>Removing friend</source>
-        <translation>Verwijderen vriend</translation>
+        <translation>Arkadaş siliniyor</translation>
     </message>
     <message>
         <location filename="../qml/FriendsPage.qml" line="98"/>
         <source>Remove</source>
-        <translation>Verwijderen</translation>
+        <translation>Sil</translation>
     </message>
     <message>
         <location filename="../qml/FriendsPage.qml" line="114"/>
         <source>Offline</source>
-        <translation>Off-line</translation>
+        <translation>Çevrim sışı</translation>
     </message>
 </context>
 <context>
@@ -191,7 +191,7 @@
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="89"/>
         <source>Offline</source>
-        <translation type="unfinished">Off-line</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -199,7 +199,7 @@
     <message>
         <location filename="../qml/MapPage.qml" line="17"/>
         <source>Map</source>
-        <translation>Kaart</translation>
+        <translation>Harita</translation>
     </message>
 </context>
 <context>
@@ -207,56 +207,56 @@
     <message>
         <location filename="../qml/MyProfilePage.qml" line="41"/>
         <source>Recent Checkins</source>
-        <translation>Recente inchecks</translation>
+        <translation>En son Checkinler</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="45"/>
         <source>Nearby Venues</source>
-        <translation>Locaties dichtbij</translation>
+        <translation>Çevredeki mekanlar</translation>
     </message>
     <message>
         <source>My Profile</source>
-        <translation type="vanished">Mijn profiel</translation>
+        <translation type="vanished">Profilim</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="183"/>
         <source>Badges</source>
-        <translation>Badges</translation>
+        <translation>Rozetler</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="160"/>
         <source>Notifications</source>
-        <translation>Meldingen</translation>
+        <translation>Bildirimler</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="135"/>
         <source>Checkins</source>
-        <translation>Inchecks</translation>
+        <translation>Checkinler</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="206"/>
         <source>Mayorships</source>
-        <translation>Mayor-schappen</translation>
+        <translation>Başkanlıklar</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="228"/>
         <source>Tips</source>
-        <translation>Tips</translation>
+        <translation>İpuçları</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="250"/>
         <source>Friends</source>
-        <translation>Vrienden</translation>
+        <translation>Arkadaşlar</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="271"/>
         <source>Lists</source>
-        <translation>Lijsten</translation>
+        <translation>Listeler</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="293"/>
         <source>Photos</source>
-        <translation>Foto&apos;s</translation>
+        <translation>Resimler</translation>
     </message>
 </context>
 <context>
@@ -265,42 +265,42 @@
         <location filename="../qml/NearbyVenuesPage.qml" line="31"/>
         <location filename="../qml/NearbyVenuesPage.qml" line="45"/>
         <source>Nearby Venues</source>
-        <translation>Locaties dichtbij</translation>
+        <translation>Çevredeki mekanlar</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="31"/>
         <source>Search results</source>
-        <translation>Zoekresultaten</translation>
+        <translation>Arama sonuşları</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="37"/>
         <source>My Profile</source>
-        <translation>Mijn profiel</translation>
+        <translation>Profilim</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="41"/>
         <source>Recent Checkins</source>
-        <translation>Recente inchecks</translation>
+        <translation>Son Checkinler</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="45"/>
         <source>Refresh</source>
-        <translation>Verversen</translation>
+        <translation>Yenile</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="52"/>
         <source>Search</source>
-        <translation>Zoeken</translation>
+        <translation>Ara</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="56"/>
         <source>Add</source>
-        <translation>Toevoegen</translation>
+        <translation>Ekle</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="148"/>
         <source>Offline</source>
-        <translation>Off-line</translation>
+        <translation>Çevrim dışı</translation>
     </message>
 </context>
 <context>
@@ -308,12 +308,12 @@
     <message>
         <location filename="../qml/NotificationsPage.qml" line="29"/>
         <source>Notifications</source>
-        <translation>Meldingen</translation>
+        <translation>Bildirimler</translation>
     </message>
     <message>
         <location filename="../qml/NotificationsPage.qml" line="98"/>
         <source>Offline</source>
-        <translation>Off-line</translation>
+        <translation>Çevrim dışı</translation>
     </message>
 </context>
 <context>
@@ -321,27 +321,27 @@
     <message>
         <location filename="../qml/PinchMap.qml" line="293"/>
         <source>Ready</source>
-        <translation>Klaar</translation>
+        <translation>Hazır</translation>
     </message>
     <message>
         <location filename="../qml/PinchMap.qml" line="294"/>
         <source>Not Set</source>
-        <translation>Niet ingesteld</translation>
+        <translation>Hazır değil</translation>
     </message>
     <message>
         <location filename="../qml/PinchMap.qml" line="295"/>
         <source>Error</source>
-        <translation>Fout</translation>
+        <translation>Hata</translation>
     </message>
     <message>
         <location filename="../qml/PinchMap.qml" line="296"/>
         <source>Loading...</source>
-        <translation>Laden ...</translation>
+        <translation>Yükleniyor...</translation>
     </message>
     <message>
         <location filename="../qml/PinchMap.qml" line="297"/>
         <source>Unknown</source>
-        <translation>Onbekend</translation>
+        <translation>Belirsiz</translation>
     </message>
 </context>
 <context>
@@ -349,27 +349,27 @@
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="27"/>
         <source>Recent Checkins</source>
-        <translation>Recente inchecks</translation>
+        <translation>Son Checkinler</translation>
     </message>
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="33"/>
         <source>My Profile</source>
-        <translation>Mijn profiel</translation>
+        <translation>Profilim</translation>
     </message>
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="37"/>
         <source>Nearby Venues</source>
-        <translation>Locaties dichtbij</translation>
+        <translation>Çevredeki mekanlar</translation>
     </message>
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="41"/>
         <source>Refresh</source>
-        <translation>Verversen</translation>
+        <translation>Yenile</translation>
     </message>
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="139"/>
         <source>Offline</source>
-        <translation>Off-line</translation>
+        <translation>Çevrim dışı</translation>
     </message>
 </context>
 <context>
@@ -377,12 +377,12 @@
     <message>
         <location filename="../qml/SearchVenueDialog.qml" line="15"/>
         <source>Search</source>
-        <translation>Zoeken</translation>
+        <translation>Ara</translation>
     </message>
     <message>
         <location filename="../qml/SearchVenueDialog.qml" line="21"/>
         <source>Venue name</source>
-        <translation>Locatienaam</translation>
+        <translation>Mekan adı</translation>
     </message>
 </context>
 <context>
@@ -390,17 +390,17 @@
     <message>
         <location filename="../qml/SelfCheckinsPage.qml" line="25"/>
         <source>History</source>
-        <translation>Geschiedenis</translation>
+        <translation>Tarih</translation>
     </message>
     <message>
         <location filename="../qml/SelfCheckinsPage.qml" line="31"/>
         <source>Refresh</source>
-        <translation>Verversen</translation>
+        <translation>Yenile</translation>
     </message>
     <message>
         <location filename="../qml/SelfCheckinsPage.qml" line="97"/>
         <source>Offline</source>
-        <translation>Off-line</translation>
+        <translation>Çevrim dışı</translation>
     </message>
 </context>
 <context>
@@ -408,12 +408,12 @@
     <message>
         <location filename="../qml/TipsPage.qml" line="25"/>
         <source>Tips</source>
-        <translation>Tips</translation>
+        <translation>İpuçları</translation>
     </message>
     <message>
         <location filename="../qml/TipsPage.qml" line="139"/>
         <source>Offline</source>
-        <translation>Off-line</translation>
+        <translation>Çevrim dışı</translation>
     </message>
 </context>
 <context>
@@ -421,32 +421,32 @@
     <message>
         <location filename="../qml/functions.js" line="19"/>
         <source>%1 years ago</source>
-        <translation>%1 jaar geleden</translation>
+        <translation>%1 yıl önce</translation>
     </message>
     <message>
         <location filename="../qml/functions.js" line="23"/>
         <source>%1 months ago</source>
-        <translation>%1 maand(en) geleden</translation>
+        <translation>%1 ay önce</translation>
     </message>
     <message>
         <location filename="../qml/functions.js" line="27"/>
         <source>%1 days ago</source>
-        <translation>%1 dag(en) geleden</translation>
+        <translation>%1 gün önce</translation>
     </message>
     <message>
         <location filename="../qml/functions.js" line="31"/>
         <source>%1 hours ago</source>
-        <translation>%1 uur geleden</translation>
+        <translation>%1 saat önce</translation>
     </message>
     <message>
         <location filename="../qml/functions.js" line="35"/>
         <source>%1 minutes ago</source>
-        <translation>%1 min geleden</translation>
+        <translation>%1 dakika önce</translation>
     </message>
     <message>
         <location filename="../qml/functions.js" line="37"/>
         <source>%1 seconds ago</source>
-        <translation>%1 seconden ago</translation>
+        <translation>%1 saniye önce</translation>
     </message>
 </context>
 <context>
@@ -454,7 +454,7 @@
     <message>
         <location filename="../qml/harbour-foursail.qml" line="13"/>
         <source>Tap to show</source>
-        <translation>Tikken om te tonen</translation>
+        <translation>Göstermek için dokunun</translation>
     </message>
 </context>
 </TS>

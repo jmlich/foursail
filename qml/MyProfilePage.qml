@@ -25,6 +25,7 @@ Page {
     signal switchToNotifications();
     signal switchToTips();
     signal switchToFriends();
+    signal switchToLeaderboard();
 
 
     SilicaFlickable {
@@ -48,7 +49,7 @@ Page {
 
 
             PageHeader {
-                title: qsTr("My Profile")
+                title: user_name
             }
 
 
@@ -62,37 +63,25 @@ Page {
 
 
                 Label {
-                    id: userName
-                    anchors.top: parent.top
-                    anchors.left: parent.left
-                    anchors.right: userPhoto.left
-
-                    font.family: Theme.fontFamilyHeading;
-                    font.pixelSize: Theme.fontSizeLarge;
-                    color: Theme.primaryColor
-                    text: user_name
-                }
-
-                Label {
                     id: userHomeCity
 
-                    anchors.leftMargin: Theme.paddingMedium;
-                    anchors.top: userName.bottom
-                    anchors.left: parent.left
-                    anchors.right: userPhoto.left
+                    anchors.left: userPhoto.right
+                    anchors.right: parent.right
+                    anchors.bottom: userPhoto.verticalCenter
+                    anchors.margins: Theme.paddingMedium
 
                     font.bold: false
                     font.pixelSize: Theme.fontSizeSmall
-                    color: Theme.primaryColor
+                    color: Theme.secondaryColor;
                     text: user_home_city
                 }
 
                 Rectangle {
-                    anchors.left: parent.left;
-                    anchors.right: userPhoto.left;
-                    anchors.bottom: parent.bottom
-                    anchors.rightMargin: Theme.paddingMedium
-                    anchors.bottomMargin: Theme.paddingMedium
+                    // score
+                    anchors.left: userPhoto.right;
+                    anchors.right: parent.right;
+                    anchors.top: userHomeCity.bottom
+                    anchors.margins: Theme.paddingMedium
                     height: scores_label.height;
 
                     border.width:  1
@@ -118,14 +107,21 @@ Page {
                         }
                     }
 
+
+                    MouseArea {
+                        anchors.fill: parent;
+                        onClicked: switchToLeaderboard()
+                    }
                 }
 
                 Image {
                     id: userPhoto
                     anchors.verticalCenter: parent.verticalCenter
-                    anchors.right: parent.right
-
+                    anchors.left: parent.left
                     source: profile_photo_url
+                    width: 128;
+                    height: 128;
+
                 }
             }
 
@@ -219,7 +215,7 @@ Page {
                     anchors.margins: Theme.paddingMedium;
 
                 }
-                onClicked: console.log("Mayorships")
+                onClicked: console.log("Mayorships");
             }
 
             BackgroundItem {

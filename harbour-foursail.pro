@@ -37,7 +37,8 @@ OTHER_FILES += qml/harbour-foursail.qml \
     qml/NotificationPopup.qml \
     qml/NotificationsPage.qml \
     qml/FriendsPage.qml \
-    qml/TipsPage.qml
+    qml/TipsPage.qml \
+    qml/LeaderboardPage.qml
 
 QT += webkit
 
@@ -51,11 +52,29 @@ i18n.path = /usr/share/$${TARGET}
 INSTALLS += i18n
 
 
-TRANSLATIONS +=  ./i18n/harbour-foursail_en_EN.ts \
-    ./i18n/harbour-foursail_nl_NL.ts \
-    ./i18n/harbour-foursail_it_IT.ts \
-    ./i18n/harbour-foursail_ru_RU.ts \
-    ./i18n/harbour-foursail_cs_CZ.ts
+TRANSLATIONS +=  \
+./i18n/harbour-foursail_cs_CZ.ts \
+./i18n/harbour-foursail_da_DK.ts \
+./i18n/harbour-foursail_de_DE.ts \
+./i18n/harbour-foursail_el_GR.ts \
+./i18n/harbour-foursail_en_US.ts \
+./i18n/harbour-foursail_es_ES.ts \
+./i18n/harbour-foursail_fr_FR.ts \
+./i18n/harbour-foursail_it_IT.ts \
+./i18n/harbour-foursail_nl_NL.ts \
+./i18n/harbour-foursail_ru_RU.ts \
+./i18n/harbour-foursail_tr_TR.ts \
+./i18n/harbour-foursail_zh_CN.ts
+
+
+QMAKE_LRELEASE = lrelease
+
+updateqm.input = TRANSLATIONS
+updateqm.output = ${QMAKE_FILE_BASE}.qm
+updateqm.commands = $$QMAKE_LRELEASE -silent ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_BASE}.qm
+updateqm.CONFIG += no_link target_predeps
+QMAKE_EXTRA_COMPILERS += updateqm
+
 
 CODECFORTR = UTF-8
 CODECFORSRC = UTF-8
