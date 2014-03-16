@@ -411,7 +411,7 @@
         <translation type="unfinished">Tipy</translation>
     </message>
     <message>
-        <location filename="../qml/TipsPage.qml" line="139"/>
+        <location filename="../qml/TipsPage.qml" line="150"/>
         <source>Offline</source>
         <translation type="unfinished">Offline</translation>
     </message>
