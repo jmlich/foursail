@@ -563,29 +563,31 @@ Rectangle {
                                 var uid = item.id;
                                 var text = item.text;
                                 var date = new Date(parseInt(item.createdAt * 1000));
-                                var isPhotoExists = (item.photo !== undefined);
                                 var likesCount = item.likes.count;
                                 var venueId = item.venue.id
                                 var venueName = item.venue.name
                                 var address = item.venue.location.address !== undefined ?
-                                        item.venue.location.address +
+                                            item.venue.location.address +
                                             (item.venue.location.crossStreet !== undefined ?
-                                                    " " :
-                                                    ", ") :
-                                        "";
+                                                 " " :
+                                                 ", ") :
+                                            "";
                                 var crossStreet = item.venue.location.crossStreet !== undefined ? "(" + item.venue.location.crossStreet + "), " : "";
                                 var city = item.venue.location.city !== undefined ? item.venue.location.city + ", " : "";
                                 var country = item.venue.location.country !== undefined ? item.venue.location.country : "";
                                 var venueAddress = address + crossStreet + city + country;
 
+                                var venue_icon = (item.venue.categories[0] !== undefined) ? item.venue.categories[0].icon : ""
+
                                 data = {
                                     'tipIdentifier': uid,
-                                    'photo': isPhotoExists ? photo.prefix + "86x86" + photo.suffix : "",
+//                                                                        'photo': ((item.photo !== undefined) ? photo.prefix + "86x86" + photo.suffix : ""),
                                     'tipText': text,
                                     'date': date,
                                     'venueIdentifier' : venueId,
                                     'venueName' : venueName,
                                     'venueAddress' : venueAddress,
+                                    'venueIcon': venue_icon.prefix + "64" + venue_icon.suffix,
                                 };
 
                                 tipsPage.m.append(data);

@@ -41,15 +41,24 @@ Page {
             property string tipId : tipIdentifier
 
 
+            Image {
+                id: itemIcon
+                width: 86
+                height: 86
+                anchors.margins: Theme.paddingMedium
+                source: venueIcon;
+            }
+
             Label {
                 id: venueNameLabel
 
                 anchors.top: parent.top
-                anchors.left: parent.left
+                anchors.left: itemIcon.right
                 anchors.right: parent.right
                 anchors.leftMargin: Theme.paddingMedium
                 anchors.rightMargin: Theme.paddingMedium
 
+                wrapMode: Text.WordWrap
                 textFormat: Text.RichText
                 font.pixelSize: Theme.fontSizeLarge
 //                text: "<style type='text/css'>a:link{color:"+Theme.primaryColor+"; text-decoration: none;} a:visited{color:"+Theme.primaryColor+"}</style> <a href=\"venue\">" + venueName + "</a>"
@@ -65,7 +74,7 @@ Page {
             Image {
                 id: tipPhotoImage
                 anchors.top: venueNameLabel.bottom
-                anchors.left: parent.left
+                anchors.left: itemIcon.right
                 anchors.right: parent.right
                 anchors.leftMargin: Theme.paddingMedium;
                 anchors.rightMargin: Theme.paddingMedium
@@ -79,7 +88,7 @@ Page {
 
                 id: venueAddressLabel
 
-                anchors.left: parent.left
+                anchors.left: itemIcon.right
                 anchors.right: parent.right
                 anchors.leftMargin: Theme.paddingMedium
                 anchors.rightMargin: Theme.paddingMedium
@@ -89,6 +98,7 @@ Page {
                 font.pixelSize: Theme.fontSizeTiny
                 elide: Text.ElideRight
 
+                wrapMode: Text.WordWrap
                 text: venueAddress
             }
 
@@ -96,13 +106,14 @@ Page {
                 id: dateLabel
 
                 anchors.top: venueAddressLabel.bottom
-                anchors.left: parent.left
+                anchors.left: itemIcon.right
                 anchors.right: parent.right
                 anchors.leftMargin: Theme.paddingMedium
                 anchors.rightMargin: Theme.paddingMedium
 
                 color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                 font.pixelSize: Theme.fontSizeTiny
+                wrapMode: Text.WordWrap
                 text: F.formatDate(date)
             }
 
@@ -110,7 +121,7 @@ Page {
                 id: tipLabel
 
                 anchors.top: dateLabel.bottom
-                anchors.left: parent.left
+                anchors.left: itemIcon.right
                 anchors.right: parent.right
                 anchors.leftMargin: Theme.paddingMedium
                 anchors.rightMargin: Theme.paddingMedium
