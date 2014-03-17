@@ -316,6 +316,33 @@ Rectangle {
         foursquareDownload(source, params, "GET");
     }
 
+    function lists (uid) {
+        var source = "https://api.foursquare.com/v2/users/" + uid + "/lists"
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version +
+                "&locale="+locale + "&group=created";
+        foursquareDownload(source, params, "GET");
+    }
+
+    function addList(name, description) {
+        var source = "https://api.foursquare.com/v2/lists/add"
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version +
+                "&locale="+locale + "&name=" + name + "&description=" + description;
+        foursquareDownload(source, params, "POST");
+    }
+
+    function editList(lid, name, description) {
+        var source = "https://api.foursquare.com/v2/lists/" + lid + "/update"
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version +
+                "&locale="+locale + "&name=" + name + "&description=" + description;
+        foursquareDownload(source, params, "POST");
+    }
+
+    function listDetails(lid) {
+        var source = "https://api.foursquare.com/v2/lists/" + lid
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version +
+                "&locale="+locale
+        foursquareDownload(source, params, "GET");
+    }
     function checkin(vid, shout, twitter, facebook) {
         var source = "https://api.foursquare.com/v2/checkins/add";
         var params = "oauth_token=" + accessToken + "&v="+foursquare_api_version + "&locale="+locale + "&venueId=" + vid + "&ll=" + lat + "," + lon;
@@ -645,6 +672,64 @@ Rectangle {
                                 leaderboardPage.m.append(data);
                             }
                         }
+                        if (resultObject.response.lists !== undefined) {
+                             listsPage.m.clear();
+                             array = resultObject.response.lists.items;
+                             for (i = 0; i < array.length; ++i) {
+                                 item = array[i];
+                                 var listId = item.id;
+                                 var name = item.name
+                                 var description = item.description
+                                 var count = item.listItems.count
+
+                                 data = {
+                                     'listId': listId,
+                                     'name': name,
+                                     'description': description,
+                                     'count': count
+                                 };
+                                 listsPage.m.append(data);
+                             }
+                         }
+
+                         if (resultObject.response.list !== undefined) {
+                             var found = false;
+                             item = resultObject.response.list
+                             for (i = 0; i < listsPage.m.count; ++i) {
+                                 if (item.id === listsPage.m.get(i).listId) {
+                                     found = true;
+                                     break;
+                                 }
+                             }
+
+                             var listData = {
+                                 'listId': item.id,
+                                 'name': item.name,
+                                 'description': item.description,
+                                 'count': item.listItems.count
+                             }
+
+                             if (found) {
+                                 listsPage.m.set(i, listData)
+                             } else {
+                                 listsPage.m.append(listData)
+                             }
+
+                             if(item.listItems.items !== undefined) {
+                                 listDetailPage.m.clear()
+                                 array = item.listItems.items
+                                 for(i = 0; i < array.length; ++i) {
+                                     var listItem = array[i];
+
+                                     var listItemData = {
+                                         'liid': listItem.id,
+                                         'photo': listItem.photo,
+                                         'venue': listItem.venue
+                                     }
+                                     listDetailPage.m.append(listItemData)
+                                 }
+                             }
+                         }
 
                     } catch(e) {
                         console.log("foursquareDownload: parse failed: " + e)

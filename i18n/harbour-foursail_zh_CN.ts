@@ -10,6 +10,24 @@
     </message>
 </context>
 <context>
+    <name>AddAndEditListPage</name>
+    <message>
+        <location filename="../qml/AddAndEditListPage.qml" line="19"/>
+        <source>Create List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/AddAndEditListPage.qml" line="25"/>
+        <source>List name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/AddAndEditListPage.qml" line="31"/>
+        <source>List&apos;s description</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>AddVenuePage</name>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="36"/>
@@ -135,7 +153,7 @@
 <context>
     <name>Data</name>
     <message>
-        <location filename="../qml/Data.qml" line="371"/>
+        <location filename="../qml/Data.qml" line="398"/>
         <source>%1 Notifications</source>
         <translation>%1条信息</translation>
     </message>
@@ -195,6 +213,37 @@
     </message>
 </context>
 <context>
+    <name>ListDetailPage</name>
+    <message>
+        <location filename="../qml/ListDetailPage.qml" line="49"/>
+        <source>Offline</source>
+        <translation type="unfinished">离线</translation>
+    </message>
+</context>
+<context>
+    <name>ListsPage</name>
+    <message>
+        <location filename="../qml/ListsPage.qml" line="25"/>
+        <source>New list</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/ListsPage.qml" line="31"/>
+        <source>Lists</source>
+        <translation type="unfinished">列表</translation>
+    </message>
+    <message>
+        <location filename="../qml/ListsPage.qml" line="114"/>
+        <source>Edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/ListsPage.qml" line="131"/>
+        <source>Offline</source>
+        <translation type="unfinished">离线</translation>
+    </message>
+</context>
+<context>
     <name>MapPage</name>
     <message>
         <location filename="../qml/MapPage.qml" line="17"/>
@@ -205,12 +254,12 @@
 <context>
     <name>MyProfilePage</name>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="41"/>
+        <location filename="../qml/MyProfilePage.qml" line="42"/>
         <source>Recent Checkins</source>
         <translation>近期签到</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="45"/>
+        <location filename="../qml/MyProfilePage.qml" line="46"/>
         <source>Nearby Venues</source>
         <translation>附近地点</translation>
     </message>
@@ -219,42 +268,42 @@
         <translation type="vanished">我的简介</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="183"/>
+        <location filename="../qml/MyProfilePage.qml" line="184"/>
         <source>Badges</source>
         <translation>徽章</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="160"/>
+        <location filename="../qml/MyProfilePage.qml" line="161"/>
         <source>Notifications</source>
         <translation>信息</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="135"/>
+        <location filename="../qml/MyProfilePage.qml" line="136"/>
         <source>Checkins</source>
         <translation>签到</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="206"/>
+        <location filename="../qml/MyProfilePage.qml" line="207"/>
         <source>Mayorships</source>
         <translation>地点霸主</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="228"/>
+        <location filename="../qml/MyProfilePage.qml" line="229"/>
         <source>Tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="250"/>
+        <location filename="../qml/MyProfilePage.qml" line="251"/>
         <source>Friends</source>
         <translation>好友</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="271"/>
+        <location filename="../qml/MyProfilePage.qml" line="272"/>
         <source>Lists</source>
         <translation>列表</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="293"/>
+        <location filename="../qml/MyProfilePage.qml" line="294"/>
         <source>Photos</source>
         <translation>照片</translation>
     </message>
@@ -455,6 +504,16 @@
         <location filename="../qml/harbour-foursail.qml" line="13"/>
         <source>Tap to show</source>
         <translation>点击以显示</translation>
+    </message>
+    <message>
+        <location filename="../qml/harbour-foursail.qml" line="277"/>
+        <source>Edit List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/harbour-foursail.qml" line="277"/>
+        <source>Create List</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

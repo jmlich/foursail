@@ -26,6 +26,7 @@ Page {
     signal switchToTips();
     signal switchToFriends();
     signal switchToLeaderboard();
+    signal switchToLists();
 
 
     SilicaFlickable {
@@ -280,7 +281,7 @@ Page {
                     anchors.margins: Theme.paddingMedium;
 
                 }
-                onClicked: console.log("Lists")
+                onClicked: switchToLists()
             }
 
             BackgroundItem {

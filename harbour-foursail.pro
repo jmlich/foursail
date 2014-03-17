@@ -38,7 +38,11 @@ OTHER_FILES += qml/harbour-foursail.qml \
     qml/NotificationsPage.qml \
     qml/FriendsPage.qml \
     qml/TipsPage.qml \
-    qml/LeaderboardPage.qml
+    qml/LeaderboardPage.qml \
+    qml/ListsPage.qml \
+    qml/ListDetailPage.qml \
+    qml/AddAndEditListPage.qml \
+    qml/ShortVenueItem.qml
 
 QT += webkit
 

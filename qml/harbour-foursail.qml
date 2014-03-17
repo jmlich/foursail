@@ -194,6 +194,11 @@ ApplicationWindow {
             pageStack.push(selfCheckinsPage)
         }
 
+        onSwitchToLists: {
+            data.lists("self")
+            pageStack.push(listsPage);
+        }
+
         onSwitchToNearbyVenues: {
             pageStack.replace(nearbyVeneuesPage)
         }
@@ -258,6 +263,32 @@ ApplicationWindow {
                 pageStack.push(checkinDetailPage)
             }
         }
+
+    }
+
+    ListsPage {
+        id: listsPage;
+        loading: (data.countLoading > 0)
+        onSwitchToListDetailPage: {
+            data.listDetails(lid)
+            pageStack.push(listDetailPage)
+        }
+        onSwitchToAddAndEditList: {
+            addAndEditListPage.dialogHeaderText = (lid !== "") ? qsTr("Edit List") : qsTr("Create List")
+            addAndEditListPage.listId = lid;
+            addAndEditListPage.listName = name;
+            addAndEditListPage.listDescription = description;
+            pageStack.push(addAndEditListPage)
+        }
+    }
+
+    ListDetailPage {
+        id: listDetailPage;
+        loading: (data.countLoading > 0)
+    }
+
+    AddAndEditListPage {
+        id: addAndEditListPage
 
     }
 
