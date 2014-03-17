@@ -608,7 +608,7 @@ Rectangle {
 
                                 data = {
                                     'tipIdentifier': uid,
-//                                                                        'photo': ((item.photo !== undefined) ? photo.prefix + "86x86" + photo.suffix : ""),
+                                    'photo': ((item.photo !== undefined) ? photo.prefix + "86x86" + photo.suffix : ""),
                                     'tipText': text,
                                     'date': date,
                                     'venueIdentifier' : venueId,
