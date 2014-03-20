@@ -14,17 +14,17 @@
     <message>
         <location filename="../qml/AddAndEditListPage.qml" line="19"/>
         <source>Create List</source>
-        <translation type="unfinished"></translation>
+        <translation>Δημιουργία Λίστας</translation>
     </message>
     <message>
         <location filename="../qml/AddAndEditListPage.qml" line="25"/>
         <source>List name</source>
-        <translation type="unfinished"></translation>
+        <translation>Όνομα λίστας</translation>
     </message>
     <message>
         <location filename="../qml/AddAndEditListPage.qml" line="31"/>
         <source>List&apos;s description</source>
-        <translation type="unfinished"></translation>
+        <translation>Περιγραφή λίστας</translation>
     </message>
 </context>
 <context>
@@ -203,13 +203,13 @@
     </message>
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="59"/>
-        <source>%1 checkins</source>
+        <source>%n checkins</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="89"/>
         <source>Offline</source>
-        <translation type="unfinished">Εκτός σύνδεσης</translation>
+        <translation>Εκτός σύνδεσης</translation>
     </message>
 </context>
 <context>
@@ -217,7 +217,7 @@
     <message>
         <location filename="../qml/ListDetailPage.qml" line="49"/>
         <source>Offline</source>
-        <translation type="unfinished">Εκτός σύνδεσης</translation>
+        <translation>Εκτός σύνδεσης</translation>
     </message>
 </context>
 <context>
@@ -225,22 +225,22 @@
     <message>
         <location filename="../qml/ListsPage.qml" line="25"/>
         <source>New list</source>
-        <translation type="unfinished"></translation>
+        <translation>Νέα λίστα</translation>
     </message>
     <message>
         <location filename="../qml/ListsPage.qml" line="31"/>
         <source>Lists</source>
-        <translation type="unfinished">Λίστες</translation>
+        <translation>Λίστες</translation>
     </message>
     <message>
         <location filename="../qml/ListsPage.qml" line="114"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Επεξεργασία</translation>
     </message>
     <message>
         <location filename="../qml/ListsPage.qml" line="131"/>
         <source>Offline</source>
-        <translation type="unfinished">Εκτός σύνδεσης</translation>
+        <translation>Εκτός σύνδεσης</translation>
     </message>
 </context>
 <context>
@@ -262,10 +262,6 @@
         <location filename="../qml/MyProfilePage.qml" line="46"/>
         <source>Nearby Venues</source>
         <translation>Κοντινές Τοποθεσίες</translation>
-    </message>
-    <message>
-        <source>My Profile</source>
-        <translation type="vanished">Προφίλ</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="184"/>
@@ -508,12 +504,12 @@
     <message>
         <location filename="../qml/harbour-foursail.qml" line="277"/>
         <source>Edit List</source>
-        <translation type="unfinished"></translation>
+        <translation>Επεξεργασία Λίστας</translation>
     </message>
     <message>
         <location filename="../qml/harbour-foursail.qml" line="277"/>
         <source>Create List</source>
-        <translation type="unfinished"></translation>
+        <translation>Δημιουργία Λίστας</translation>
     </message>
 </context>
 </TS>

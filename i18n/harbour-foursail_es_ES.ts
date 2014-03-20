@@ -203,7 +203,7 @@
     </message>
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="59"/>
-        <source>%1 checkins</source>
+        <source>%n checkins</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

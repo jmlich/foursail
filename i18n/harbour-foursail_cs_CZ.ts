@@ -6,7 +6,7 @@
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="163"/>
         <source>Tap to cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Klikněte pro zrušení</translation>
     </message>
 </context>
 <context>
@@ -14,17 +14,17 @@
     <message>
         <location filename="../qml/AddAndEditListPage.qml" line="19"/>
         <source>Create List</source>
-        <translation type="unfinished"></translation>
+        <translation>Vytvořit seznam</translation>
     </message>
     <message>
         <location filename="../qml/AddAndEditListPage.qml" line="25"/>
         <source>List name</source>
-        <translation type="unfinished"></translation>
+        <translation>Název seznamu</translation>
     </message>
     <message>
         <location filename="../qml/AddAndEditListPage.qml" line="31"/>
         <source>List&apos;s description</source>
-        <translation type="unfinished"></translation>
+        <translation>Popis seznamu</translation>
     </message>
 </context>
 <context>
@@ -32,12 +32,12 @@
     <message>
         <location filename="../qml/AddVenuePage.qml" line="36"/>
         <source>Create Venue</source>
-        <translation type="unfinished"></translation>
+        <translation>Založit místo</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="44"/>
         <source>Venue name</source>
-        <translation type="unfinished"></translation>
+        <translation>Název místa</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="65"/>
@@ -142,7 +142,7 @@
     <message>
         <location filename="../qml/CoverPage.qml" line="59"/>
         <source>Loading ...</source>
-        <translation type="unfinished"></translation>
+        <translation>Načítá se ...</translation>
     </message>
     <message>
         <location filename="../qml/CoverPage.qml" line="65"/>
@@ -181,7 +181,7 @@
     <message>
         <location filename="../qml/FriendsPage.qml" line="75"/>
         <source>Removing friend</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstraňuji z přátel</translation>
     </message>
     <message>
         <location filename="../qml/FriendsPage.qml" line="98"/>
@@ -199,11 +199,11 @@
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="21"/>
         <source>Leaderboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Žebříček</translation>
     </message>
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="59"/>
-        <source>%1 checkins</source>
+        <source>%n checkins</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -225,17 +225,17 @@
     <message>
         <location filename="../qml/ListsPage.qml" line="25"/>
         <source>New list</source>
-        <translation type="unfinished"></translation>
+        <translation>Nový seznam</translation>
     </message>
     <message>
         <location filename="../qml/ListsPage.qml" line="31"/>
         <source>Lists</source>
-        <translation type="unfinished">Seznamy</translation>
+        <translation>Seznamy</translation>
     </message>
     <message>
         <location filename="../qml/ListsPage.qml" line="114"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Upravit</translation>
     </message>
     <message>
         <location filename="../qml/ListsPage.qml" line="131"/>
@@ -261,11 +261,7 @@
     <message>
         <location filename="../qml/MyProfilePage.qml" line="46"/>
         <source>Nearby Venues</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>My Profile</source>
-        <translation type="vanished">Můj profil</translation>
+        <translation>Místa v okolí</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="184"/>
@@ -314,7 +310,7 @@
         <location filename="../qml/NearbyVenuesPage.qml" line="31"/>
         <location filename="../qml/NearbyVenuesPage.qml" line="45"/>
         <source>Nearby Venues</source>
-        <translation type="unfinished"></translation>
+        <translation>Místa v okolí</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="31"/>
@@ -390,7 +386,7 @@
     <message>
         <location filename="../qml/PinchMap.qml" line="297"/>
         <source>Unknown</source>
-        <translation type="unfinished"></translation>
+        <translation>Neznámo</translation>
     </message>
 </context>
 <context>
@@ -408,7 +404,7 @@
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="37"/>
         <source>Nearby Venues</source>
-        <translation type="unfinished"></translation>
+        <translation>Místa v okolí</translation>
     </message>
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="41"/>
@@ -431,7 +427,7 @@
     <message>
         <location filename="../qml/SearchVenueDialog.qml" line="21"/>
         <source>Venue name</source>
-        <translation type="unfinished"></translation>
+        <translation>Název místa</translation>
     </message>
 </context>
 <context>
@@ -457,7 +453,7 @@
     <message>
         <location filename="../qml/TipsPage.qml" line="25"/>
         <source>Tips</source>
-        <translation type="unfinished">Tipy</translation>
+        <translation>Tipy</translation>
     </message>
     <message>
         <location filename="../qml/TipsPage.qml" line="150"/>
@@ -508,12 +504,12 @@
     <message>
         <location filename="../qml/harbour-foursail.qml" line="277"/>
         <source>Edit List</source>
-        <translation type="unfinished"></translation>
+        <translation>Upravit seznam</translation>
     </message>
     <message>
         <location filename="../qml/harbour-foursail.qml" line="277"/>
         <source>Create List</source>
-        <translation type="unfinished"></translation>
+        <translation>Vytvořit seznam</translation>
     </message>
 </context>
 </TS>

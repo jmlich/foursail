@@ -203,7 +203,7 @@
     </message>
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="59"/>
-        <source>%1 checkins</source>
+        <source>%n checkins</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -264,10 +264,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>My Profile</source>
-        <translation type="vanished">Min profil</translation>
-    </message>
-    <message>
         <location filename="../qml/MyProfilePage.qml" line="184"/>
         <source>Badges</source>
         <translation type="unfinished"></translation>
@@ -324,7 +320,7 @@
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="37"/>
         <source>My Profile</source>
-        <translation type="unfinished">Min profil</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="41"/>
@@ -403,7 +399,7 @@
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="33"/>
         <source>My Profile</source>
-        <translation type="unfinished">Min profil</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="37"/>

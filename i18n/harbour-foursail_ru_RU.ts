@@ -14,17 +14,17 @@
     <message>
         <location filename="../qml/AddAndEditListPage.qml" line="19"/>
         <source>Create List</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить список</translation>
     </message>
     <message>
         <location filename="../qml/AddAndEditListPage.qml" line="25"/>
         <source>List name</source>
-        <translation type="unfinished"></translation>
+        <translation>Название списка</translation>
     </message>
     <message>
         <location filename="../qml/AddAndEditListPage.qml" line="31"/>
         <source>List&apos;s description</source>
-        <translation type="unfinished"></translation>
+        <translation>Описание списка</translation>
     </message>
 </context>
 <context>
@@ -199,17 +199,21 @@
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="21"/>
         <source>Leaderboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Список лидеров</translation>
     </message>
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="59"/>
-        <source>%1 checkins</source>
+        <source>%n checkins</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%1 checkins</source>
+        <translation type="vanished">%1 чекины</translation>
     </message>
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="89"/>
         <source>Offline</source>
-        <translation type="unfinished">Офлайн</translation>
+        <translation>Офлайн</translation>
     </message>
 </context>
 <context>
@@ -217,7 +221,7 @@
     <message>
         <location filename="../qml/ListDetailPage.qml" line="49"/>
         <source>Offline</source>
-        <translation type="unfinished">Офлайн</translation>
+        <translation>Офлайн</translation>
     </message>
 </context>
 <context>
@@ -225,22 +229,22 @@
     <message>
         <location filename="../qml/ListsPage.qml" line="25"/>
         <source>New list</source>
-        <translation type="unfinished"></translation>
+        <translation>Новый список</translation>
     </message>
     <message>
         <location filename="../qml/ListsPage.qml" line="31"/>
         <source>Lists</source>
-        <translation type="unfinished">Списки</translation>
+        <translation>Списки</translation>
     </message>
     <message>
         <location filename="../qml/ListsPage.qml" line="114"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Редактировать</translation>
     </message>
     <message>
         <location filename="../qml/ListsPage.qml" line="131"/>
         <source>Offline</source>
-        <translation type="unfinished">Офлайн</translation>
+        <translation>Офлайн</translation>
     </message>
 </context>
 <context>
@@ -262,10 +266,6 @@
         <location filename="../qml/MyProfilePage.qml" line="46"/>
         <source>Nearby Venues</source>
         <translation>Места поблизости</translation>
-    </message>
-    <message>
-        <source>My Profile</source>
-        <translation type="vanished">Мой Профиль</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="184"/>
@@ -508,12 +508,12 @@
     <message>
         <location filename="../qml/harbour-foursail.qml" line="277"/>
         <source>Edit List</source>
-        <translation type="unfinished"></translation>
+        <translation>Редактировать список</translation>
     </message>
     <message>
         <location filename="../qml/harbour-foursail.qml" line="277"/>
         <source>Create List</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить список</translation>
     </message>
 </context>
 </TS>

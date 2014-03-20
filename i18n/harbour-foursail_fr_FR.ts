@@ -203,7 +203,7 @@
     </message>
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="59"/>
-        <source>%1 checkins</source>
+        <source>%n checkins</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -262,10 +262,6 @@
         <location filename="../qml/MyProfilePage.qml" line="46"/>
         <source>Nearby Venues</source>
         <translation>Lieux à proximité</translation>
-    </message>
-    <message>
-        <source>My Profile</source>
-        <translation type="vanished">Mon profile</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="184"/>

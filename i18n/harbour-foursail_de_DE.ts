@@ -14,17 +14,17 @@
     <message>
         <location filename="../qml/AddAndEditListPage.qml" line="19"/>
         <source>Create List</source>
-        <translation type="unfinished"></translation>
+        <translation>Liste erstellen</translation>
     </message>
     <message>
         <location filename="../qml/AddAndEditListPage.qml" line="25"/>
         <source>List name</source>
-        <translation type="unfinished"></translation>
+        <translation>Listenname</translation>
     </message>
     <message>
         <location filename="../qml/AddAndEditListPage.qml" line="31"/>
         <source>List&apos;s description</source>
-        <translation type="unfinished"></translation>
+        <translation>Listen Beschreibung</translation>
     </message>
 </context>
 <context>
@@ -199,17 +199,21 @@
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="21"/>
         <source>Leaderboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Leaderboard</translation>
     </message>
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="59"/>
-        <source>%1 checkins</source>
+        <source>%n checkins</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%1 checkins</source>
+        <translation type="vanished">%1 Check-ins</translation>
     </message>
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="89"/>
         <source>Offline</source>
-        <translation type="unfinished">Offline</translation>
+        <translation>Offline</translation>
     </message>
 </context>
 <context>
@@ -217,7 +221,7 @@
     <message>
         <location filename="../qml/ListDetailPage.qml" line="49"/>
         <source>Offline</source>
-        <translation type="unfinished">Offline</translation>
+        <translation>Offline</translation>
     </message>
 </context>
 <context>
@@ -225,22 +229,22 @@
     <message>
         <location filename="../qml/ListsPage.qml" line="25"/>
         <source>New list</source>
-        <translation type="unfinished"></translation>
+        <translation>neue Liste</translation>
     </message>
     <message>
         <location filename="../qml/ListsPage.qml" line="31"/>
         <source>Lists</source>
-        <translation type="unfinished">Listen</translation>
+        <translation>Listen</translation>
     </message>
     <message>
         <location filename="../qml/ListsPage.qml" line="114"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Bearbeiten</translation>
     </message>
     <message>
         <location filename="../qml/ListsPage.qml" line="131"/>
         <source>Offline</source>
-        <translation type="unfinished">Offline</translation>
+        <translation>Offline</translation>
     </message>
 </context>
 <context>
@@ -264,10 +268,6 @@
         <translation>nahe gelegene Orte</translation>
     </message>
     <message>
-        <source>My Profile</source>
-        <translation type="vanished">Mein Profil</translation>
-    </message>
-    <message>
         <location filename="../qml/MyProfilePage.qml" line="184"/>
         <source>Badges</source>
         <translation>Abzeichen</translation>
@@ -280,7 +280,7 @@
     <message>
         <location filename="../qml/MyProfilePage.qml" line="136"/>
         <source>Checkins</source>
-        <translation> Check-in</translation>
+        <translation> Check-ins</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="207"/>
@@ -508,12 +508,12 @@
     <message>
         <location filename="../qml/harbour-foursail.qml" line="277"/>
         <source>Edit List</source>
-        <translation type="unfinished"></translation>
+        <translation>Liste bearbeiten</translation>
     </message>
     <message>
         <location filename="../qml/harbour-foursail.qml" line="277"/>
         <source>Create List</source>
-        <translation type="unfinished"></translation>
+        <translation>Liste erstellen</translation>
     </message>
 </context>
 </TS>

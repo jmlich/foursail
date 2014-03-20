@@ -56,7 +56,7 @@ Page {
                     id: infoLabel
                     color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                     font.pixelSize: Theme.fontSizeSmall
-                    text: qsTr ("%1 checkins").arg (checkins_count)
+                    text: qsTr ("%n checkins").arg (checkins_count)
                 }
             }
 
