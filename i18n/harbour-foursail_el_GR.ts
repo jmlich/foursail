@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="el">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.1">
 <context>
-    <name></name>
+    <name/>
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="163"/>
         <source>Tap to cancel</source>
@@ -106,7 +104,7 @@
     <message>
         <location filename="../qml/CheckinDetailPage.qml" line="38"/>
         <source>Checkin</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qml/CheckinDetailPage.qml" line="85"/>
@@ -134,7 +132,7 @@
     <message>
         <location filename="../qml/CheckinResultPage.qml" line="26"/>
         <source>Checkin</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -199,12 +197,12 @@
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="21"/>
         <source>Leaderboard</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="59"/>
-        <source>%n checkins</source>
-        <translation type="unfinished"></translation>
+        <source>%1 checkins</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="89"/>
@@ -256,7 +254,7 @@
     <message>
         <location filename="../qml/MyProfilePage.qml" line="42"/>
         <source>Recent Checkins</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="46"/>
@@ -276,7 +274,7 @@
     <message>
         <location filename="../qml/MyProfilePage.qml" line="136"/>
         <source>Checkins</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="207"/>
@@ -325,7 +323,7 @@
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="41"/>
         <source>Recent Checkins</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="45"/>
@@ -371,7 +369,7 @@
     <message>
         <location filename="../qml/PinchMap.qml" line="294"/>
         <source>Not Set</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qml/PinchMap.qml" line="295"/>
@@ -394,7 +392,7 @@
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="27"/>
         <source>Recent Checkins</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="33"/>

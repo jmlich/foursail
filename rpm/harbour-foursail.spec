@@ -13,7 +13,7 @@ Name:       harbour-foursail
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Simple foursquare client with basic functions.
-Version:    0.6.9
+Version:    0.6.10
 Release:    1
 Group:      Qt/Qt
 License:    BSD Licence
@@ -72,6 +72,7 @@ desktop-file-install --delete-original       \
 
 %files
 %defattr(-,root,root,-)
+/usr/share/harbour-foursail/i18n
 %{_bindir}
 %{_datadir}/%{name}/qml
 %{_datadir}/applications/%{name}.desktop

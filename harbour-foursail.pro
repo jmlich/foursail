@@ -50,35 +50,31 @@ HEADERS += \
     src/networkaccessmanagerfactory.h \
     src/customnetworkaccessmanager.h
 
-i18n.files = i18n
-i18n.path = /usr/share/$${TARGET}
-
-INSTALLS += i18n
 
 
-TRANSLATIONS +=  \
-./i18n/harbour-foursail_cs_CZ.ts \
-./i18n/harbour-foursail_da_DK.ts \
-./i18n/harbour-foursail_de_DE.ts \
-./i18n/harbour-foursail_el_GR.ts \
-./i18n/harbour-foursail_en_US.ts \
-./i18n/harbour-foursail_es_ES.ts \
-./i18n/harbour-foursail_fr_FR.ts \
-./i18n/harbour-foursail_it_IT.ts \
-./i18n/harbour-foursail_nl_NL.ts \
-./i18n/harbour-foursail_ru_RU.ts \
-./i18n/harbour-foursail_tr_TR.ts \
-./i18n/harbour-foursail_zh_CN.ts
+LANGUAGES = cs_CZ da_DK de_DE el_GR es_ES fr_FR it_IT nl_NL ru_RU tr_TR zh_CN
 
+# var, prepend, append
+defineReplace(prependAll) {
+    for(a,$$1):result += $$2$${a}$$3
+    return($$result)
+}
 
-QMAKE_LRELEASE = lrelease
+LRELEASE = lrelease
+
+TRANSLATIONS = $$prependAll(LANGUAGES, $$PWD/i18n/harbour-foursail_,.ts)
 
 updateqm.input = TRANSLATIONS
-updateqm.output = ${QMAKE_FILE_BASE}.qm
-updateqm.commands = $$QMAKE_LRELEASE -silent ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_BASE}.qm
+updateqm.output = $$OUT_PWD/${QMAKE_FILE_BASE}.qm
+updateqm.commands = $$LRELEASE -silent ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_BASE}.qm
 updateqm.CONFIG += no_link target_predeps
 QMAKE_EXTRA_COMPILERS += updateqm
 
+qmfiles.files = $$prependAll(LANGUAGES, $$OUT_PWD/harbour-foursail_,.qm)
+qmfiles.path = /usr/share/$${TARGET}/i18n
+qmfiles.CONFIG += no_check_exist
+
+INSTALLS += qmfiles
 
 CODECFORTR = UTF-8
 CODECFORSRC = UTF-8

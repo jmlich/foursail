@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="nl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl" version="2.1">
 <context>
-    <name></name>
+    <name/>
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="163"/>
         <source>Tap to cancel</source>
@@ -203,12 +201,8 @@
     </message>
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="59"/>
-        <source>%n checkins</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>%1 checkins</source>
-        <translation type="vanished">%1 inchecks</translation>
+        <translation>%1 inchecks</translation>
     </message>
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="89"/>
