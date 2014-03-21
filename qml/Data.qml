@@ -343,9 +343,13 @@ Rectangle {
                 "&locale="+locale
         foursquareDownload(source, params, "GET");
     }
-    function checkin(vid, shout, twitter, facebook) {
+    function checkin(vid, event, shout, twitter, facebook) {
         var source = "https://api.foursquare.com/v2/checkins/add";
         var params = "oauth_token=" + accessToken + "&v="+foursquare_api_version + "&locale="+locale + "&venueId=" + vid + "&ll=" + lat + "," + lon;
+
+        if ( (event !== undefined) && (event.length > 0)) {
+            params += "&eventId="+encodeURIComponent(event)
+        }
 
         if ( (shout !== undefined) && (shout.length > 0)) {
             params += "&shout=" + encodeURIComponent(shout)

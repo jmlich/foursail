@@ -7,6 +7,7 @@ Dialog {
     property alias venue_name: venue_name_label.text
     property alias venue_address: venue_address_label.text
     property alias icon: venue_category_icon.source
+    property string event;
 
     property double lat;
     property double lon;

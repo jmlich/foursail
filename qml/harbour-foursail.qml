@@ -169,7 +169,7 @@ ApplicationWindow {
 
         onAccepted: {
             checkinResultPage.m.clear();
-            data.checkin(venue_id, comment, twitter, facebook)
+            data.checkin(venue_id, event, comment, twitter, facebook)
             //            pageStack.push(checkinResultPage)
         }
 
