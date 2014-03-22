@@ -318,8 +318,7 @@ Rectangle {
 
     function lists (uid) {
         var source = "https://api.foursquare.com/v2/users/" + uid + "/lists"
-        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version +
-                "&locale="+locale + "&group=created";
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale;
         foursquareDownload(source, params, "GET");
     }
 
@@ -376,7 +375,7 @@ Rectangle {
     function foursquareDownload(source, params, method) {
         console.log(method + ": " + source + "?" + params)
 
-        var array, item, i, data, user;
+        var array, item, i, j, data, user;
 
         var http = new XMLHttpRequest()
         http.open(method, source+"?"+params, true);
@@ -677,63 +676,63 @@ Rectangle {
                             }
                         }
                         if (resultObject.response.lists !== undefined) {
-                             listsPage.m.clear();
-                             array = resultObject.response.lists.items;
-                             for (i = 0; i < array.length; ++i) {
-                                 item = array[i];
-                                 var listId = item.id;
-                                 var name = item.name
-                                 var description = item.description
-                                 var count = item.listItems.count
+                            listsPage.m.clear();
+                            array = resultObject.response.lists.groups;
+                            for (i = 0; i < array.length; i++) {
+                                var group = array[i]
+                                var group_name = group.type
+                                for (j = 0; j < group.items.length; j++) {
+                                    item = group.items[j];
+                                    data = {
+                                        'listId': item.id,
+                                        'name': item.name,
+                                        'group': group.name,
+                                        'description': item.description,
+                                        'count': item.listItems.count
+                                    };
+                                    listsPage.m.append(data);
+                                }
+                            }
+                        }
 
-                                 data = {
-                                     'listId': listId,
-                                     'name': name,
-                                     'description': description,
-                                     'count': count
-                                 };
-                                 listsPage.m.append(data);
-                             }
-                         }
+                        if (resultObject.response.list !== undefined) {
+                            var found = false;
+                            item = resultObject.response.list
+                            for (i = 0; i < listsPage.m.count; ++i) {
+                                if (item.id === listsPage.m.get(i).listId) {
+                                    found = true;
+                                    break;
+                                }
+                            }
 
-                         if (resultObject.response.list !== undefined) {
-                             var found = false;
-                             item = resultObject.response.list
-                             for (i = 0; i < listsPage.m.count; ++i) {
-                                 if (item.id === listsPage.m.get(i).listId) {
-                                     found = true;
-                                     break;
-                                 }
-                             }
+                            var listData = {
+                                'listId': item.id,
+                                'name': item.name,
+                                'description': item.description,
+                                'count': item.listItems.count
+                            }
 
-                             var listData = {
-                                 'listId': item.id,
-                                 'name': item.name,
-                                 'description': item.description,
-                                 'count': item.listItems.count
-                             }
+                            if (found) {
+                                listsPage.m.set(i, listData)
+                            } else {
+                                listsPage.m.append(listData)
+                            }
 
-                             if (found) {
-                                 listsPage.m.set(i, listData)
-                             } else {
-                                 listsPage.m.append(listData)
-                             }
+                            if(item.listItems.items !== undefined) {
+                                listDetailPage.m.clear()
+                                array = item.listItems.items
+                                for(i = 0; i < array.length; ++i) {
+                                    var listItem = array[i];
 
-                             if(item.listItems.items !== undefined) {
-                                 listDetailPage.m.clear()
-                                 array = item.listItems.items
-                                 for(i = 0; i < array.length; ++i) {
-                                     var listItem = array[i];
-
-                                     var listItemData = {
-                                         'liid': listItem.id,
-                                         'photo': listItem.photo,
-                                         'venue': listItem.venue
-                                     }
-                                     listDetailPage.m.append(listItemData)
-                                 }
-                             }
-                         }
+                                    var listItemData = {
+                                        'liid': listItem.id,
+                                        'photo': listItem.photo,
+                                        'venue': listItem.venue
+                                    }
+                                    listDetailPage.m.append(listItemData)
+                                }
+                            }
+                        }
 
                     } catch(e) {
                         console.log("foursquareDownload: parse failed: " + e)

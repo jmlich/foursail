@@ -19,6 +19,9 @@ Page {
         id: listView
         model: listmodel
         anchors.fill: parent
+        spacing: Theme.paddingMedium
+
+        property Item contextMenu
 
         PullDownMenu {
             MenuItem {
@@ -31,89 +34,89 @@ Page {
             title: qsTr("Lists")
         }
 
-        spacing: Theme.paddingMedium
+        delegate: Item {
+            id: myListItem
+            property bool menuOpen: listView.contextMenu != null && listView.contextMenu.parent === myListItem
 
-        property Item contextMenu
+            width: ListView.view.width
+            height: menuOpen ? listView.contextMenu.height + contentItem.height : contentItem.height
 
-        delegate: BackgroundItem {
-            id: delegate
 
-            width: parent.width
+            BackgroundItem {
+                id: contentItem
 
-            property bool menuOpen: listView.contextMenu != null &&
-                    listView.contextMenu.parent === delegate
-            height: menuOpen ?
-                listView.contextMenu.height + 70 :
-                70
+                width: parent.width
+                height: nameLabel.height + descriptionLabel.height
 
-            property string lid: listId
-            property string listName: name
-            property string listDescription: description
+                Label {
+                    id: nameLabel
 
-            Label {
-                id: nameLabel
+                    anchors.left: parent.left
+                    anchors.right: itemsCountLabel.left
+                    anchors.margins: Theme.paddingMedium
 
-                anchors.left: parent.left
-                anchors.right: itemsCountLabel.left
-                anchors.verticalCenter: descriptionLabel.text.length === 0 && !menuOpen ?
-                    parent.verticalCenter :
-                    undefined
-                anchors.margins: Theme.paddingMedium
+                    font.family: Theme.fontFamilyHeading
+                    font.pixelSize:  Theme.fontSizeMedium
+                    wrapMode: Text.Wrap
 
-                font.family: Theme.fontFamilyHeading
-                font.pixelSize:  Theme.fontSizeMedium
-                elide: Text.ElideRight
-                color: parent.down ? Theme.highlightColor : Theme.primaryColor
+                    color: myListItem.highlighted ? Theme.highlightColor : Theme.primaryColor
 
-                text: name
-            }
+                    text: name
+                }
 
-            Label {
-                id: descriptionLabel
+                Label {
+                    id: descriptionLabel
 
-                anchors.left: parent.left
-                anchors.right: itemsCountLabel.left
-                anchors.top: nameLabel.bottom
-                anchors.leftMargin: Theme.paddingMedium
-                anchors.rightMargin: Theme.paddingMedium
-                anchors.topMargin: 0
+                    anchors.left: parent.left
+                    anchors.right: itemsCountLabel.left
+                    anchors.top: nameLabel.bottom
+                    anchors.leftMargin: Theme.paddingMedium
+                    anchors.rightMargin: Theme.paddingMedium
 
-                font.pixelSize:  Theme.fontSizeTiny
-                elide: Text.ElideRight
-                color: parent.down ? Theme.highlightColor : Theme.primaryColor
+                    font.pixelSize:  Theme.fontSizeSmall
+                    wrapMode: Text.Wrap
 
-                text: description
-            }
+                    color: myListItem.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
 
-            Label {
-                id: itemsCountLabel
-                anchors.right: parent.right
-                anchors.top: parent.top
-                anchors.bottom: parent.bottom
-                anchors.margins: 10
-                color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
-                text: count
-            }
+                    text: description
+                }
 
-            onClicked: switchToListDetailPage(delegate.lid, delegate.listName)
+                Label {
+                    id: itemsCountLabel
+                    anchors.right: parent.right
+                    anchors.top: parent.top
+                    anchors.bottom: parent.bottom
+                    anchors.margins: Theme.paddingMedium
+                    color: myListItem.highlighted ? Theme.highlightColor : Theme.primaryColor
+                    text: count
+                }
 
-            onPressAndHold: {
-                listView.currentIndex = index;
-                if (!listView.contextMenu)
-                    listView.contextMenu = listsContextMenuComponent.createObject()
-                listView.contextMenu.show(delegate)
+                onClicked: switchToListDetailPage(listId, name)
+
+                onPressAndHold: {
+                    if (!listView.contextMenu) {
+                        listView.contextMenu = contextMenuComponent.createObject(listView)
+                    }
+                    listView.contextMenu.listId = model.listId;
+                    listView.contextMenu.name = model.name;
+                    listView.contextMenu.description = model.description;
+
+                    listView.contextMenu.show(myListItem)
+                }
             }
         }
 
         VerticalScrollDecorator {}
 
         Component {
-            id: listsContextMenuComponent
+            id: contextMenuComponent
             ContextMenu {
+                property string listId;
+                property string name;
+                property string description;
                 MenuItem {
                     text: qsTr ("Edit");
-                    onClicked: switchToAddAndEditList(listView.currentItem.lid,
-                            listView.currentItem.listName, listView.currentItem.listDescription)
+                    onClicked: switchToAddAndEditList(listId, name, description)
                 }
             }
         }

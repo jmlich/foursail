@@ -46,6 +46,6 @@ Item {
         color: Theme.secondaryColor
         font.pixelSize: Theme.fontSizeSmall
 
-        text: venueInfo.location.address
+        text: (venueInfo.location.address !== undefined) ? venueInfo.location.address : ""
     }
 }
