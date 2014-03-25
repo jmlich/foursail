@@ -3,6 +3,7 @@ import Sailfish.Silica 1.0
 
 Page {
     property alias profile_photo_url: userPhoto.source
+    property string uid: "self"
     property alias user_name: user_name_field.title
     property alias user_home_city: userHomeCity.text
 
@@ -27,6 +28,7 @@ Page {
     signal switchToFriends();
     signal switchToLeaderboard();
     signal switchToLists();
+    signal switchToPhotos();
 
 
     SilicaFlickable {
@@ -302,7 +304,7 @@ Page {
                     anchors.margins: Theme.paddingMedium;
 
                 }
-                onClicked: console.log("Photos")
+                onClicked: switchToPhotos()
             }
 
         }

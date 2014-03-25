@@ -342,6 +342,14 @@ Rectangle {
                 "&locale="+locale
         foursquareDownload(source, params, "GET");
     }
+
+    function photos(uid) {
+        var source = "https://api.foursquare.com/v2/users/"+uid+"/photos";
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version +
+                "&locale="+locale
+        foursquareDownload(source, params, "GET");
+    }
+
     function checkin(vid, event, shout, twitter, facebook) {
         var source = "https://api.foursquare.com/v2/checkins/add";
         var params = "oauth_token=" + accessToken + "&v="+foursquare_api_version + "&locale="+locale + "&venueId=" + vid + "&ll=" + lat + "," + lon;
@@ -539,6 +547,21 @@ Rectangle {
                                 badgesPage.m.append(data);
                             }
                         }
+
+                        if (resultObject.response.photos !== undefined) {
+                            photosPage.m.clear();
+                            array = resultObject.response.photos.items;
+                            for (var i in array) {
+                                item = array[i];
+
+                                data = {
+                                    'photo': item.prefix + "270x270" + item.suffix,
+                                    'photo_large': item.prefix + "original" + item.suffix,
+                                }
+                                photosPage.m.append(data);
+                            }
+                        }
+
 
                         if (resultObject.response.categories !== undefined) {
                             categoriesPage.m.clear()

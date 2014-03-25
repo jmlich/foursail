@@ -18,7 +18,6 @@ Page {
     }
 
 
-
     PinchMap {
 
         id: map

@@ -190,12 +190,12 @@ ApplicationWindow {
         id: myProfilePage
 
         onSwitchToHistory: {
-            data.checkinHistory("self")
+            data.checkinHistory(uid)
             pageStack.push(selfCheckinsPage)
         }
 
         onSwitchToLists: {
-            data.lists("self")
+            data.lists(uid)
             pageStack.push(listsPage);
         }
 
@@ -212,24 +212,30 @@ ApplicationWindow {
         }
 
         onSwitchToBadges: {
-            data.badges("self")
+            data.badges(uid)
             pageStack.push(badgesPage)
         }
 
         onSwitchToFriends: {
-            data.friends("self")
+            data.friends(uid)
             pageStack.push(friendPage)
         }
 
         onSwitchToTips: {
-            data.tips("self");
-            tipsPage.uid = "self"
+            data.tips(uid);
+            tipsPage.uid = uid
             pageStack.push(tipsPage)
+        }
+
+        onSwitchToPhotos: {
+            data.photos(uid);
+            pageStack.push(photosPage)
+
         }
 
         onStatusChanged: {
             if (status === PageStatus.Activating) {
-                data.profile ("self")
+                data.profile (uid)
             }
         }
 
@@ -348,6 +354,26 @@ ApplicationWindow {
     BadgesPage {
         id: badgesPage
     }
+
+    PhotosPage {
+        id: photosPage
+        onShowPhotoDetail: {
+            photoDetailPage.addr = addr;
+            pageStack.push(photoDetailPage);
+
+        }
+    }
+
+    PhotoDetailPage {
+        id: photoDetailPage
+        onStatusChanged: {
+            if (status === PageStatus.Inactive) {
+                addr = "";
+            }
+
+        }
+    }
+
 
     TipsPage {
         id: tipsPage
