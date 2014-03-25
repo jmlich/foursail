@@ -249,7 +249,7 @@ ApplicationWindow {
 
             onRefresh: {
                 m.clear();
-                data.selfCheckins();
+                data.checkinHistory("self")
             }
 
             onCheckinDetail: {
@@ -271,6 +271,7 @@ ApplicationWindow {
         loading: (data.countLoading > 0)
         onSwitchToListDetailPage: {
             data.listDetails(lid)
+            listDetailPage.m.clear();
             pageStack.push(listDetailPage)
         }
         onSwitchToAddAndEditList: {
