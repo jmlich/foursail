@@ -2,9 +2,9 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 Page {
-    property string profile_photo_url;
-    property string user_name;
-    property string user_home_city;
+    property alias profile_photo_url: userPhoto.source
+    property alias user_name: user_name_field.title
+    property alias user_home_city: userHomeCity.text
 
     property alias badges_count: badges_count_label.text
     property alias tips_count: tips_count_label.text
@@ -50,7 +50,8 @@ Page {
 
 
             PageHeader {
-                title: user_name
+                id: user_name_field
+
             }
 
 
@@ -74,7 +75,6 @@ Page {
                     font.bold: false
                     font.pixelSize: Theme.fontSizeSmall
                     color: Theme.secondaryColor;
-                    text: user_home_city
                 }
 
                 Rectangle {
@@ -119,7 +119,6 @@ Page {
                     id: userPhoto
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.left: parent.left
-                    source: profile_photo_url
                     width: 128;
                     height: 128;
 

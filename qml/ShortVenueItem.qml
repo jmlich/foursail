@@ -2,8 +2,8 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 Item {
-    property var venueIcon
-    property var venueInfo
+    property variant venueIcon
+    property variant venueInfo
 
     width: parent.width
     height: Math.max(venue_icon.height, venue_name_label.height + venue_address_label.height)
@@ -24,8 +24,8 @@ Item {
         anchors.left: venue_icon.right
         anchors.right: parent.right
         anchors.top: parent.top;
-        anchors.rightMargin: 10;
-        anchors.leftMargin: 10;
+        anchors.rightMargin: Theme.paddingMedium;
+        anchors.leftMargin: Theme.paddingMedium;
 
         wrapMode: Text.Wrap
         color: Theme.primaryColor
@@ -39,8 +39,8 @@ Item {
         anchors.left: venue_icon.right
         anchors.right: parent.right
         anchors.top: venue_name_label.bottom;
-        anchors.rightMargin: 10;
-        anchors.leftMargin: 10;
+        anchors.rightMargin: Theme.paddingMedium;
+        anchors.leftMargin: Theme.paddingMedium;
 
         wrapMode: Text.Wrap
         color: Theme.secondaryColor

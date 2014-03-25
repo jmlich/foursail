@@ -285,6 +285,17 @@ ApplicationWindow {
     ListDetailPage {
         id: listDetailPage;
         loading: (data.countLoading > 0)
+        onCheckinDetail: {
+            checkinDetailPage.venue_id = venue_id;
+            checkinDetailPage.venue_name = name;
+            checkinDetailPage.venue_address = address;
+            checkinDetailPage.icon = icon;
+            checkinDetailPage.comment = "";
+            checkinDetailPage.lat = lat;
+            checkinDetailPage.lon = lon;
+            pageStack.push(checkinDetailPage)
+
+        }
     }
 
     AddAndEditListPage {
