@@ -44,7 +44,8 @@ OTHER_FILES += qml/harbour-foursail.qml \
     qml/AddAndEditListPage.qml \
     qml/ShortVenueItem.qml \
     qml/PhotosPage.qml \
-    qml/PhotoDetailPage.qml
+    qml/PhotoDetailPage.qml \
+    qml/MayorshipsPage.qml
 
 QT += webkit
 

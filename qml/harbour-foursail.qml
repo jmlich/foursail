@@ -109,9 +109,9 @@ ApplicationWindow {
         }
 
         onStatusChanged: {
-//            if ((status === PageStatus.Activating) && (m.count === 0) && (outputType !== "nearby")) {
-//                data.nearbyVenues();
-//            }
+            //            if ((status === PageStatus.Activating) && (m.count === 0) && (outputType !== "nearby")) {
+            //                data.nearbyVenues();
+            //            }
         }
 
 
@@ -233,6 +233,17 @@ ApplicationWindow {
 
         }
 
+        onSwitchToLeaderboard:  {
+            data.leaderboard()
+            pageStack.push(leaderboardPage)
+        }
+
+        onSwitchToMayorships: {
+            data.mayorships(uid)
+            pageStack.push(mayorshipsPage)
+
+        }
+
         onStatusChanged: {
             if (status === PageStatus.Activating) {
                 data.profile (uid)
@@ -243,11 +254,6 @@ ApplicationWindow {
         //            if ((status === PageStatus.Activating) && (selfCheckinsPage.m.count === 0)) {
         //            }
         //        }
-
-    onSwitchToLeaderboard:  {
-        data.leaderboard()
-        pageStack.push(leaderboardPage)
-    }
 
         SelfCheckinsPage {
             id: selfCheckinsPage;
@@ -301,7 +307,6 @@ ApplicationWindow {
             checkinDetailPage.lat = lat;
             checkinDetailPage.lon = lon;
             pageStack.push(checkinDetailPage)
-
         }
     }
 
@@ -334,11 +339,11 @@ ApplicationWindow {
         }
 
         // TBD
-//        onStatusChanged: {
-//            if (status === PageStatus.Activating) {
-//                data.profile (uid)
-//            }
-//        }
+        //        onStatusChanged: {
+        //            if (status === PageStatus.Activating) {
+        //                data.profile (uid)
+        //            }
+        //        }
     }
 
     CategoriesPage {
@@ -370,18 +375,34 @@ ApplicationWindow {
             if (status === PageStatus.Inactive) {
                 addr = "";
             }
-
         }
     }
+
+    MayorshipsPage {
+        id: mayorshipsPage;
+        loading: (data.countLoading > 0)
+        onCheckinDetail: {
+            checkinDetailPage.venue_id = venue_id;
+            checkinDetailPage.venue_name = name;
+            checkinDetailPage.venue_address = address;
+            checkinDetailPage.icon = icon;
+            checkinDetailPage.comment = "";
+            checkinDetailPage.lat = lat;
+            checkinDetailPage.lon = lon;
+            pageStack.push(checkinDetailPage)
+        }
+
+    }
+
 
 
     TipsPage {
         id: tipsPage
         loading: (data.countLoading > 0)
 
-//        onRefresh: {
-//            data.tips(uid)
-//        }
+        //        onRefresh: {
+        //            data.tips(uid)
+        //        }
     }
 
     CoverPage {

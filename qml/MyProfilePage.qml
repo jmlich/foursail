@@ -29,6 +29,7 @@ Page {
     signal switchToLeaderboard();
     signal switchToLists();
     signal switchToPhotos();
+    signal switchToMayorships();
 
 
     SilicaFlickable {
@@ -217,7 +218,7 @@ Page {
                     anchors.margins: Theme.paddingMedium;
 
                 }
-                onClicked: console.log("Mayorships");
+                onClicked: switchToMayorships();
             }
 
             BackgroundItem {

@@ -153,7 +153,7 @@
 <context>
     <name>Data</name>
     <message>
-        <location filename="../qml/Data.qml" line="409"/>
+        <location filename="../qml/Data.qml" line="416"/>
         <source>%1 Notifications</source>
         <translation>%1 bildirim</translation>
     </message>
@@ -252,54 +252,67 @@
     </message>
 </context>
 <context>
+    <name>MayorshipsPage</name>
+    <message>
+        <location filename="../qml/MayorshipsPage.qml" line="24"/>
+        <source>Mayorships</source>
+        <translation type="unfinished">Başkanlıklar</translation>
+    </message>
+    <message>
+        <location filename="../qml/MayorshipsPage.qml" line="67"/>
+        <source>Offline</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MyProfilePage</name>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="44"/>
+        <location filename="../qml/MyProfilePage.qml" line="45"/>
         <source>Recent Checkins</source>
         <translation>En son Checkinler</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="48"/>
+        <location filename="../qml/MyProfilePage.qml" line="49"/>
         <source>Nearby Venues</source>
         <translation>Çevredeki mekanlar</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="185"/>
+        <location filename="../qml/MyProfilePage.qml" line="186"/>
         <source>Badges</source>
         <translation>Rozetler</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="162"/>
+        <location filename="../qml/MyProfilePage.qml" line="163"/>
         <source>Notifications</source>
         <translation>Bildirimler</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="137"/>
+        <location filename="../qml/MyProfilePage.qml" line="138"/>
         <source>Checkins</source>
         <translation>Checkinler</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="208"/>
+        <location filename="../qml/MyProfilePage.qml" line="209"/>
         <source>Mayorships</source>
         <translation>Başkanlıklar</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="230"/>
+        <location filename="../qml/MyProfilePage.qml" line="231"/>
         <source>Tips</source>
         <translation>İpuçları</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="252"/>
+        <location filename="../qml/MyProfilePage.qml" line="253"/>
         <source>Friends</source>
         <translation>Arkadaşlar</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="273"/>
+        <location filename="../qml/MyProfilePage.qml" line="274"/>
         <source>Lists</source>
         <translation>Listeler</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="295"/>
+        <location filename="../qml/MyProfilePage.qml" line="296"/>
         <source>Photos</source>
         <translation>Resimler</translation>
     </message>
@@ -510,12 +523,12 @@
         <translation>Göstermek için dokunun</translation>
     </message>
     <message>
-        <location filename="../qml/harbour-foursail.qml" line="284"/>
+        <location filename="../qml/harbour-foursail.qml" line="290"/>
         <source>Edit List</source>
         <translation>Listeyi düzenle</translation>
     </message>
     <message>
-        <location filename="../qml/harbour-foursail.qml" line="284"/>
+        <location filename="../qml/harbour-foursail.qml" line="290"/>
         <source>Create List</source>
         <translation>Liste oluştur</translation>
     </message>

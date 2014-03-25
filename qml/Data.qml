@@ -350,6 +350,13 @@ Rectangle {
         foursquareDownload(source, params, "GET");
     }
 
+    function mayorships(uid) {
+        var source = "https://api.foursquare.com/v2/users/"+uid+"/mayorships";
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version +
+                "&locale="+locale
+        foursquareDownload(source, params, "GET");
+    }
+
     function checkin(vid, event, shout, twitter, facebook) {
         var source = "https://api.foursquare.com/v2/checkins/add";
         var params = "oauth_token=" + accessToken + "&v="+foursquare_api_version + "&locale="+locale + "&venueId=" + vid + "&ll=" + lat + "," + lon;
@@ -755,6 +762,21 @@ Rectangle {
                                     listDetailPage.m.append(listItemData)
                                 }
                             }
+                        }
+                        if (resultObject.response.mayorships !== undefined) {
+                            var array = resultObject.response.mayorships.items;
+                            mayorshipsPage.m.clear();
+                            for (i = 0; i < array.length; i++) {
+                                var item = array[i]
+
+                                data = {
+                                    'venue': item.venue
+
+                                }
+
+                                mayorshipsPage.m.append(data)
+                            }
+
                         }
 
                     } catch(e) {
