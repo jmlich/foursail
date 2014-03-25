@@ -129,6 +129,7 @@ Page {
             }
 
             BackgroundItem {
+                visible: (uid == "self")
                 width: parent.width
                 Label {
                     anchors.verticalCenter: parent.verticalCenter;
@@ -154,6 +155,7 @@ Page {
             }
 
             BackgroundItem {
+                visible: (uid == "self")
                 width: parent.width
                 Label {
                     anchors.verticalCenter: parent.verticalCenter;

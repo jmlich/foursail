@@ -596,23 +596,21 @@ Rectangle {
 
                         if (resultObject.response.user !== undefined) {
                             user = resultObject.response.user;
-                            if (user.relationship === "self") {
-                                myProfilePage.friends_count = user.friends.count;
-                                myProfilePage.profile_photo_url = user.photo.prefix + "128x128" + user.photo.suffix;
-                                myProfilePage.user_name = user.firstName + " " + user.lastName
-                                myProfilePage.user_home_city = user.homeCity
-                                myProfilePage.badges_count = user.badges.count;
-                                myProfilePage.tips_count = user.tips.count
-                                myProfilePage.mayorships_count = user.mayorships.count
-                                myProfilePage.checkins_count  = user.checkins.count
-                                myProfilePage.lists_count  = user.lists.count
-                                myProfilePage.photos_count  = user.photos.count
-                                myProfilePage.scores_recent = user.scores.recent
-                                myProfilePage.scores_max = user.scores.max
-                                myProfilePage.notifications_count = (resultObject.notifications[0].item !== undefined) ? resultObject.notifications[0].item.unreadCount : 0 ;
-                            } else {
-                                console.log("friend " + user.homeCity + user.friends.count + " " + user.tips.count + " "  + user.badges.count + " " + user.mayorships.count + " " +user.checkins.count + " " + user.lists.count + " " + user.photos.count + " " + user.scores.recent + " " + user.scores.max)
-                            }
+
+                            myProfilePage.friends_count = user.friends.count;
+                            myProfilePage.profile_photo_url = user.photo.prefix + "128x128" + user.photo.suffix;
+                            myProfilePage.user_name = user.firstName + " " + user.lastName
+                            myProfilePage.user_home_city = user.homeCity
+                            myProfilePage.badges_count = user.badges.count;
+                            myProfilePage.tips_count = user.tips.count
+                            myProfilePage.mayorships_count = user.mayorships.count
+                            myProfilePage.checkins_count  = user.checkins.count
+                            myProfilePage.lists_count  = user.lists.count
+                            myProfilePage.photos_count  = user.photos.count
+                            myProfilePage.scores_recent = user.scores.recent
+                            myProfilePage.scores_max = user.scores.max
+                            myProfilePage.notifications_count = (resultObject.notifications[0].item !== undefined) ? resultObject.notifications[0].item.unreadCount : 0 ;
+
                         }
 
                         if (resultObject.response.tips !== undefined) {

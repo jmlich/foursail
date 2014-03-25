@@ -55,6 +55,7 @@ ApplicationWindow {
         }
 
         onSwitchToMyProfile: {
+            myProfilePage.uid = "self"
             pageStack.replace(myProfilePage)
         }
 
@@ -81,10 +82,8 @@ ApplicationWindow {
             pageStack.push(checkinDetailPage)
         }
         onFriendDetail: {
-            friendDetailPage.name = model.firstName +" " + model.lastName
-            friendDetailPage.icon = model.photo
-            friendDetailPage.uid = model.uid
-            pageStack.push(friendDetailPage)
+            myProfilePage.uid = model.uid
+            pageStack.push(myProfilePage)
         }
 
     }
@@ -105,6 +104,7 @@ ApplicationWindow {
         }
 
         onSwitchToMyProfile: {
+            myProfilePage.uid = "self"
             pageStack.replace(myProfilePage)
         }
 
@@ -325,25 +325,6 @@ ApplicationWindow {
         onRemoveFriend: {
             data.removeFriend(uid);
         }
-    }
-
-    FriendDetailPage {
-        id: friendDetailPage
-        onSwitchToBadges: {
-            data.badges(uid)
-            pageStack.push(badgesPage)
-        }
-        onSwitchToCheckinHistory: {
-            data.checkinHistory(uid);
-            pageStack.push(selfCheckinsPage)
-        }
-
-        // TBD
-        //        onStatusChanged: {
-        //            if (status === PageStatus.Activating) {
-        //                data.profile (uid)
-        //            }
-        //        }
     }
 
     CategoriesPage {

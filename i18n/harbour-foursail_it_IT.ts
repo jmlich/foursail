@@ -161,14 +161,12 @@
 <context>
     <name>FriendDetailPage</name>
     <message>
-        <location filename="../qml/FriendDetailPage.qml" line="21"/>
         <source>Friend Detail</source>
-        <translation>Dettagli Amico</translation>
+        <translation type="vanished">Dettagli Amico</translation>
     </message>
     <message>
-        <location filename="../qml/FriendDetailPage.qml" line="70"/>
         <source>Badges</source>
-        <translation>Badge</translation>
+        <translation type="vanished">Badge</translation>
     </message>
 </context>
 <context>
@@ -277,42 +275,42 @@
         <translation>Luoghi nelle vicinanze</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="186"/>
+        <location filename="../qml/MyProfilePage.qml" line="188"/>
         <source>Badges</source>
         <translation>Badge</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="163"/>
+        <location filename="../qml/MyProfilePage.qml" line="165"/>
         <source>Notifications</source>
         <translation>Notifiche</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="138"/>
+        <location filename="../qml/MyProfilePage.qml" line="139"/>
         <source>Checkins</source>
         <translation>Check-in</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="209"/>
+        <location filename="../qml/MyProfilePage.qml" line="211"/>
         <source>Mayorships</source>
         <translation>Mayorship</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="231"/>
+        <location filename="../qml/MyProfilePage.qml" line="233"/>
         <source>Tips</source>
         <translation>Consigli</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="253"/>
+        <location filename="../qml/MyProfilePage.qml" line="255"/>
         <source>Friends</source>
         <translation>Amici</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="274"/>
+        <location filename="../qml/MyProfilePage.qml" line="276"/>
         <source>Lists</source>
         <translation>Liste</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="296"/>
+        <location filename="../qml/MyProfilePage.qml" line="298"/>
         <source>Photos</source>
         <translation>Foto</translation>
     </message>

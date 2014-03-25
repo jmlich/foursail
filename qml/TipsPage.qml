@@ -95,7 +95,7 @@ Page {
                 anchors.top: tipPhotoImage.bottom
                 verticalAlignment: Text.AlignBottom
                 color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
-                font.pixelSize: Theme.fontSizeTiny
+                font.pixelSize: Theme.fontSizeSmall
                 elide: Text.ElideRight
 
                 wrapMode: Text.WordWrap
@@ -112,7 +112,7 @@ Page {
                 anchors.rightMargin: Theme.paddingMedium
 
                 color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
-                font.pixelSize: Theme.fontSizeTiny
+                font.pixelSize: Theme.fontSizeSmall
                 wrapMode: Text.WordWrap
                 text: F.formatDate(date)
             }
