@@ -11,6 +11,7 @@ Page {
 
     signal refresh();
     signal removeFriend(string uid);
+    signal showFriend(string uid)
 
     ListModel {
         id: listmodel;
@@ -80,6 +81,10 @@ Page {
             }
 
             RemorseItem { id: remorse }
+
+            onClicked: {
+                showFriend(uid)
+            }
 
             onPressAndHold: {
                 listView.currentIndex = index;

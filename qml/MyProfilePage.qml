@@ -2,8 +2,9 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 Page {
-    property alias profile_photo_url: userPhoto.source
     property string uid: "self"
+
+    property alias profile_photo_url: userPhoto.source
     property alias user_name: user_name_field.title
     property alias user_home_city: userHomeCity.text
 
@@ -30,6 +31,23 @@ Page {
     signal switchToLists();
     signal switchToPhotos();
     signal switchToMayorships();
+
+    onUidChanged: { // details should be empty while loading
+        userPhoto.source = "";
+        user_name_field.title = "";
+        userHomeCity.text = "";
+
+        badges_count_label.text = "";
+        tips_count_label.text = "";
+        friends_count_label.text = "";
+        mayorships_count_label.text = "";
+        checkins_count_label.text = "";
+        lists_count_label.text = "";
+        photos_count_label.text = "";
+        notifications_count_label.text = "";
+        scores_recent = 0;
+        scores_max = 1;
+    }
 
 
     SilicaFlickable {

@@ -599,7 +599,7 @@ Rectangle {
 
                             myProfilePage.friends_count = user.friends.count;
                             myProfilePage.profile_photo_url = user.photo.prefix + "128x128" + user.photo.suffix;
-                            myProfilePage.user_name = user.firstName + " " + user.lastName
+                            myProfilePage.user_name = ((user.firstName !== undefined) ? (user.firstName + " ") : "") + ((user.lastName !== undefined) ?  user.lastName : "")
                             myProfilePage.user_home_city = user.homeCity
                             myProfilePage.badges_count = user.badges.count;
                             myProfilePage.tips_count = user.tips.count

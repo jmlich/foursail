@@ -82,6 +82,7 @@ ApplicationWindow {
             pageStack.push(checkinDetailPage)
         }
         onFriendDetail: {
+
             myProfilePage.uid = model.uid
             pageStack.push(myProfilePage)
         }
@@ -204,7 +205,12 @@ ApplicationWindow {
         }
 
         onSwitchToRecentCheckins: {
-            pageStack.replace(recentCheckinsPage)
+            var p = pageStack.find(function(page) { return page === recentCheckinsPage; });
+            if (p !== null) {
+                pageStack.pop(recentCheckinsPage)
+            } else {
+                pageStack.replace(recentCheckinsPage)
+            }
         }
 
         onSwitchToNotifications: {
@@ -325,6 +331,13 @@ ApplicationWindow {
         onRemoveFriend: {
             data.removeFriend(uid);
         }
+
+        onShowFriend: {
+            myProfilePage.uid = uid
+
+            pageStack.pop(myProfilePage)
+        }
+
     }
 
     CategoriesPage {
