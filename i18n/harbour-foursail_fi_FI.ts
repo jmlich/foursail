@@ -1,10 +1,10 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="it" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fi" version="2.1">
 <context>
     <name/>
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="163"/>
         <source>Tap to cancel</source>
-        <translation>Tocca per annullare</translation>
+        <translation>Napauta peruuttaaksesi</translation>
     </message>
 </context>
 <context>
@@ -12,17 +12,17 @@
     <message>
         <location filename="../qml/AddAndEditListPage.qml" line="19"/>
         <source>Create List</source>
-        <translation>Crea Lista</translation>
+        <translation>Luo lista</translation>
     </message>
     <message>
         <location filename="../qml/AddAndEditListPage.qml" line="25"/>
         <source>List name</source>
-        <translation>Nome Lista</translation>
+        <translation>Listan nimi</translation>
     </message>
     <message>
         <location filename="../qml/AddAndEditListPage.qml" line="31"/>
         <source>List&apos;s description</source>
-        <translation>Descrizione lista</translation>
+        <translation>Listan kuvaus</translation>
     </message>
 </context>
 <context>
@@ -30,47 +30,47 @@
     <message>
         <location filename="../qml/AddVenuePage.qml" line="36"/>
         <source>Create Venue</source>
-        <translation>Crea Luogo</translation>
+        <translation>Luo paikka</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="44"/>
         <source>Venue name</source>
-        <translation>Nome del Luogo</translation>
+        <translation>Paikannimi</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="65"/>
         <source>Choose category</source>
-        <translation>Scegli categoria</translation>
+        <translation>Valitse kategoria</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="79"/>
         <source>Address</source>
-        <translation>Indirizzo</translation>
+        <translation>Osoite</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="85"/>
         <source>Cross street</source>
-        <translation>Angolo</translation>
+        <translation>Poikkikatu</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="92"/>
         <source>City</source>
-        <translation>Città</translation>
+        <translation>Kaupunki</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="98"/>
         <source>State</source>
-        <translation>Stato</translation>
+        <translation>Maakunta</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="104"/>
         <source>ZIP</source>
-        <translation>CAP</translation>
+        <translation>Postinumero</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="111"/>
         <source>Phone</source>
-        <translation>Telefono</translation>
+        <translation>Puhelin</translation>
     </message>
     <message>
         <location filename="../qml/AddVenuePage.qml" line="117"/>
@@ -80,7 +80,7 @@
     <message>
         <location filename="../qml/AddVenuePage.qml" line="123"/>
         <source>description</source>
-        <translation>descrizione</translation>
+        <translation>Kuvaus</translation>
     </message>
 </context>
 <context>
@@ -88,7 +88,7 @@
     <message>
         <location filename="../qml/BadgesPage.qml" line="30"/>
         <source>Badges</source>
-        <translation>Badge</translation>
+        <translation>Merkit</translation>
     </message>
 </context>
 <context>
@@ -96,7 +96,7 @@
     <message>
         <location filename="../qml/CategoriesPage.qml" line="30"/>
         <source>Select Category</source>
-        <translation>Seleziona Categoria</translation>
+        <translation>Valitse kategoria</translation>
     </message>
 </context>
 <context>
@@ -104,27 +104,27 @@
     <message>
         <location filename="../qml/CheckinDetailPage.qml" line="38"/>
         <source>Checkin</source>
-        <translation>Check-in</translation>
+        <translation>Kirjaudu</translation>
     </message>
     <message>
         <location filename="../qml/CheckinDetailPage.qml" line="85"/>
         <source>Write your comment here.</source>
-        <translation>Scrivi il tuo commento qui</translation>
+        <translation>Kirjoita kommenttisi tähän.</translation>
     </message>
     <message>
         <location filename="../qml/CheckinDetailPage.qml" line="90"/>
         <source>Share on Facebook</source>
-        <translation>Condividi su Facebook</translation>
+        <translation>Jaa Facebookissa</translation>
     </message>
     <message>
         <location filename="../qml/CheckinDetailPage.qml" line="95"/>
         <source>Share on Twitter</source>
-        <translation>Condividi su Twitter</translation>
+        <translation>Jaa Twitterissä</translation>
     </message>
     <message>
         <location filename="../qml/CheckinDetailPage.qml" line="99"/>
         <source>Show on Map</source>
-        <translation>Mostra sulla Mappa</translation>
+        <translation>Näytä kartalla</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,7 @@
     <message>
         <location filename="../qml/CheckinResultPage.qml" line="26"/>
         <source>Checkin</source>
-        <translation>Check-in</translation>
+        <translation>Kirjaudu</translation>
     </message>
 </context>
 <context>
@@ -140,7 +140,7 @@
     <message>
         <location filename="../qml/CoverPage.qml" line="59"/>
         <source>Loading ...</source>
-        <translation>Caricamento...</translation>
+        <translation>Lataa ...</translation>
     </message>
     <message>
         <location filename="../qml/CoverPage.qml" line="65"/>
@@ -153,7 +153,7 @@
     <message>
         <location filename="../qml/Data.qml" line="398"/>
         <source>%1 Notifications</source>
-        <translation>%1 Notifiche</translation>
+        <translation>%1 Ilmoitusta</translation>
     </message>
 </context>
 <context>
@@ -161,12 +161,12 @@
     <message>
         <location filename="../qml/FriendDetailPage.qml" line="21"/>
         <source>Friend Detail</source>
-        <translation>Dettagli Amico</translation>
+        <translation>Ystävän tieto</translation>
     </message>
     <message>
         <location filename="../qml/FriendDetailPage.qml" line="70"/>
         <source>Badges</source>
-        <translation>Badge</translation>
+        <translation>Merkit</translation>
     </message>
 </context>
 <context>
@@ -174,17 +174,17 @@
     <message>
         <location filename="../qml/FriendsPage.qml" line="24"/>
         <source>Friends</source>
-        <translation>Amici</translation>
+        <translation>Ystävät</translation>
     </message>
     <message>
         <location filename="../qml/FriendsPage.qml" line="75"/>
         <source>Removing friend</source>
-        <translation>Rimuovi amico</translation>
+        <translation>Poistetaan ystävä</translation>
     </message>
     <message>
         <location filename="../qml/FriendsPage.qml" line="98"/>
         <source>Remove</source>
-        <translation>Rimuovi</translation>
+        <translation>Poista</translation>
     </message>
     <message>
         <location filename="../qml/FriendsPage.qml" line="114"/>
@@ -197,12 +197,12 @@
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="21"/>
         <source>Leaderboard</source>
-        <translation>Leaderboard</translation>
+        <translation>Tulostaulu</translation>
     </message>
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="59"/>
         <source>%1 checkins</source>
-        <translation>%1 checkin</translation>
+        <translation>%1 kirjautumista</translation>
     </message>
     <message>
         <location filename="../qml/LeaderboardPage.qml" line="89"/>
@@ -223,17 +223,17 @@
     <message>
         <location filename="../qml/ListsPage.qml" line="25"/>
         <source>New list</source>
-        <translation>Nuova Lista</translation>
+        <translation>Uusi lista</translation>
     </message>
     <message>
         <location filename="../qml/ListsPage.qml" line="31"/>
         <source>Lists</source>
-        <translation>Liste</translation>
+        <translation>Listat</translation>
     </message>
     <message>
         <location filename="../qml/ListsPage.qml" line="114"/>
         <source>Edit</source>
-        <translation>Edita</translation>
+        <translation>Muokkaa</translation>
     </message>
     <message>
         <location filename="../qml/ListsPage.qml" line="131"/>
@@ -246,7 +246,7 @@
     <message>
         <location filename="../qml/MapPage.qml" line="17"/>
         <source>Map</source>
-        <translation>Mappa</translation>
+        <translation>Kartta</translation>
     </message>
 </context>
 <context>
@@ -254,52 +254,52 @@
     <message>
         <location filename="../qml/MyProfilePage.qml" line="42"/>
         <source>Recent Checkins</source>
-        <translation>Check-in recenti</translation>
+        <translation>Viimeisimmät kirjautumiset</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="46"/>
         <source>Nearby Venues</source>
-        <translation>Luoghi nelle vicinanze</translation>
+        <translation>Lähellä olevat paikat</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="136"/>
         <source>Checkins</source>
-        <translation>Check-in</translation>
+        <translation>Kirjautumiset</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="161"/>
         <source>Notifications</source>
-        <translation>Notifiche</translation>
+        <translation>Ilmoitukset</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="184"/>
         <source>Badges</source>
-        <translation>Badge</translation>
+        <translation>Merkit</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="207"/>
         <source>Mayorships</source>
-        <translation>Mayorship</translation>
+        <translation>Pormestariudet</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="229"/>
         <source>Tips</source>
-        <translation>Consigli</translation>
+        <translation>Vinkit</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="251"/>
         <source>Friends</source>
-        <translation>Amici</translation>
+        <translation>Ystävät</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="272"/>
         <source>Lists</source>
-        <translation>Liste</translation>
+        <translation>Listat</translation>
     </message>
     <message>
         <location filename="../qml/MyProfilePage.qml" line="294"/>
         <source>Photos</source>
-        <translation>Foto</translation>
+        <translation>Valokuvat</translation>
     </message>
 </context>
 <context>
@@ -308,37 +308,37 @@
         <location filename="../qml/NearbyVenuesPage.qml" line="31"/>
         <location filename="../qml/NearbyVenuesPage.qml" line="45"/>
         <source>Nearby Venues</source>
-        <translation>Luoghi nelle vicinanze</translation>
+        <translation>Lähellä olevat paikat</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="31"/>
         <source>Search results</source>
-        <translation>Risultati ricerca</translation>
+        <translation>Hakutulokset</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="37"/>
         <source>My Profile</source>
-        <translation>Il mio Profilo</translation>
+        <translation>Profiilini</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="41"/>
         <source>Recent Checkins</source>
-        <translation>Check-in recenti</translation>
+        <translation>Viimeisimmät kirjautumiset</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="45"/>
         <source>Refresh</source>
-        <translation>Aggiorna</translation>
+        <translation>Päivitä</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="52"/>
         <source>Search</source>
-        <translation>Cerca</translation>
+        <translation>Etsi</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="56"/>
         <source>Add</source>
-        <translation>Aggiungi</translation>
+        <translation>Lisää</translation>
     </message>
     <message>
         <location filename="../qml/NearbyVenuesPage.qml" line="148"/>
@@ -351,7 +351,7 @@
     <message>
         <location filename="../qml/NotificationsPage.qml" line="29"/>
         <source>Notifications</source>
-        <translation>Notifiche</translation>
+        <translation>Ilmoitukset</translation>
     </message>
     <message>
         <location filename="../qml/NotificationsPage.qml" line="98"/>
@@ -364,27 +364,27 @@
     <message>
         <location filename="../qml/PinchMap.qml" line="293"/>
         <source>Ready</source>
-        <translation>Pronto</translation>
+        <translation>Valmis</translation>
     </message>
     <message>
         <location filename="../qml/PinchMap.qml" line="294"/>
         <source>Not Set</source>
-        <translation>Non impostato</translation>
+        <translation>Ei asetettu</translation>
     </message>
     <message>
         <location filename="../qml/PinchMap.qml" line="295"/>
         <source>Error</source>
-        <translation>Errore</translation>
+        <translation>Virhe</translation>
     </message>
     <message>
         <location filename="../qml/PinchMap.qml" line="296"/>
         <source>Loading...</source>
-        <translation>Caricamento...</translation>
+        <translation>Lataa...</translation>
     </message>
     <message>
         <location filename="../qml/PinchMap.qml" line="297"/>
         <source>Unknown</source>
-        <translation>Sconosciuto</translation>
+        <translation>Tuntematon</translation>
     </message>
 </context>
 <context>
@@ -392,22 +392,22 @@
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="27"/>
         <source>Recent Checkins</source>
-        <translation>Check-in recenti</translation>
+        <translation>Viimeisimmät kirjautumiset</translation>
     </message>
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="33"/>
         <source>My Profile</source>
-        <translation>Il mio Profilo</translation>
+        <translation>Profiilini</translation>
     </message>
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="37"/>
         <source>Nearby Venues</source>
-        <translation>Luoghi nelle vicinanze</translation>
+        <translation>Lähellä olevat paikat</translation>
     </message>
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="41"/>
         <source>Refresh</source>
-        <translation>Aggiorna</translation>
+        <translation>Päivitä</translation>
     </message>
     <message>
         <location filename="../qml/RecentCheckinsPage.qml" line="139"/>
@@ -420,12 +420,12 @@
     <message>
         <location filename="../qml/SearchVenueDialog.qml" line="15"/>
         <source>Search</source>
-        <translation>Cerca</translation>
+        <translation>Etsi</translation>
     </message>
     <message>
         <location filename="../qml/SearchVenueDialog.qml" line="21"/>
         <source>Venue name</source>
-        <translation>Nome del Luogo</translation>
+        <translation>Paikannimi</translation>
     </message>
 </context>
 <context>
@@ -433,12 +433,12 @@
     <message>
         <location filename="../qml/SelfCheckinsPage.qml" line="25"/>
         <source>History</source>
-        <translation>Cronologia</translation>
+        <translation>Historia</translation>
     </message>
     <message>
         <location filename="../qml/SelfCheckinsPage.qml" line="31"/>
         <source>Refresh</source>
-        <translation>Aggiorna</translation>
+        <translation>Päivitä</translation>
     </message>
     <message>
         <location filename="../qml/SelfCheckinsPage.qml" line="97"/>
@@ -451,7 +451,7 @@
     <message>
         <location filename="../qml/TipsPage.qml" line="25"/>
         <source>Tips</source>
-        <translation>Consigli</translation>
+        <translation>Vinkit</translation>
     </message>
     <message>
         <location filename="../qml/TipsPage.qml" line="150"/>
@@ -464,32 +464,32 @@
     <message>
         <location filename="../qml/functions.js" line="19"/>
         <source>%1 years ago</source>
-        <translation>%1 anni fa</translation>
+        <translation>%1 vuotta sitten</translation>
     </message>
     <message>
         <location filename="../qml/functions.js" line="23"/>
         <source>%1 months ago</source>
-        <translation>%1 mesi fa</translation>
+        <translation>%1 kuukautta sitten</translation>
     </message>
     <message>
         <location filename="../qml/functions.js" line="27"/>
         <source>%1 days ago</source>
-        <translation>%1 giorni fa</translation>
+        <translation>%1 päivää sitten</translation>
     </message>
     <message>
         <location filename="../qml/functions.js" line="31"/>
         <source>%1 hours ago</source>
-        <translation>%1 ore fa</translation>
+        <translation>%1 tuntia sitten</translation>
     </message>
     <message>
         <location filename="../qml/functions.js" line="35"/>
         <source>%1 minutes ago</source>
-        <translation>%1 minuti fa</translation>
+        <translation>%1 minuuttia sitten</translation>
     </message>
     <message>
         <location filename="../qml/functions.js" line="37"/>
         <source>%1 seconds ago</source>
-        <translation>%1 secondi fa</translation>
+        <translation>%1 sekuntia sitten</translation>
     </message>
 </context>
 <context>
@@ -497,17 +497,17 @@
     <message>
         <location filename="../qml/harbour-foursail.qml" line="13"/>
         <source>Tap to show</source>
-        <translation>Tocca per visualizzare</translation>
+        <translation>Napauta näyttääksesi</translation>
     </message>
     <message>
         <location filename="../qml/harbour-foursail.qml" line="277"/>
         <source>Edit List</source>
-        <translation>Modifica Lista</translation>
+        <translation>Muokkaa listaa</translation>
     </message>
     <message>
         <location filename="../qml/harbour-foursail.qml" line="277"/>
         <source>Create List</source>
-        <translation>Crea Lista</translation>
+        <translation>Luo lista</translation>
     </message>
 </context>
 </TS>

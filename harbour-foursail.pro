@@ -54,7 +54,7 @@ HEADERS += \
 
 
 
-LANGUAGES = cs_CZ da_DK de_DE el_GR es_ES fr_FR it_IT nl_NL ru_RU tr_TR zh_CN
+LANGUAGES = cs_CZ da_DK de_DE el_GR es_ES fi_FI fr_FR it_IT nl_NL ru_RU tr_TR zh_CN
 
 # var, prepend, append
 defineReplace(prependAll) {
