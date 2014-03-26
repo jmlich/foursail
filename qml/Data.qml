@@ -231,6 +231,10 @@ Rectangle {
         foursquareDownload(source, params, "POST");
     }
 
+    function likeVenue(venue_id, value) {
+        console.log("FIXME likeVenue " + venue_id + " " + value)
+    }
+
     function badges(uid) {
         var source = "https://api.foursquare.com/v2/users/"+uid+"/badges"
         var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale;
@@ -298,6 +302,12 @@ Rectangle {
         foursquareDownload(source, params, "POST");
     }
 
+    function venueTips(vid) {
+        var source = "https://api.foursquare.com/v2/venues/" + vid + "/tips"
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale + "&sort=recent";
+        foursquareDownload(source, params, "GET");
+    }
+
     function tips(uid) {
         var source = "https://api.foursquare.com/v2/users/" + uid + "/tips"
         var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale + "&sort=recent";
@@ -322,31 +332,42 @@ Rectangle {
         foursquareDownload(source, params, "GET");
     }
 
+    function venueListed(vid) {
+        var source = "https://api.foursquare.com/v2/venues/" + vid + "/listed"
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale;
+        foursquareDownload(source, params, "GET");
+    }
+
     function addList(name, description) {
         var source = "https://api.foursquare.com/v2/lists/add"
-        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version +
-                "&locale="+locale + "&name=" + name + "&description=" + description;
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale
+                + "&name=" + name + "&description=" + description;
         foursquareDownload(source, params, "POST");
     }
 
     function editList(lid, name, description) {
         var source = "https://api.foursquare.com/v2/lists/" + lid + "/update"
-        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version +
-                "&locale="+locale + "&name=" + name + "&description=" + description;
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale
+                + "&name=" + name + "&description=" + description;
         foursquareDownload(source, params, "POST");
     }
 
     function listDetails(lid) {
         var source = "https://api.foursquare.com/v2/lists/" + lid
-        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version +
-                "&locale="+locale
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale
         foursquareDownload(source, params, "GET");
     }
 
     function photos(uid) {
         var source = "https://api.foursquare.com/v2/users/"+uid+"/photos";
-        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version +
-                "&locale="+locale
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale
+        foursquareDownload(source, params, "GET");
+    }
+
+
+    function venuePhotos(vid) {
+        var source = "https://api.foursquare.com/v2/venues/"+vid+"/photos";
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale
         foursquareDownload(source, params, "GET");
     }
 
@@ -618,35 +639,49 @@ Rectangle {
                             array = resultObject.response.tips.items;
                             for (i = 0; i < array.length; ++i) {
                                 item = array[i];
+                                console.log("tips id " + item.id)
                                 var uid = item.id;
                                 var text = item.text;
                                 var date = new Date(parseInt(item.createdAt * 1000));
                                 var likesCount = item.likes.count;
-                                var venueId = item.venue.id
-                                var venueName = item.venue.name
-                                var address = item.venue.location.address !== undefined ?
-                                            item.venue.location.address +
-                                            (item.venue.location.crossStreet !== undefined ?
-                                                 " " :
-                                                 ", ") :
-                                            "";
-                                var crossStreet = item.venue.location.crossStreet !== undefined ? "(" + item.venue.location.crossStreet + "), " : "";
-                                var city = item.venue.location.city !== undefined ? item.venue.location.city + ", " : "";
-                                var country = item.venue.location.country !== undefined ? item.venue.location.country : "";
-                                var venueAddress = address + crossStreet + city + country;
+                                if (item.venue !== undefined) {
+                                    var venueId = item.venue.id
+                                    var venueName = item.venue.name
+                                    var address = item.venue.location.address !== undefined ?
+                                                item.venue.location.address +
+                                                (item.venue.location.crossStreet !== undefined ?
+                                                     " " :
+                                                     ", ") :
+                                                "";
+                                    var crossStreet = item.venue.location.crossStreet !== undefined ? "(" + item.venue.location.crossStreet + "), " : "";
+                                    var city = item.venue.location.city !== undefined ? item.venue.location.city + ", " : "";
+                                    var country = item.venue.location.country !== undefined ? item.venue.location.country : "";
+                                    var venueAddress = address + crossStreet + city + country;
 
-                                var venue_icon = (item.venue.categories[0] !== undefined) ? item.venue.categories[0].icon : ""
+                                    var venue_icon = (item.venue.categories[0] !== undefined) ? item.venue.categories[0].icon : ""
 
-                                data = {
-                                    'tipIdentifier': uid,
-                                    'photo': ((item.photo !== undefined) ? photo.prefix + "86x86" + photo.suffix : ""),
-                                    'tipText': text,
-                                    'date': date,
-                                    'venueIdentifier' : venueId,
-                                    'venueName' : venueName,
-                                    'venueAddress' : venueAddress,
-                                    'venueIcon': venue_icon.prefix + "64" + venue_icon.suffix,
-                                };
+                                    data = {
+                                        'tipIdentifier': uid,
+                                        'tipText': text,
+                                        'photo': ((item.photo !== undefined) ? photo.prefix + "300x300" + photo.suffix : ""),
+                                        'date': date,
+                                        'venueIdentifier' : venueId,
+                                        'tipTitle' : venueName,
+                                        'tipTitle2' : venueAddress,
+                                        'tipIcon': venue_icon.prefix + "64" + venue_icon.suffix,
+                                    };
+                                } else { // if we are asking for tips asociated with venue
+                                    data = {
+                                        'tipIdentifier': uid,
+                                        'tipText': text,
+                                        'photo': ((item.photo !== undefined) ? photo.prefix + "300x300" + photo.suffix : ""),
+                                        'date': date,
+                                        'tipIcon': item.user.photo.prefix + "86x86" + item.user.photo.suffix,
+                                        'tipTitle': ((item.user.firstName !== undefined) ? item.user.firstName : "") + " " + ((item.user.lastName !== undefined) ? item.user.lastName : ""),
+                                        'tipTitle2': ""
+
+                                    }
+                                }
 
                                 tipsPage.m.append(data);
                             }

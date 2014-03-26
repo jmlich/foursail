@@ -146,6 +146,12 @@ Page {
                 }
 
                 Image {
+                    anchors.fill: userPhoto
+                    source: "./images/blank_boy.png"
+                    visible: (userPhoto.status !== Image.Ready)
+                }
+
+                Image {
                     id: userPhoto
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.left: parent.left

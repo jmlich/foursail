@@ -174,6 +174,27 @@ ApplicationWindow {
             //            pageStack.push(checkinResultPage)
         }
 
+        onSwitchToPhotos: {
+            data.venuePhotos(venue_id)
+            pageStack.push(photosPage)
+        }
+
+        onSwitchToTips: {
+            data.venueTips(venue_id)
+            pageStack.push(tipsPage)
+
+        }
+
+        onSwitchToListed: {
+            data.venueListed(venue_id)
+            pageStack.push(listsPage)
+        }
+
+        onVenue_likedChanged: {
+            data.likeVenue(venue_id, venue_liked)
+        }
+
+
         acceptDestination: checkinResultPage
         acceptDestinationAction: PageStackAction.Replace
         deviceLat: positionSource.position.coordinate.latitude;

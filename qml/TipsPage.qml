@@ -37,7 +37,6 @@ Page {
             id: delegate
             height: contentItem.childrenRect.height
 
-            property string venueId : venueIdentifier
             property string tipId : tipIdentifier
 
 
@@ -46,7 +45,7 @@ Page {
                 width: 86
                 height: 86
                 anchors.margins: Theme.paddingMedium
-                source: venueIcon;
+                source: tipIcon;
             }
 
             Label {
@@ -62,7 +61,7 @@ Page {
                 textFormat: Text.RichText
                 font.pixelSize: Theme.fontSizeLarge
 //                text: "<style type='text/css'>a:link{color:"+Theme.primaryColor+"; text-decoration: none;} a:visited{color:"+Theme.primaryColor+"}</style> <a href=\"venue\">" + venueName + "</a>"
-                text: venueName
+                text: tipTitle
                 color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
                 onLinkActivated: {
                     if (link == "venue") {
@@ -97,30 +96,29 @@ Page {
                 color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                 font.pixelSize: Theme.fontSizeSmall
                 elide: Text.ElideRight
-
                 wrapMode: Text.WordWrap
-                text: venueAddress
+                text: ((tipTitle2 !== "") ? tipTitle2+"\n" : "") + F.formatDate(date)
             }
 
-            Label {
-                id: dateLabel
+//            Label {
+//                id: dateLabel
 
-                anchors.top: venueAddressLabel.bottom
-                anchors.left: itemIcon.right
-                anchors.right: parent.right
-                anchors.leftMargin: Theme.paddingMedium
-                anchors.rightMargin: Theme.paddingMedium
+//                anchors.top: venueAddressLabel.bottom
+//                anchors.left: itemIcon.right
+//                anchors.right: parent.right
+//                anchors.leftMargin: Theme.paddingMedium
+//                anchors.rightMargin: Theme.paddingMedium
 
-                color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
-                font.pixelSize: Theme.fontSizeSmall
-                wrapMode: Text.WordWrap
-                text: F.formatDate(date)
-            }
+//                color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+//                font.pixelSize: Theme.fontSizeSmall
+//                wrapMode: Text.WordWrap
+//                text: F.formatDate(date)
+//            }
 
             Label {
                 id: tipLabel
 
-                anchors.top: dateLabel.bottom
+                anchors.top: venueAddressLabel.bottom
                 anchors.left: itemIcon.right
                 anchors.right: parent.right
                 anchors.leftMargin: Theme.paddingMedium
@@ -130,10 +128,7 @@ Page {
                 wrapMode: Text.Wrap
             }
 
-
-
-
-            onClicked: console.log (venueId, tipId)
+            onClicked: console.log ("like/dislike tip: " + tipId)  // press and hold?
         }
         VerticalScrollDecorator {}
     }

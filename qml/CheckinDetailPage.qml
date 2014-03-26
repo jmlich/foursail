@@ -14,9 +14,16 @@ Dialog {
     property double deviceLat;
     property double deviceLon;
 
+    property bool venue_liked: false
+
     property alias comment: comment_textarea.text
     property alias twitter: twitter_switch.checked
     property alias facebook: facebook_switch.checked
+
+    signal switchToPhotos();
+    signal switchToTips();
+    signal switchToListed();
+    signal venueLike();
 
     MapPage {
         id: mapPage;
@@ -26,12 +33,39 @@ Dialog {
         deviceLon: page.deviceLon
     }
 
+
+
     SilicaFlickable {
         anchors.fill: parent;
-        contentHeight: contentItem.childrenRect.height
+        contentHeight: column.height
+
+
+        PullDownMenu {
+            MenuItem {
+                text: qsTr("Photos")
+                onClicked: switchToPhotos();
+            }
+            MenuItem {
+                text: qsTr("Tips")
+                onClicked: switchToTips();
+            }
+            MenuItem {
+                text: qsTr("Listed")
+                onClicked: switchToListed();
+            }
+
+            MenuItem {
+                visible: false; // FIXME venue_liked must be filled first
+                text: venue_liked ? qsTr("Dislike") : qsTr("Like")
+                onClicked: {
+                    venue_liked = !venue_liked;
+                }
+            }
+        }
 
 
         Column {
+            id: column
             width: parent.width
 
             DialogHeader {
@@ -103,6 +137,7 @@ Dialog {
                     pageStack.push(mapPage)
                 }
             }
+
 
         }
     }
