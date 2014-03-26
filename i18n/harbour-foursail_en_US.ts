@@ -104,27 +104,52 @@
 <context>
     <name>CheckinDetailPage</name>
     <message>
-        <location filename="../qml/CheckinDetailPage.qml" line="39"/>
+        <location filename="../qml/CheckinDetailPage.qml" line="45"/>
+        <source>Photos</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/CheckinDetailPage.qml" line="49"/>
+        <source>Tips</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/CheckinDetailPage.qml" line="53"/>
+        <source>Listed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/CheckinDetailPage.qml" line="59"/>
+        <source>Dislike</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/CheckinDetailPage.qml" line="59"/>
+        <source>Like</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/CheckinDetailPage.qml" line="73"/>
         <source>Checkin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/CheckinDetailPage.qml" line="86"/>
+        <location filename="../qml/CheckinDetailPage.qml" line="120"/>
         <source>Write your comment here.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/CheckinDetailPage.qml" line="91"/>
+        <location filename="../qml/CheckinDetailPage.qml" line="125"/>
         <source>Share on Facebook</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/CheckinDetailPage.qml" line="96"/>
+        <location filename="../qml/CheckinDetailPage.qml" line="130"/>
         <source>Share on Twitter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/CheckinDetailPage.qml" line="100"/>
+        <location filename="../qml/CheckinDetailPage.qml" line="134"/>
         <source>Show on Map</source>
         <translation type="unfinished"></translation>
     </message>
@@ -153,7 +178,7 @@
 <context>
     <name>Data</name>
     <message>
-        <location filename="../qml/Data.qml" line="416"/>
+        <location filename="../qml/Data.qml" line="437"/>
         <source>%1 Notifications</source>
         <translation type="unfinished"></translation>
     </message>
@@ -269,42 +294,42 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="166"/>
+        <location filename="../qml/MyProfilePage.qml" line="172"/>
         <source>Checkins</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="192"/>
+        <location filename="../qml/MyProfilePage.qml" line="198"/>
         <source>Notifications</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="215"/>
+        <location filename="../qml/MyProfilePage.qml" line="221"/>
         <source>Badges</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="238"/>
+        <location filename="../qml/MyProfilePage.qml" line="244"/>
         <source>Mayorships</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="260"/>
+        <location filename="../qml/MyProfilePage.qml" line="266"/>
         <source>Tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="282"/>
+        <location filename="../qml/MyProfilePage.qml" line="288"/>
         <source>Friends</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="303"/>
+        <location filename="../qml/MyProfilePage.qml" line="309"/>
         <source>Lists</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="325"/>
+        <location filename="../qml/MyProfilePage.qml" line="331"/>
         <source>Photos</source>
         <translation type="unfinished"></translation>
     </message>
@@ -469,7 +494,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/TipsPage.qml" line="150"/>
+        <location filename="../qml/TipsPage.qml" line="145"/>
         <source>Offline</source>
         <translation type="unfinished"></translation>
     </message>
@@ -515,12 +540,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/harbour-foursail.qml" line="300"/>
+        <location filename="../qml/harbour-foursail.qml" line="321"/>
         <source>Edit List</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/harbour-foursail.qml" line="300"/>
+        <location filename="../qml/harbour-foursail.qml" line="321"/>
         <source>Create List</source>
         <translation type="unfinished"></translation>
     </message>
