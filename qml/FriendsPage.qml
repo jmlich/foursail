@@ -8,6 +8,8 @@ Page {
 
     property alias m: listmodel
     property bool loading;
+    property string last_error;
+
 
     signal refresh();
     signal removeFriend(string uid);
@@ -21,10 +23,16 @@ Page {
         id: listView
         model: listmodel
         anchors.fill: parent
+        spacing: Theme.paddingMedium;
         header: PageHeader {
             title: qsTr("Friends")
         }
-        spacing: 10;
+
+        ViewPlaceholder {
+            enabled: !loading && (listmodel.count === 0)
+            text: (last_error !== "") ? last_error : qsTr("Connect with your friends")
+        }
+
 
         property Item contextMenu
 
@@ -53,8 +61,8 @@ Page {
                 anchors.top: parent.top;
                 anchors.left: personPhoto.right
                 anchors.right: parent.right
-                anchors.leftMargin: 10;
-                anchors.rightMargin: 10
+                anchors.leftMargin: Theme.paddingMedium;
+                anchors.rightMargin: Theme.paddingMedium
                 text: name
                 color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
             }
@@ -64,8 +72,8 @@ Page {
                 anchors.top: personNameLabel.bottom;
                 anchors.left: personPhoto.right
                 anchors.right: parent.right
-                anchors.leftMargin: 10;
-                anchors.rightMargin: 10
+                anchors.leftMargin: Theme.paddingMedium;
+                anchors.rightMargin: Theme.paddingMedium;
                 color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                 font.pixelSize: Theme.fontSizeSmall
                 text: homeCity
@@ -113,11 +121,6 @@ Page {
         running: visible;
     }
 
-    Label {
-        anchors.centerIn: parent;
-        visible: !loading && (listmodel.count === 0)
-        text: qsTr("Offline")
-    }
 
 }
 

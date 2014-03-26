@@ -22,6 +22,8 @@ Rectangle {
 
     property int countLoading: 0;
 
+    property string last_error: "";
+
     property real lat
     property real lon
     property bool posReady: false;
@@ -35,6 +37,10 @@ Rectangle {
 
     property string foursquare_api_version: "20131016"
     //    property string locale: "en"
+
+    function foo() {
+
+    }
 
     ListModel {
         id: recentCheckinsModel
@@ -815,12 +821,18 @@ Rectangle {
                     } catch(e) {
                         console.log("foursquareDownload: parse failed: " + e)
                     }
+                    if (countLoading == 0) {
+                        last_error = "";
+                    }
+
                     //                              ajaxstatus = "ready"
                 } else if (http.status === 401) {
                     console.log("http.status: 401 not authorized")
                     accessToken = "";
+                    last_error = qsTr("Not authorized");
 
                 } else if (http.status === 0){
+                    last_error = qsTr("Connection problem"); // http.statusText;
                     countLoading = 0;
                 } else {
                     //                              ajaxstatus = "failed"

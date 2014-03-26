@@ -10,6 +10,7 @@ CoverBackground {
     property date updateDate
     property alias checkinPhotoSource: checkinPhoto.source
     property bool loading;
+    property string last_error;
     property string checkin_id;
 
 
@@ -55,13 +56,21 @@ CoverBackground {
 
     Label {
         visible: (checkinLabel.text === "") && loading
-        anchors.centerIn: parent
+        anchors.centerIn: parent;
+        color: Theme.secondaryColor;
+        width: parent.width - Theme.paddingLarge
+        horizontalAlignment: Text.AlignHCenter
+        wrapMode: Text.Wrap;
         text: qsTr("Loading ...")
     }
 
     Label {
         visible: (checkinLabel.text === "") && !loading
-        anchors.centerIn: parent
+        anchors.centerIn: parent;
+        color: Theme.secondaryColor;
+        width: parent.width - Theme.paddingLarge
+        horizontalAlignment: Text.AlignHCenter
+        wrapMode: Text.Wrap;
         text: qsTr("Offline")
     }
 

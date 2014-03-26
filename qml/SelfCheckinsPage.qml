@@ -7,6 +7,7 @@ Page {
 
     property alias m: model
     property bool loading;
+    property string last_error;
 
     signal refresh();
     signal switchToRecentCheckins();
@@ -24,7 +25,12 @@ Page {
         header: PageHeader {
             title: qsTr("History")
         }
-        spacing: 10;
+        spacing: Theme.paddingMedium;
+
+        ViewPlaceholder {
+            enabled: !loading && (model.count === 0)
+            text: (last_error !== "") ? last_error : qsTr("List is empty")
+        }
 
         PullDownMenu {
             MenuItem {
@@ -53,8 +59,8 @@ Page {
                 anchors.top: parent.top;
                 anchors.left: categoryPhoto.right
                 anchors.right: parent.right
-                anchors.leftMargin: 10;
-                anchors.rightMargin: 10
+                anchors.leftMargin: Theme.paddingMedium;
+                anchors.rightMargin: Theme.paddingMedium;
                 text: name
                 color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
                 wrapMode: Text.Wrap
@@ -66,8 +72,8 @@ Page {
                 anchors.top: venue_name_label.bottom;
                 anchors.left: categoryPhoto.right
                 anchors.right: parent.right
-                anchors.leftMargin: 10;
-                anchors.rightMargin: 10
+                anchors.leftMargin: Theme.paddingMedium;
+                anchors.rightMargin: Theme.paddingMedium;
                 color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                 font.pixelSize: Theme.fontSizeSmall
                 text: address + ((address.length > 0) ? "\n" : "") + F.formatDate(createdDate)
@@ -89,12 +95,6 @@ Page {
         visible: loading && (model.count === 0)
         running: visible;
         anchors.centerIn: parent;
-    }
-
-    Label {
-        anchors.centerIn: parent;
-        visible: !loading && (model.count === 0)
-        text: qsTr("Offline")
     }
 
 }

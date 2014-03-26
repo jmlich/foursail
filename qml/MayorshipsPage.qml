@@ -6,9 +6,10 @@ Page {
 
     property alias m: listmodel
     property bool loading;
-    property string listName
+    property string last_error;
+    property string listName;
 
-    signal checkinDetail(string venue_id, string name, string address, url icon, double lat, double lon)
+    signal checkinDetail(string venue_id, string name, string address, url icon, double lat, double lon);
 
 
     ListModel {
@@ -22,6 +23,11 @@ Page {
 
         header: PageHeader {
             title: qsTr("Mayorships")
+        }
+
+        ViewPlaceholder {
+            enabled: !loading && (listmodel.count === 0)
+            text: (last_error !== "") ? last_error : qsTr("List is empty")
         }
 
         delegate: BackgroundItem {
@@ -61,11 +67,6 @@ Page {
         running: visible;
     }
 
-    Label {
-        anchors.centerIn: parent;
-        visible: !loading && (listmodel.count === 0)
-        text: qsTr("Offline")
-    }
 
 }
 

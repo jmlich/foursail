@@ -8,6 +8,7 @@ Page {
 
     property alias m: listmodel
     property bool loading;
+    property string last_error;
 
     //    signal refresh();
     //    signal switchToNearbyVenues();
@@ -28,7 +29,13 @@ Page {
         header: PageHeader {
             title: qsTr("Notifications")
         }
-        spacing: 10;
+        spacing: Theme.paddingMedium;
+
+        ViewPlaceholder {
+            enabled: !loading && (listmodel.count === 0)
+            text: (last_error !== "") ? last_error : qsTr("You have no notifications")
+        }
+
 
         /*
         PullDownMenu {
@@ -90,12 +97,6 @@ Page {
         anchors.centerIn: parent;
         visible: loading && (listmodel.count === 0)
         running: visible;
-    }
-
-    Label {
-        anchors.centerIn: parent;
-        visible: !loading && (listmodel.count === 0)
-        text: qsTr("Offline")
     }
 
 

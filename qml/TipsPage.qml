@@ -10,6 +10,7 @@ Page {
 
     property alias m: listmodel
     property bool loading;
+    property string last_error
 
 //    signal refresh(string uid);
 
@@ -24,7 +25,13 @@ Page {
         header: PageHeader {
             title: qsTr("Tips")
         }
-        spacing: 10;
+        spacing: Theme.paddingMedium;
+
+
+        ViewPlaceholder {
+            enabled: !loading && (listmodel.count === 0)
+            text: (last_error !== "") ? last_error : qsTr("Add a new tip")
+        }
 
 //        PullDownMenu {
 //            MenuItem {
@@ -139,11 +146,6 @@ Page {
         running: visible;
     }
 
-    Label {
-        anchors.centerIn: parent;
-        visible: !loading && (listmodel.count === 0)
-        text: qsTr("Offline")
-    }
 
 }
 

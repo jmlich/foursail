@@ -67,7 +67,7 @@ Page {
                 }
 
                 onStatusChanged: {
-                    if (status == Image.Ready) {
+                    if (status === Image.Ready) {
                         fitToScreen()
                         loadedAnimation.start()
                     }
@@ -87,6 +87,8 @@ Page {
                 }
             }
         }
+
+
         PinchArea {
             id: pinchArea
 
@@ -94,7 +96,7 @@ Page {
             property real maxScale: 3.0
 
             anchors.fill: parent
-            enabled: imageItem.status == Image.Ready
+            enabled: true; // (imageItem.status === Image.Ready)
             pinch.target: imageItem
             pinch.minimumScale: minScale * 0.5 // This is to create "bounce back effect"
             pinch.maximumScale: maxScale * 1.5 // when over zoomed

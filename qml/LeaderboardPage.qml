@@ -8,6 +8,7 @@ Page {
 
     property alias m: listmodel
     property bool loading;
+    property string last_error;
 
     ListModel {
         id: listmodel;
@@ -17,10 +18,16 @@ Page {
         id: listView
         model: listmodel
         anchors.fill: parent
+        spacing: Theme.paddingMedium;
+
         header: PageHeader {
             title: qsTr("Leaderboard")
         }
-        spacing: 10;
+
+        ViewPlaceholder {
+            enabled: !loading && (listmodel.count === 0)
+            text: (last_error !== "") ? last_error : qsTr("List is empty")
+        }
 
         delegate: BackgroundItem {
             id: delegate
@@ -81,12 +88,6 @@ Page {
         anchors.centerIn: parent;
         visible: loading && (listmodel.count === 0)
         running: visible;
-    }
-
-    Label {
-        anchors.centerIn: parent;
-        visible: !loading && (listmodel.count === 0)
-        text: qsTr("Offline")
     }
 
 }

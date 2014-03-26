@@ -22,6 +22,7 @@ ApplicationWindow {
     NotificationsPage {
         id: notificationsPage
         loading: (data.countLoading > 0)
+        last_error: data.last_error
         onStatusChanged: {
             if (notificationsPage.status === PageStatus.Activating) {
                 data.notifications()
@@ -48,6 +49,7 @@ ApplicationWindow {
     RecentCheckinsPage {
         id: recentCheckinsPage;
         loading: (data.countLoading > 0)
+        last_error: data.last_error
 
         onSwitchToNearbyVenues: {
             pageStack.replace(nearbyVeneuesPage)
@@ -92,6 +94,7 @@ ApplicationWindow {
     NearbyVenuesPage {
         id: nearbyVeneuesPage;
         loading: ( (data.countLoading > 0) || positionSource.active)
+        last_error: data.last_error
 
         onSwitchToRecentCheckins: {
             pageStack.replace(recentCheckinsPage)
@@ -205,6 +208,7 @@ ApplicationWindow {
     LeaderboardPage {
         id: leaderboardPage
         loading: (data.countLoading > 0)
+        last_error: data.last_error
     }
 
 
@@ -289,6 +293,7 @@ ApplicationWindow {
         SelfCheckinsPage {
             id: selfCheckinsPage;
             loading: (data.countLoading > 0)
+            last_error: data.last_error
 
             onRefresh: {
                 m.clear();
@@ -312,6 +317,8 @@ ApplicationWindow {
     ListsPage {
         id: listsPage;
         loading: (data.countLoading > 0)
+        last_error: data.last_error
+
         onSwitchToListDetailPage: {
             data.listDetails(lid)
             listDetailPage.m.clear();
@@ -329,6 +336,8 @@ ApplicationWindow {
     ListDetailPage {
         id: listDetailPage;
         loading: (data.countLoading > 0)
+        last_error: data.last_error
+
         onCheckinDetail: {
             checkinDetailPage.venue_id = venue_id;
             checkinDetailPage.venue_name = name;
@@ -349,6 +358,7 @@ ApplicationWindow {
     FriendsPage {
         id: friendPage
         loading: (data.countLoading > 0)
+        last_error: data.last_error
 
         onRefresh: {
             data.friends("self");
@@ -377,10 +387,16 @@ ApplicationWindow {
 
     BadgesPage {
         id: badgesPage
+        loading: (data.countLoading > 0)
+        last_error: data.last_error
+
     }
 
     PhotosPage {
         id: photosPage
+        loading: (data.countLoading > 0)
+        last_error: data.last_error
+
         onShowPhotoDetail: {
             photoDetailPage.addr = addr;
             pageStack.push(photoDetailPage);
@@ -400,6 +416,8 @@ ApplicationWindow {
     MayorshipsPage {
         id: mayorshipsPage;
         loading: (data.countLoading > 0)
+        last_error: data.last_error
+
         onCheckinDetail: {
             checkinDetailPage.venue_id = venue_id;
             checkinDetailPage.venue_name = name;
@@ -418,6 +436,8 @@ ApplicationWindow {
     TipsPage {
         id: tipsPage
         loading: (data.countLoading > 0)
+        last_error: data.last_error
+
 
         //        onRefresh: {
         //            data.tips(uid)
@@ -439,6 +459,8 @@ ApplicationWindow {
         checkinPhotoSource: data.lastCheckinPhoto
         checkin_id: data.lastCheckinId
         loading: (data.countLoading > 0)
+        last_error: data.last_error
+
 
         Component.onCompleted: {
             data.recentCheckins();

@@ -81,8 +81,8 @@ Dialog {
                     id: venue_category_icon
                     anchors.left: parent.left;
                     anchors.verticalCenter: parent.verticalCenter
-                    anchors.rightMargin: 10;
-                    anchors.leftMargin: 10;
+                    anchors.rightMargin: Theme.paddingMedium;
+                    anchors.leftMargin: Theme.paddingMedium;
                     width: 64;
                     height: 64;
 
@@ -93,8 +93,8 @@ Dialog {
                     anchors.left: venue_category_icon.right
                     anchors.right: parent.right
                     anchors.top: parent.top;
-                    anchors.rightMargin: 10;
-                    anchors.leftMargin: 10;
+                    anchors.rightMargin: Theme.paddingMedium;
+                    anchors.leftMargin: Theme.paddingMedium;
 
                     wrapMode: Text.Wrap
                     color: Theme.primaryColor
@@ -105,8 +105,8 @@ Dialog {
                     anchors.left: venue_category_icon.right
                     anchors.right: parent.right
                     anchors.top: venue_name_label.bottom;
-                    anchors.rightMargin: 10;
-                    anchors.leftMargin: 10;
+                    anchors.rightMargin: Theme.paddingMedium;
+                    anchors.leftMargin: Theme.paddingMedium;
 
                     wrapMode: Text.Wrap
                     color: Theme.secondaryColor

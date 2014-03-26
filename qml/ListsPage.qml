@@ -7,6 +7,7 @@ Page {
 
     property alias m: listmodel
     property bool loading;
+    property string last_error;
 
     signal switchToAddAndEditList(string lid, string name, string description)
     signal switchToListDetailPage(string lid, string listName)
@@ -23,15 +24,20 @@ Page {
 
         property Item contextMenu
 
+        header: PageHeader {
+            title: qsTr("Lists")
+        }
+
+        ViewPlaceholder {
+            enabled: !loading && (listmodel.count === 0)
+            text: (last_error !== "") ? last_error : qsTr("List is empty")
+        }
+
         PullDownMenu {
             MenuItem {
                 text: qsTr("New list")
                 onClicked: switchToAddAndEditList("", "", "")
             }
-        }
-
-        header: PageHeader {
-            title: qsTr("Lists")
         }
 
         delegate: Item {
@@ -126,12 +132,6 @@ Page {
         anchors.centerIn: parent;
         visible: loading && (listmodel.count === 0)
         running: visible;
-    }
-
-    Label {
-        anchors.centerIn: parent;
-        visible: !loading && (listmodel.count === 0)
-        text: qsTr("Offline")
     }
 
 }

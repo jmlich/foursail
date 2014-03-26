@@ -4,7 +4,7 @@ import Sailfish.Silica 1.0
 Dialog {
     id: dialog
 
-    canAccept: listNameTextfield.text != ""
+    canAccept: listNameTextfield.text !== ""
 
     property string listId
     property alias listName: listNameTextfield.text

@@ -8,6 +8,7 @@ Page {
 
     property alias m: listmodel
     property bool loading;
+    property string last_error;
 
     signal refresh();
     signal switchToNearbyVenues();
@@ -23,10 +24,15 @@ Page {
         id: listView
         model: listmodel
         anchors.fill: parent
+        spacing: Theme.paddingMedium;
         header: PageHeader {
             title: qsTr("Recent Checkins")
         }
-        spacing: 10;
+
+        ViewPlaceholder {
+            enabled: !loading && (listmodel.count === 0)
+            text: (last_error !== "") ? last_error : qsTr("List is empty")
+        }
 
         PullDownMenu {
             MenuItem {
@@ -62,8 +68,8 @@ Page {
                 anchors.top: parent.top;
                 anchors.left: personPhoto.right
                 anchors.right: parent.right
-                anchors.leftMargin: 10;
-                anchors.rightMargin: 10
+                anchors.leftMargin: Theme.paddingMedium;
+                anchors.rightMargin: Theme.paddingMedium;
                 textFormat: Text.RichText
                 text: "<style type='text/css'>a:link{color:"+Theme.primaryColor+"; text-decoration: none;} a:visited{color:"+Theme.primaryColor+"}</style> <a href=\"name\">" + firstName +" " + lastName + "</a> @ <a href=\"venue\">" + venueName + "</a>"
                 color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
@@ -83,8 +89,8 @@ Page {
                 anchors.top: personNameLabel.bottom;
                 anchors.left: personPhoto.right
                 anchors.right: parent.right
-                anchors.leftMargin: 10;
-                anchors.rightMargin: 10
+                anchors.leftMargin: Theme.paddingMedium;
+                anchors.rightMargin: Theme.paddingMedium;
                 color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                 font.pixelSize: Theme.fontSizeSmall
                 text: address + ((address.length > 0) ? "\n" : "") + F.formatDate(createdDate)
@@ -131,12 +137,6 @@ Page {
         anchors.centerIn: parent;
         visible: loading && (listmodel.count === 0)
         running: visible;
-    }
-
-    Label {
-        anchors.centerIn: parent;
-        visible: !loading && (listmodel.count === 0)
-        text: qsTr("Offline")
     }
 
 }

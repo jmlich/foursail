@@ -6,6 +6,7 @@ Page {
 
     property alias m: listmodel
     property bool loading;
+    property string last_error;
     property string listName
 
     signal checkinDetail(string venue_id, string name, string address, url icon, double lat, double lon)
@@ -22,6 +23,11 @@ Page {
 
         header: PageHeader {
             title: listName
+        }
+
+        ViewPlaceholder {
+            enabled: !loading && (listmodel.count === 0)
+            text: (last_error !== "") ? last_error : qsTr("Add new item into the list")
         }
 
         delegate: BackgroundItem {
@@ -66,12 +72,6 @@ Page {
         anchors.centerIn: parent;
         visible: loading && (listmodel.count === 0)
         running: visible;
-    }
-
-    Label {
-        anchors.centerIn: parent;
-        visible: !loading && (listmodel.count === 0)
-        text: qsTr("Offline")
     }
 
 }

@@ -1,5 +1,6 @@
 .pragma library
 
+
 function formatDate(date) {
     var t1 = date.getTime();
     var t2 = new Date().getTime();

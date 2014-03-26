@@ -25,7 +25,7 @@ Page {
         header: PageHeader {
             title: qsTr("Checkin")
         }
-        spacing: 10;
+        spacing: Theme.paddingMedium;
 
         delegate: BackgroundItem {
             id: delegate
@@ -36,9 +36,9 @@ Page {
                 source: icon
                 anchors.left: parent.left;
                 anchors.top: parent.top;
-                anchors.topMargin: 5
-                anchors.leftMargin: 10;
-                anchors.rightMargin: 10
+                anchors.topMargin: Theme.paddingSmall
+                anchors.leftMargin: Theme.paddingMedium;
+                anchors.rightMargin: Theme.paddingMedium
                 width: 22
                 height: 22
                 fillMode: Image.PreserveAspectFit
@@ -50,8 +50,8 @@ Page {
                 anchors.top: parent.top;
                 anchors.left: scoreIcon.right
                 anchors.right: scoreValue.left
-                anchors.leftMargin: 10;
-                anchors.rightMargin: 10
+                anchors.leftMargin: Theme.paddingMedium;
+                anchors.rightMargin: Theme.paddingMedium
                 text: message
                 color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
                 wrapMode: Text.Wrap
@@ -61,8 +61,8 @@ Page {
                 id: scoreValue
                 anchors.top: parent.top;
                 anchors.right: parent.right
-                anchors.leftMargin: 10;
-                anchors.rightMargin: 10
+                anchors.leftMargin: Theme.paddingMedium;
+                anchors.rightMargin: Theme.paddingMedium
                 color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
                 text: points
                 wrapMode: Text.Wrap

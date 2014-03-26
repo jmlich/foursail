@@ -6,6 +6,9 @@ Page {
     id: page
 
     property alias m: model
+    property bool loading;
+    property string last_error
+
 
     ListModel {
         id: model;
@@ -14,7 +17,7 @@ Page {
 
     BusyIndicator {
         anchors.centerIn: parent;
-        visible: model.count === 0;
+        visible: loading && (model.count === 0)
         running: visible;
     }
 
@@ -29,6 +32,12 @@ Page {
         header: PageHeader {
             title: qsTr("Badges")
         }
+
+        ViewPlaceholder {
+            enabled: !loading && (model.count === 0)
+            text: (last_error !== "") ? last_error : qsTr("You have no badge")
+        }
+
 
         delegate: BackgroundItem {
             id: delegate
