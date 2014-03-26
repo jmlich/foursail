@@ -190,6 +190,10 @@ ApplicationWindow {
     MyProfilePage {
         id: myProfilePage
 
+        onSwitchToMyProfile: {
+            uid = "self";
+        }
+
         onSwitchToHistory: {
             data.checkinHistory(uid)
             pageStack.push(selfCheckinsPage)

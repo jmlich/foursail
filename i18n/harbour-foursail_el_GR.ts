@@ -172,22 +172,22 @@
 <context>
     <name>FriendsPage</name>
     <message>
-        <location filename="../qml/FriendsPage.qml" line="24"/>
+        <location filename="../qml/FriendsPage.qml" line="25"/>
         <source>Friends</source>
         <translation>Φίλοι</translation>
     </message>
     <message>
-        <location filename="../qml/FriendsPage.qml" line="75"/>
+        <location filename="../qml/FriendsPage.qml" line="76"/>
         <source>Removing friend</source>
         <translation>Αφαίρεση από φίλους</translation>
     </message>
     <message>
-        <location filename="../qml/FriendsPage.qml" line="98"/>
+        <location filename="../qml/FriendsPage.qml" line="103"/>
         <source>Remove</source>
         <translation>Αφαίρεση</translation>
     </message>
     <message>
-        <location filename="../qml/FriendsPage.qml" line="114"/>
+        <location filename="../qml/FriendsPage.qml" line="119"/>
         <source>Offline</source>
         <translation>Εκτός σύνδεσης</translation>
     </message>
@@ -265,52 +265,57 @@
 <context>
     <name>MyProfilePage</name>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="45"/>
+        <location filename="../qml/MyProfilePage.qml" line="70"/>
         <source>Recent Checkins</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="49"/>
+        <location filename="../qml/MyProfilePage.qml" line="75"/>
         <source>Nearby Venues</source>
         <translation>Κοντινές Τοποθεσίες</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="188"/>
+        <location filename="../qml/MyProfilePage.qml" line="215"/>
         <source>Badges</source>
         <translation>Κονκάρδες</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="165"/>
+        <location filename="../qml/MyProfilePage.qml" line="192"/>
         <source>Notifications</source>
         <translation>Ειδοποιήσεις</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="139"/>
+        <location filename="../qml/MyProfilePage.qml" line="64"/>
+        <source>My Profile</source>
+        <translation type="unfinished">Προφίλ</translation>
+    </message>
+    <message>
+        <location filename="../qml/MyProfilePage.qml" line="166"/>
         <source>Checkins</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="211"/>
+        <location filename="../qml/MyProfilePage.qml" line="238"/>
         <source>Mayorships</source>
         <translation>Δημαρχίες</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="233"/>
+        <location filename="../qml/MyProfilePage.qml" line="260"/>
         <source>Tips</source>
         <translation>Συμβουλές</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="255"/>
+        <location filename="../qml/MyProfilePage.qml" line="282"/>
         <source>Friends</source>
         <translation>Φίλοι</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="276"/>
+        <location filename="../qml/MyProfilePage.qml" line="303"/>
         <source>Lists</source>
         <translation>Λίστες</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="298"/>
+        <location filename="../qml/MyProfilePage.qml" line="325"/>
         <source>Photos</source>
         <translation>Φωτογραφίες</translation>
     </message>
@@ -521,12 +526,12 @@
         <translation>Πιέστε για εμφάνιση</translation>
     </message>
     <message>
-        <location filename="../qml/harbour-foursail.qml" line="290"/>
+        <location filename="../qml/harbour-foursail.qml" line="300"/>
         <source>Edit List</source>
         <translation>Επεξεργασία Λίστας</translation>
     </message>
     <message>
-        <location filename="../qml/harbour-foursail.qml" line="290"/>
+        <location filename="../qml/harbour-foursail.qml" line="300"/>
         <source>Create List</source>
         <translation>Δημιουργία Λίστας</translation>
     </message>

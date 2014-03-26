@@ -31,6 +31,7 @@ Page {
     signal switchToLists();
     signal switchToPhotos();
     signal switchToMayorships();
+    signal switchToMyProfile();
 
     onUidChanged: { // details should be empty while loading
         userPhoto.source = "";
@@ -60,13 +61,21 @@ Page {
             PullDownMenu {
 
                 MenuItem {
+                    text: qsTr("My Profile")
+                    onClicked: switchToMyProfile();
+                    visible: (uid !== "self")
+                }
+
+                MenuItem {
                     text: qsTr("Recent Checkins")
                     onClicked: switchToRecentCheckins()
                 }
+
                 MenuItem {
                     text: qsTr("Nearby Venues")
                     onClicked: switchToNearbyVenues();
                 }
+
             }
 
 

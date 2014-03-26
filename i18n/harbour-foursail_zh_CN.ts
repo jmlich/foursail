@@ -172,22 +172,22 @@
 <context>
     <name>FriendsPage</name>
     <message>
-        <location filename="../qml/FriendsPage.qml" line="24"/>
+        <location filename="../qml/FriendsPage.qml" line="25"/>
         <source>Friends</source>
         <translation>好友</translation>
     </message>
     <message>
-        <location filename="../qml/FriendsPage.qml" line="75"/>
+        <location filename="../qml/FriendsPage.qml" line="76"/>
         <source>Removing friend</source>
         <translation>正在移除好友</translation>
     </message>
     <message>
-        <location filename="../qml/FriendsPage.qml" line="98"/>
+        <location filename="../qml/FriendsPage.qml" line="103"/>
         <source>Remove</source>
         <translation>移除</translation>
     </message>
     <message>
-        <location filename="../qml/FriendsPage.qml" line="114"/>
+        <location filename="../qml/FriendsPage.qml" line="119"/>
         <source>Offline</source>
         <translation>离线</translation>
     </message>
@@ -265,52 +265,57 @@
 <context>
     <name>MyProfilePage</name>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="45"/>
+        <location filename="../qml/MyProfilePage.qml" line="70"/>
         <source>Recent Checkins</source>
         <translation>近期签到</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="49"/>
+        <location filename="../qml/MyProfilePage.qml" line="75"/>
         <source>Nearby Venues</source>
         <translation>附近地点</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="188"/>
+        <location filename="../qml/MyProfilePage.qml" line="215"/>
         <source>Badges</source>
         <translation>徽章</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="165"/>
+        <location filename="../qml/MyProfilePage.qml" line="192"/>
         <source>Notifications</source>
         <translation>信息</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="139"/>
+        <location filename="../qml/MyProfilePage.qml" line="64"/>
+        <source>My Profile</source>
+        <translation type="unfinished">我的简介</translation>
+    </message>
+    <message>
+        <location filename="../qml/MyProfilePage.qml" line="166"/>
         <source>Checkins</source>
         <translation>签到</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="211"/>
+        <location filename="../qml/MyProfilePage.qml" line="238"/>
         <source>Mayorships</source>
         <translation>地点霸主</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="233"/>
+        <location filename="../qml/MyProfilePage.qml" line="260"/>
         <source>Tips</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="255"/>
+        <location filename="../qml/MyProfilePage.qml" line="282"/>
         <source>Friends</source>
         <translation>好友</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="276"/>
+        <location filename="../qml/MyProfilePage.qml" line="303"/>
         <source>Lists</source>
         <translation>列表</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="298"/>
+        <location filename="../qml/MyProfilePage.qml" line="325"/>
         <source>Photos</source>
         <translation>照片</translation>
     </message>
@@ -521,12 +526,12 @@
         <translation>点击以显示</translation>
     </message>
     <message>
-        <location filename="../qml/harbour-foursail.qml" line="290"/>
+        <location filename="../qml/harbour-foursail.qml" line="300"/>
         <source>Edit List</source>
         <translation>编辑列表</translation>
     </message>
     <message>
-        <location filename="../qml/harbour-foursail.qml" line="290"/>
+        <location filename="../qml/harbour-foursail.qml" line="300"/>
         <source>Create List</source>
         <translation>创建列表</translation>
     </message>
