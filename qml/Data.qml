@@ -418,6 +418,7 @@ Rectangle {
         console.log(method + ": " + source + "?" + params)
 
         var array, item, i, j, data, user;
+        var empty_category_icon = {'prefix': "https://foursquare.com/img/categories_v2/none_", "suffix":".png"};
 
         var http = new XMLHttpRequest()
         http.open(method, source+"?"+params, true);
@@ -466,7 +467,7 @@ Rectangle {
 
                                     var shout = (item.shout !== undefined) ? item.shout : ""
 
-                                    var venue_icon = (item.venue.categories[0] !== undefined) ? item.venue.categories[0].icon : ""
+                                    var venue_icon = (item.venue.categories[0] !== undefined) ? item.venue.categories[0].icon : empty_category_icon
 
 
                                     data = {
@@ -517,8 +518,7 @@ Rectangle {
                                 street = (item.location.address !== undefined) ? item.location.address : "";
                                 city   = (item.location.city !== undefined) ? item.location.city : "";
                                 address = (street !== "") ? (street + ", " + city) : city;
-                                var empty_photo = {'prefix': "https://foursquare.com/img/categories_v2/none_", "suffix":".png"};
-                                photo = (item.categories[0] !== undefined) ? item.categories[0].icon : empty_photo;
+                                photo = (item.categories[0] !== undefined) ? item.categories[0].icon : empty_category_icon;
                                 var events = (item.events !== undefined) ? item.events.count : 0;
                                 data = {'vid': item.id, 'name': item.name, 'photo_prefix': photo.prefix, 'photo_suffix': photo.suffix, 'address': address, 'distance': item.location.distance,'hereNow': item.hereNow.count,'lat': item.location.lat, 'lon': item.location.lng,'specials_count': item.specials.count,'stats_checkinsCount': item.stats.checkinsCount,'stats_usersCount': item.stats.usersCount,'stats_tipCount': item.stats.tipCount, 'events' : events}
                                 nearbyVeneuesPage.m.append(data)
@@ -548,7 +548,7 @@ Rectangle {
                                     var street = (item.venue.location.address !== undefined) ? item.venue.location.address : "";
                                     var city   = (item.venue.location.city !== undefined) ? item.venue.location.city : "";
                                     var address = (street !== "") ? (street + ", " + city) : city;
-                                    photo = (item.venue.categories[0] !== undefined) ? item.venue.categories[0].icon : ""
+                                    photo = (item.venue.categories[0] !== undefined) ? item.venue.categories[0].icon : empty_category_icon
 
                                     data = {'vid': venueId, 'name': venueName, 'photo_prefix': photo.prefix, 'photo_suffix': photo.suffix, 'address': address, 'createdAt': createdAt, 'createdDate': createdDate, 'lat': item.venue.location.lat, 'lon': item.venue.location.lng};
 
@@ -665,7 +665,7 @@ Rectangle {
                                     var country = item.venue.location.country !== undefined ? item.venue.location.country : "";
                                     var venueAddress = address + crossStreet + city + country;
 
-                                    var venue_icon = (item.venue.categories[0] !== undefined) ? item.venue.categories[0].icon : ""
+                                    var venue_icon = (item.venue.categories[0] !== undefined) ? item.venue.categories[0].icon : empty_category_icon
 
                                     data = {
                                         'tipIdentifier': uid,
