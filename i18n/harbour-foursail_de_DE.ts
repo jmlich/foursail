@@ -165,7 +165,8 @@
     </message>
     <message id="n-notifications" numerus="yes">
         <location filename="../qml/Data.qml" line="443"/>
-        <source>%n Notification(s)</source>
+        <source>%n Notifications</source>
+        <oldsource>%n Notification(s)</oldsource>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>

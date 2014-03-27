@@ -439,7 +439,7 @@ Rectangle {
                         if (resultObject.notifications[0].item !== undefined) {
                             var unreadCount = resultObject.notifications[0].item.unreadCount;
                             if (unreadCount > 0) {
-                                //% "%n Notification(s)"
+                                //% "%n Notifications"
                                 notificationPopup.show(qsTrId("n-notifications", unreadCount))
                             }
                         }
