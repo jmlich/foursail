@@ -624,19 +624,19 @@ Rectangle {
                         if (resultObject.response.user !== undefined) {
                             user = resultObject.response.user;
 
-                            myProfilePage.friends_count = user.friends.count;
-                            myProfilePage.profile_photo_url = user.photo.prefix + "128x128" + user.photo.suffix;
-                            myProfilePage.user_name = ((user.firstName !== undefined) ? (user.firstName + " ") : "") + ((user.lastName !== undefined) ?  user.lastName : "")
-                            myProfilePage.user_home_city = user.homeCity
-                            myProfilePage.badges_count = user.badges.count;
-                            myProfilePage.tips_count = user.tips.count
-                            myProfilePage.mayorships_count = user.mayorships.count
-                            myProfilePage.checkins_count  = user.checkins.count
-                            myProfilePage.lists_count  = user.lists.count
-                            myProfilePage.photos_count  = user.photos.count
-                            myProfilePage.scores_recent = user.scores.recent
-                            myProfilePage.scores_max = user.scores.max
-                            myProfilePage.notifications_count = (resultObject.notifications[0].item !== undefined) ? resultObject.notifications[0].item.unreadCount : 0 ;
+                            profilePage.friends_count = user.friends.count;
+                            profilePage.profile_photo_url = user.photo.prefix + "128x128" + user.photo.suffix;
+                            profilePage.user_name = ((user.firstName !== undefined) ? (user.firstName + " ") : "") + ((user.lastName !== undefined) ?  user.lastName : "")
+                            profilePage.user_home_city = user.homeCity
+                            profilePage.badges_count = user.badges.count;
+                            profilePage.tips_count = user.tips.count
+                            profilePage.mayorships_count = user.mayorships.count
+                            profilePage.checkins_count  = user.checkins.count
+                            profilePage.lists_count  = user.lists.count
+                            profilePage.photos_count  = user.photos.count
+                            profilePage.scores_recent = user.scores.recent
+                            profilePage.scores_max = user.scores.max
+                            profilePage.notifications_count = (resultObject.notifications[0].item !== undefined) ? resultObject.notifications[0].item.unreadCount : 0 ;
 
                         }
 
