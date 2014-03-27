@@ -72,7 +72,7 @@ CoverBackground {
         width: parent.width - Theme.paddingLarge
         horizontalAlignment: Text.AlignHCenter
         wrapMode: Text.Wrap;
-        //% "FIXME"
+        //% "Nobody of your friends checked in yet"
         text: (last_error !== "") ? last_error : qsTrId("cover-no-checkins")
 
     }

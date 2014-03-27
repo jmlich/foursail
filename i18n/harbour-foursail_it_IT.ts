@@ -159,7 +159,8 @@
     </message>
     <message id="cover-no-checkins">
         <location filename="../qml/CoverPage.qml" line="76"/>
-        <source>FIXME</source>
+        <source>Nobody of your friends checked in yet</source>
+        <oldsource>FIXME</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message id="n-notifications" numerus="yes">
