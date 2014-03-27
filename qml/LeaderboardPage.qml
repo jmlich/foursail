@@ -65,7 +65,7 @@ Page {
                     id: infoLabel
                     color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                     font.pixelSize: Theme.fontSizeSmall
-                    //% "%n checkin(s)"
+                    //% "%n checkins"
                     text: qsTrId("leaderboard-n-checkins", checkins_count);
                 }
             }

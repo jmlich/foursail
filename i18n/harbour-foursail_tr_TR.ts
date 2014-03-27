@@ -209,7 +209,8 @@
     </message>
     <message id="leaderboard-n-checkins" numerus="yes">
         <location filename="../qml/LeaderboardPage.qml" line="69"/>
-        <source>%n checkin(s)</source>
+        <source>%n checkins</source>
+        <oldsource>%n checkin(s)</oldsource>
         <translation type="unfinished">
             <numerusform></numerusform>
         </translation>
