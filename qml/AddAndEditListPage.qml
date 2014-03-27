@@ -26,7 +26,7 @@ Dialog {
         TextField {
             id: listNameTextfield
             width: parent.width
-            //% "List Name"
+            //% "List name"
             placeholderText: qsTrId("lists-create-name")
         }
 

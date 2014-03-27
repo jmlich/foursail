@@ -20,8 +20,9 @@
     </message>
     <message id="lists-create-name">
         <location filename="../qml/AddAndEditListPage.qml" line="30"/>
-        <source>List Name</source>
-        <translation type="unfinished"></translation>
+        <source>List name</source>
+        <oldsource>List Name</oldsource>
+        <translation type="unfinished">Nome Lista</translation>
     </message>
     <message id="lists-create-description">
         <location filename="../qml/AddAndEditListPage.qml" line="37"/>
