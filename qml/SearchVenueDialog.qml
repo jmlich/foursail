@@ -22,13 +22,15 @@ Dialog {
             anchors.left: parent.left;
             anchors.right: parent.right
             DialogHeader {
-                title: qsTr("Search")
+                //% "Search"
+                title: qsTrId("search-title")
             }
 
             SearchField {
                 id: searchTextField
                 width: parent.width
-                placeholderText: qsTr("Venue name")
+                //% "Venue name"
+                placeholderText: qsTrId("search-venue-name")
                 EnterKey.onClicked: {
                     searchDialog.accept()
                 }

@@ -27,33 +27,16 @@ Page {
         model: listmodel
         anchors.fill: parent
         header: PageHeader {
-            title: qsTr("Notifications")
+            //% "Notifications"
+            title: qsTrId("notifications-title")
         }
         spacing: Theme.paddingMedium;
 
         ViewPlaceholder {
             enabled: !loading && (listmodel.count === 0)
-            text: (last_error !== "") ? last_error : qsTr("You have no notifications")
+            //% "You have no notifications"
+            text: (last_error !== "") ? last_error : qsTrId("notifications-empty")
         }
-
-
-        /*
-        PullDownMenu {
-            MenuItem {
-                text: qsTr("My Profile")
-                onClicked: switchToMyProfile();
-            }
-            MenuItem {
-                text: qsTr("Nearby Venues")
-                onClicked: switchToNearbyVenues();
-            }
-            MenuItem {
-                text: qsTr("Refresh")
-                onClicked: refresh();
-            }
-        }
-
-        */
 
         delegate: BackgroundItem {
             id: delegate

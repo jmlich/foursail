@@ -27,7 +27,8 @@ Page {
 
         ViewPlaceholder {
             enabled: !loading && (listmodel.count === 0)
-            text: (last_error !== "") ? last_error : qsTr("Add new item into the list")
+            //% "List contains no venues"
+            text: (last_error !== "") ? last_error : qsTrId("list-detail-empty")
         }
 
         delegate: BackgroundItem {

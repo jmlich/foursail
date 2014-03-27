@@ -14,7 +14,8 @@ Page {
 
     PageHeader {
         id: pageHeader;
-        title: qsTr("Map")
+        //% "Map"
+        title: qsTrId("map-title")
     }
 
 

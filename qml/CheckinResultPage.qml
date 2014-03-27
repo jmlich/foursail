@@ -23,7 +23,8 @@ Page {
         model: model
         anchors.fill: parent
         header: PageHeader {
-            title: qsTr("Checkin")
+            //% "Checkin"
+            title: qsTrId("checkin-result-title")
         }
         spacing: Theme.paddingMedium;
 

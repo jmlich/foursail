@@ -23,18 +23,21 @@ Page {
         model: model
         anchors.fill: parent
         header: PageHeader {
-            title: qsTr("History")
+            //% "History"
+            title: qsTrId("history-title")
         }
         spacing: Theme.paddingMedium;
 
         ViewPlaceholder {
             enabled: !loading && (model.count === 0)
-            text: (last_error !== "") ? last_error : qsTr("List is empty")
+            //% "User didn't make check in yet"
+            text: (last_error !== "") ? last_error : qsTrId("history-empty")
         }
 
         PullDownMenu {
             MenuItem {
-                text: qsTr("Refresh")
+                //% "Refresh"
+                text: qsTrId("history-refresh-menu")
                 onClicked: refresh()
             }
         }
@@ -76,7 +79,8 @@ Page {
                 anchors.rightMargin: Theme.paddingMedium;
                 color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                 font.pixelSize: Theme.fontSizeSmall
-                text: address + ((address.length > 0) ? "\n" : "") + F.formatDate(createdDate)
+                text: address + ((address.length > 0) ? "\n" : "") +
+                      Format.formatDate(createdDate, Formatter.DurationElapsed)
                 wrapMode: Text.Wrap
 
             }

@@ -27,7 +27,8 @@ Page {
         model: model;
 
         header: PageHeader {
-            title: qsTr("Select Category")
+            //% "Categories"
+            title: qsTrId("categories-title")
         }
 
         delegate: BackgroundItem {

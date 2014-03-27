@@ -42,21 +42,28 @@ Dialog {
 
         PullDownMenu {
             MenuItem {
-                text: qsTr("Photos")
+                //% "Photos"
+                text: qsTrId("checkin-photos-menu")
                 onClicked: switchToPhotos();
             }
             MenuItem {
-                text: qsTr("Tips")
+                //% "Tips"
+                text: qsTrId("checkin-tips-menu")
                 onClicked: switchToTips();
             }
             MenuItem {
-                text: qsTr("Listed")
+                //% "Listed"
+                text: qsTrId("checkin-listed-menu")
                 onClicked: switchToListed();
             }
 
             MenuItem {
                 visible: false; // FIXME venue_liked must be filled first
-                text: venue_liked ? qsTr("Dislike") : qsTr("Like")
+                text: venue_liked
+                //% "Dislike"
+                      ? qsTrId("checkin-dislike-venue-menu")
+                        //% "Like"
+                      : qsTrId("checkin-like-venue-menu")
                 onClicked: {
                     venue_liked = !venue_liked;
                 }
@@ -70,7 +77,8 @@ Dialog {
 
             DialogHeader {
                 id: dialogHeader;
-                acceptText: qsTr("Checkin")
+                //% "Checkin"
+                acceptText: qsTrId("venue-checkin-accept")
             }
 
             Item {
@@ -117,21 +125,25 @@ Dialog {
                 id: comment_textarea
                 width: parent.width
                 height: 350
-                placeholderText: qsTr("Write your comment here.")
+                //% "Comment"
+                placeholderText: qsTrId("venue-checkin-comment")
             }
 
             TextSwitch {
                 id: facebook_switch
-                text: qsTr("Share on Facebook")
+                //% "Share to Facebook"
+                text: qsTrId("venue-checkin-share-to-facebook-button")
             }
 
             TextSwitch {
                 id: twitter_switch
-                text: qsTr("Share on Twitter")
+                //% "Share to Twitter"
+                text: qsTrId("venue-checkin-share-to-twitter-button")
             }
 
             Button {
-                text: qsTr("Show on Map")
+                //% "Show on Map"
+                text: qsTrId("venue-checkin-show-on-map-button")
                 anchors.horizontalCenter: parent.horizontalCenter
                 onClicked: {
                     pageStack.push(mapPage)

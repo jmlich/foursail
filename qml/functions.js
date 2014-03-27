@@ -1,44 +1,5 @@
 .pragma library
 
-
-function formatDate(date) {
-    var t1 = date.getTime();
-    var t2 = new Date().getTime();
-
-    var seconds = Math.floor((Math.abs(t1-t2)/ 1000));
-
-
-    if (isNaN(seconds)) {
-        return ""
-    }
-
-//        console.log("seconds "  + seconds )
-
-    var interval = Math.floor(seconds / 31536000);
-
-    if (interval >= 1) {
-        return qsTr("%1 years ago").arg(interval);
-    }
-    interval = Math.floor(seconds / 2592000);
-    if (interval >= 1) {
-        return qsTr("%1 months ago").arg(interval);
-    }
-    interval = Math.floor(seconds / 86400);
-    if (interval >= 1) {
-        return qsTr("%1 days ago").arg(interval);
-    }
-    interval = Math.floor(seconds / 3600);
-    if (interval >= 1) {
-        return qsTr("%1 hours ago").arg(interval);
-    }
-    interval = Math.floor(seconds / 60);
-    if (interval >= 1) {
-        return qsTr("%1 minutes ago").arg(interval);
-    }
-    return qsTr("%1 seconds ago").arg(Math.floor(seconds));
-
-}
-
 var earth_radius = 6371000;
 
 function rad2deg (rad) {

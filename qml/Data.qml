@@ -430,7 +430,6 @@ Rectangle {
                 if (http.status === 200) {
                     try{
                         var result = http.responseText;
-                        //                        console.log("XXXXXXXXXXXXXXX " + result + "YYYYYYYYYYYYYYYYYYYYY")
                         var resultObject = JSON.parse(result)
                         if (resultObject.meta.code >= 400 && resultObject.meta.code < 500) {
                             accessToken = "";
@@ -440,7 +439,8 @@ Rectangle {
                         if (resultObject.notifications[0].item !== undefined) {
                             var unreadCount = resultObject.notifications[0].item.unreadCount;
                             if (unreadCount > 0) {
-                                notificationPopup.show(qsTr("%1 Notifications").arg(unreadCount))
+                                //% "%n Notification(s)"
+                                notificationPopup.show(qsTrId("n-notifications", unreadCount))
                             }
                         }
 
@@ -829,10 +829,12 @@ Rectangle {
                 } else if (http.status === 401) {
                     console.log("http.status: 401 not authorized")
                     accessToken = "";
-                    last_error = qsTr("Not authorized");
+                    //% "Not authorized"
+                    last_error = qsTrId("error-not-authorized");
 
                 } else if (http.status === 0){
-                    last_error = qsTr("Connection problem"); // http.statusText;
+                    //% "Connection problem"
+                    last_error = qsTrId("error-connection-problem"); // http.statusText;
                     countLoading = 0;
                 } else {
                     //                              ajaxstatus = "failed"

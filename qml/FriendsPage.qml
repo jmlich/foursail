@@ -25,12 +25,14 @@ Page {
         anchors.fill: parent
         spacing: Theme.paddingMedium;
         header: PageHeader {
-            title: qsTr("Friends")
+            //% "Friends"
+            title: qsTrId("friends-title")
         }
 
         ViewPlaceholder {
             enabled: !loading && (listmodel.count === 0)
-            text: (last_error !== "") ? last_error : qsTr("Connect with your friends")
+            //% "List of friends is empty"
+            text: (last_error !== "") ? last_error : qsTrId("friends-empty")
         }
 
 
@@ -81,7 +83,8 @@ Page {
 
             function remove() {
                 var idx = index
-                remorse.execute(delegate, qsTr ("Removing friend"),
+                //% "Removing friend"
+                remorse.execute(delegate, qsTrId("friends-removing"),
                         function () {
                             removeFriend(uid);
                             listmodel.remove(idx);
@@ -108,7 +111,8 @@ Page {
             id: friendContextMenuComponent
             ContextMenu {
                 MenuItem {
-                    text: qsTr ("Remove");
+                    //% "Remove"
+                    text: qsTrIs("friends remove");
                     onClicked: listView.currentItem.remove();
                 }
             }

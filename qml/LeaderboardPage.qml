@@ -21,12 +21,14 @@ Page {
         spacing: Theme.paddingMedium;
 
         header: PageHeader {
-            title: qsTr("Leaderboard")
+            //% "Leaderboard"
+            title: qsTrId("leaderboard-title")
         }
 
         ViewPlaceholder {
             enabled: !loading && (listmodel.count === 0)
-            text: (last_error !== "") ? last_error : qsTr("List is empty")
+            //% "Leaderboard is empty"
+            text: (last_error !== "") ? last_error : qsTrId("leaderboard-empty")
         }
 
         delegate: BackgroundItem {
@@ -63,7 +65,8 @@ Page {
                     id: infoLabel
                     color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                     font.pixelSize: Theme.fontSizeSmall
-                    text: qsTr ("%1 checkins").arg(checkins_count)
+                    //% "%n checkin(s)"
+                    text: qsTrId("leaderboard-n-checkins", checkins_count);
                 }
             }
 

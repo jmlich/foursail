@@ -290,11 +290,16 @@ Rectangle {
 
     function imageStatusToString(status) {
         switch (status) {
-        case Image.Ready: return qsTr("Ready");
-        case Image.Null: return qsTr("Not Set");
-        case Image.Error: return qsTr("Error");
-        case Image.Loading: return qsTr("Loading...");
-        default: return qsTr("Unknown");
+            //% "Ready"
+        case Image.Ready: return qsTrId("image-status-ready");
+            //% "Not Set"
+        case Image.Null: return qsTrId("image-status-not-set");
+            //% "Error"
+        case Image.Error: return qsTrId("image-status-error");
+            //% "Loading ..."
+        case Image.Loading: return qsTrId("image-status-loading");
+            //% "Unknown"
+        default: return qsTrId("image-status-unknown");
         }
     }
 

@@ -33,7 +33,8 @@ Dialog {
 
             DialogHeader {
                 id: dialogHeader;
-                acceptText: qsTr("Create Venue")
+                //% "Create"
+                acceptText: qsTrId("venue-add-accept")
             }
 
 
@@ -41,7 +42,8 @@ Dialog {
                 id: venueNameTextfield
                 width: parent.width
                 validator: RegExpValidator { regExp: /^.{3,}$/ }
-                placeholderText: qsTr("Venue name")
+                //% "Name"
+                placeholderText: qsTrId("venue-add-name")
             }
 
             BackgroundItem {
@@ -61,8 +63,8 @@ Dialog {
                     anchors.left: categoryIconImage.right
                     anchors.right: parent.right
                     anchors.verticalCenter: parent.verticalCenter
-
-                    text: qsTr("Choose category")
+                    //% "Choose category"
+                    text: qsTrId("venue-add-choose-category")
                     color: Theme.primaryColor
                 }
 
@@ -76,51 +78,59 @@ Dialog {
             TextField {
                 id: addressTextfield
                 width: parent.width
-                placeholderText: qsTr("Address")
+                //% "Address"
+                placeholderText: qsTrId("venue-add-address")
             }
 
             TextField {
                 id: crossStreetTextfield
                 width: parent.width
-                placeholderText: qsTr("Cross street")
+                //% "Cross street"
+                placeholderText: qsTrId("venue-add-cross-street")
 
             }
 
             TextField {
                 id: cityTextfield
                 width: parent.width
-                placeholderText: qsTr("City")
+                //% "City"
+                placeholderText: qsTrId("venue-add-city")
             }
 
             TextField {
                 id: stateTextfield
                 width: parent.width
-                placeholderText: qsTr("State")
+                //% "State"
+                placeholderText: qsTrId("venue-add-state")
             }
 
             TextField {
                 id: zipTextfield
                 width: parent.width
-                placeholderText: qsTr("ZIP")
+                //% "ZIP"
+                placeholderText: qsTrId("venue-add-zip")
             }
 
             TextField {
                 id: phoneTextfield
                 width: parent.width
                 inputMethodHints: Qt.ImhDialableCharactersOnly
-                placeholderText: qsTr("Phone")
+                //% "Phone"
+                placeholderText: qsTrId("venue-add-phone")
             }
 
             TextField {
                 id: twitterTextfield
                 width: parent.width
-                placeholderText: qsTr("Twitter")
+                //% "Twitter"
+                placeholderText: qsTrId("venue-add-twitter")
             }
 
             TextArea {
                 id: descriptionTextfield
                 width: parent.width
-                placeholderText: qsTr("description")
+                //% "Description"
+                placeholderText: qsTrId("venue-add-description")
                 height: 350
             }
 

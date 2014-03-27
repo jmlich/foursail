@@ -61,18 +61,21 @@ Page {
             PullDownMenu {
 
                 MenuItem {
-                    text: qsTr("My Profile")
+                    //% "My Profile"
+                    text: qsTrId("profile-my-profile-menu")
                     onClicked: switchToMyProfile();
                     visible: (uid !== "self")
                 }
 
                 MenuItem {
-                    text: qsTr("Recent Checkins")
+                    //% "Recent Checkins"
+                    text: qsTrId("profile-recent-checkins-menu")
                     onClicked: switchToRecentCheckins()
                 }
 
                 MenuItem {
-                    text: qsTr("Nearby Venues")
+                    //% "Nearby Venues"
+                    text: qsTrId("profile-nearby-venues-menu")
                     onClicked: switchToNearbyVenues();
                 }
 
@@ -169,7 +172,8 @@ Page {
                     anchors.left: parent.left;
                     anchors.right: parent.right;
                     anchors.margins: Theme.paddingMedium;
-                    text: qsTr("Checkins")
+                    //% "Checkins"
+                    text: qsTrId("profile-checkins")
                     color: parent.highlighted ? Theme.highlightColor : Theme.primaryColor
                 }
 
@@ -195,7 +199,8 @@ Page {
                     anchors.left: parent.left;
                     anchors.right: parent.right;
                     anchors.margins: Theme.paddingMedium;
-                    text: qsTr("Notifications")
+                    //% "Notifications"
+                    text: qsTrId("profile-notifications")
                     color: parent.highlighted ? Theme.highlightColor : Theme.primaryColor
                 }
                 Label {
@@ -218,7 +223,8 @@ Page {
                     anchors.left: parent.left;
                     anchors.right: parent.right;
                     anchors.margins: Theme.paddingMedium;
-                    text: qsTr("Badges")
+                    //% "Badges"
+                    text: qsTrId("profile-badges")
                     color: parent.highlighted ? Theme.highlightColor : Theme.primaryColor
                 }
                 Label {
@@ -241,7 +247,8 @@ Page {
                     anchors.left: parent.left;
                     anchors.right: parent.right;
                     anchors.margins: Theme.paddingMedium;
-                    text: qsTr("Mayorships")
+                    //% "Mayorships"
+                    text: qsTrId("profile-mayorships")
                     color: parent.highlighted ? Theme.highlightColor : Theme.primaryColor
                 }
                 Label {
@@ -263,7 +270,8 @@ Page {
                     anchors.left: parent.left;
                     anchors.right: parent.right;
                     anchors.margins: Theme.paddingMedium;
-                    text: qsTr("Tips")
+                    //% "Tips"
+                    text: qsTrId("profile-tips")
                     color: parent.highlighted ? Theme.highlightColor : Theme.primaryColor
                 }
                 Label {
@@ -285,7 +293,8 @@ Page {
                     anchors.left: parent.left;
                     anchors.right: parent.right;
                     anchors.margins: Theme.paddingMedium;
-                    text: qsTr("Friends")
+                    //% "Friends"
+                    text: qsTrId("profile-friends")
                     color: parent.highlighted ? Theme.highlightColor : Theme.primaryColor
                 }
                 Label {
@@ -306,7 +315,8 @@ Page {
                     anchors.left: parent.left;
                     anchors.right: parent.right;
                     anchors.margins: Theme.paddingMedium;
-                    text: qsTr("Lists")
+                    //% "Lists"
+                    text: qsTrId("profile-lists")
                     color: parent.highlighted ? Theme.highlightColor : Theme.primaryColor
                 }
                 Label {
@@ -328,7 +338,8 @@ Page {
                     anchors.left: parent.left;
                     anchors.right: parent.right;
                     anchors.margins: Theme.paddingMedium;
-                    text: qsTr("Photos")
+                    //% "Photos"
+                    text: qsTrId("profile-photos")
                     color: parent.highlighted ? Theme.highlightColor : Theme.primaryColor
                 }
                 Label {

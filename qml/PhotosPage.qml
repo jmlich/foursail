@@ -30,13 +30,15 @@ Page {
         cellWidth: ( page.width ) /2
         cellHeight: cellWidth;
         header: PageHeader {
-            title: qsTr("Photos")
+            //% "Photos"
+            title: qsTrId("photos-title")
         }
 
 
         ViewPlaceholder {
             enabled: !loading && (model.count === 0)
-            text: (last_error !== "") ? last_error : qsTr("List is empty")
+            //% "List of photos is empty"
+            text: (last_error !== "") ? last_error : qsTrId("photos-empty")
         }
 
         delegate: BackgroundItem {

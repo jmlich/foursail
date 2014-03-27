@@ -8,194 +8,593 @@
         <source>Tap to cancel</source>
         <translation>İptal etmek için dokun</translation>
     </message>
+    <message id="lists-edit-accept">
+        <location filename="../qml/AddAndEditListPage.qml" line="21"/>
+        <source>Edit List</source>
+        <translation type="unfinished">Listeyi düzenle</translation>
+    </message>
+    <message id="lists-create-accept">
+        <location filename="../qml/AddAndEditListPage.qml" line="23"/>
+        <source>Create List</source>
+        <translation type="unfinished">Liste oluştur</translation>
+    </message>
+    <message id="lists-create-name">
+        <location filename="../qml/AddAndEditListPage.qml" line="30"/>
+        <source>List Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="lists-create-description">
+        <location filename="../qml/AddAndEditListPage.qml" line="37"/>
+        <source>List description</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="venue-add-accept">
+        <location filename="../qml/AddVenuePage.qml" line="37"/>
+        <source>Create</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="venue-add-name">
+        <location filename="../qml/AddVenuePage.qml" line="46"/>
+        <source>Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="venue-add-choose-category">
+        <location filename="../qml/AddVenuePage.qml" line="67"/>
+        <source>Choose category</source>
+        <translation type="unfinished">Kategori seç</translation>
+    </message>
+    <message id="venue-add-address">
+        <location filename="../qml/AddVenuePage.qml" line="82"/>
+        <source>Address</source>
+        <translation type="unfinished">Adres</translation>
+    </message>
+    <message id="venue-add-cross-street">
+        <location filename="../qml/AddVenuePage.qml" line="89"/>
+        <source>Cross street</source>
+        <translation type="unfinished">Çapraz sokak</translation>
+    </message>
+    <message id="venue-add-city">
+        <location filename="../qml/AddVenuePage.qml" line="97"/>
+        <source>City</source>
+        <translation type="unfinished">Şehir</translation>
+    </message>
+    <message id="venue-add-state">
+        <location filename="../qml/AddVenuePage.qml" line="104"/>
+        <source>State</source>
+        <translation type="unfinished">Eyalet</translation>
+    </message>
+    <message id="venue-add-zip">
+        <location filename="../qml/AddVenuePage.qml" line="111"/>
+        <source>ZIP</source>
+        <translation type="unfinished">PK</translation>
+    </message>
+    <message id="venue-add-phone">
+        <location filename="../qml/AddVenuePage.qml" line="119"/>
+        <source>Phone</source>
+        <translation type="unfinished">Telefon</translation>
+    </message>
+    <message id="venue-add-twitter">
+        <location filename="../qml/AddVenuePage.qml" line="126"/>
+        <source>Twitter</source>
+        <translation type="unfinished">Twitter</translation>
+    </message>
+    <message id="venue-add-description">
+        <location filename="../qml/AddVenuePage.qml" line="133"/>
+        <source>Description</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="badges-title">
+        <location filename="../qml/BadgesPage.qml" line="34"/>
+        <source>Badges</source>
+        <translation type="unfinished">Rozetler</translation>
+    </message>
+    <message id="badges-empty">
+        <location filename="../qml/BadgesPage.qml" line="40"/>
+        <source>List of badges is empty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="categories-title">
+        <location filename="../qml/CategoriesPage.qml" line="31"/>
+        <source>Categories</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="checkin-photos-menu">
+        <location filename="../qml/CheckinDetailPage.qml" line="46"/>
+        <source>Photos</source>
+        <translation type="unfinished">Resimler</translation>
+    </message>
+    <message id="checkin-tips-menu">
+        <location filename="../qml/CheckinDetailPage.qml" line="51"/>
+        <source>Tips</source>
+        <translation type="unfinished">İpuçları</translation>
+    </message>
+    <message id="checkin-listed-menu">
+        <location filename="../qml/CheckinDetailPage.qml" line="56"/>
+        <source>Listed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="checkin-dislike-venue-menu">
+        <location filename="../qml/CheckinDetailPage.qml" line="64"/>
+        <source>Dislike</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="checkin-like-venue-menu">
+        <location filename="../qml/CheckinDetailPage.qml" line="66"/>
+        <source>Like</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="venue-checkin-accept">
+        <location filename="../qml/CheckinDetailPage.qml" line="81"/>
+        <source>Checkin</source>
+        <translation type="unfinished">Checkin</translation>
+    </message>
+    <message id="venue-checkin-comment">
+        <location filename="../qml/CheckinDetailPage.qml" line="129"/>
+        <source>Comment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="venue-checkin-share-to-facebook-button">
+        <location filename="../qml/CheckinDetailPage.qml" line="135"/>
+        <source>Share to Facebook</source>
+        <oldsource>Share to facebook</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="venue-checkin-share-to-twitter-button">
+        <location filename="../qml/CheckinDetailPage.qml" line="141"/>
+        <source>Share to Twitter</source>
+        <oldsource>Share to twitter</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="venue-checkin-show-on-map-button">
+        <location filename="../qml/CheckinDetailPage.qml" line="146"/>
+        <source>Show on Map</source>
+        <translation type="unfinished">Haritada göster</translation>
+    </message>
+    <message id="cover-loading">
+        <location filename="../qml/CoverPage.qml" line="65"/>
+        <source>Loading ...</source>
+        <translation type="unfinished">Yükleniyor...</translation>
+    </message>
+    <message id="cover-no-checkins">
+        <location filename="../qml/CoverPage.qml" line="76"/>
+        <source>FIXME</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="n-notifications" numerus="yes">
+        <location filename="../qml/Data.qml" line="443"/>
+        <source>%n Notification(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message id="error-not-authorized">
+        <location filename="../qml/Data.qml" line="833"/>
+        <source>Not authorized</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="error-connection-problem">
+        <location filename="../qml/Data.qml" line="837"/>
+        <source>Connection problem</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="friends-title">
+        <location filename="../qml/FriendsPage.qml" line="29"/>
+        <source>Friends</source>
+        <translation type="unfinished">Arkadaşlar</translation>
+    </message>
+    <message id="friends-empty">
+        <location filename="../qml/FriendsPage.qml" line="35"/>
+        <source>List of friends is empty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="friends-removing">
+        <location filename="../qml/FriendsPage.qml" line="87"/>
+        <source>Removing friend</source>
+        <translation type="unfinished">Arkadaş siliniyor</translation>
+    </message>
+    <message id="leaderboard-title">
+        <location filename="../qml/LeaderboardPage.qml" line="25"/>
+        <source>Leaderboard</source>
+        <translation type="unfinished">Lider panosu</translation>
+    </message>
+    <message id="leaderboard-empty">
+        <location filename="../qml/LeaderboardPage.qml" line="31"/>
+        <source>Leaderboard is empty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="leaderboard-n-checkins" numerus="yes">
+        <location filename="../qml/LeaderboardPage.qml" line="69"/>
+        <source>%n checkin(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message id="list-detail-empty">
+        <location filename="../qml/ListDetailPage.qml" line="31"/>
+        <source>List contains no venues</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="lists-title">
+        <location filename="../qml/ListsPage.qml" line="29"/>
+        <source>Lists</source>
+        <translation type="unfinished">Listeler</translation>
+    </message>
+    <message id="lists-empty">
+        <location filename="../qml/ListsPage.qml" line="35"/>
+        <source>No lists are available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="lists-new">
+        <location filename="../qml/ListsPage.qml" line="44"/>
+        <source>New</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="lists-edit">
+        <location filename="../qml/ListsPage.qml" line="131"/>
+        <source>Edit</source>
+        <translation type="unfinished">Düzenle</translation>
+    </message>
+    <message id="map-title">
+        <location filename="../qml/MapPage.qml" line="18"/>
+        <source>Map</source>
+        <translation type="unfinished">Harita</translation>
+    </message>
+    <message id="mayorships-title">
+        <location filename="../qml/MayorshipsPage.qml" line="26"/>
+        <source>Mayorships</source>
+        <translation type="unfinished">Başkanlıklar</translation>
+    </message>
+    <message id="mayorships-empty">
+        <location filename="../qml/MayorshipsPage.qml" line="32"/>
+        <source>User hasn&apos;t got any mayorships yet!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="nearby-venues-title">
+        <location filename="../qml/NearbyVenuesPage.qml" line="36"/>
+        <source>Nearby Venues</source>
+        <translation type="unfinished">Çevredeki mekanlar</translation>
+    </message>
+    <message id="search-results-title">
+        <location filename="../qml/NearbyVenuesPage.qml" line="38"/>
+        <source>Search results</source>
+        <translation type="unfinished">Arama sonuşları</translation>
+    </message>
+    <message id="nearby-venues-my-profile-menu">
+        <location filename="../qml/NearbyVenuesPage.qml" line="44"/>
+        <source>My Profile</source>
+        <translation type="unfinished">Profilim</translation>
+    </message>
+    <message id="nearby-venues-recent-checkins-menu">
+        <location filename="../qml/NearbyVenuesPage.qml" line="49"/>
+        <source>Recent Checkins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="nearby-venues-refresh-menu">
+        <location filename="../qml/NearbyVenuesPage.qml" line="55"/>
+        <source>Refresh</source>
+        <translation type="unfinished">Yenile</translation>
+    </message>
+    <message id="nearby-venues-nearby-venues-menu">
+        <location filename="../qml/NearbyVenuesPage.qml" line="57"/>
+        <source>Nearby Venues</source>
+        <translation type="unfinished">Çevredeki mekanlar</translation>
+    </message>
+    <message id="nearby-venues-search-menu">
+        <location filename="../qml/NearbyVenuesPage.qml" line="65"/>
+        <source>Search</source>
+        <translation type="unfinished">Ara</translation>
+    </message>
+    <message id="nearby-venues-add">
+        <location filename="../qml/NearbyVenuesPage.qml" line="70"/>
+        <source>Add</source>
+        <translation type="unfinished">Ekle</translation>
+    </message>
+    <message id="nearby-venues-empty">
+        <location filename="../qml/NearbyVenuesPage.qml" line="78"/>
+        <source>There is no venue in nearby</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="notifications-title">
+        <location filename="../qml/NotificationsPage.qml" line="31"/>
+        <source>Notifications</source>
+        <translation type="unfinished">Bildirimler</translation>
+    </message>
+    <message id="notifications-empty">
+        <location filename="../qml/NotificationsPage.qml" line="38"/>
+        <source>You have no notifications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="photos-title">
+        <location filename="../qml/PhotosPage.qml" line="34"/>
+        <source>Photos</source>
+        <translation type="unfinished">Resimler</translation>
+    </message>
+    <message id="photos-empty">
+        <location filename="../qml/PhotosPage.qml" line="41"/>
+        <source>List of photos is empty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="image-status-ready">
+        <location filename="../qml/PinchMap.qml" line="294"/>
+        <source>Ready</source>
+        <translation type="unfinished">Hazır</translation>
+    </message>
+    <message id="image-status-not-set">
+        <location filename="../qml/PinchMap.qml" line="296"/>
+        <source>Not Set</source>
+        <translation type="unfinished">Hazır değil</translation>
+    </message>
+    <message id="image-status-error">
+        <location filename="../qml/PinchMap.qml" line="298"/>
+        <source>Error</source>
+        <translation type="unfinished">Hata</translation>
+    </message>
+    <message id="image-status-loading">
+        <location filename="../qml/PinchMap.qml" line="300"/>
+        <source>Loading ...</source>
+        <translation type="unfinished">Yükleniyor...</translation>
+    </message>
+    <message id="image-status-unknown">
+        <location filename="../qml/PinchMap.qml" line="302"/>
+        <source>Unknown</source>
+        <translation type="unfinished">Belirsiz</translation>
+    </message>
+    <message id="profile-my-profile-menu">
+        <location filename="../qml/ProfilePage.qml" line="65"/>
+        <source>My Profile</source>
+        <translation type="unfinished">Profilim</translation>
+    </message>
+    <message id="profile-recent-checkins-menu">
+        <location filename="../qml/ProfilePage.qml" line="72"/>
+        <source>Recent Checkins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="profile-nearby-venues-menu">
+        <location filename="../qml/ProfilePage.qml" line="78"/>
+        <source>Nearby Venues</source>
+        <translation type="unfinished">Çevredeki mekanlar</translation>
+    </message>
+    <message id="profile-checkins">
+        <location filename="../qml/ProfilePage.qml" line="176"/>
+        <source>Checkins</source>
+        <translation type="unfinished">Checkinler</translation>
+    </message>
+    <message id="profile-notifications">
+        <location filename="../qml/ProfilePage.qml" line="203"/>
+        <source>Notifications</source>
+        <translation type="unfinished">Bildirimler</translation>
+    </message>
+    <message id="profile-badges">
+        <location filename="../qml/ProfilePage.qml" line="227"/>
+        <source>Badges</source>
+        <translation type="unfinished">Rozetler</translation>
+    </message>
+    <message id="profile-mayorships">
+        <location filename="../qml/ProfilePage.qml" line="251"/>
+        <source>Mayorships</source>
+        <translation type="unfinished">Başkanlıklar</translation>
+    </message>
+    <message id="profile-tips">
+        <location filename="../qml/ProfilePage.qml" line="274"/>
+        <source>Tips</source>
+        <translation type="unfinished">İpuçları</translation>
+    </message>
+    <message id="profile-friends">
+        <location filename="../qml/ProfilePage.qml" line="297"/>
+        <source>Friends</source>
+        <translation type="unfinished">Arkadaşlar</translation>
+    </message>
+    <message id="profile-lists">
+        <location filename="../qml/ProfilePage.qml" line="319"/>
+        <source>Lists</source>
+        <translation type="unfinished">Listeler</translation>
+    </message>
+    <message id="profile-photos">
+        <location filename="../qml/ProfilePage.qml" line="342"/>
+        <source>Photos</source>
+        <translation type="unfinished">Resimler</translation>
+    </message>
+    <message id="tap-to-show">
+        <location filename="../qml/harbour-foursail.qml" line="14"/>
+        <source>Tap to show</source>
+        <translation type="unfinished">Göstermek için dokunun</translation>
+    </message>
+    <message id="recent-checkins-title">
+        <location filename="../qml/RecentCheckinsPage.qml" line="30"/>
+        <source>Recent Checkins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="recent-checkins-empty">
+        <location filename="../qml/RecentCheckinsPage.qml" line="36"/>
+        <source>None of your friends checked in yet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="recent-checkins-my-profile-menu">
+        <location filename="../qml/RecentCheckinsPage.qml" line="42"/>
+        <source>My Profile</source>
+        <translation type="unfinished">Profilim</translation>
+    </message>
+    <message id="recent-checkins-nearby-venues-menu">
+        <location filename="../qml/RecentCheckinsPage.qml" line="47"/>
+        <source>Nearby Venues</source>
+        <translation type="unfinished">Çevredeki mekanlar</translation>
+    </message>
+    <message id="recent-checkins-refresh-menu">
+        <location filename="../qml/RecentCheckinsPage.qml" line="52"/>
+        <source>Refresh</source>
+        <translation type="unfinished">Yenile</translation>
+    </message>
+    <message id="search-title">
+        <location filename="../qml/SearchVenueDialog.qml" line="26"/>
+        <source>Search</source>
+        <translation type="unfinished">Ara</translation>
+    </message>
+    <message id="search-venue-name">
+        <location filename="../qml/SearchVenueDialog.qml" line="33"/>
+        <source>Venue name</source>
+        <translation type="unfinished">Mekan adı</translation>
+    </message>
+    <message id="history-title">
+        <location filename="../qml/SelfCheckinsPage.qml" line="27"/>
+        <source>History</source>
+        <translation type="unfinished">Tarih</translation>
+    </message>
+    <message id="history-empty">
+        <location filename="../qml/SelfCheckinsPage.qml" line="34"/>
+        <source>User didn&apos;t make check in yet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="history-refresh-menu">
+        <location filename="../qml/SelfCheckinsPage.qml" line="40"/>
+        <source>Refresh</source>
+        <translation type="unfinished">Yenile</translation>
+    </message>
+    <message id="tips-title">
+        <location filename="../qml/TipsPage.qml" line="27"/>
+        <source>Tips</source>
+        <translation type="unfinished">İpuçları</translation>
+    </message>
+    <message id="tips-empty">
+        <location filename="../qml/TipsPage.qml" line="35"/>
+        <source>List of tips is empty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="checkin-result-title">
+        <location filename="../qml/CheckinResultPage.qml" line="27"/>
+        <source>Checkin</source>
+        <translation type="unfinished">Checkin</translation>
+    </message>
 </context>
 <context>
     <name>AddAndEditListPage</name>
     <message>
-        <location filename="../qml/AddAndEditListPage.qml" line="19"/>
         <source>Create List</source>
-        <translation>Liste oluştur</translation>
+        <translation type="vanished">Liste oluştur</translation>
     </message>
     <message>
-        <location filename="../qml/AddAndEditListPage.qml" line="25"/>
         <source>List name</source>
-        <translation>Liste ismi</translation>
+        <translation type="vanished">Liste ismi</translation>
     </message>
     <message>
-        <location filename="../qml/AddAndEditListPage.qml" line="31"/>
         <source>List&apos;s description</source>
-        <translation>Liste tanımi</translation>
+        <translation type="vanished">Liste tanımi</translation>
     </message>
 </context>
 <context>
     <name>AddVenuePage</name>
     <message>
-        <location filename="../qml/AddVenuePage.qml" line="36"/>
         <source>Create Venue</source>
-        <translation>Mekan oluştur</translation>
+        <translation type="vanished">Mekan oluştur</translation>
     </message>
     <message>
-        <location filename="../qml/AddVenuePage.qml" line="44"/>
         <source>Venue name</source>
-        <translation>Mekan adı</translation>
+        <translation type="vanished">Mekan adı</translation>
     </message>
     <message>
-        <location filename="../qml/AddVenuePage.qml" line="65"/>
         <source>Choose category</source>
-        <translation>Kategori seç</translation>
+        <translation type="vanished">Kategori seç</translation>
     </message>
     <message>
-        <location filename="../qml/AddVenuePage.qml" line="79"/>
         <source>Address</source>
-        <translation>Adres</translation>
+        <translation type="vanished">Adres</translation>
     </message>
     <message>
-        <location filename="../qml/AddVenuePage.qml" line="85"/>
         <source>Cross street</source>
-        <translation>Çapraz sokak</translation>
+        <translation type="vanished">Çapraz sokak</translation>
     </message>
     <message>
-        <location filename="../qml/AddVenuePage.qml" line="92"/>
         <source>City</source>
-        <translation>Şehir</translation>
+        <translation type="vanished">Şehir</translation>
     </message>
     <message>
-        <location filename="../qml/AddVenuePage.qml" line="98"/>
         <source>State</source>
-        <translation>Eyalet</translation>
+        <translation type="vanished">Eyalet</translation>
     </message>
     <message>
-        <location filename="../qml/AddVenuePage.qml" line="104"/>
         <source>ZIP</source>
-        <translation>PK</translation>
+        <translation type="vanished">PK</translation>
     </message>
     <message>
-        <location filename="../qml/AddVenuePage.qml" line="111"/>
         <source>Phone</source>
-        <translation>Telefon</translation>
+        <translation type="vanished">Telefon</translation>
     </message>
     <message>
-        <location filename="../qml/AddVenuePage.qml" line="117"/>
         <source>Twitter</source>
-        <translation>Twitter</translation>
+        <translation type="vanished">Twitter</translation>
     </message>
     <message>
-        <location filename="../qml/AddVenuePage.qml" line="123"/>
         <source>description</source>
-        <translation>açıklama</translation>
+        <translation type="vanished">açıklama</translation>
     </message>
 </context>
 <context>
     <name>BadgesPage</name>
     <message>
-        <location filename="../qml/BadgesPage.qml" line="33"/>
         <source>Badges</source>
-        <translation>Rozetler</translation>
-    </message>
-    <message>
-        <location filename="../qml/BadgesPage.qml" line="38"/>
-        <source>You have no badge</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">Rozetler</translation>
     </message>
 </context>
 <context>
     <name>CategoriesPage</name>
     <message>
-        <location filename="../qml/CategoriesPage.qml" line="30"/>
         <source>Select Category</source>
-        <translation>Kategori seç</translation>
+        <translation type="vanished">Kategori seç</translation>
     </message>
 </context>
 <context>
     <name>CheckinDetailPage</name>
     <message>
-        <location filename="../qml/CheckinDetailPage.qml" line="45"/>
         <source>Photos</source>
-        <translation type="unfinished">Resimler</translation>
+        <translation type="obsolete">Resimler</translation>
     </message>
     <message>
-        <location filename="../qml/CheckinDetailPage.qml" line="49"/>
         <source>Tips</source>
-        <translation type="unfinished">İpuçları</translation>
+        <translation type="obsolete">İpuçları</translation>
     </message>
     <message>
-        <location filename="../qml/CheckinDetailPage.qml" line="53"/>
-        <source>Listed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/CheckinDetailPage.qml" line="59"/>
-        <source>Dislike</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/CheckinDetailPage.qml" line="59"/>
-        <source>Like</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/CheckinDetailPage.qml" line="73"/>
         <source>Checkin</source>
-        <translation>Checkin</translation>
+        <translation type="vanished">Checkin</translation>
     </message>
     <message>
-        <location filename="../qml/CheckinDetailPage.qml" line="120"/>
         <source>Write your comment here.</source>
-        <translation>Yorumunu buraya yaz.</translation>
+        <translation type="vanished">Yorumunu buraya yaz.</translation>
     </message>
     <message>
-        <location filename="../qml/CheckinDetailPage.qml" line="125"/>
         <source>Share on Facebook</source>
-        <translation>Facebook&apos;ta paylaş</translation>
+        <translation type="vanished">Facebook&apos;ta paylaş</translation>
     </message>
     <message>
-        <location filename="../qml/CheckinDetailPage.qml" line="130"/>
         <source>Share on Twitter</source>
-        <translation>Twitter&apos;da paylaş</translation>
+        <translation type="vanished">Twitter&apos;da paylaş</translation>
     </message>
     <message>
-        <location filename="../qml/CheckinDetailPage.qml" line="134"/>
         <source>Show on Map</source>
-        <translation>Haritada göster</translation>
+        <translation type="vanished">Haritada göster</translation>
     </message>
 </context>
 <context>
     <name>CheckinResultPage</name>
     <message>
-        <location filename="../qml/CheckinResultPage.qml" line="26"/>
         <source>Checkin</source>
-        <translation>Checkin</translation>
+        <translation type="vanished">Checkin</translation>
     </message>
 </context>
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../qml/CoverPage.qml" line="64"/>
         <source>Loading ...</source>
-        <translation>Yükleniyor...</translation>
+        <translation type="vanished">Yükleniyor...</translation>
     </message>
     <message>
-        <location filename="../qml/CoverPage.qml" line="74"/>
         <source>Offline</source>
-        <translation>Çevrim dışı</translation>
+        <translation type="vanished">Çevrim dışı</translation>
     </message>
 </context>
 <context>
     <name>Data</name>
     <message>
-        <location filename="../qml/Data.qml" line="443"/>
         <source>%1 Notifications</source>
-        <translation>%1 bildirim</translation>
-    </message>
-    <message>
-        <location filename="../qml/Data.qml" line="832"/>
-        <source>Not authorized</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Data.qml" line="835"/>
-        <source>Connection problem</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">%1 bildirim</translation>
     </message>
 </context>
 <context>
@@ -212,24 +611,16 @@
 <context>
     <name>FriendsPage</name>
     <message>
-        <location filename="../qml/FriendsPage.qml" line="28"/>
         <source>Friends</source>
-        <translation>Arkadaşlar</translation>
+        <translation type="vanished">Arkadaşlar</translation>
     </message>
     <message>
-        <location filename="../qml/FriendsPage.qml" line="33"/>
-        <source>Connect with your friends</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/FriendsPage.qml" line="84"/>
         <source>Removing friend</source>
-        <translation>Arkadaş siliniyor</translation>
+        <translation type="vanished">Arkadaş siliniyor</translation>
     </message>
     <message>
-        <location filename="../qml/FriendsPage.qml" line="111"/>
         <source>Remove</source>
-        <translation>Sil</translation>
+        <translation type="vanished">Sil</translation>
     </message>
     <message>
         <source>Offline</source>
@@ -239,19 +630,12 @@
 <context>
     <name>LeaderboardPage</name>
     <message>
-        <location filename="../qml/LeaderboardPage.qml" line="24"/>
         <source>Leaderboard</source>
-        <translation>Lider panosu</translation>
+        <translation type="vanished">Lider panosu</translation>
     </message>
     <message>
-        <location filename="../qml/LeaderboardPage.qml" line="29"/>
-        <source>List is empty</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/LeaderboardPage.qml" line="66"/>
         <source>%1 checkins</source>
-        <translation>%1 checkinler</translation>
+        <translation type="vanished">%1 checkinler</translation>
     </message>
     <message>
         <source>Offline</source>
@@ -264,33 +648,20 @@
         <source>Offline</source>
         <translation type="vanished">Çevrim dışı</translation>
     </message>
-    <message>
-        <location filename="../qml/ListDetailPage.qml" line="30"/>
-        <source>Add new item into the list</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>ListsPage</name>
     <message>
-        <location filename="../qml/ListsPage.qml" line="38"/>
         <source>New list</source>
-        <translation>Yeni liste</translation>
+        <translation type="vanished">Yeni liste</translation>
     </message>
     <message>
-        <location filename="../qml/ListsPage.qml" line="28"/>
         <source>Lists</source>
-        <translation>Listeler</translation>
+        <translation type="vanished">Listeler</translation>
     </message>
     <message>
-        <location filename="../qml/ListsPage.qml" line="33"/>
-        <source>List is empty</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/ListsPage.qml" line="124"/>
         <source>Edit</source>
-        <translation>Düzenle</translation>
+        <translation type="vanished">Düzenle</translation>
     </message>
     <message>
         <source>Offline</source>
@@ -300,124 +671,93 @@
 <context>
     <name>MapPage</name>
     <message>
-        <location filename="../qml/MapPage.qml" line="17"/>
         <source>Map</source>
-        <translation>Harita</translation>
+        <translation type="vanished">Harita</translation>
     </message>
 </context>
 <context>
     <name>MayorshipsPage</name>
     <message>
-        <location filename="../qml/MayorshipsPage.qml" line="25"/>
         <source>Mayorships</source>
-        <translation type="unfinished">Başkanlıklar</translation>
-    </message>
-    <message>
-        <location filename="../qml/MayorshipsPage.qml" line="30"/>
-        <source>List is empty</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Başkanlıklar</translation>
     </message>
 </context>
 <context>
     <name>MyProfilePage</name>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="70"/>
         <source>Recent Checkins</source>
-        <translation>En son Checkinler</translation>
+        <translation type="vanished">En son Checkinler</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="75"/>
         <source>Nearby Venues</source>
-        <translation>Çevredeki mekanlar</translation>
+        <translation type="vanished">Çevredeki mekanlar</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="221"/>
         <source>Badges</source>
-        <translation>Rozetler</translation>
+        <translation type="vanished">Rozetler</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="198"/>
         <source>Notifications</source>
-        <translation>Bildirimler</translation>
+        <translation type="vanished">Bildirimler</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="64"/>
         <source>My Profile</source>
-        <translation type="unfinished">Profilim</translation>
+        <translation type="obsolete">Profilim</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="172"/>
         <source>Checkins</source>
-        <translation>Checkinler</translation>
+        <translation type="vanished">Checkinler</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="244"/>
         <source>Mayorships</source>
-        <translation>Başkanlıklar</translation>
+        <translation type="vanished">Başkanlıklar</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="266"/>
         <source>Tips</source>
-        <translation>İpuçları</translation>
+        <translation type="vanished">İpuçları</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="288"/>
         <source>Friends</source>
-        <translation>Arkadaşlar</translation>
+        <translation type="vanished">Arkadaşlar</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="309"/>
         <source>Lists</source>
-        <translation>Listeler</translation>
+        <translation type="vanished">Listeler</translation>
     </message>
     <message>
-        <location filename="../qml/MyProfilePage.qml" line="331"/>
         <source>Photos</source>
-        <translation>Resimler</translation>
+        <translation type="vanished">Resimler</translation>
     </message>
 </context>
 <context>
     <name>NearbyVenuesPage</name>
     <message>
-        <location filename="../qml/NearbyVenuesPage.qml" line="34"/>
-        <location filename="../qml/NearbyVenuesPage.qml" line="47"/>
         <source>Nearby Venues</source>
-        <translation>Çevredeki mekanlar</translation>
+        <translation type="vanished">Çevredeki mekanlar</translation>
     </message>
     <message>
-        <location filename="../qml/NearbyVenuesPage.qml" line="34"/>
         <source>Search results</source>
-        <translation>Arama sonuşları</translation>
+        <translation type="vanished">Arama sonuşları</translation>
     </message>
     <message>
-        <location filename="../qml/NearbyVenuesPage.qml" line="39"/>
         <source>My Profile</source>
-        <translation>Profilim</translation>
+        <translation type="vanished">Profilim</translation>
     </message>
     <message>
-        <location filename="../qml/NearbyVenuesPage.qml" line="43"/>
         <source>Recent Checkins</source>
-        <translation>Son Checkinler</translation>
+        <translation type="vanished">Son Checkinler</translation>
     </message>
     <message>
-        <location filename="../qml/NearbyVenuesPage.qml" line="47"/>
         <source>Refresh</source>
-        <translation>Yenile</translation>
+        <translation type="vanished">Yenile</translation>
     </message>
     <message>
-        <location filename="../qml/NearbyVenuesPage.qml" line="54"/>
         <source>Search</source>
-        <translation>Ara</translation>
+        <translation type="vanished">Ara</translation>
     </message>
     <message>
-        <location filename="../qml/NearbyVenuesPage.qml" line="58"/>
         <source>Add</source>
-        <translation>Ekle</translation>
-    </message>
-    <message>
-        <location filename="../qml/NearbyVenuesPage.qml" line="65"/>
-        <source>List is empty</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">Ekle</translation>
     </message>
     <message>
         <source>Offline</source>
@@ -427,14 +767,8 @@
 <context>
     <name>NotificationsPage</name>
     <message>
-        <location filename="../qml/NotificationsPage.qml" line="30"/>
         <source>Notifications</source>
-        <translation>Bildirimler</translation>
-    </message>
-    <message>
-        <location filename="../qml/NotificationsPage.qml" line="36"/>
-        <source>You have no notifications</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">Bildirimler</translation>
     </message>
     <message>
         <source>Offline</source>
@@ -444,70 +778,69 @@
 <context>
     <name>PhotosPage</name>
     <message>
-        <location filename="../qml/PhotosPage.qml" line="33"/>
         <source>Photos</source>
-        <translation type="unfinished">Resimler</translation>
-    </message>
-    <message>
-        <location filename="../qml/PhotosPage.qml" line="39"/>
-        <source>List is empty</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Resimler</translation>
     </message>
 </context>
 <context>
     <name>PinchMap</name>
     <message>
-        <location filename="../qml/PinchMap.qml" line="293"/>
         <source>Ready</source>
-        <translation>Hazır</translation>
+        <translation type="vanished">Hazır</translation>
     </message>
     <message>
-        <location filename="../qml/PinchMap.qml" line="294"/>
         <source>Not Set</source>
-        <translation>Hazır değil</translation>
+        <translation type="vanished">Hazır değil</translation>
     </message>
     <message>
-        <location filename="../qml/PinchMap.qml" line="295"/>
         <source>Error</source>
-        <translation>Hata</translation>
+        <translation type="vanished">Hata</translation>
     </message>
     <message>
-        <location filename="../qml/PinchMap.qml" line="296"/>
         <source>Loading...</source>
-        <translation>Yükleniyor...</translation>
+        <translation type="vanished">Yükleniyor...</translation>
     </message>
     <message>
-        <location filename="../qml/PinchMap.qml" line="297"/>
         <source>Unknown</source>
-        <translation>Belirsiz</translation>
+        <translation type="vanished">Belirsiz</translation>
+    </message>
+</context>
+<context>
+    <name>ProfilePage</name>
+    <message>
+        <source>Tips</source>
+        <translation type="obsolete">İpuçları</translation>
+    </message>
+    <message>
+        <source>Friends</source>
+        <translation type="obsolete">Arkadaşlar</translation>
+    </message>
+    <message>
+        <source>Lists</source>
+        <translation type="obsolete">Listeler</translation>
+    </message>
+    <message>
+        <source>Photos</source>
+        <translation type="obsolete">Resimler</translation>
     </message>
 </context>
 <context>
     <name>RecentCheckinsPage</name>
     <message>
-        <location filename="../qml/RecentCheckinsPage.qml" line="29"/>
         <source>Recent Checkins</source>
-        <translation>Son Checkinler</translation>
+        <translation type="vanished">Son Checkinler</translation>
     </message>
     <message>
-        <location filename="../qml/RecentCheckinsPage.qml" line="34"/>
-        <source>List is empty</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/RecentCheckinsPage.qml" line="39"/>
         <source>My Profile</source>
-        <translation>Profilim</translation>
+        <translation type="vanished">Profilim</translation>
     </message>
     <message>
-        <location filename="../qml/RecentCheckinsPage.qml" line="43"/>
         <source>Nearby Venues</source>
-        <translation>Çevredeki mekanlar</translation>
+        <translation type="vanished">Çevredeki mekanlar</translation>
     </message>
     <message>
-        <location filename="../qml/RecentCheckinsPage.qml" line="47"/>
         <source>Refresh</source>
-        <translation>Yenile</translation>
+        <translation type="vanished">Yenile</translation>
     </message>
     <message>
         <source>Offline</source>
@@ -517,32 +850,23 @@
 <context>
     <name>SearchVenueDialog</name>
     <message>
-        <location filename="../qml/SearchVenueDialog.qml" line="25"/>
         <source>Search</source>
-        <translation>Ara</translation>
+        <translation type="vanished">Ara</translation>
     </message>
     <message>
-        <location filename="../qml/SearchVenueDialog.qml" line="31"/>
         <source>Venue name</source>
-        <translation>Mekan adı</translation>
+        <translation type="vanished">Mekan adı</translation>
     </message>
 </context>
 <context>
     <name>SelfCheckinsPage</name>
     <message>
-        <location filename="../qml/SelfCheckinsPage.qml" line="26"/>
         <source>History</source>
-        <translation>Tarih</translation>
+        <translation type="vanished">Tarih</translation>
     </message>
     <message>
-        <location filename="../qml/SelfCheckinsPage.qml" line="32"/>
-        <source>List is empty</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/SelfCheckinsPage.qml" line="37"/>
         <source>Refresh</source>
-        <translation>Yenile</translation>
+        <translation type="vanished">Yenile</translation>
     </message>
     <message>
         <source>Offline</source>
@@ -552,14 +876,8 @@
 <context>
     <name>TipsPage</name>
     <message>
-        <location filename="../qml/TipsPage.qml" line="26"/>
         <source>Tips</source>
-        <translation>İpuçları</translation>
-    </message>
-    <message>
-        <location filename="../qml/TipsPage.qml" line="33"/>
-        <source>Add a new tip</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">İpuçları</translation>
     </message>
     <message>
         <source>Offline</source>
@@ -569,52 +887,43 @@
 <context>
     <name>functions</name>
     <message>
-        <location filename="../qml/functions.js" line="20"/>
         <source>%1 years ago</source>
-        <translation>%1 yıl önce</translation>
+        <translation type="vanished">%1 yıl önce</translation>
     </message>
     <message>
-        <location filename="../qml/functions.js" line="24"/>
         <source>%1 months ago</source>
-        <translation>%1 ay önce</translation>
+        <translation type="vanished">%1 ay önce</translation>
     </message>
     <message>
-        <location filename="../qml/functions.js" line="28"/>
         <source>%1 days ago</source>
-        <translation>%1 gün önce</translation>
+        <translation type="vanished">%1 gün önce</translation>
     </message>
     <message>
-        <location filename="../qml/functions.js" line="32"/>
         <source>%1 hours ago</source>
-        <translation>%1 saat önce</translation>
+        <translation type="vanished">%1 saat önce</translation>
     </message>
     <message>
-        <location filename="../qml/functions.js" line="36"/>
         <source>%1 minutes ago</source>
-        <translation>%1 dakika önce</translation>
+        <translation type="vanished">%1 dakika önce</translation>
     </message>
     <message>
-        <location filename="../qml/functions.js" line="38"/>
         <source>%1 seconds ago</source>
-        <translation>%1 saniye önce</translation>
+        <translation type="vanished">%1 saniye önce</translation>
     </message>
 </context>
 <context>
     <name>harbour-foursail</name>
     <message>
-        <location filename="../qml/harbour-foursail.qml" line="13"/>
         <source>Tap to show</source>
-        <translation>Göstermek için dokunun</translation>
+        <translation type="vanished">Göstermek için dokunun</translation>
     </message>
     <message>
-        <location filename="../qml/harbour-foursail.qml" line="328"/>
         <source>Edit List</source>
-        <translation>Listeyi düzenle</translation>
+        <translation type="vanished">Listeyi düzenle</translation>
     </message>
     <message>
-        <location filename="../qml/harbour-foursail.qml" line="328"/>
         <source>Create List</source>
-        <translation>Liste oluştur</translation>
+        <translation type="vanished">Liste oluştur</translation>
     </message>
 </context>
 </TS>

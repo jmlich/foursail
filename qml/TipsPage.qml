@@ -23,22 +23,17 @@ Page {
         model: listmodel
         anchors.fill: parent
         header: PageHeader {
-            title: qsTr("Tips")
+            //% "Tips"
+            title: qsTrId("tips-title")
         }
         spacing: Theme.paddingMedium;
 
 
         ViewPlaceholder {
             enabled: !loading && (listmodel.count === 0)
-            text: (last_error !== "") ? last_error : qsTr("Add a new tip")
+            //% "List of tips is empty"
+            text: (last_error !== "") ? last_error : qsTrId("tips-empty")
         }
-
-//        PullDownMenu {
-//            MenuItem {
-//                text: qsTr("Refresh")
-//                onClicked: refresh(uid);
-//            }
-//        }
 
         delegate: BackgroundItem {
             id: delegate

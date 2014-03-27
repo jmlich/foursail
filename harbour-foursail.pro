@@ -29,7 +29,6 @@ OTHER_FILES += qml/harbour-foursail.qml \
     qml/MapPage.qml \
     qml/PinchMap.qml \
     qml/SelfCheckinsPage.qml \
-    qml/MyProfilePage.qml \
     qml/SearchVenueDialog.qml \
     qml/BadgesPage.qml \
     qml/CategoriesPage.qml \
@@ -44,7 +43,8 @@ OTHER_FILES += qml/harbour-foursail.qml \
     qml/ShortVenueItem.qml \
     qml/PhotosPage.qml \
     qml/PhotoDetailPage.qml \
-    qml/MayorshipsPage.qml
+    qml/MayorshipsPage.qml \
+    qml/ProfilePage.qml
 
 QT += webkit
 
@@ -54,7 +54,7 @@ HEADERS += \
 
 
 
-LANGUAGES = cs_CZ da_DK de_DE el_GR es_ES fi_FI fr_FR it_IT nl_NL ru_RU tr_TR zh_CN
+LANGUAGES = cs_CZ da_DK de_DE el_GR es_ES en_US fi_FI fr_FR it_IT nl_NL ru_RU tr_TR zh_CN
 
 # var, prepend, append
 defineReplace(prependAll) {
@@ -68,7 +68,7 @@ TRANSLATIONS = $$prependAll(LANGUAGES, $$PWD/i18n/harbour-foursail_,.ts)
 
 updateqm.input = TRANSLATIONS
 updateqm.output = $$OUT_PWD/${QMAKE_FILE_BASE}.qm
-updateqm.commands = $$LRELEASE -silent ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_BASE}.qm
+updateqm.commands = $$LRELEASE -idbased -silent ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_BASE}.qm
 updateqm.CONFIG += no_link target_predeps
 QMAKE_EXTRA_COMPILERS += updateqm
 

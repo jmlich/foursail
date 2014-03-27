@@ -26,25 +26,30 @@ Page {
         anchors.fill: parent
         spacing: Theme.paddingMedium;
         header: PageHeader {
-            title: qsTr("Recent Checkins")
+            //% "Recent Checkins"
+            title: qsTrId("recent-checkins-title")
         }
 
         ViewPlaceholder {
             enabled: !loading && (listmodel.count === 0)
-            text: (last_error !== "") ? last_error : qsTr("List is empty")
+            //% "None of your friends checked in yet"
+            text: (last_error !== "") ? last_error : qsTrId("recent-checkins-empty")
         }
 
         PullDownMenu {
             MenuItem {
-                text: qsTr("My Profile")
+                //% "My Profile"
+                text: qsTrId("recent-checkins-my-profile-menu")
                 onClicked: switchToMyProfile();
             }
             MenuItem {
-                text: qsTr("Nearby Venues")
+                //% "Nearby Venues"
+                text: qsTrId("recent-checkins-nearby-venues-menu")
                 onClicked: switchToNearbyVenues();
             }
             MenuItem {
-                text: qsTr("Refresh")
+                //% "Refresh"
+                text: qsTrId("recent-checkins-refresh-menu")
                 onClicked: refresh();
             }
         }
@@ -93,7 +98,8 @@ Page {
                 anchors.rightMargin: Theme.paddingMedium;
                 color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                 font.pixelSize: Theme.fontSizeSmall
-                text: address + ((address.length > 0) ? "\n" : "") + F.formatDate(createdDate)
+                text: address + ((address.length > 0) ? "\n" : "") +
+                      Format.formatDate(createdDate, Formatter.DurationElapsed)
                 wrapMode: Text.Wrap
 
             }

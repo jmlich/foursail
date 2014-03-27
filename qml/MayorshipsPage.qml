@@ -22,12 +22,14 @@ Page {
         anchors.fill: parent
 
         header: PageHeader {
-            title: qsTr("Mayorships")
+            //% "Mayorships"
+            title: qsTrId("mayorships-title")
         }
 
         ViewPlaceholder {
             enabled: !loading && (listmodel.count === 0)
-            text: (last_error !== "") ? last_error : qsTr("List is empty")
+            //% "User hasn't got any mayorships yet!"
+            text: (last_error !== "") ? last_error : qsTrId("mayorships-empty")
         }
 
         delegate: BackgroundItem {

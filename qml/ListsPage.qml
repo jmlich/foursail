@@ -25,17 +25,23 @@ Page {
         property Item contextMenu
 
         header: PageHeader {
-            title: qsTr("Lists")
+            //% "Lists"
+            title: qsTrId("lists-title")
         }
 
         ViewPlaceholder {
             enabled: !loading && (listmodel.count === 0)
-            text: (last_error !== "") ? last_error : qsTr("List is empty")
+            //% "No lists are available"
+            text: (last_error !== "") ? last_error : qsTrId("lists-empty")
         }
 
+
+
         PullDownMenu {
+            visible: false // FIXME temporally disabled (must add condition about own/friends list)
             MenuItem {
-                text: qsTr("New list")
+                //% "New"
+                text: qsTrId("lists-new")
                 onClicked: switchToAddAndEditList("", "", "")
             }
         }
@@ -121,7 +127,8 @@ Page {
                 property string name;
                 property string description;
                 MenuItem {
-                    text: qsTr ("Edit");
+                    //% "Edit"
+                    text: qsTrId("lists-edit");
                     onClicked: switchToAddAndEditList(listId, name, description)
                 }
             }

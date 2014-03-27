@@ -30,12 +30,14 @@ Page {
         cellWidth: ( page.width - 2* Theme.paddingMedium) /3
         cellHeight: 1.4*cellWidth
         header: PageHeader {
-            title: qsTr("Badges")
+            //% "Badges"
+            title: qsTrId("badges-title")
         }
 
         ViewPlaceholder {
             enabled: !loading && (model.count === 0)
-            text: (last_error !== "") ? last_error : qsTr("You have no badge")
+            //% "List of badges is empty"
+            text: (last_error !== "") ? last_error : qsTrId("badges-empty")
         }
 
 

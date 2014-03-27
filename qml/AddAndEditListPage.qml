@@ -16,19 +16,25 @@ Dialog {
 
         DialogHeader {
             id: dialogHeader;
-            acceptText: qsTr("Create List")
+            acceptText: (listId !== "")
+            //% "Edit List"
+                        ? qsTrId("lists-edit-accept")
+                          //% "Create List"
+                        : qsTrId("lists-create-accept")
         }
 
         TextField {
             id: listNameTextfield
             width: parent.width
-            placeholderText: qsTr("List name")
+            //% "List Name"
+            placeholderText: qsTrId("lists-create-name")
         }
 
         TextField {
             id: listDescriptionTextfield
             width: parent.width
-            placeholderText: qsTr("List's description")
+            //% "List description"
+            placeholderText: qsTrId("lists-create-description")
         }
     }
 }

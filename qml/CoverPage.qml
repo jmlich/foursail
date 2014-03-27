@@ -61,7 +61,8 @@ CoverBackground {
         width: parent.width - Theme.paddingLarge
         horizontalAlignment: Text.AlignHCenter
         wrapMode: Text.Wrap;
-        text: qsTr("Loading ...")
+        //% "Loading ..."
+        text: qsTrId("cover-loading")
     }
 
     Label {
@@ -71,7 +72,9 @@ CoverBackground {
         width: parent.width - Theme.paddingLarge
         horizontalAlignment: Text.AlignHCenter
         wrapMode: Text.Wrap;
-        text: qsTr("Offline")
+        //% "FIXME"
+        text: (last_error !== "") ? last_error : qsTrId("cover-no-checkins")
+
     }
 
 
@@ -105,7 +108,7 @@ CoverBackground {
 
     onStatusChanged: {
         if (status === Cover.Active) {
-            timestampLabel.text = F.formatDate(updateDate)
+            timestampLabel.text = Format.formatDate(updateDate, Formatter.DurationElapsed)
         }
 
     }
@@ -117,7 +120,7 @@ CoverBackground {
         repeat: true
         running: (status === Cover.Active)
         onTriggered: {
-            timestampLabel.text = F.formatDate(updateDate)
+            timestampLabel.text = Format.formatDate(updateDate, Formatter.DurationElapsed)
         }
     }
 

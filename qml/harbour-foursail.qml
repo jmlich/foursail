@@ -10,7 +10,8 @@ ApplicationWindow {
     NotificationPopup {
         id: notificationPopup;
 
-        secondaryText: qsTr("Tap to show")
+        //% "Tap to show"
+        secondaryText: qsTrId("tap-to-show")
 
         enabled: (notificationsPage.status === PageStatus.Inactive)
 
@@ -57,8 +58,8 @@ ApplicationWindow {
         }
 
         onSwitchToMyProfile: {
-            myProfilePage.uid = "self"
-            pageStack.replace(myProfilePage)
+            profilePage.uid = "self"
+            pageStack.replace(profilePage)
         }
 
         onRefresh: {
@@ -85,8 +86,8 @@ ApplicationWindow {
         }
         onFriendDetail: {
 
-            myProfilePage.uid = model.uid
-            pageStack.push(myProfilePage)
+            profilePage.uid = model.uid
+            pageStack.push(profilePage)
         }
 
     }
@@ -108,8 +109,8 @@ ApplicationWindow {
         }
 
         onSwitchToMyProfile: {
-            myProfilePage.uid = "self"
-            pageStack.replace(myProfilePage)
+            profilePage.uid = "self"
+            pageStack.replace(profilePage)
         }
 
         onStatusChanged: {
@@ -212,8 +213,8 @@ ApplicationWindow {
     }
 
 
-    MyProfilePage {
-        id: myProfilePage
+    ProfilePage {
+        id: profilePage
 
         onSwitchToMyProfile: {
             uid = "self";
@@ -325,7 +326,6 @@ ApplicationWindow {
             pageStack.push(listDetailPage)
         }
         onSwitchToAddAndEditList: {
-            addAndEditListPage.dialogHeaderText = (lid !== "") ? qsTr("Edit List") : qsTr("Create List")
             addAndEditListPage.listId = lid;
             addAndEditListPage.listName = name;
             addAndEditListPage.listDescription = description;
@@ -368,9 +368,9 @@ ApplicationWindow {
         }
 
         onShowFriend: {
-            myProfilePage.uid = uid
+            profilePage.uid = uid
 
-            pageStack.pop(myProfilePage)
+            pageStack.pop(profilePage)
         }
 
     }

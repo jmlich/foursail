@@ -31,38 +31,51 @@ Page {
         spacing: Theme.paddingMedium
 
         header: PageHeader {
-            title: (outputType === "nearby") ? qsTr("Nearby Venues") : qsTr("Search results")
+            title: (outputType === "nearby")
+            //% "Nearby Venues"
+                   ? qsTrId("nearby-venues-title")
+                     //% "Search results"
+                   : qsTrId("search-results-title")
         }
 
         PullDownMenu {
             MenuItem {
-                text: qsTr("My Profile")
+                //% "My Profile"
+                text: qsTrId("nearby-venues-my-profile-menu")
                 onClicked: switchToMyProfile();
             }
             MenuItem {
-                text: qsTr("Recent Checkins")
+                //% "Recent Checkins"
+                text: qsTrId("nearby-venues-recent-checkins-menu")
                 onClicked: switchToRecentCheckins()
             }
             MenuItem {
-                text: (outputType === "nearby") ? qsTr("Refresh") : qsTr("Nearby Venues")
+                text: (outputType === "nearby")
+                //% "Refresh"
+                      ? qsTrId("nearby-venues-refresh-menu")
+                        //% "Nearby Venues"
+                      : qsTrId("nearby-venues-nearby-venues-menu")
                 onClicked: refresh()
             }
         }
 
         PushUpMenu {
             MenuItem {
-                text: qsTr("Search");
+                //% "Search"
+                text: qsTrId("nearby-venues-search-menu");
                 onClicked: switchToSearchVenue()
             }
             MenuItem {
-                text: qsTr("Add")
+                //% "Add"
+                text: qsTrId("nearby-venues-add")
                 onClicked: switchToAddVenue();
             }
         }
 
         ViewPlaceholder {
             enabled: !loading && (model.count === 0)
-            text: (last_error !== "") ? last_error : qsTr("List is empty")
+            //% "There is no venue in nearby"
+            text: (last_error !== "") ? last_error : qsTrId("nearby-venues-empty")
         }
 
 
