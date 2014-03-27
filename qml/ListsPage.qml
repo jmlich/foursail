@@ -46,6 +46,11 @@ Page {
             }
         }
 
+        section.property: "group"
+        section.delegate: SectionHeader {
+            text: section
+        }
+
         delegate: Item {
             id: myListItem
             property bool menuOpen: listView.contextMenu != null && listView.contextMenu.parent === myListItem

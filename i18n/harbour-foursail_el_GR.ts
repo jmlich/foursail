@@ -238,7 +238,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message id="lists-edit">
-        <location filename="../qml/ListsPage.qml" line="131"/>
+        <location filename="../qml/ListsPage.qml" line="136"/>
         <source>Edit</source>
         <translation type="unfinished">Επεξεργασία</translation>
     </message>

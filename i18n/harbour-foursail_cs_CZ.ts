@@ -1,6 +1,8 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="cs" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="cs">
 <context>
-    <name/>
+    <name></name>
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="163"/>
         <source>Tap to cancel</source>
@@ -165,7 +167,11 @@
         <location filename="../qml/Data.qml" line="443"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
-        <translation><numerusform>%n upozornění</numerusform><numerusform>%n upozornění</numerusform><numerusform>%n upozornění</numerusform></translation>
+        <translation>
+            <numerusform>%n upozornění</numerusform>
+            <numerusform>%n upozornění</numerusform>
+            <numerusform>%n upozornění</numerusform>
+        </translation>
     </message>
     <message id="error-not-authorized">
         <location filename="../qml/Data.qml" line="833"/>
@@ -207,7 +213,11 @@
         <location filename="../qml/LeaderboardPage.qml" line="69"/>
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
-        <translation><numerusform>%n checkin</numerusform><numerusform>%n checkiny</numerusform><numerusform>%n checkinů</numerusform></translation>
+        <translation>
+            <numerusform>%n checkin</numerusform>
+            <numerusform>%n checkiny</numerusform>
+            <numerusform>%n checkinů</numerusform>
+        </translation>
     </message>
     <message id="list-detail-empty">
         <location filename="../qml/ListDetailPage.qml" line="31"/>
@@ -230,7 +240,7 @@
         <translation>Nový</translation>
     </message>
     <message id="lists-edit">
-        <location filename="../qml/ListsPage.qml" line="131"/>
+        <location filename="../qml/ListsPage.qml" line="136"/>
         <source>Edit</source>
         <translation>Upravit</translation>
     </message>
