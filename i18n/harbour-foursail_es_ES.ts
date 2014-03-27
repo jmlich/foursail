@@ -131,7 +131,8 @@
     </message>
     <message id="venue-checkin-comment">
         <location filename="../qml/CheckinDetailPage.qml" line="129"/>
-        <source>Comment</source>
+        <source>Write your comment here.</source>
+        <oldsource>Comment</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message id="venue-checkin-share-to-facebook-button">

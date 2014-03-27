@@ -125,7 +125,7 @@ Dialog {
                 id: comment_textarea
                 width: parent.width
                 height: 350
-                //% "Comment"
+                //% "Write your comment here."
                 placeholderText: qsTrId("venue-checkin-comment")
             }
 
