@@ -231,15 +231,27 @@ Rectangle {
         foursquareDownload(source, params, "POST");
     }
 
-    function likeCheckin(checkin_id) {
+    function likeCheckin(checkin_id, value) {
         var source = "https://api.foursquare.com/v2/checkins/" + checkin_id + "/like"
-        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale + "&set=1";
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale + "&set=" + (value ? "1" : "0");
         foursquareDownload(source, params, "POST");
     }
 
     function likeVenue(venue_id, value) {
+        var source = "https://api.foursquare.com/v2/venues/" + venue_id+"/like"
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale + "&set=" + (value ? "1" : "0");
         console.log("FIXME likeVenue " + venue_id + " " + value)
+//        foursquareDownload(source, params, "POST");
     }
+
+    function likeTip(tip_id, value) {
+        var source = "https://api.foursquare.com/v2/tips/" + tip_id + "/like"
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale + "&set=" + (value ? "1" : "0");
+
+        console.log("FIXME: likeTip " + tip_id + " " + value)
+//        foursquareDownload(source, params, "POST");
+    }
+
 
     function badges(uid) {
         var source = "https://api.foursquare.com/v2/users/"+uid+"/badges"
@@ -320,11 +332,6 @@ Rectangle {
         foursquareDownload(source, params, "GET");
     }
 
-    function likeTip(uid, like) {
-        var source = "https://api.foursquare.com/v2/tips/" + uid + "/like"
-        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale + "&set=" + (like ? "1" : "0");
-        foursquareDownload(source, params, "POST");
-    }
 
     function leaderboard() {
         var source = "https://api.foursquare.com/v2/users/leaderboard";
@@ -672,6 +679,7 @@ Rectangle {
                                         'tipText': text,
                                         'photo': ((item.photo !== undefined) ? photo.prefix + "300x300" + photo.suffix : ""),
                                         'date': date,
+                                        'like': item.like,
                                         'venueIdentifier' : venueId,
                                         'tipTitle' : venueName,
                                         'tipTitle2' : venueAddress,
@@ -683,6 +691,7 @@ Rectangle {
                                         'tipText': text,
                                         'photo': ((item.photo !== undefined) ? photo.prefix + "300x300" + photo.suffix : ""),
                                         'date': date,
+                                        'like': item.like,
                                         'tipIcon': item.user.photo.prefix + "86x86" + item.user.photo.suffix,
                                         'tipTitle': ((item.user.firstName !== undefined) ? item.user.firstName : "") + " " + ((item.user.lastName !== undefined) ? item.user.lastName : ""),
                                         'tipTitle2': ""

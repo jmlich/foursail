@@ -12,7 +12,7 @@ Page {
     property bool loading;
     property string last_error
 
-//    signal refresh(string uid);
+    signal likeTip(string tid, bool value)
 
     ListModel {
         id: listmodel;
@@ -99,7 +99,8 @@ Page {
                 font.pixelSize: Theme.fontSizeSmall
                 elide: Text.ElideRight
                 wrapMode: Text.WordWrap
-                text: ((tipTitle2 !== "") ? tipTitle2+"\n" : "") + F.formatDate(date)
+                text: ((tipTitle2 !== "") ? tipTitle2+"\n" : "")
+                      + Format.formatDate(date, Formatter.DurationElapsed)
             }
 
 //            Label {
@@ -130,7 +131,7 @@ Page {
                 wrapMode: Text.Wrap
             }
 
-            onClicked: console.log ("like/dislike tip: " + tipId)  // press and hold?
+            onClicked: likeTip(tipId, !like); // FIXME context Menu
         }
         VerticalScrollDecorator {}
     }

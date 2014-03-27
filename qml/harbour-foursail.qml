@@ -483,10 +483,10 @@ ApplicationWindow {
         loading: (data.countLoading > 0)
         last_error: data.last_error
 
+        onLikeTip: {
+            data.likeTip(tid, value);
+        }
 
-        //        onRefresh: {
-        //            data.tips(uid)
-        //        }
     }
 
     CoverPage {
@@ -496,7 +496,7 @@ ApplicationWindow {
             data.recentCheckins();
         }
         onLike: {
-            data.likeCheckin(checkin_id);
+            data.likeCheckin(checkin_id, true);
         }
 
         labelText: data.lastCheckin
