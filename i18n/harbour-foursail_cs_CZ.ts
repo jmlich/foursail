@@ -175,7 +175,8 @@
     </message>
     <message id="error-not-authorized">
         <location filename="../qml/Data.qml" line="833"/>
-        <source>Not authorized</source>
+        <source>Unauthorized</source>
+        <oldsource>Not authorized</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message id="error-connection-problem">

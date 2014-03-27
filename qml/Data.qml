@@ -829,7 +829,7 @@ Rectangle {
                 } else if (http.status === 401) {
                     console.log("http.status: 401 not authorized")
                     accessToken = "";
-                    //% "Not authorized"
+                    //% "Unauthorized"
                     last_error = qsTrId("error-not-authorized");
 
                 } else if (http.status === 0){
