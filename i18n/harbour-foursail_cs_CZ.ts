@@ -174,13 +174,13 @@
         </translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="833"/>
+        <location filename="../qml/Data.qml" line="834"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation>Neautorizovaný přístup</translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="837"/>
+        <location filename="../qml/Data.qml" line="838"/>
         <source>Connection problem</source>
         <translation>Problém s připojením</translation>
     </message>

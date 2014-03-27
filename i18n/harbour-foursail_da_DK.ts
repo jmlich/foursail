@@ -42,12 +42,12 @@
     <message id="venue-add-choose-category">
         <location filename="../qml/AddVenuePage.qml" line="67"/>
         <source>Choose category</source>
-        <translation type="unfinished">Vælg kategori</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message id="venue-add-address">
         <location filename="../qml/AddVenuePage.qml" line="82"/>
         <source>Address</source>
-        <translation type="unfinished">Adresse</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message id="venue-add-cross-street">
         <location filename="../qml/AddVenuePage.qml" line="89"/>
@@ -57,7 +57,7 @@
     <message id="venue-add-city">
         <location filename="../qml/AddVenuePage.qml" line="97"/>
         <source>City</source>
-        <translation type="unfinished">By</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message id="venue-add-state">
         <location filename="../qml/AddVenuePage.qml" line="104"/>
@@ -67,7 +67,7 @@
     <message id="venue-add-zip">
         <location filename="../qml/AddVenuePage.qml" line="111"/>
         <source>ZIP</source>
-        <translation type="unfinished">Postnummer</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message id="venue-add-phone">
         <location filename="../qml/AddVenuePage.qml" line="119"/>
@@ -77,7 +77,7 @@
     <message id="venue-add-twitter">
         <location filename="../qml/AddVenuePage.qml" line="126"/>
         <source>Twitter</source>
-        <translation type="unfinished">Twitter</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message id="venue-add-description">
         <location filename="../qml/AddVenuePage.qml" line="133"/>
@@ -102,7 +102,7 @@
     <message id="checkin-photos-menu">
         <location filename="../qml/CheckinDetailPage.qml" line="46"/>
         <source>Photos</source>
-        <translation type="unfinished">Fotos</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message id="checkin-tips-menu">
         <location filename="../qml/CheckinDetailPage.qml" line="51"/>
@@ -133,7 +133,7 @@
         <location filename="../qml/CheckinDetailPage.qml" line="129"/>
         <source>Write your comment here.</source>
         <oldsource>Comment</oldsource>
-        <translation type="unfinished">Skriv din kommentar her.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message id="venue-checkin-share-to-facebook-button">
         <location filename="../qml/CheckinDetailPage.qml" line="135"/>
@@ -150,7 +150,7 @@
     <message id="venue-checkin-show-on-map-button">
         <location filename="../qml/CheckinDetailPage.qml" line="146"/>
         <source>Show on Map</source>
-        <translation type="unfinished">Vis på kort</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message id="cover-loading">
         <location filename="../qml/CoverPage.qml" line="65"/>
@@ -173,20 +173,20 @@
         </translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="833"/>
+        <location filename="../qml/Data.qml" line="834"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="837"/>
+        <location filename="../qml/Data.qml" line="838"/>
         <source>Connection problem</source>
         <translation type="unfinished"></translation>
     </message>
     <message id="friends-title">
         <location filename="../qml/FriendsPage.qml" line="29"/>
         <source>Friends</source>
-        <translation type="unfinished">Venner</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message id="friends-empty">
         <location filename="../qml/FriendsPage.qml" line="35"/>
@@ -196,7 +196,7 @@
     <message id="friends-removing">
         <location filename="../qml/FriendsPage.qml" line="87"/>
         <source>Removing friend</source>
-        <translation type="unfinished">Fjerner ven</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message id="leaderboard-title">
         <location filename="../qml/LeaderboardPage.qml" line="25"/>
@@ -245,7 +245,7 @@
     <message id="map-title">
         <location filename="../qml/MapPage.qml" line="18"/>
         <source>Map</source>
-        <translation type="unfinished">Kort</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message id="mayorships-title">
         <location filename="../qml/MayorshipsPage.qml" line="26"/>
@@ -295,7 +295,7 @@
     <message id="nearby-venues-add">
         <location filename="../qml/NearbyVenuesPage.qml" line="70"/>
         <source>Add</source>
-        <translation type="unfinished">Tilføj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message id="nearby-venues-empty">
         <location filename="../qml/NearbyVenuesPage.qml" line="78"/>
@@ -315,7 +315,7 @@
     <message id="photos-title">
         <location filename="../qml/PhotosPage.qml" line="34"/>
         <source>Photos</source>
-        <translation type="unfinished">Fotos</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message id="photos-empty">
         <location filename="../qml/PhotosPage.qml" line="41"/>
@@ -325,7 +325,7 @@
     <message id="image-status-ready">
         <location filename="../qml/PinchMap.qml" line="294"/>
         <source>Ready</source>
-        <translation type="unfinished">Klar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message id="image-status-not-set">
         <location filename="../qml/PinchMap.qml" line="296"/>
@@ -335,7 +335,7 @@
     <message id="image-status-error">
         <location filename="../qml/PinchMap.qml" line="298"/>
         <source>Error</source>
-        <translation type="unfinished">Fejl</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message id="image-status-loading">
         <location filename="../qml/PinchMap.qml" line="300"/>
@@ -345,7 +345,7 @@
     <message id="image-status-unknown">
         <location filename="../qml/PinchMap.qml" line="302"/>
         <source>Unknown</source>
-        <translation type="unfinished">Ukendt</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message id="profile-my-profile-menu">
         <location filename="../qml/ProfilePage.qml" line="65"/>
@@ -390,7 +390,7 @@
     <message id="profile-friends">
         <location filename="../qml/ProfilePage.qml" line="297"/>
         <source>Friends</source>
-        <translation type="unfinished">Venner</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message id="profile-lists">
         <location filename="../qml/ProfilePage.qml" line="319"/>
@@ -400,7 +400,7 @@
     <message id="profile-photos">
         <location filename="../qml/ProfilePage.qml" line="342"/>
         <source>Photos</source>
-        <translation type="unfinished">Fotos</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message id="tap-to-show">
         <location filename="../qml/harbour-foursail.qml" line="14"/>
@@ -471,163 +471,6 @@
         <location filename="../qml/CheckinResultPage.qml" line="27"/>
         <source>Checkin</source>
         <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>AddVenuePage</name>
-    <message>
-        <source>Choose category</source>
-        <translation type="vanished">Vælg kategori</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation type="vanished">Adresse</translation>
-    </message>
-    <message>
-        <source>City</source>
-        <translation type="vanished">By</translation>
-    </message>
-    <message>
-        <source>ZIP</source>
-        <translation type="vanished">Postnummer</translation>
-    </message>
-    <message>
-        <source>Twitter</source>
-        <translation type="vanished">Twitter</translation>
-    </message>
-    <message>
-        <source>description</source>
-        <translation type="vanished">beskrivels</translation>
-    </message>
-</context>
-<context>
-    <name>CategoriesPage</name>
-    <message>
-        <source>Select Category</source>
-        <translation type="vanished">Vælg kategori</translation>
-    </message>
-</context>
-<context>
-    <name>CheckinDetailPage</name>
-    <message>
-        <source>Photos</source>
-        <translation type="obsolete">Fotos</translation>
-    </message>
-    <message>
-        <source>Write your comment here.</source>
-        <translation type="vanished">Skriv din kommentar her.</translation>
-    </message>
-    <message>
-        <source>Share on Facebook</source>
-        <translation type="vanished">Del på Facebook</translation>
-    </message>
-    <message>
-        <source>Share on Twitter</source>
-        <translation type="vanished">Del på Twitter</translation>
-    </message>
-    <message>
-        <source>Show on Map</source>
-        <translation type="vanished">Vis på kort</translation>
-    </message>
-</context>
-<context>
-    <name>FriendsPage</name>
-    <message>
-        <source>Friends</source>
-        <translation type="vanished">Venner</translation>
-    </message>
-    <message>
-        <source>Removing friend</source>
-        <translation type="vanished">Fjerner ven</translation>
-    </message>
-    <message>
-        <source>Remove</source>
-        <translation type="vanished">Fjern</translation>
-    </message>
-</context>
-<context>
-    <name>MapPage</name>
-    <message>
-        <source>Map</source>
-        <translation type="vanished">Kort</translation>
-    </message>
-</context>
-<context>
-    <name>MyProfilePage</name>
-    <message>
-        <source>Friends</source>
-        <translation type="obsolete">Venner</translation>
-    </message>
-    <message>
-        <source>Photos</source>
-        <translation type="vanished">Fotos</translation>
-    </message>
-</context>
-<context>
-    <name>NearbyVenuesPage</name>
-    <message>
-        <source>Add</source>
-        <translation type="vanished">Tilføj</translation>
-    </message>
-</context>
-<context>
-    <name>PhotosPage</name>
-    <message>
-        <source>Photos</source>
-        <translation type="obsolete">Fotos</translation>
-    </message>
-</context>
-<context>
-    <name>PinchMap</name>
-    <message>
-        <source>Ready</source>
-        <translation type="vanished">Klar</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation type="vanished">Fejl</translation>
-    </message>
-    <message>
-        <source>Unknown</source>
-        <translation type="vanished">Ukendt</translation>
-    </message>
-</context>
-<context>
-    <name>ProfilePage</name>
-    <message>
-        <source>Friends</source>
-        <translation type="obsolete">Venner</translation>
-    </message>
-    <message>
-        <source>Photos</source>
-        <translation type="obsolete">Fotos</translation>
-    </message>
-</context>
-<context>
-    <name>functions</name>
-    <message>
-        <source>%1 years ago</source>
-        <translation type="vanished">%1 år siden</translation>
-    </message>
-    <message>
-        <source>%1 months ago</source>
-        <translation type="vanished">%1 måneder siden</translation>
-    </message>
-    <message>
-        <source>%1 days ago</source>
-        <translation type="vanished">%1 dage siden</translation>
-    </message>
-    <message>
-        <source>%1 hours ago</source>
-        <translation type="vanished">%1 timer siden</translation>
-    </message>
-    <message>
-        <source>%1 minutes ago</source>
-        <translation type="vanished">%1 minutter siden</translation>
-    </message>
-    <message>
-        <source>%1 seconds ago</source>
-        <translation type="vanished">%1 sekunder siden</translation>
     </message>
 </context>
 </TS>

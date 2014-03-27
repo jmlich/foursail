@@ -91,7 +91,9 @@ Page {
                 anchors.top: parent.top;
                 width: 64;
                 height: categoryPhoto.width;
-
+onSourceChanged: {
+    console.log("XXXXXXXXXXXXXXXXX " + photo_prefix + categoryPhoto.width + photo_suffix + " " + venue_name_label.text + " " + model.vid)
+}
             }
 
 

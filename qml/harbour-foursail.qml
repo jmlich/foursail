@@ -82,7 +82,14 @@ ApplicationWindow {
             checkinDetailPage.comment = "";
             checkinDetailPage.lat = lat;
             checkinDetailPage.lon = lon;
-            pageStack.push(checkinDetailPage)
+
+            var p = pageStack.find(function(page) { return page === checkinDetailPage; });
+            if (p !== null) {
+                pageStack.pop(checkinDetailPage)
+            } else {
+                pageStack.push(checkinDetailPage)
+            }
+
         }
         onFriendDetail: {
 
@@ -135,7 +142,13 @@ ApplicationWindow {
             checkinDetailPage.comment = "";
             checkinDetailPage.lat = lat;
             checkinDetailPage.lon = lon;
-            pageStack.push(checkinDetailPage)
+
+            var p = pageStack.find(function(page) { return page === checkinDetailPage; });
+            if (p !== null) {
+                pageStack.pop(checkinDetailPage)
+            } else {
+                pageStack.push(checkinDetailPage)
+            }
         }
     }
 
@@ -191,7 +204,14 @@ ApplicationWindow {
 
         onSwitchToListed: {
             data.venueListed(venue_id)
-            pageStack.push(listsPage)
+
+            var p = pageStack.find(function(page) { return page === listsPage; });
+            if (p !== null) {
+                pageStack.pop(listsPage)
+            } else {
+                pageStack.push(listsPage)
+            }
+
         }
 
         onVenue_likedChanged: {
@@ -227,7 +247,14 @@ ApplicationWindow {
 
         onSwitchToLists: {
             data.lists(uid)
-            pageStack.push(listsPage);
+
+            var p = pageStack.find(function(page) { return page === listsPage; });
+            if (p !== null) {
+                pageStack.pop(listsPage)
+            } else {
+                pageStack.push(listsPage)
+            }
+
         }
 
         onSwitchToNearbyVenues: {
@@ -309,7 +336,13 @@ ApplicationWindow {
                 checkinDetailPage.comment = "";
                 checkinDetailPage.lat = lat;
                 checkinDetailPage.lon = lon;
-                pageStack.push(checkinDetailPage)
+
+                var p = pageStack.find(function(page) { return page === checkinDetailPage; });
+                if (p !== null) {
+                    pageStack.pop(checkinDetailPage)
+                } else {
+                    pageStack.push(checkinDetailPage)
+                }
             }
         }
 
@@ -346,7 +379,13 @@ ApplicationWindow {
             checkinDetailPage.comment = "";
             checkinDetailPage.lat = lat;
             checkinDetailPage.lon = lon;
-            pageStack.push(checkinDetailPage)
+
+            var p = pageStack.find(function(page) { return page === checkinDetailPage; });
+            if (p !== null) {
+                pageStack.pop(checkinDetailPage)
+            } else {
+                pageStack.push(checkinDetailPage)
+            }
         }
     }
 
@@ -426,7 +465,13 @@ ApplicationWindow {
             checkinDetailPage.comment = "";
             checkinDetailPage.lat = lat;
             checkinDetailPage.lon = lon;
-            pageStack.push(checkinDetailPage)
+
+            var p = pageStack.find(function(page) { return page === checkinDetailPage; });
+            if (p !== null) {
+                pageStack.pop(checkinDetailPage)
+            } else {
+                pageStack.push(checkinDetailPage)
+            }
         }
 
     }

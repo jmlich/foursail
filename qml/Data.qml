@@ -517,7 +517,8 @@ Rectangle {
                                 street = (item.location.address !== undefined) ? item.location.address : "";
                                 city   = (item.location.city !== undefined) ? item.location.city : "";
                                 address = (street !== "") ? (street + ", " + city) : city;
-                                photo = (item.categories[0] !== undefined) ? item.categories[0].icon : ""
+                                var empty_photo = {'prefix': "https://foursquare.com/img/categories_v2/none_", "suffix":".png"};
+                                photo = (item.categories[0] !== undefined) ? item.categories[0].icon : empty_photo;
                                 var events = (item.events !== undefined) ? item.events.count : 0;
                                 data = {'vid': item.id, 'name': item.name, 'photo_prefix': photo.prefix, 'photo_suffix': photo.suffix, 'address': address, 'distance': item.location.distance,'hereNow': item.hereNow.count,'lat': item.location.lat, 'lon': item.location.lng,'specials_count': item.specials.count,'stats_checkinsCount': item.stats.checkinsCount,'stats_usersCount': item.stats.usersCount,'stats_tipCount': item.stats.tipCount, 'events' : events}
                                 nearbyVeneuesPage.m.append(data)
