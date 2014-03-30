@@ -11,181 +11,181 @@
     <message id="lists-edit-accept">
         <location filename="../qml/AddAndEditListPage.qml" line="21"/>
         <source>Edit List</source>
-        <translation type="unfinished"></translation>
+        <translation>编辑列表</translation>
     </message>
     <message id="lists-create-accept">
         <location filename="../qml/AddAndEditListPage.qml" line="23"/>
         <source>Create List</source>
-        <translation type="unfinished"></translation>
+        <translation>创建列表</translation>
     </message>
     <message id="lists-create-name">
         <location filename="../qml/AddAndEditListPage.qml" line="30"/>
         <source>List name</source>
         <oldsource>List Name</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>列表名称</translation>
     </message>
     <message id="lists-create-description">
         <location filename="../qml/AddAndEditListPage.qml" line="37"/>
         <source>List description</source>
-        <translation type="unfinished"></translation>
+        <translation>列表说明</translation>
     </message>
     <message id="venue-add-accept">
         <location filename="../qml/AddVenuePage.qml" line="37"/>
         <source>Create</source>
-        <translation type="unfinished"></translation>
+        <translation>创建</translation>
     </message>
     <message id="venue-add-name">
         <location filename="../qml/AddVenuePage.qml" line="46"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>名称</translation>
     </message>
     <message id="venue-add-choose-category">
         <location filename="../qml/AddVenuePage.qml" line="67"/>
         <source>Choose category</source>
-        <translation type="unfinished"></translation>
+        <translation>选择类别</translation>
     </message>
     <message id="venue-add-address">
         <location filename="../qml/AddVenuePage.qml" line="82"/>
         <source>Address</source>
-        <translation type="unfinished"></translation>
+        <translation>地址</translation>
     </message>
     <message id="venue-add-cross-street">
         <location filename="../qml/AddVenuePage.qml" line="89"/>
         <source>Cross street</source>
-        <translation type="unfinished"></translation>
+        <translation>街道</translation>
     </message>
     <message id="venue-add-city">
         <location filename="../qml/AddVenuePage.qml" line="97"/>
         <source>City</source>
-        <translation type="unfinished"></translation>
+        <translation>城市</translation>
     </message>
     <message id="venue-add-state">
         <location filename="../qml/AddVenuePage.qml" line="104"/>
         <source>State</source>
-        <translation type="unfinished"></translation>
+        <translation>省</translation>
     </message>
     <message id="venue-add-zip">
         <location filename="../qml/AddVenuePage.qml" line="111"/>
         <source>ZIP</source>
-        <translation type="unfinished"></translation>
+        <translation>邮政编码</translation>
     </message>
     <message id="venue-add-phone">
         <location filename="../qml/AddVenuePage.qml" line="119"/>
         <source>Phone</source>
-        <translation type="unfinished"></translation>
+        <translation>电话</translation>
     </message>
     <message id="venue-add-twitter">
         <location filename="../qml/AddVenuePage.qml" line="126"/>
         <source>Twitter</source>
-        <translation type="unfinished"></translation>
+        <translation>Twitter</translation>
     </message>
     <message id="venue-add-description">
         <location filename="../qml/AddVenuePage.qml" line="133"/>
         <source>Description</source>
-        <translation type="unfinished"></translation>
+        <translation>简介</translation>
     </message>
     <message id="badges-title">
         <location filename="../qml/BadgesPage.qml" line="34"/>
         <source>Badges</source>
-        <translation type="unfinished"></translation>
+        <translation>徽章</translation>
     </message>
     <message id="badges-empty">
         <location filename="../qml/BadgesPage.qml" line="40"/>
         <source>List of badges is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>徽章列表为空</translation>
     </message>
     <message id="categories-title">
         <location filename="../qml/CategoriesPage.qml" line="31"/>
         <source>Categories</source>
-        <translation type="unfinished"></translation>
+        <translation>类型</translation>
     </message>
     <message id="checkin-photos-menu">
         <location filename="../qml/CheckinDetailPage.qml" line="46"/>
         <source>Photos</source>
-        <translation type="unfinished"></translation>
+        <translation>照片</translation>
     </message>
     <message id="checkin-tips-menu">
         <location filename="../qml/CheckinDetailPage.qml" line="51"/>
         <source>Tips</source>
-        <translation type="unfinished"></translation>
+        <translation>提示</translation>
     </message>
     <message id="checkin-listed-menu">
         <location filename="../qml/CheckinDetailPage.qml" line="56"/>
         <source>Listed</source>
-        <translation type="unfinished"></translation>
+        <translation>列表</translation>
     </message>
     <message id="checkin-dislike-venue-menu">
         <location filename="../qml/CheckinDetailPage.qml" line="64"/>
         <source>Dislike</source>
-        <translation type="unfinished"></translation>
+        <translation>不喜欢</translation>
     </message>
     <message id="checkin-like-venue-menu">
         <location filename="../qml/CheckinDetailPage.qml" line="66"/>
         <source>Like</source>
-        <translation type="unfinished"></translation>
+        <translation>喜欢</translation>
     </message>
     <message id="venue-checkin-accept">
         <location filename="../qml/CheckinDetailPage.qml" line="81"/>
         <source>Checkin</source>
-        <translation type="unfinished"></translation>
+        <translation>签到</translation>
     </message>
     <message id="venue-checkin-comment">
         <location filename="../qml/CheckinDetailPage.qml" line="129"/>
         <source>Write your comment here.</source>
         <oldsource>Comment</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>在这里写你的评论。</translation>
     </message>
     <message id="venue-checkin-share-to-facebook-button">
         <location filename="../qml/CheckinDetailPage.qml" line="135"/>
         <source>Share to Facebook</source>
         <oldsource>Share to facebook</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>分享到Facebook</translation>
     </message>
     <message id="venue-checkin-share-to-twitter-button">
         <location filename="../qml/CheckinDetailPage.qml" line="141"/>
         <source>Share to Twitter</source>
         <oldsource>Share to twitter</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>分享到Twitter</translation>
     </message>
     <message id="venue-checkin-show-on-map-button">
         <location filename="../qml/CheckinDetailPage.qml" line="146"/>
         <source>Show on Map</source>
-        <translation type="unfinished"></translation>
+        <translation>在地图上显示</translation>
     </message>
     <message id="cover-loading">
         <location filename="../qml/CoverPage.qml" line="65"/>
         <source>Loading ...</source>
-        <translation type="unfinished"></translation>
+        <translation>载入中……</translation>
     </message>
     <message id="cover-no-checkins">
         <location filename="../qml/CoverPage.qml" line="76"/>
         <source>Nobody of your friends checked in yet</source>
         <oldsource>FIXME</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>你的好友中还没有在这里签到的人</translation>
     </message>
     <message id="n-notifications" numerus="yes">
-        <location filename="../qml/Data.qml" line="443"/>
+        <location filename="../qml/Data.qml" line="474"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n条提醒</numerusform>
         </translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="834"/>
+        <location filename="../qml/Data.qml" line="867"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="838"/>
+        <location filename="../qml/Data.qml" line="871"/>
         <source>Connection problem</source>
-        <translation type="unfinished"></translation>
+        <translation>链接问题</translation>
     </message>
     <message id="friends-title">
         <location filename="../qml/FriendsPage.qml" line="29"/>
         <source>Friends</source>
-        <translation type="unfinished"></translation>
+        <translation>好友</translation>
     </message>
     <message id="friends-empty">
         <location filename="../qml/FriendsPage.qml" line="35"/>
@@ -313,7 +313,7 @@
     <message id="photos-title">
         <location filename="../qml/PhotosPage.qml" line="34"/>
         <source>Photos</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">照片</translation>
     </message>
     <message id="photos-empty">
         <location filename="../qml/PhotosPage.qml" line="41"/>
@@ -338,7 +338,7 @@
     <message id="image-status-loading">
         <location filename="../qml/PinchMap.qml" line="300"/>
         <source>Loading ...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">载入中……</translation>
     </message>
     <message id="image-status-unknown">
         <location filename="../qml/PinchMap.qml" line="302"/>
@@ -346,59 +346,59 @@
         <translation type="unfinished"></translation>
     </message>
     <message id="profile-my-profile-menu">
-        <location filename="../qml/ProfilePage.qml" line="65"/>
+        <location filename="../qml/ProfilePage.qml" line="73"/>
         <source>My Profile</source>
         <translation type="unfinished"></translation>
     </message>
     <message id="profile-recent-checkins-menu">
-        <location filename="../qml/ProfilePage.qml" line="72"/>
+        <location filename="../qml/ProfilePage.qml" line="80"/>
         <source>Recent Checkins</source>
         <translation type="unfinished"></translation>
     </message>
     <message id="profile-nearby-venues-menu">
-        <location filename="../qml/ProfilePage.qml" line="78"/>
+        <location filename="../qml/ProfilePage.qml" line="86"/>
         <source>Nearby Venues</source>
         <translation type="unfinished"></translation>
     </message>
     <message id="profile-checkins">
-        <location filename="../qml/ProfilePage.qml" line="176"/>
+        <location filename="../qml/ProfilePage.qml" line="184"/>
         <source>Checkins</source>
         <translation type="unfinished"></translation>
     </message>
     <message id="profile-notifications">
-        <location filename="../qml/ProfilePage.qml" line="203"/>
+        <location filename="../qml/ProfilePage.qml" line="211"/>
         <source>Notifications</source>
         <translation type="unfinished"></translation>
     </message>
     <message id="profile-badges">
-        <location filename="../qml/ProfilePage.qml" line="227"/>
+        <location filename="../qml/ProfilePage.qml" line="235"/>
         <source>Badges</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">徽章</translation>
     </message>
     <message id="profile-mayorships">
-        <location filename="../qml/ProfilePage.qml" line="251"/>
+        <location filename="../qml/ProfilePage.qml" line="259"/>
         <source>Mayorships</source>
         <translation type="unfinished"></translation>
     </message>
     <message id="profile-tips">
-        <location filename="../qml/ProfilePage.qml" line="274"/>
+        <location filename="../qml/ProfilePage.qml" line="282"/>
         <source>Tips</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">提示</translation>
     </message>
     <message id="profile-friends">
-        <location filename="../qml/ProfilePage.qml" line="297"/>
+        <location filename="../qml/ProfilePage.qml" line="305"/>
         <source>Friends</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">好友</translation>
     </message>
     <message id="profile-lists">
-        <location filename="../qml/ProfilePage.qml" line="319"/>
+        <location filename="../qml/ProfilePage.qml" line="327"/>
         <source>Lists</source>
         <translation type="unfinished"></translation>
     </message>
     <message id="profile-photos">
-        <location filename="../qml/ProfilePage.qml" line="342"/>
+        <location filename="../qml/ProfilePage.qml" line="350"/>
         <source>Photos</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">照片</translation>
     </message>
     <message id="tap-to-show">
         <location filename="../qml/harbour-foursail.qml" line="14"/>
@@ -458,7 +458,7 @@
     <message id="tips-title">
         <location filename="../qml/TipsPage.qml" line="27"/>
         <source>Tips</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">提示</translation>
     </message>
     <message id="tips-empty">
         <location filename="../qml/TipsPage.qml" line="35"/>
@@ -468,7 +468,7 @@
     <message id="checkin-result-title">
         <location filename="../qml/CheckinResultPage.qml" line="27"/>
         <source>Checkin</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">签到</translation>
     </message>
 </context>
 </TS>

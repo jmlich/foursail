@@ -164,7 +164,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message id="n-notifications" numerus="yes">
-        <location filename="../qml/Data.qml" line="443"/>
+        <location filename="../qml/Data.qml" line="474"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
         <translation type="unfinished">
@@ -173,13 +173,13 @@
         </translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="834"/>
+        <location filename="../qml/Data.qml" line="867"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="838"/>
+        <location filename="../qml/Data.qml" line="871"/>
         <source>Connection problem</source>
         <translation type="unfinished"></translation>
     </message>
@@ -348,57 +348,57 @@
         <translation type="unfinished"></translation>
     </message>
     <message id="profile-my-profile-menu">
-        <location filename="../qml/ProfilePage.qml" line="65"/>
+        <location filename="../qml/ProfilePage.qml" line="73"/>
         <source>My Profile</source>
         <translation type="unfinished"></translation>
     </message>
     <message id="profile-recent-checkins-menu">
-        <location filename="../qml/ProfilePage.qml" line="72"/>
+        <location filename="../qml/ProfilePage.qml" line="80"/>
         <source>Recent Checkins</source>
         <translation type="unfinished"></translation>
     </message>
     <message id="profile-nearby-venues-menu">
-        <location filename="../qml/ProfilePage.qml" line="78"/>
+        <location filename="../qml/ProfilePage.qml" line="86"/>
         <source>Nearby Venues</source>
         <translation type="unfinished"></translation>
     </message>
     <message id="profile-checkins">
-        <location filename="../qml/ProfilePage.qml" line="176"/>
+        <location filename="../qml/ProfilePage.qml" line="184"/>
         <source>Checkins</source>
         <translation type="unfinished"></translation>
     </message>
     <message id="profile-notifications">
-        <location filename="../qml/ProfilePage.qml" line="203"/>
+        <location filename="../qml/ProfilePage.qml" line="211"/>
         <source>Notifications</source>
         <translation type="unfinished"></translation>
     </message>
     <message id="profile-badges">
-        <location filename="../qml/ProfilePage.qml" line="227"/>
+        <location filename="../qml/ProfilePage.qml" line="235"/>
         <source>Badges</source>
         <translation type="unfinished"></translation>
     </message>
     <message id="profile-mayorships">
-        <location filename="../qml/ProfilePage.qml" line="251"/>
+        <location filename="../qml/ProfilePage.qml" line="259"/>
         <source>Mayorships</source>
         <translation type="unfinished"></translation>
     </message>
     <message id="profile-tips">
-        <location filename="../qml/ProfilePage.qml" line="274"/>
+        <location filename="../qml/ProfilePage.qml" line="282"/>
         <source>Tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message id="profile-friends">
-        <location filename="../qml/ProfilePage.qml" line="297"/>
+        <location filename="../qml/ProfilePage.qml" line="305"/>
         <source>Friends</source>
         <translation type="unfinished"></translation>
     </message>
     <message id="profile-lists">
-        <location filename="../qml/ProfilePage.qml" line="319"/>
+        <location filename="../qml/ProfilePage.qml" line="327"/>
         <source>Lists</source>
         <translation type="unfinished"></translation>
     </message>
     <message id="profile-photos">
-        <location filename="../qml/ProfilePage.qml" line="342"/>
+        <location filename="../qml/ProfilePage.qml" line="350"/>
         <source>Photos</source>
         <translation type="unfinished"></translation>
     </message>
