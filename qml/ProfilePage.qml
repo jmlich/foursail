@@ -112,6 +112,7 @@ Page {
                     anchors.right: parent.right
                     anchors.bottom: userPhoto.verticalCenter
                     anchors.margins: Theme.paddingMedium
+                    wrapMode: Text.WordWrap
 
                     font.bold: false
                     font.pixelSize: Theme.fontSizeSmall
