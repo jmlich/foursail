@@ -271,8 +271,7 @@ Rectangle {
         var source = "https://api.foursquare.com/v2/tips/" + tip_id + "/like"
         var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale + "&set=" + (value ? "1" : "0");
 
-        console.log("FIXME: likeTip " + tip_id + " " + value)
-//        foursquareDownload(source, params, "POST");
+        foursquareDownload(source, params, "POST");
     }
 
 
@@ -679,7 +678,6 @@ Rectangle {
                             array = resultObject.response.tips.items;
                             for (i = 0; i < array.length; ++i) {
                                 item = array[i];
-                                console.log("tips id " + item.id)
                                 var uid = item.id;
                                 var text = item.text;
                                 var date = new Date(parseInt(item.createdAt * 1000));
@@ -701,11 +699,11 @@ Rectangle {
                                     var venue_icon = (item.venue.categories[0] !== undefined) ? item.venue.categories[0].icon : empty_category_icon
 
                                     data = {
-                                        'tipIdentifier': uid,
+                                        'tipId': uid,
                                         'tipText': text,
                                         'photo': ((item.photo !== undefined) ? item.photo.prefix + "300x300" + item.photo.suffix : ""),
                                         'date': date,
-                                        'like': item.like,
+                                        'liked': item.like,
                                         'venueIdentifier' : venueId,
                                         'tipTitle' : venueName,
                                         'tipTitle2' : venueAddress,
@@ -713,11 +711,11 @@ Rectangle {
                                     };
                                 } else { // if we are asking for tips asociated with venue
                                     data = {
-                                        'tipIdentifier': uid,
+                                        'tipId': uid,
                                         'tipText': text,
                                         'photo': ((item.photo !== undefined) ? item.photo.prefix + "300x300" + item.photo.suffix : ""),
                                         'date': date,
-                                        'like': item.like,
+                                        'liked': item.like,
                                         'tipIcon': item.user.photo.prefix + "86x86" + item.user.photo.suffix,
                                         'tipTitle': ((item.user.firstName !== undefined) ? item.user.firstName : "") + " " + ((item.user.lastName !== undefined) ? item.user.lastName : ""),
                                         'tipTitle2': ""

@@ -40,47 +40,47 @@
         <translation>Name</translation>
     </message>
     <message id="venue-add-choose-category">
-        <location filename="../qml/AddVenuePage.qml" line="67"/>
+        <location filename="../qml/AddVenuePage.qml" line="69"/>
         <source>Choose category</source>
         <translation>Choose category</translation>
     </message>
     <message id="venue-add-address">
-        <location filename="../qml/AddVenuePage.qml" line="82"/>
+        <location filename="../qml/AddVenuePage.qml" line="84"/>
         <source>Address</source>
         <translation>Address</translation>
     </message>
     <message id="venue-add-cross-street">
-        <location filename="../qml/AddVenuePage.qml" line="89"/>
+        <location filename="../qml/AddVenuePage.qml" line="91"/>
         <source>Cross street</source>
         <translation>Cross street</translation>
     </message>
     <message id="venue-add-city">
-        <location filename="../qml/AddVenuePage.qml" line="97"/>
+        <location filename="../qml/AddVenuePage.qml" line="99"/>
         <source>City</source>
         <translation>City</translation>
     </message>
     <message id="venue-add-state">
-        <location filename="../qml/AddVenuePage.qml" line="104"/>
+        <location filename="../qml/AddVenuePage.qml" line="106"/>
         <source>State</source>
         <translation>State</translation>
     </message>
     <message id="venue-add-zip">
-        <location filename="../qml/AddVenuePage.qml" line="111"/>
+        <location filename="../qml/AddVenuePage.qml" line="113"/>
         <source>ZIP</source>
         <translation>ZIP</translation>
     </message>
     <message id="venue-add-phone">
-        <location filename="../qml/AddVenuePage.qml" line="119"/>
+        <location filename="../qml/AddVenuePage.qml" line="121"/>
         <source>Phone</source>
         <translation>Phone</translation>
     </message>
     <message id="venue-add-twitter">
-        <location filename="../qml/AddVenuePage.qml" line="126"/>
+        <location filename="../qml/AddVenuePage.qml" line="128"/>
         <source>Twitter</source>
         <translation>Twitter</translation>
     </message>
     <message id="venue-add-description">
-        <location filename="../qml/AddVenuePage.qml" line="133"/>
+        <location filename="../qml/AddVenuePage.qml" line="135"/>
         <source>Description</source>
         <translation>Description</translation>
     </message>
@@ -164,7 +164,7 @@
         <translation>Nobody of your friends checked in yet</translation>
     </message>
     <message id="n-notifications" numerus="yes">
-        <location filename="../qml/Data.qml" line="474"/>
+        <location filename="../qml/Data.qml" line="473"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
         <translation>
@@ -173,13 +173,13 @@
         </translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="869"/>
+        <location filename="../qml/Data.qml" line="867"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation>Unauthorized</translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="873"/>
+        <location filename="../qml/Data.qml" line="871"/>
         <source>Connection problem</source>
         <translation>Connection problem</translation>
     </message>
@@ -369,42 +369,42 @@
         <translation>Nearby Venues</translation>
     </message>
     <message id="profile-checkins">
-        <location filename="../qml/ProfilePage.qml" line="184"/>
+        <location filename="../qml/ProfilePage.qml" line="185"/>
         <source>Checkins</source>
         <translation>Checkins</translation>
     </message>
     <message id="profile-notifications">
-        <location filename="../qml/ProfilePage.qml" line="211"/>
+        <location filename="../qml/ProfilePage.qml" line="212"/>
         <source>Notifications</source>
         <translation>Notifications</translation>
     </message>
     <message id="profile-badges">
-        <location filename="../qml/ProfilePage.qml" line="235"/>
+        <location filename="../qml/ProfilePage.qml" line="236"/>
         <source>Badges</source>
         <translation>Badges</translation>
     </message>
     <message id="profile-mayorships">
-        <location filename="../qml/ProfilePage.qml" line="259"/>
+        <location filename="../qml/ProfilePage.qml" line="260"/>
         <source>Mayorships</source>
         <translation>Mayorships</translation>
     </message>
     <message id="profile-tips">
-        <location filename="../qml/ProfilePage.qml" line="282"/>
+        <location filename="../qml/ProfilePage.qml" line="283"/>
         <source>Tips</source>
         <translation>Tips</translation>
     </message>
     <message id="profile-friends">
-        <location filename="../qml/ProfilePage.qml" line="305"/>
+        <location filename="../qml/ProfilePage.qml" line="306"/>
         <source>Friends</source>
         <translation>Friends</translation>
     </message>
     <message id="profile-lists">
-        <location filename="../qml/ProfilePage.qml" line="327"/>
+        <location filename="../qml/ProfilePage.qml" line="328"/>
         <source>Lists</source>
         <translation>Lists</translation>
     </message>
     <message id="profile-photos">
-        <location filename="../qml/ProfilePage.qml" line="350"/>
+        <location filename="../qml/ProfilePage.qml" line="351"/>
         <source>Photos</source>
         <translation>Photos</translation>
     </message>
@@ -500,6 +500,16 @@
         <location filename="../qml/TipsPage.qml" line="35"/>
         <source>List of tips is empty</source>
         <translation>List of tips is empty</translation>
+    </message>
+    <message id="tips-dislike">
+        <location filename="../qml/TipsPage.qml" line="158"/>
+        <source>Dislike tip</source>
+        <translation>Dislike tip</translation>
+    </message>
+    <message id="tips-like">
+        <location filename="../qml/TipsPage.qml" line="160"/>
+        <source>Like tip</source>
+        <translation>Like tip</translation>
     </message>
     <message id="checkin-result-title">
         <location filename="../qml/CheckinResultPage.qml" line="27"/>
