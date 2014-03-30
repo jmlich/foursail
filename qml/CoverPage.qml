@@ -124,6 +124,16 @@ CoverBackground {
         }
     }
 
+    Timer {
+        id: refreshTimer
+        interval: 1800000 // 30 * 60 * 1000 ms = 30 minutes
+        repeat: true
+        running: (status === Cover.Active)
+        onTriggered: {
+            refresh()
+        }
+    }
+
 }
 
 

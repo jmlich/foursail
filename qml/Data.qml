@@ -101,14 +101,37 @@ Rectangle {
             accessToken = configGet("accessToken", "");
             lastUpdate = parseInt(configGet("lastUpdate", 0));
             searchVenuePage.historyStr = configGet("searchHistory", "{}");
+
+
+            lastCheckin = configGet("lastCheckin","")
+            var d = configGet("lastCheckinDate",0);
+            lastCheckinDate = (d !== 0) ?  new Date(d) : "";
+            lastCheckinPhoto = configGet("lastCheckinPhoto","")
+            lastCheckinId = configGet("lastCheckinId", "")
+
+
         } catch (e) {
             console.log("exception: configGet" + e)
         }
+
+
 
         if (accessToken === "") {
             auth_refresh()
         }
 
+    }
+
+    function saveCover() {
+        console.log("saving last cover to database...")
+        try {
+            configSet("lastCheckinDate", lastCheckinDate.getTime());
+            configSet("lastCheckinPhoto", lastCheckinPhoto);
+            configSet("lastCheckin", lastCheckin);
+            configSet("lastCheckinId", lastCheckinId);
+        } catch (e) {
+            console.log("exception: configGet" + e)
+        }
     }
 
     onAccessTokenChanged: {
@@ -507,6 +530,7 @@ Rectangle {
                                         lastCheckinPhoto = photo.prefix + "86x86" + photo.suffix;
                                         lastCheckin = firstName + " " + lastName + "\n@ " + venueName
                                         lastCheckinId = item.id;
+                                        saveCover();
                                         //                                    console.log("TO COVER: " + lastCheckin + " " + lastCheckinPhoto + " " + lastCheckinDate)
                                     }
                                     //                                          console.log(firstName + " " + lastName + "@ " + venueName + createdDate)

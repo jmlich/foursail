@@ -4,6 +4,8 @@ import Sailfish.Silica 1.0
 Page {
     property string uid: "self"
 
+    // FIXME loading
+
     property alias profile_photo_url: userPhoto.source
     property alias user_name: user_name_field.title
     property alias user_home_city: userHomeCity.text
