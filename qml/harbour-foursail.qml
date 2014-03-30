@@ -238,6 +238,7 @@ ApplicationWindow {
 
         onSwitchToMyProfile: {
             uid = "self";
+            data.profile (uid)
         }
 
         onSwitchToHistory: {
