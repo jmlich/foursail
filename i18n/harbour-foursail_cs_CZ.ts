@@ -1,8 +1,10 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="cs" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="cs">
 <context>
-    <name/>
+    <name></name>
     <message id="components-la-tap-to-cancel">
-        <location filename="../qml/NotificationPopup.qml" line="163"/>
+        <location filename="../qml/NotificationPopup.qml" line="161"/>
         <source>Tap to cancel</source>
         <translation>Klikněte pro zrušení</translation>
     </message>
@@ -165,7 +167,11 @@
         <location filename="../qml/Data.qml" line="474"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
-        <translation><numerusform>%n upozornění</numerusform><numerusform>%n upozornění</numerusform><numerusform>%n upozornění</numerusform></translation>
+        <translation>
+            <numerusform>%n upozornění</numerusform>
+            <numerusform>%n upozornění</numerusform>
+            <numerusform>%n upozornění</numerusform>
+        </translation>
     </message>
     <message id="error-not-authorized">
         <location filename="../qml/Data.qml" line="869"/>
@@ -193,6 +199,11 @@
         <source>Removing friend</source>
         <translation>Odstraňuji z přátel</translation>
     </message>
+    <message id="friends-remove">
+        <location filename="../qml/FriendsPage.qml" line="115"/>
+        <source>Remove</source>
+        <translation>Odstranit</translation>
+    </message>
     <message id="leaderboard-title">
         <location filename="../qml/LeaderboardPage.qml" line="25"/>
         <source>Leaderboard</source>
@@ -207,7 +218,11 @@
         <location filename="../qml/LeaderboardPage.qml" line="69"/>
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
-        <translation><numerusform>%n checkin</numerusform><numerusform>%n checkiny</numerusform><numerusform>%n checkinů</numerusform></translation>
+        <translation>
+            <numerusform>%n checkin</numerusform>
+            <numerusform>%n checkiny</numerusform>
+            <numerusform>%n checkinů</numerusform>
+        </translation>
     </message>
     <message id="list-detail-empty">
         <location filename="../qml/ListDetailPage.qml" line="31"/>
@@ -246,7 +261,8 @@
     </message>
     <message id="mayorships-empty">
         <location filename="../qml/MayorshipsPage.qml" line="32"/>
-        <source>User hasn&apos;t got any mayorships yet!</source>
+        <source>User hasn&apos;t got any mayorships yet</source>
+        <oldsource>User hasn&apos;t got any mayorships yet!</oldsource>
         <translation>Uživatel ještě není nikde starostou</translation>
     </message>
     <message id="nearby-venues-title">
@@ -425,13 +441,26 @@
         <translation>Obnovit</translation>
     </message>
     <message id="recent-checkins-like">
-        <location filename="../qml/RecentCheckinsPage.qml" line="171"/>
-        <source>Like</source>
+        <location filename="../qml/RecentCheckinsPage.qml" line="182"/>
+        <source>Like checkin</source>
+        <oldsource>Like</oldsource>
         <translation>Líbí</translation>
     </message>
+    <message id="recent-checkins-friend-profile">
+        <location filename="../qml/RecentCheckinsPage.qml" line="198"/>
+        <source>Profile</source>
+        <translation>Uživatel</translation>
+    </message>
+    <message id="recent-checkins-venue-detail">
+        <location filename="../qml/RecentCheckinsPage.qml" line="207"/>
+        <source>Venue</source>
+        <oldsource>Venue detail</oldsource>
+        <translation>Místo</translation>
+    </message>
     <message id="recent-checkins-dislike">
-        <location filename="../qml/RecentCheckinsPage.qml" line="169"/>
-        <source>Dislike</source>
+        <location filename="../qml/RecentCheckinsPage.qml" line="180"/>
+        <source>Dislike checkin</source>
+        <oldsource>Dislike</oldsource>
         <translation>Už se nelíbí</translation>
     </message>
     <message id="search-title">

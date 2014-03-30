@@ -38,8 +38,8 @@ Rectangle {
     onTargetLatChanged: { latitude = targetLat;  }
     onTargetLonChanged: { longitude = targetLon; }
 
-    property double latitude;//: FlightData.configGet("currentPositionLat", 49.803575)
-    property double longitude;//: FlightData.configGet("currentPositionLon", 15.475555)
+    property double latitude;// FlightData.configGet("currentPositionLat", 49.803575)
+    property double longitude;// FlightData.configGet("currentPositionLon", 15.475555)
 
     property variant scaleBarLength: getScaleBarLength(latitude);
 

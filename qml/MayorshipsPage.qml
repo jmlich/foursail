@@ -28,7 +28,7 @@ Page {
 
         ViewPlaceholder {
             enabled: !loading && (listmodel.count === 0)
-            //% "User hasn't got any mayorships yet!"
+            //% "User hasn't got any mayorships yet"
             text: (last_error !== "") ? last_error : qsTrId("mayorships-empty")
         }
 

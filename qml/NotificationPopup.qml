@@ -148,8 +148,6 @@ BackgroundItem {
         opacity: 0.7
         Label {
             id: titleLabel
-            //% "in %n seconds"
-//            text: remorsePopup.text + " " + qsTrId("components-la-in-n-seconds", remorsePopup._secsRemaining)
             text: remorsePopup.text
             width: parent.width
             font.family: Theme.fontFamilyHeading

@@ -1,8 +1,10 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_CN" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="zh_CN">
 <context>
-    <name/>
+    <name></name>
     <message id="components-la-tap-to-cancel">
-        <location filename="../qml/NotificationPopup.qml" line="163"/>
+        <location filename="../qml/NotificationPopup.qml" line="161"/>
         <source>Tap to cancel</source>
         <translation>点击以取消</translation>
     </message>
@@ -165,13 +167,15 @@
         <location filename="../qml/Data.qml" line="474"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
-        <translation><numerusform>%n条提醒</numerusform></translation>
+        <translation>
+            <numerusform>%n条提醒</numerusform>
+        </translation>
     </message>
     <message id="error-not-authorized">
         <location filename="../qml/Data.qml" line="869"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="error-connection-problem">
         <location filename="../qml/Data.qml" line="873"/>
@@ -186,293 +190,314 @@
     <message id="friends-empty">
         <location filename="../qml/FriendsPage.qml" line="35"/>
         <source>List of friends is empty</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="friends-removing">
         <location filename="../qml/FriendsPage.qml" line="87"/>
         <source>Removing friend</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="friends-remove">
+        <location filename="../qml/FriendsPage.qml" line="115"/>
+        <source>Remove</source>
+        <translation type="unfinished"></translation>
     </message>
     <message id="leaderboard-title">
         <location filename="../qml/LeaderboardPage.qml" line="25"/>
         <source>Leaderboard</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="leaderboard-empty">
         <location filename="../qml/LeaderboardPage.qml" line="31"/>
         <source>Leaderboard is empty</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="leaderboard-n-checkins" numerus="yes">
         <location filename="../qml/LeaderboardPage.qml" line="69"/>
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
-        <translation type="unfinished"><numerusform></numerusform></translation>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message id="list-detail-empty">
         <location filename="../qml/ListDetailPage.qml" line="31"/>
         <source>List contains no venues</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="lists-title">
         <location filename="../qml/ListsPage.qml" line="29"/>
         <source>Lists</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="lists-empty">
         <location filename="../qml/ListsPage.qml" line="35"/>
         <source>No lists are available</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="lists-new">
         <location filename="../qml/ListsPage.qml" line="44"/>
         <source>New</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="lists-edit">
         <location filename="../qml/ListsPage.qml" line="136"/>
         <source>Edit</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="map-title">
         <location filename="../qml/MapPage.qml" line="18"/>
         <source>Map</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="mayorships-title">
         <location filename="../qml/MayorshipsPage.qml" line="26"/>
         <source>Mayorships</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="mayorships-empty">
         <location filename="../qml/MayorshipsPage.qml" line="32"/>
-        <source>User hasn&apos;t got any mayorships yet!</source>
-        <translation type="unfinished"/>
+        <source>User hasn&apos;t got any mayorships yet</source>
+        <oldsource>User hasn&apos;t got any mayorships yet!</oldsource>
+        <translation type="unfinished"></translation>
     </message>
     <message id="nearby-venues-title">
         <location filename="../qml/NearbyVenuesPage.qml" line="36"/>
         <source>Nearby Venues</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="search-results-title">
         <location filename="../qml/NearbyVenuesPage.qml" line="38"/>
         <source>Search results</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="nearby-venues-my-profile-menu">
         <location filename="../qml/NearbyVenuesPage.qml" line="44"/>
         <source>My Profile</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="nearby-venues-recent-checkins-menu">
         <location filename="../qml/NearbyVenuesPage.qml" line="49"/>
         <source>Recent Checkins</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="nearby-venues-refresh-menu">
         <location filename="../qml/NearbyVenuesPage.qml" line="55"/>
         <source>Refresh</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="nearby-venues-nearby-venues-menu">
         <location filename="../qml/NearbyVenuesPage.qml" line="57"/>
         <source>Nearby Venues</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="nearby-venues-search-menu">
         <location filename="../qml/NearbyVenuesPage.qml" line="65"/>
         <source>Search</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="nearby-venues-add">
         <location filename="../qml/NearbyVenuesPage.qml" line="70"/>
         <source>Add</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="nearby-venues-empty">
         <location filename="../qml/NearbyVenuesPage.qml" line="78"/>
         <source>There is no venue in nearby</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="notifications-title">
         <location filename="../qml/NotificationsPage.qml" line="31"/>
         <source>Notifications</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="notifications-empty">
         <location filename="../qml/NotificationsPage.qml" line="38"/>
         <source>You have no notifications</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="photos-title">
         <location filename="../qml/PhotosPage.qml" line="34"/>
         <source>Photos</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">照片</translation>
     </message>
     <message id="photos-empty">
         <location filename="../qml/PhotosPage.qml" line="41"/>
         <source>List of photos is empty</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="image-status-ready">
         <location filename="../qml/PinchMap.qml" line="294"/>
         <source>Ready</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="image-status-not-set">
         <location filename="../qml/PinchMap.qml" line="296"/>
         <source>Not Set</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="image-status-error">
         <location filename="../qml/PinchMap.qml" line="298"/>
         <source>Error</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="image-status-loading">
         <location filename="../qml/PinchMap.qml" line="300"/>
         <source>Loading ...</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">载入中……</translation>
     </message>
     <message id="image-status-unknown">
         <location filename="../qml/PinchMap.qml" line="302"/>
         <source>Unknown</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="profile-my-profile-menu">
         <location filename="../qml/ProfilePage.qml" line="73"/>
         <source>My Profile</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="profile-recent-checkins-menu">
         <location filename="../qml/ProfilePage.qml" line="80"/>
         <source>Recent Checkins</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="profile-nearby-venues-menu">
         <location filename="../qml/ProfilePage.qml" line="86"/>
         <source>Nearby Venues</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="profile-checkins">
         <location filename="../qml/ProfilePage.qml" line="184"/>
         <source>Checkins</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="profile-notifications">
         <location filename="../qml/ProfilePage.qml" line="211"/>
         <source>Notifications</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="profile-badges">
         <location filename="../qml/ProfilePage.qml" line="235"/>
         <source>Badges</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">徽章</translation>
     </message>
     <message id="profile-mayorships">
         <location filename="../qml/ProfilePage.qml" line="259"/>
         <source>Mayorships</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="profile-tips">
         <location filename="../qml/ProfilePage.qml" line="282"/>
         <source>Tips</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">提示</translation>
     </message>
     <message id="profile-friends">
         <location filename="../qml/ProfilePage.qml" line="305"/>
         <source>Friends</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">好友</translation>
     </message>
     <message id="profile-lists">
         <location filename="../qml/ProfilePage.qml" line="327"/>
         <source>Lists</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="profile-photos">
         <location filename="../qml/ProfilePage.qml" line="350"/>
         <source>Photos</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">照片</translation>
     </message>
     <message id="tap-to-show">
         <location filename="../qml/harbour-foursail.qml" line="14"/>
         <source>Tap to show</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="recent-checkins-title">
         <location filename="../qml/RecentCheckinsPage.qml" line="31"/>
         <source>Recent Checkins</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="recent-checkins-empty">
         <location filename="../qml/RecentCheckinsPage.qml" line="37"/>
         <source>None of your friends checked in yet</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="recent-checkins-my-profile-menu">
         <location filename="../qml/RecentCheckinsPage.qml" line="43"/>
         <source>My Profile</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="recent-checkins-nearby-venues-menu">
         <location filename="../qml/RecentCheckinsPage.qml" line="48"/>
         <source>Nearby Venues</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="recent-checkins-refresh-menu">
         <location filename="../qml/RecentCheckinsPage.qml" line="53"/>
         <source>Refresh</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="recent-checkins-like">
-        <location filename="../qml/RecentCheckinsPage.qml" line="171"/>
-        <source>Like</source>
-        <translation type="unfinished"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="182"/>
+        <source>Like checkin</source>
+        <oldsource>Like</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="recent-checkins-friend-profile">
+        <location filename="../qml/RecentCheckinsPage.qml" line="198"/>
+        <source>Profile</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="recent-checkins-venue-detail">
+        <location filename="../qml/RecentCheckinsPage.qml" line="207"/>
+        <source>Venue</source>
+        <oldsource>Venue detail</oldsource>
+        <translation type="unfinished"></translation>
     </message>
     <message id="recent-checkins-dislike">
-        <location filename="../qml/RecentCheckinsPage.qml" line="169"/>
-        <source>Dislike</source>
-        <translation type="unfinished"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="180"/>
+        <source>Dislike checkin</source>
+        <oldsource>Dislike</oldsource>
+        <translation type="unfinished"></translation>
     </message>
     <message id="search-title">
         <location filename="../qml/SearchVenueDialog.qml" line="26"/>
         <source>Search</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="search-venue-name">
         <location filename="../qml/SearchVenueDialog.qml" line="33"/>
         <source>Venue name</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="history-title">
         <location filename="../qml/SelfCheckinsPage.qml" line="27"/>
         <source>History</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="history-empty">
         <location filename="../qml/SelfCheckinsPage.qml" line="34"/>
         <source>User didn&apos;t make check in yet</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="history-refresh-menu">
         <location filename="../qml/SelfCheckinsPage.qml" line="40"/>
         <source>Refresh</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="tips-title">
         <location filename="../qml/TipsPage.qml" line="27"/>
         <source>Tips</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">提示</translation>
     </message>
     <message id="tips-empty">
         <location filename="../qml/TipsPage.qml" line="35"/>
         <source>List of tips is empty</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="checkin-result-title">
         <location filename="../qml/CheckinResultPage.qml" line="27"/>
         <source>Checkin</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">签到</translation>
     </message>
 </context>
 </TS>

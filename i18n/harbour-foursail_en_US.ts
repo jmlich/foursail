@@ -4,7 +4,7 @@
 <context>
     <name></name>
     <message id="components-la-tap-to-cancel">
-        <location filename="../qml/NotificationPopup.qml" line="163"/>
+        <location filename="../qml/NotificationPopup.qml" line="161"/>
         <source>Tap to cancel</source>
         <translation>Tap to cancel</translation>
     </message>
@@ -198,6 +198,11 @@
         <source>Removing friend</source>
         <translation>Removing friend</translation>
     </message>
+    <message id="friends-remove">
+        <location filename="../qml/FriendsPage.qml" line="115"/>
+        <source>Remove</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message id="leaderboard-title">
         <location filename="../qml/LeaderboardPage.qml" line="25"/>
         <source>Leaderboard</source>
@@ -254,8 +259,9 @@
     </message>
     <message id="mayorships-empty">
         <location filename="../qml/MayorshipsPage.qml" line="32"/>
-        <source>User hasn&apos;t got any mayorships yet!</source>
-        <translation>User hasn&apos;t got any mayorships yet!</translation>
+        <source>User hasn&apos;t got any mayorships yet</source>
+        <oldsource>User hasn&apos;t got any mayorships yet!</oldsource>
+        <translation>User hasn&apos;t got any mayorships yet</translation>
     </message>
     <message id="nearby-venues-title">
         <location filename="../qml/NearbyVenuesPage.qml" line="36"/>
@@ -433,14 +439,32 @@
         <translation>Refresh</translation>
     </message>
     <message id="recent-checkins-like">
-        <location filename="../qml/RecentCheckinsPage.qml" line="171"/>
-        <source>Like</source>
-        <translation>Like</translation>
+        <location filename="../qml/RecentCheckinsPage.qml" line="182"/>
+        <source>Like checkin</source>
+        <oldsource>Like</oldsource>
+        <translation>Like checkin</translation>
+    </message>
+    <message id="recent-checkins-friend-profile">
+        <location filename="../qml/RecentCheckinsPage.qml" line="198"/>
+        <source>Profile</source>
+        <translation>Profile</translation>
+    </message>
+    <message id="recent-checkins-friendDetail">
+        <source>Profile</source>
+        <oldsource>Friend detail</oldsource>
+        <translation type="obsolete">Friend detail</translation>
+    </message>
+    <message id="recent-checkins-venue-detail">
+        <location filename="../qml/RecentCheckinsPage.qml" line="207"/>
+        <source>Venue</source>
+        <oldsource>Venue detail</oldsource>
+        <translation>Venue</translation>
     </message>
     <message id="recent-checkins-dislike">
-        <location filename="../qml/RecentCheckinsPage.qml" line="169"/>
-        <source>Dislike</source>
-        <translation>Dislike</translation>
+        <location filename="../qml/RecentCheckinsPage.qml" line="180"/>
+        <source>Dislike checkin</source>
+        <oldsource>Dislike</oldsource>
+        <translation>Dislike checkin</translation>
     </message>
     <message id="search-title">
         <location filename="../qml/SearchVenueDialog.qml" line="26"/>

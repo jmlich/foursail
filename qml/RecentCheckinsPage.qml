@@ -87,17 +87,9 @@ Page {
                     anchors.leftMargin: Theme.paddingMedium;
                     anchors.rightMargin: Theme.paddingMedium;
                     textFormat: Text.RichText
-                    text: "<style type='text/css'>a:link{color:"+Theme.primaryColor+"; text-decoration: none;} a:visited{color:"+Theme.primaryColor+"}</style> <a href=\"name\">" + firstName +" " + lastName + "</a> @ <a href=\"venue\">" + venueName + "</a>"
+                    text: firstName +" " + lastName + " @ " + venueName
                     color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
                     wrapMode: Text.Wrap
-                    onLinkActivated: {
-                        if (link == "venue") {
-                            checkinDetail(vid, venueName, address, venuePhoto, lat, lon)
-                        }
-                        if (link == "name") {
-                            friendDetail(listmodel.get(index))
-                        }
-                    }
                 }
 
                 Label {
@@ -145,14 +137,23 @@ Page {
                 }
 
 
-                onClicked: console.log("Clicked " + index)
-                onPressAndHold: {
-                    console.log("press and hold")
+//                onClicked: console.log("Clicked " + index)
+                onClicked: {
                     if (listView.contextMenu === null) {
                         listView.contextMenu = contextMenuComponent.createObject(listView)
                     }
-                    listView.contextMenu.checkinId = checkinId
-                    listView.contextMenu.liked = liked
+                    listView.contextMenu.checkinId = checkinId;
+                    listView.contextMenu.liked = liked;
+                    listView.contextMenu.vid = vid;
+                    listView.contextMenu.venueName = venueName;
+                    listView.contextMenu.address = address;
+                    listView.contextMenu.venuePhoto = venuePhoto;
+                    listView.contextMenu.lat = lat;
+                    listView.contextMenu.lon = lon;
+                    listView.contextMenu.index = index;
+                    listView.contextMenu.firstName = firstName;
+                    listView.contextMenu.lastName = lastName;
+
                     listView.contextMenu.show(myListItem)
                 }
             }
@@ -163,11 +164,21 @@ Page {
             ContextMenu {
                 property string checkinId;
                 property bool liked;
+                property string vid
+                property string venueName;
+                property string address;
+                property string venuePhoto
+                property real lat
+                property real lon
+                property int index;
+                property string firstName
+                property string lastName
+
                 MenuItem {
                     text: liked ?
-                              //% "Dislike"
+                              //% "Dislike checkin"
                               qsTrId("recent-checkins-dislike") :
-                              //% "Like"
+                              //% "Like checkin"
                               qsTrId("recent-checkins-like")
                     onClicked: {
                         liked = !liked;
@@ -180,6 +191,22 @@ Page {
                                 listmodel.setProperty(i, "liked", liked)
                             }
                         }
+                    }
+                }
+                MenuItem {
+                    //% "Profile"
+                    text: qsTrId("recent-checkins-friend-profile");
+                    onClicked: {
+                        friendDetail(listmodel.get(index))
+                    }
+
+                }
+
+                MenuItem {
+                    //% "Venue"
+                    text: qsTrId("recent-checkins-venue-detail")
+                    onClicked: {
+                        checkinDetail(vid, venueName, address, venuePhoto, lat, lon)
                     }
                 }
             }

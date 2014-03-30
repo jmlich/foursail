@@ -112,7 +112,7 @@ Page {
             ContextMenu {
                 MenuItem {
                     //% "Remove"
-                    text: qsTrIs("friends remove");
+                    text: qsTrId("friends-remove");
                     onClicked: listView.currentItem.remove();
                 }
             }
