@@ -703,7 +703,7 @@ Rectangle {
                                     data = {
                                         'tipIdentifier': uid,
                                         'tipText': text,
-                                        'photo': ((item.photo !== undefined) ? photo.prefix + "300x300" + photo.suffix : ""),
+                                        'photo': ((item.photo !== undefined) ? item.photo.prefix + "300x300" + item.photo.suffix : ""),
                                         'date': date,
                                         'like': item.like,
                                         'venueIdentifier' : venueId,
@@ -715,7 +715,7 @@ Rectangle {
                                     data = {
                                         'tipIdentifier': uid,
                                         'tipText': text,
-                                        'photo': ((item.photo !== undefined) ? photo.prefix + "300x300" + photo.suffix : ""),
+                                        'photo': ((item.photo !== undefined) ? item.photo.prefix + "300x300" + item.photo.suffix : ""),
                                         'date': date,
                                         'like': item.like,
                                         'tipIcon': item.user.photo.prefix + "86x86" + item.user.photo.suffix,

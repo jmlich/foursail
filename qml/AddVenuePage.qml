@@ -56,6 +56,8 @@ Dialog {
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.leftMargin: Theme.paddingMedium
                     anchors.rightMargin: Theme.paddingMedium
+                    source: "https://foursquare.com/img/categories_v2/none_"+height+".png" // default source
+
                 }
 
                 Label {

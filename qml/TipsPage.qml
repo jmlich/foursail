@@ -97,7 +97,6 @@ Page {
                 verticalAlignment: Text.AlignBottom
                 color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
                 font.pixelSize: Theme.fontSizeSmall
-                elide: Text.ElideRight
                 wrapMode: Text.WordWrap
                 text: ((tipTitle2 !== "") ? tipTitle2+"\n" : "")
                       + Format.formatDate(date, Formatter.DurationElapsed)
@@ -126,6 +125,8 @@ Page {
                 anchors.right: parent.right
                 anchors.leftMargin: Theme.paddingMedium
                 anchors.rightMargin: Theme.paddingMedium
+
+                color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
 
                 text: tipText
                 wrapMode: Text.Wrap
