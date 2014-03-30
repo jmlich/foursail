@@ -58,6 +58,13 @@ Dialog {
             }
 
             MenuItem {
+                //% "Specials"
+                text: qsTrId("checkin-specials")
+//                onClicked: switchToSpecials()
+                visible: false;
+            }
+
+            MenuItem {
                 visible: false; // FIXME venue_liked must be filled first
                 text: venue_liked
                 //% "Dislike"

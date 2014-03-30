@@ -104,8 +104,8 @@ Rectangle {
 
 
             lastCheckin = configGet("lastCheckin","")
-            var d = configGet("lastCheckinDate",0);
-            lastCheckinDate = (d !== 0) ?  new Date(d) : "";
+            var d = configGet("lastCheckinDate","");
+            lastCheckinDate = (d !== "") ?  new Date(parseInt(d)) : "";
             lastCheckinPhoto = configGet("lastCheckinPhoto","")
             lastCheckinId = configGet("lastCheckinId", "")
 
