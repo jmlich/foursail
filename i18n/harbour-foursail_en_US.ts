@@ -173,13 +173,13 @@
         </translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="867"/>
+        <location filename="../qml/Data.qml" line="869"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation>Unauthorized</translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="871"/>
+        <location filename="../qml/Data.qml" line="873"/>
         <source>Connection problem</source>
         <translation>Connection problem</translation>
     </message>
@@ -408,29 +408,39 @@
         <translation>Tap to show</translation>
     </message>
     <message id="recent-checkins-title">
-        <location filename="../qml/RecentCheckinsPage.qml" line="30"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="31"/>
         <source>Recent Checkins</source>
         <translation>Recent Checkins</translation>
     </message>
     <message id="recent-checkins-empty">
-        <location filename="../qml/RecentCheckinsPage.qml" line="36"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="37"/>
         <source>None of your friends checked in yet</source>
         <translation>None of your friends checked in yet</translation>
     </message>
     <message id="recent-checkins-my-profile-menu">
-        <location filename="../qml/RecentCheckinsPage.qml" line="42"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="43"/>
         <source>My Profile</source>
         <translation>My Profile</translation>
     </message>
     <message id="recent-checkins-nearby-venues-menu">
-        <location filename="../qml/RecentCheckinsPage.qml" line="47"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="48"/>
         <source>Nearby Venues</source>
         <translation>Nearby Venues</translation>
     </message>
     <message id="recent-checkins-refresh-menu">
-        <location filename="../qml/RecentCheckinsPage.qml" line="52"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="53"/>
         <source>Refresh</source>
         <translation>Refresh</translation>
+    </message>
+    <message id="recent-checkins-like">
+        <location filename="../qml/RecentCheckinsPage.qml" line="171"/>
+        <source>Like</source>
+        <translation>Like</translation>
+    </message>
+    <message id="recent-checkins-dislike">
+        <location filename="../qml/RecentCheckinsPage.qml" line="169"/>
+        <source>Dislike</source>
+        <translation>Dislike</translation>
     </message>
     <message id="search-title">
         <location filename="../qml/SearchVenueDialog.qml" line="26"/>

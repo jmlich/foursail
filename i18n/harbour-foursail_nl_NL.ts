@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="nl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl" version="2.1">
 <context>
-    <name></name>
+    <name/>
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="163"/>
         <source>Tap to cancel</source>
@@ -167,19 +165,16 @@
         <location filename="../qml/Data.qml" line="474"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
-        <translation>
-            <numerusform>%n melding</numerusform>
-            <numerusform>%n meldingen</numerusform>
-        </translation>
+        <translation><numerusform>%n melding</numerusform><numerusform>%n meldingen</numerusform></translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="867"/>
+        <location filename="../qml/Data.qml" line="869"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation>Onbevoegd</translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="871"/>
+        <location filename="../qml/Data.qml" line="873"/>
         <source>Connection problem</source>
         <translation>Verbindingsprobleem</translation>
     </message>
@@ -212,10 +207,7 @@
         <location filename="../qml/LeaderboardPage.qml" line="69"/>
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
-        <translation>
-            <numerusform>%n incheck</numerusform>
-            <numerusform>%n inchecks</numerusform>
-        </translation>
+        <translation><numerusform>%n incheck</numerusform><numerusform>%n inchecks</numerusform></translation>
     </message>
     <message id="list-detail-empty">
         <location filename="../qml/ListDetailPage.qml" line="31"/>
@@ -408,29 +400,39 @@
         <translation>Tik om te tonen</translation>
     </message>
     <message id="recent-checkins-title">
-        <location filename="../qml/RecentCheckinsPage.qml" line="30"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="31"/>
         <source>Recent Checkins</source>
         <translation>Recente inchecks</translation>
     </message>
     <message id="recent-checkins-empty">
-        <location filename="../qml/RecentCheckinsPage.qml" line="36"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="37"/>
         <source>None of your friends checked in yet</source>
         <translation>Geen van je vrienden is al ingecheckt</translation>
     </message>
     <message id="recent-checkins-my-profile-menu">
-        <location filename="../qml/RecentCheckinsPage.qml" line="42"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="43"/>
         <source>My Profile</source>
         <translation>Mijn profiel</translation>
     </message>
     <message id="recent-checkins-nearby-venues-menu">
-        <location filename="../qml/RecentCheckinsPage.qml" line="47"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="48"/>
         <source>Nearby Venues</source>
         <translation>Gelegenheden dichtbij</translation>
     </message>
     <message id="recent-checkins-refresh-menu">
-        <location filename="../qml/RecentCheckinsPage.qml" line="52"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="53"/>
         <source>Refresh</source>
         <translation>Verversen</translation>
+    </message>
+    <message id="recent-checkins-like">
+        <location filename="../qml/RecentCheckinsPage.qml" line="171"/>
+        <source>Like</source>
+        <translation type="unfinished"/>
+    </message>
+    <message id="recent-checkins-dislike">
+        <location filename="../qml/RecentCheckinsPage.qml" line="169"/>
+        <source>Dislike</source>
+        <translation type="unfinished"/>
     </message>
     <message id="search-title">
         <location filename="../qml/SearchVenueDialog.qml" line="26"/>

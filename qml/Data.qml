@@ -501,6 +501,8 @@ Rectangle {
 
 
                                     data = {
+                                        'checkinId' : item.id,
+                                        'liked': item.like,
                                         'uid': item.user.id,
                                         'photo': item.user.photo.prefix + "86x86" + item.user.photo.suffix,
                                         'firstName': ((item.user.firstName !== undefined) ? item.user.firstName : ""),

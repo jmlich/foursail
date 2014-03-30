@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ru">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ru" version="2.1">
 <context>
-    <name></name>
+    <name/>
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="163"/>
         <source>Tap to cancel</source>
@@ -167,20 +165,16 @@
         <location filename="../qml/Data.qml" line="474"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
-        <translation>
-            <numerusform>%n Уведомление</numerusform>
-            <numerusform>%n Уведомлений</numerusform>
-            <numerusform>%n Уведомлений</numerusform>
-        </translation>
+        <translation><numerusform>%n Уведомление</numerusform><numerusform>%n Уведомлений</numerusform><numerusform>%n Уведомлений</numerusform></translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="867"/>
+        <location filename="../qml/Data.qml" line="869"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation>Не подтвержденный</translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="871"/>
+        <location filename="../qml/Data.qml" line="873"/>
         <source>Connection problem</source>
         <translation>Проблема соединения</translation>
     </message>
@@ -213,11 +207,7 @@
         <location filename="../qml/LeaderboardPage.qml" line="69"/>
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
-        <translation>
-            <numerusform>%n чекин</numerusform>
-            <numerusform>%n чекинов</numerusform>
-            <numerusform>%n чекинов</numerusform>
-        </translation>
+        <translation><numerusform>%n чекин</numerusform><numerusform>%n чекинов</numerusform><numerusform>%n чекинов</numerusform></translation>
     </message>
     <message id="list-detail-empty">
         <location filename="../qml/ListDetailPage.qml" line="31"/>
@@ -410,29 +400,39 @@
         <translation>Нажмите, чтобы показать</translation>
     </message>
     <message id="recent-checkins-title">
-        <location filename="../qml/RecentCheckinsPage.qml" line="30"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="31"/>
         <source>Recent Checkins</source>
         <translation>История чекинов</translation>
     </message>
     <message id="recent-checkins-empty">
-        <location filename="../qml/RecentCheckinsPage.qml" line="36"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="37"/>
         <source>None of your friends checked in yet</source>
         <translation>Никто из друзей не зачекинился еще</translation>
     </message>
     <message id="recent-checkins-my-profile-menu">
-        <location filename="../qml/RecentCheckinsPage.qml" line="42"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="43"/>
         <source>My Profile</source>
         <translation>Мой Профиль</translation>
     </message>
     <message id="recent-checkins-nearby-venues-menu">
-        <location filename="../qml/RecentCheckinsPage.qml" line="47"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="48"/>
         <source>Nearby Venues</source>
         <translation>Места поблизости</translation>
     </message>
     <message id="recent-checkins-refresh-menu">
-        <location filename="../qml/RecentCheckinsPage.qml" line="52"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="53"/>
         <source>Refresh</source>
         <translation>Обновить</translation>
+    </message>
+    <message id="recent-checkins-like">
+        <location filename="../qml/RecentCheckinsPage.qml" line="171"/>
+        <source>Like</source>
+        <translation type="unfinished"/>
+    </message>
+    <message id="recent-checkins-dislike">
+        <location filename="../qml/RecentCheckinsPage.qml" line="169"/>
+        <source>Dislike</source>
+        <translation type="unfinished"/>
     </message>
     <message id="search-title">
         <location filename="../qml/SearchVenueDialog.qml" line="26"/>

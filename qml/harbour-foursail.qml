@@ -97,6 +97,10 @@ ApplicationWindow {
             pageStack.push(profilePage)
         }
 
+        onLikeCheckin: {
+            data.likeCheckin(checkinId, value)
+        }
+
     }
 
     NearbyVenuesPage {
