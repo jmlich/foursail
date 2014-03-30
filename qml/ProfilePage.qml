@@ -4,7 +4,7 @@ import Sailfish.Silica 1.0
 Page {
     property string uid: "self"
 
-    // FIXME loading
+    property bool loading;
 
     property alias profile_photo_url: userPhoto.source
     property alias user_name: user_name_field.title
@@ -35,6 +35,7 @@ Page {
     signal switchToMayorships();
     signal switchToMyProfile();
 
+
     onUidChanged: { // details should be empty while loading
         userPhoto.source = "";
         user_name_field.title = "";
@@ -52,6 +53,11 @@ Page {
         scores_max = 1;
     }
 
+    BusyIndicator {
+        anchors.centerIn: parent;
+        visible: loading && (user_name_field.title === "")
+        running: visible;
+    }
 
     SilicaFlickable {
 

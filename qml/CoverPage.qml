@@ -116,7 +116,7 @@ CoverBackground {
 
     Timer {
         id: coverTimer
-        interval: 10000
+        interval: 10000 // 10 s
         repeat: true
         running: (status === Cover.Active)
         onTriggered: {

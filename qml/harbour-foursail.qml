@@ -236,6 +236,8 @@ ApplicationWindow {
     ProfilePage {
         id: profilePage
 
+        loading: (data.countLoading > 0)
+
         onSwitchToMyProfile: {
             uid = "self";
             data.profile (uid)
