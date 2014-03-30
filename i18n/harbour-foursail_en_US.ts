@@ -201,7 +201,7 @@
     <message id="friends-remove">
         <location filename="../qml/FriendsPage.qml" line="115"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Remove</translation>
     </message>
     <message id="leaderboard-title">
         <location filename="../qml/LeaderboardPage.qml" line="25"/>
