@@ -13,6 +13,10 @@ CoverBackground {
     property string last_error;
     property string checkin_id;
 
+    onUpdateDateChanged: {
+        timestampLabel.text = Format.formatDate(updateDate, Formatter.DurationElapsed)
+    }
+
 
     Image {
         id: checkinPhoto

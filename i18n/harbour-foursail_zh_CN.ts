@@ -114,51 +114,56 @@
         <source>Listed</source>
         <translation>列表</translation>
     </message>
+    <message id="checkin-specials">
+        <location filename="../qml/CheckinDetailPage.qml" line="62"/>
+        <source>Specials</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message id="checkin-dislike-venue-menu">
-        <location filename="../qml/CheckinDetailPage.qml" line="64"/>
+        <location filename="../qml/CheckinDetailPage.qml" line="71"/>
         <source>Dislike</source>
         <translation>不喜欢</translation>
     </message>
     <message id="checkin-like-venue-menu">
-        <location filename="../qml/CheckinDetailPage.qml" line="66"/>
+        <location filename="../qml/CheckinDetailPage.qml" line="73"/>
         <source>Like</source>
         <translation>喜欢</translation>
     </message>
     <message id="venue-checkin-accept">
-        <location filename="../qml/CheckinDetailPage.qml" line="81"/>
+        <location filename="../qml/CheckinDetailPage.qml" line="88"/>
         <source>Checkin</source>
         <translation>签到</translation>
     </message>
     <message id="venue-checkin-comment">
-        <location filename="../qml/CheckinDetailPage.qml" line="129"/>
+        <location filename="../qml/CheckinDetailPage.qml" line="136"/>
         <source>Write your comment here.</source>
         <oldsource>Comment</oldsource>
         <translation>在这里写你的评论。</translation>
     </message>
     <message id="venue-checkin-share-to-facebook-button">
-        <location filename="../qml/CheckinDetailPage.qml" line="135"/>
+        <location filename="../qml/CheckinDetailPage.qml" line="142"/>
         <source>Share to Facebook</source>
         <oldsource>Share to facebook</oldsource>
         <translation>分享到Facebook</translation>
     </message>
     <message id="venue-checkin-share-to-twitter-button">
-        <location filename="../qml/CheckinDetailPage.qml" line="141"/>
+        <location filename="../qml/CheckinDetailPage.qml" line="148"/>
         <source>Share to Twitter</source>
         <oldsource>Share to twitter</oldsource>
         <translation>分享到Twitter</translation>
     </message>
     <message id="venue-checkin-show-on-map-button">
-        <location filename="../qml/CheckinDetailPage.qml" line="146"/>
+        <location filename="../qml/CheckinDetailPage.qml" line="153"/>
         <source>Show on Map</source>
         <translation>在地图上显示</translation>
     </message>
     <message id="cover-loading">
-        <location filename="../qml/CoverPage.qml" line="65"/>
+        <location filename="../qml/CoverPage.qml" line="69"/>
         <source>Loading ...</source>
         <translation>载入中……</translation>
     </message>
     <message id="cover-no-checkins">
-        <location filename="../qml/CoverPage.qml" line="76"/>
+        <location filename="../qml/CoverPage.qml" line="80"/>
         <source>Nobody of your friends checked in yet</source>
         <oldsource>FIXME</oldsource>
         <translation>你的好友中还没有在这里签到的人</translation>

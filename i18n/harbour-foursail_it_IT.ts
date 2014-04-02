@@ -114,51 +114,56 @@
         <source>Listed</source>
         <translation>In una lista</translation>
     </message>
+    <message id="checkin-specials">
+        <location filename="../qml/CheckinDetailPage.qml" line="62"/>
+        <source>Specials</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message id="checkin-dislike-venue-menu">
-        <location filename="../qml/CheckinDetailPage.qml" line="64"/>
+        <location filename="../qml/CheckinDetailPage.qml" line="71"/>
         <source>Dislike</source>
         <translation>Non mi piace</translation>
     </message>
     <message id="checkin-like-venue-menu">
-        <location filename="../qml/CheckinDetailPage.qml" line="66"/>
+        <location filename="../qml/CheckinDetailPage.qml" line="73"/>
         <source>Like</source>
         <translation>Mi piace</translation>
     </message>
     <message id="venue-checkin-accept">
-        <location filename="../qml/CheckinDetailPage.qml" line="81"/>
+        <location filename="../qml/CheckinDetailPage.qml" line="88"/>
         <source>Checkin</source>
         <translation>Check-in</translation>
     </message>
     <message id="venue-checkin-comment">
-        <location filename="../qml/CheckinDetailPage.qml" line="129"/>
+        <location filename="../qml/CheckinDetailPage.qml" line="136"/>
         <source>Write your comment here.</source>
         <oldsource>Comment</oldsource>
         <translation>Scrivi qui il tuo commento.</translation>
     </message>
     <message id="venue-checkin-share-to-facebook-button">
-        <location filename="../qml/CheckinDetailPage.qml" line="135"/>
+        <location filename="../qml/CheckinDetailPage.qml" line="142"/>
         <source>Share to Facebook</source>
         <oldsource>Share to facebook</oldsource>
         <translation>Condividi su Facebook</translation>
     </message>
     <message id="venue-checkin-share-to-twitter-button">
-        <location filename="../qml/CheckinDetailPage.qml" line="141"/>
+        <location filename="../qml/CheckinDetailPage.qml" line="148"/>
         <source>Share to Twitter</source>
         <oldsource>Share to twitter</oldsource>
         <translation>Condividi su Twitter</translation>
     </message>
     <message id="venue-checkin-show-on-map-button">
-        <location filename="../qml/CheckinDetailPage.qml" line="146"/>
+        <location filename="../qml/CheckinDetailPage.qml" line="153"/>
         <source>Show on Map</source>
         <translation>Mostra sulla mappa</translation>
     </message>
     <message id="cover-loading">
-        <location filename="../qml/CoverPage.qml" line="65"/>
+        <location filename="../qml/CoverPage.qml" line="69"/>
         <source>Loading ...</source>
         <translation>Caricamento...</translation>
     </message>
     <message id="cover-no-checkins">
-        <location filename="../qml/CoverPage.qml" line="76"/>
+        <location filename="../qml/CoverPage.qml" line="80"/>
         <source>Nobody of your friends checked in yet</source>
         <oldsource>FIXME</oldsource>
         <translation>Nessuno dei tuoi amici ha ancora fatto check-in</translation>
