@@ -830,7 +830,8 @@ Rectangle {
                                     var listItemData = {
                                         'liid': listItem.id,
                                         'photo': listItem.photo,
-                                        'venue': listItem.venue
+                                        'venue': listItem.venue,
+                                        'message': listItem.tip !== undefined ? listItem.tip.text : ""
                                     }
                                     listDetailPage.m.append(listItemData)
                                 }

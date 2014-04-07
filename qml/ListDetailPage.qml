@@ -44,6 +44,19 @@ Page {
                 venueInfo: venue
             }
 
+            Text {
+                id: listItemText;
+                anchors.top: shortVenueItem.bottom
+                anchors.right: shortVenueItem.right
+                anchors.left: shortVenueItem.left
+                anchors.leftMargin: Theme.paddingMedium * 2 + 64
+
+                font.pixelSize: Theme.fontSizeSmall
+                color: Theme.primaryColor
+
+                text: message !== undefined ? message : ""
+            }
+
             Image {
                 anchors.rightMargin: Theme.paddingMedium
                 anchors.top: shortVenueItem.top
