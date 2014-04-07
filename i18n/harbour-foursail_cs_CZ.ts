@@ -52,7 +52,7 @@
     <message id="venue-add-cross-street">
         <location filename="../qml/AddVenuePage.qml" line="91"/>
         <source>Cross street</source>
-        <translation>Křižuje ulici</translation>
+        <translation>Na křižovatce</translation>
     </message>
     <message id="venue-add-city">
         <location filename="../qml/AddVenuePage.qml" line="99"/>
@@ -144,13 +144,13 @@
         <location filename="../qml/CheckinDetailPage.qml" line="142"/>
         <source>Share to Facebook</source>
         <oldsource>Share to facebook</oldsource>
-        <translation>Sdílet na facebooku</translation>
+        <translation>Sdílet na Facebooku</translation>
     </message>
     <message id="venue-checkin-share-to-twitter-button">
         <location filename="../qml/CheckinDetailPage.qml" line="148"/>
         <source>Share to Twitter</source>
         <oldsource>Share to twitter</oldsource>
-        <translation>Sdílet na twitteru</translation>
+        <translation>Sdílet na Twitteru</translation>
     </message>
     <message id="venue-checkin-show-on-map-button">
         <location filename="../qml/CheckinDetailPage.qml" line="153"/>
@@ -486,7 +486,7 @@
     <message id="history-empty">
         <location filename="../qml/SelfCheckinsPage.qml" line="34"/>
         <source>User didn&apos;t make check in yet</source>
-        <translation>Uživatel ještě neudělal žádný checkin</translation>
+        <translation>Neudělal jste zatím žádný checkin</translation>
     </message>
     <message id="history-refresh-menu">
         <location filename="../qml/SelfCheckinsPage.qml" line="40"/>

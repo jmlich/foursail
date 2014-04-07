@@ -117,7 +117,7 @@
     <message id="checkin-specials">
         <location filename="../qml/CheckinDetailPage.qml" line="62"/>
         <source>Specials</source>
-        <translation type="unfinished"></translation>
+        <translation>Spesialler</translation>
     </message>
     <message id="checkin-dislike-venue-menu">
         <location filename="../qml/CheckinDetailPage.qml" line="71"/>
@@ -205,7 +205,7 @@
     <message id="friends-remove">
         <location filename="../qml/FriendsPage.qml" line="115"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Sil</translation>
     </message>
     <message id="leaderboard-title">
         <location filename="../qml/LeaderboardPage.qml" line="25"/>
@@ -445,24 +445,24 @@
         <location filename="../qml/RecentCheckinsPage.qml" line="182"/>
         <source>Like checkin</source>
         <oldsource>Like</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Beğen</translation>
     </message>
     <message id="recent-checkins-friend-profile">
         <location filename="../qml/RecentCheckinsPage.qml" line="198"/>
         <source>Profile</source>
-        <translation type="unfinished"></translation>
+        <translation>Profil</translation>
     </message>
     <message id="recent-checkins-venue-detail">
         <location filename="../qml/RecentCheckinsPage.qml" line="207"/>
         <source>Venue</source>
         <oldsource>Venue detail</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Mekan</translation>
     </message>
     <message id="recent-checkins-dislike">
         <location filename="../qml/RecentCheckinsPage.qml" line="180"/>
         <source>Dislike checkin</source>
         <oldsource>Dislike</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Beğenme</translation>
     </message>
     <message id="search-title">
         <location filename="../qml/SearchVenueDialog.qml" line="26"/>
@@ -502,12 +502,12 @@
     <message id="tips-dislike">
         <location filename="../qml/TipsPage.qml" line="158"/>
         <source>Dislike tip</source>
-        <translation type="unfinished"></translation>
+        <translation>Beğenme</translation>
     </message>
     <message id="tips-like">
         <location filename="../qml/TipsPage.qml" line="160"/>
         <source>Like tip</source>
-        <translation type="unfinished"></translation>
+        <translation>Beğen</translation>
     </message>
     <message id="checkin-result-title">
         <location filename="../qml/CheckinResultPage.qml" line="27"/>

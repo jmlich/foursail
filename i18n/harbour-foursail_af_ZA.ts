@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="nl">
+<TS version="2.1" language="af_ZA">
 <context>
     <name></name>
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="161"/>
         <source>Tap to cancel</source>
-        <translation>Tik om te annuleren</translation>
+        <translation>Tik om te Kanselleer</translation>
     </message>
     <message id="lists-edit-accept">
         <location filename="../qml/AddAndEditListPage.qml" line="21"/>
         <source>Edit List</source>
-        <translation>Bewerk lijst</translation>
+        <translation>Wysig lys</translation>
     </message>
     <message id="lists-create-accept">
         <location filename="../qml/AddAndEditListPage.qml" line="23"/>
         <source>Create List</source>
-        <translation>Creëer lijst</translation>
+        <translation>Skep lys</translation>
     </message>
     <message id="lists-create-name">
         <location filename="../qml/AddAndEditListPage.qml" line="30"/>
         <source>List name</source>
         <oldsource>List Name</oldsource>
-        <translation>Naam lijst</translation>
+        <translation>Lys naam</translation>
     </message>
     <message id="lists-create-description">
         <location filename="../qml/AddAndEditListPage.qml" line="37"/>
         <source>List description</source>
-        <translation>Beschrijving lijst</translation>
+        <translation>Lys beskrywing</translation>
     </message>
     <message id="venue-add-accept">
         <location filename="../qml/AddVenuePage.qml" line="37"/>
         <source>Create</source>
-        <translation>Creëer</translation>
+        <translation>Skep</translation>
     </message>
     <message id="venue-add-name">
         <location filename="../qml/AddVenuePage.qml" line="46"/>
         <source>Name</source>
-        <translation>Naam gelegenheid</translation>
+        <translation>Plek Naam</translation>
     </message>
     <message id="venue-add-choose-category">
         <location filename="../qml/AddVenuePage.qml" line="69"/>
         <source>Choose category</source>
-        <translation>Kies categorie</translation>
+        <translation>Kies Kategorie</translation>
     </message>
     <message id="venue-add-address">
         <location filename="../qml/AddVenuePage.qml" line="84"/>
@@ -52,22 +52,22 @@
     <message id="venue-add-cross-street">
         <location filename="../qml/AddVenuePage.qml" line="91"/>
         <source>Cross street</source>
-        <translation>Dwarsstraat</translation>
+        <translation>Kruis straat</translation>
     </message>
     <message id="venue-add-city">
         <location filename="../qml/AddVenuePage.qml" line="99"/>
         <source>City</source>
-        <translation>Plaats</translation>
+        <translation>Stad</translation>
     </message>
     <message id="venue-add-state">
         <location filename="../qml/AddVenuePage.qml" line="106"/>
         <source>State</source>
-        <translation>Staat</translation>
+        <translation>Provinsie</translation>
     </message>
     <message id="venue-add-zip">
         <location filename="../qml/AddVenuePage.qml" line="113"/>
         <source>ZIP</source>
-        <translation>Postcode</translation>
+        <translation>Poskode</translation>
     </message>
     <message id="venue-add-phone">
         <location filename="../qml/AddVenuePage.qml" line="121"/>
@@ -82,22 +82,22 @@
     <message id="venue-add-description">
         <location filename="../qml/AddVenuePage.qml" line="135"/>
         <source>Description</source>
-        <translation>Beschrijving</translation>
+        <translation>Beskrywing</translation>
     </message>
     <message id="badges-title">
         <location filename="../qml/BadgesPage.qml" line="34"/>
         <source>Badges</source>
-        <translation>Badges</translation>
+        <translation>Kentekens</translation>
     </message>
     <message id="badges-empty">
         <location filename="../qml/BadgesPage.qml" line="40"/>
         <source>List of badges is empty</source>
-        <translation>Lijst voor badges is leeg</translation>
+        <translation>Lys van kentekens is leeg</translation>
     </message>
     <message id="categories-title">
         <location filename="../qml/CategoriesPage.qml" line="31"/>
         <source>Categories</source>
-        <translation>Categorieën</translation>
+        <translation>Kategorieë</translation>
     </message>
     <message id="checkin-photos-menu">
         <location filename="../qml/CheckinDetailPage.qml" line="46"/>
@@ -107,150 +107,150 @@
     <message id="checkin-tips-menu">
         <location filename="../qml/CheckinDetailPage.qml" line="51"/>
         <source>Tips</source>
-        <translation>Tips</translation>
+        <translation>Wenke</translation>
     </message>
     <message id="checkin-listed-menu">
         <location filename="../qml/CheckinDetailPage.qml" line="56"/>
         <source>Listed</source>
-        <translation>Op lijst</translation>
+        <translation>Gelys</translation>
     </message>
     <message id="checkin-specials">
         <location filename="../qml/CheckinDetailPage.qml" line="62"/>
         <source>Specials</source>
-        <translation>Aanbiedingen</translation>
+        <translation>Aanbiedings</translation>
     </message>
     <message id="checkin-dislike-venue-menu">
         <location filename="../qml/CheckinDetailPage.qml" line="71"/>
         <source>Dislike</source>
-        <translation>Niet leuk</translation>
+        <translation>Hekel</translation>
     </message>
     <message id="checkin-like-venue-menu">
         <location filename="../qml/CheckinDetailPage.qml" line="73"/>
         <source>Like</source>
-        <translation>Leuk</translation>
+        <translation>Hou van</translation>
     </message>
     <message id="venue-checkin-accept">
         <location filename="../qml/CheckinDetailPage.qml" line="88"/>
         <source>Checkin</source>
-        <translation>Inchecken</translation>
+        <translation>Inklaar</translation>
     </message>
     <message id="venue-checkin-comment">
         <location filename="../qml/CheckinDetailPage.qml" line="136"/>
         <source>Write your comment here.</source>
         <oldsource>Comment</oldsource>
-        <translation>Schrijf hier je reacties.</translation>
+        <translation>Skryf hier jou kommentaar.</translation>
     </message>
     <message id="venue-checkin-share-to-facebook-button">
         <location filename="../qml/CheckinDetailPage.qml" line="142"/>
         <source>Share to Facebook</source>
         <oldsource>Share to facebook</oldsource>
-        <translation>Delen op Facebook</translation>
+        <translation>Deel op Facebook</translation>
     </message>
     <message id="venue-checkin-share-to-twitter-button">
         <location filename="../qml/CheckinDetailPage.qml" line="148"/>
         <source>Share to Twitter</source>
         <oldsource>Share to twitter</oldsource>
-        <translation>Delen op Twitter</translation>
+        <translation>Deel op Twitter</translation>
     </message>
     <message id="venue-checkin-show-on-map-button">
         <location filename="../qml/CheckinDetailPage.qml" line="153"/>
         <source>Show on Map</source>
-        <translation>Toon op kaart</translation>
+        <translation>Toon op Kaart</translation>
     </message>
     <message id="cover-loading">
         <location filename="../qml/CoverPage.qml" line="69"/>
         <source>Loading ...</source>
-        <translation>Laden ...</translation>
+        <translation>Laai ...</translation>
     </message>
     <message id="cover-no-checkins">
         <location filename="../qml/CoverPage.qml" line="80"/>
         <source>Nobody of your friends checked in yet</source>
         <oldsource>FIXME</oldsource>
-        <translation>Geen van je vrienden is al ingecheckt</translation>
+        <translation>Nie een van jou vriende het al ingeklaar nie</translation>
     </message>
     <message id="n-notifications" numerus="yes">
         <location filename="../qml/Data.qml" line="473"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
         <translation>
-            <numerusform>%n melding</numerusform>
-            <numerusform>%n meldingen</numerusform>
+            <numerusform>%n Kennisgewings</numerusform>
+            <numerusform>%n Kennisgewings</numerusform>
         </translation>
     </message>
     <message id="error-not-authorized">
         <location filename="../qml/Data.qml" line="867"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
-        <translation>Onbevoegd</translation>
+        <translation>Ongemagtigd</translation>
     </message>
     <message id="error-connection-problem">
         <location filename="../qml/Data.qml" line="871"/>
         <source>Connection problem</source>
-        <translation>Verbindingsprobleem</translation>
+        <translation>Probleem met verbinding</translation>
     </message>
     <message id="friends-title">
         <location filename="../qml/FriendsPage.qml" line="29"/>
         <source>Friends</source>
-        <translation>Vrienden</translation>
+        <translation>Vriende</translation>
     </message>
     <message id="friends-empty">
         <location filename="../qml/FriendsPage.qml" line="35"/>
         <source>List of friends is empty</source>
-        <translation>Vriendenlijst is leeg</translation>
+        <translation>Lys van vriende is leeg</translation>
     </message>
     <message id="friends-removing">
         <location filename="../qml/FriendsPage.qml" line="87"/>
         <source>Removing friend</source>
-        <translation>Verwijderen vriend</translation>
+        <translation>Verwyder Vriend</translation>
     </message>
     <message id="friends-remove">
         <location filename="../qml/FriendsPage.qml" line="115"/>
         <source>Remove</source>
-        <translation>Verwijderen</translation>
+        <translation>Verwyder</translation>
     </message>
     <message id="leaderboard-title">
         <location filename="../qml/LeaderboardPage.qml" line="25"/>
         <source>Leaderboard</source>
-        <translation>Scorebord</translation>
+        <translation>Leaderboard</translation>
     </message>
     <message id="leaderboard-empty">
         <location filename="../qml/LeaderboardPage.qml" line="31"/>
         <source>Leaderboard is empty</source>
-        <translation>Scorebord is leeg</translation>
+        <translation>Leaderbord is leeg</translation>
     </message>
     <message id="leaderboard-n-checkins" numerus="yes">
         <location filename="../qml/LeaderboardPage.qml" line="69"/>
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
         <translation>
-            <numerusform>%n incheck</numerusform>
-            <numerusform>%n inchecks</numerusform>
+            <numerusform>%n check-in</numerusform>
+            <numerusform>%n inklaringe</numerusform>
         </translation>
     </message>
     <message id="list-detail-empty">
         <location filename="../qml/ListDetailPage.qml" line="31"/>
         <source>List contains no venues</source>
-        <translation>Lijst bevat geen gelegenheden</translation>
+        <translation>Lys bevat geen plekke nie</translation>
     </message>
     <message id="lists-title">
         <location filename="../qml/ListsPage.qml" line="29"/>
         <source>Lists</source>
-        <translation>Lijsten</translation>
+        <translation>Lyste</translation>
     </message>
     <message id="lists-empty">
         <location filename="../qml/ListsPage.qml" line="35"/>
         <source>No lists are available</source>
-        <translation>Geen lijsten beschikbaar</translation>
+        <translation>Geen lyste beskikbaar nie</translation>
     </message>
     <message id="lists-new">
         <location filename="../qml/ListsPage.qml" line="44"/>
         <source>New</source>
-        <translation>Nieuw</translation>
+        <translation>Nuut</translation>
     </message>
     <message id="lists-edit">
         <location filename="../qml/ListsPage.qml" line="136"/>
         <source>Edit</source>
-        <translation>Bewerk</translation>
+        <translation>Redigeer</translation>
     </message>
     <message id="map-title">
         <location filename="../qml/MapPage.qml" line="18"/>
@@ -260,68 +260,68 @@
     <message id="mayorships-title">
         <location filename="../qml/MayorshipsPage.qml" line="26"/>
         <source>Mayorships</source>
-        <translation>Burgemeesterschappen</translation>
+        <translation>Burgermeesterskap</translation>
     </message>
     <message id="mayorships-empty">
         <location filename="../qml/MayorshipsPage.qml" line="32"/>
         <source>User hasn&apos;t got any mayorships yet</source>
         <oldsource>User hasn&apos;t got any mayorships yet!</oldsource>
-        <translation>Nog geen burgemeesterschappen!</translation>
+        <translation>Nog geen burgermeesterskappe nie</translation>
     </message>
     <message id="nearby-venues-title">
         <location filename="../qml/NearbyVenuesPage.qml" line="36"/>
         <source>Nearby Venues</source>
-        <translation>Gelegenheden dichtbij</translation>
+        <translation>Nabygeleë plekke</translation>
     </message>
     <message id="search-results-title">
         <location filename="../qml/NearbyVenuesPage.qml" line="38"/>
         <source>Search results</source>
-        <translation>Zoekresultaten</translation>
+        <translation>Soek resultate</translation>
     </message>
     <message id="nearby-venues-my-profile-menu">
         <location filename="../qml/NearbyVenuesPage.qml" line="44"/>
         <source>My Profile</source>
-        <translation>Mijn profiel</translation>
+        <translation>My Profiel</translation>
     </message>
     <message id="nearby-venues-recent-checkins-menu">
         <location filename="../qml/NearbyVenuesPage.qml" line="49"/>
         <source>Recent Checkins</source>
-        <translation>Recente inchecks</translation>
+        <translation>Onlangs Ingeklaar</translation>
     </message>
     <message id="nearby-venues-refresh-menu">
         <location filename="../qml/NearbyVenuesPage.qml" line="55"/>
         <source>Refresh</source>
-        <translation>Verversen</translation>
+        <translation>Verfris</translation>
     </message>
     <message id="nearby-venues-nearby-venues-menu">
         <location filename="../qml/NearbyVenuesPage.qml" line="57"/>
         <source>Nearby Venues</source>
-        <translation>Gelegenheden dichtbij</translation>
+        <translation>Nabygeleë plekke</translation>
     </message>
     <message id="nearby-venues-search-menu">
         <location filename="../qml/NearbyVenuesPage.qml" line="65"/>
         <source>Search</source>
-        <translation>Zoeken</translation>
+        <translation>Soek</translation>
     </message>
     <message id="nearby-venues-add">
         <location filename="../qml/NearbyVenuesPage.qml" line="70"/>
         <source>Add</source>
-        <translation>Toevoegen</translation>
+        <translation>Voeg by</translation>
     </message>
     <message id="nearby-venues-empty">
         <location filename="../qml/NearbyVenuesPage.qml" line="78"/>
         <source>There is no venue in nearby</source>
-        <translation>Er is geen gelegenheid dichtbij</translation>
+        <translation>Daar is geen plekke naby nie</translation>
     </message>
     <message id="notifications-title">
         <location filename="../qml/NotificationsPage.qml" line="31"/>
         <source>Notifications</source>
-        <translation>Meldingen</translation>
+        <translation>Kennisgewings</translation>
     </message>
     <message id="notifications-empty">
         <location filename="../qml/NotificationsPage.qml" line="38"/>
         <source>You have no notifications</source>
-        <translation>Je hebt geen meldingen</translation>
+        <translation>Jy het geen kennisgewings nie</translation>
     </message>
     <message id="photos-title">
         <location filename="../qml/PhotosPage.qml" line="34"/>
@@ -331,17 +331,17 @@
     <message id="photos-empty">
         <location filename="../qml/PhotosPage.qml" line="41"/>
         <source>List of photos is empty</source>
-        <translation>Nog geen foto&apos;s</translation>
+        <translation>Nog geen foto&apos;s nie</translation>
     </message>
     <message id="image-status-ready">
         <location filename="../qml/PinchMap.qml" line="294"/>
         <source>Ready</source>
-        <translation>Klaar</translation>
+        <translation>Gereed</translation>
     </message>
     <message id="image-status-not-set">
         <location filename="../qml/PinchMap.qml" line="296"/>
         <source>Not Set</source>
-        <translation>Niet ingesteld</translation>
+        <translation>Nie ingestel nie</translation>
     </message>
     <message id="image-status-error">
         <location filename="../qml/PinchMap.qml" line="298"/>
@@ -351,62 +351,62 @@
     <message id="image-status-loading">
         <location filename="../qml/PinchMap.qml" line="300"/>
         <source>Loading ...</source>
-        <translation>Laden ...</translation>
+        <translation>Laai ...</translation>
     </message>
     <message id="image-status-unknown">
         <location filename="../qml/PinchMap.qml" line="302"/>
         <source>Unknown</source>
-        <translation>Onbekende fout</translation>
+        <translation>Onbekende Fout</translation>
     </message>
     <message id="profile-my-profile-menu">
         <location filename="../qml/ProfilePage.qml" line="73"/>
         <source>My Profile</source>
-        <translation>Mijn profiel</translation>
+        <translation>My Profiel</translation>
     </message>
     <message id="profile-recent-checkins-menu">
         <location filename="../qml/ProfilePage.qml" line="80"/>
         <source>Recent Checkins</source>
-        <translation>Recente inchecks</translation>
+        <translation>Onlangse Inklaringe</translation>
     </message>
     <message id="profile-nearby-venues-menu">
         <location filename="../qml/ProfilePage.qml" line="86"/>
         <source>Nearby Venues</source>
-        <translation>Gelegenheden dichtbij</translation>
+        <translation>Nabygeleë plekke</translation>
     </message>
     <message id="profile-checkins">
         <location filename="../qml/ProfilePage.qml" line="185"/>
         <source>Checkins</source>
-        <translation>Inchecks</translation>
+        <translation>Inklaar</translation>
     </message>
     <message id="profile-notifications">
         <location filename="../qml/ProfilePage.qml" line="212"/>
         <source>Notifications</source>
-        <translation>Meldingen</translation>
+        <translation>Kennisgewings</translation>
     </message>
     <message id="profile-badges">
         <location filename="../qml/ProfilePage.qml" line="236"/>
         <source>Badges</source>
-        <translation>Badges</translation>
+        <translation>Kentekens</translation>
     </message>
     <message id="profile-mayorships">
         <location filename="../qml/ProfilePage.qml" line="260"/>
         <source>Mayorships</source>
-        <translation>Burgemeesterschappen</translation>
+        <translation>Burgermeesterskappe</translation>
     </message>
     <message id="profile-tips">
         <location filename="../qml/ProfilePage.qml" line="283"/>
         <source>Tips</source>
-        <translation>Tips</translation>
+        <translation>Wenke</translation>
     </message>
     <message id="profile-friends">
         <location filename="../qml/ProfilePage.qml" line="306"/>
         <source>Friends</source>
-        <translation>Vrienden</translation>
+        <translation>Vriende</translation>
     </message>
     <message id="profile-lists">
         <location filename="../qml/ProfilePage.qml" line="328"/>
         <source>Lists</source>
-        <translation>Lijsten</translation>
+        <translation>Lyste</translation>
     </message>
     <message id="profile-photos">
         <location filename="../qml/ProfilePage.qml" line="351"/>
@@ -416,38 +416,38 @@
     <message id="tap-to-show">
         <location filename="../qml/harbour-foursail.qml" line="14"/>
         <source>Tap to show</source>
-        <translation>Tik om te tonen</translation>
+        <translation>Tik om te wys</translation>
     </message>
     <message id="recent-checkins-title">
         <location filename="../qml/RecentCheckinsPage.qml" line="31"/>
         <source>Recent Checkins</source>
-        <translation>Recente inchecks</translation>
+        <translation>Onlangse Inklaringe</translation>
     </message>
     <message id="recent-checkins-empty">
         <location filename="../qml/RecentCheckinsPage.qml" line="37"/>
         <source>None of your friends checked in yet</source>
-        <translation>Geen van je vrienden is al ingecheckt</translation>
+        <translation>Nie een van jou vriende het al ingeklaar nie</translation>
     </message>
     <message id="recent-checkins-my-profile-menu">
         <location filename="../qml/RecentCheckinsPage.qml" line="43"/>
         <source>My Profile</source>
-        <translation>Mijn profiel</translation>
+        <translation>My Profiel</translation>
     </message>
     <message id="recent-checkins-nearby-venues-menu">
         <location filename="../qml/RecentCheckinsPage.qml" line="48"/>
         <source>Nearby Venues</source>
-        <translation>Gelegenheden dichtbij</translation>
+        <translation>Nabygeleë plekke</translation>
     </message>
     <message id="recent-checkins-refresh-menu">
         <location filename="../qml/RecentCheckinsPage.qml" line="53"/>
         <source>Refresh</source>
-        <translation>Verversen</translation>
+        <translation>Verfris</translation>
     </message>
     <message id="recent-checkins-like">
         <location filename="../qml/RecentCheckinsPage.qml" line="182"/>
         <source>Like checkin</source>
         <oldsource>Like</oldsource>
-        <translation>Leuk</translation>
+        <translation>Hou van</translation>
     </message>
     <message id="recent-checkins-friend-profile">
         <location filename="../qml/RecentCheckinsPage.qml" line="198"/>
@@ -458,63 +458,63 @@
         <location filename="../qml/RecentCheckinsPage.qml" line="207"/>
         <source>Venue</source>
         <oldsource>Venue detail</oldsource>
-        <translation>Gelegenheid</translation>
+        <translation>Plek</translation>
     </message>
     <message id="recent-checkins-dislike">
         <location filename="../qml/RecentCheckinsPage.qml" line="180"/>
         <source>Dislike checkin</source>
         <oldsource>Dislike</oldsource>
-        <translation>Niet leuk</translation>
+        <translation>Hekel</translation>
     </message>
     <message id="search-title">
         <location filename="../qml/SearchVenueDialog.qml" line="26"/>
         <source>Search</source>
-        <translation>Zoeken</translation>
+        <translation>Soek</translation>
     </message>
     <message id="search-venue-name">
         <location filename="../qml/SearchVenueDialog.qml" line="33"/>
         <source>Venue name</source>
-        <translation>Naam gelegenheid</translation>
+        <translation>Plek Naam</translation>
     </message>
     <message id="history-title">
         <location filename="../qml/SelfCheckinsPage.qml" line="27"/>
         <source>History</source>
-        <translation>Geschiedenis</translation>
+        <translation>Geskiedenis</translation>
     </message>
     <message id="history-empty">
         <location filename="../qml/SelfCheckinsPage.qml" line="34"/>
         <source>User didn&apos;t make check in yet</source>
-        <translation>Je bent nog nergens ingecheckt</translation>
+        <translation>Jy het nog nie enige inklarings gedoen nie</translation>
     </message>
     <message id="history-refresh-menu">
         <location filename="../qml/SelfCheckinsPage.qml" line="40"/>
         <source>Refresh</source>
-        <translation>Verversen</translation>
+        <translation>Verfris</translation>
     </message>
     <message id="tips-title">
         <location filename="../qml/TipsPage.qml" line="27"/>
         <source>Tips</source>
-        <translation>Tips</translation>
+        <translation>Wenke</translation>
     </message>
     <message id="tips-empty">
         <location filename="../qml/TipsPage.qml" line="35"/>
         <source>List of tips is empty</source>
-        <translation>Lijst voor tips is leeg</translation>
+        <translation>Lys met wenke is leeg</translation>
     </message>
     <message id="tips-dislike">
         <location filename="../qml/TipsPage.qml" line="158"/>
         <source>Dislike tip</source>
-        <translation>Niet leuk</translation>
+        <translation>Hekel</translation>
     </message>
     <message id="tips-like">
         <location filename="../qml/TipsPage.qml" line="160"/>
         <source>Like tip</source>
-        <translation>Leuk</translation>
+        <translation>Hou van</translation>
     </message>
     <message id="checkin-result-title">
         <location filename="../qml/CheckinResultPage.qml" line="27"/>
         <source>Checkin</source>
-        <translation>Inchecken</translation>
+        <translation>Inklaar</translation>
     </message>
 </context>
 </TS>
