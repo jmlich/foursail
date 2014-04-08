@@ -34,6 +34,7 @@ Rectangle {
     property bool rotationEnabled: false
 
     property bool pageActive: false;
+    property bool mapTileVisible: pageActive
 
     onTargetLatChanged: { latitude = targetLat;  }
     onTargetLonChanged: { longitude = targetLon; }
@@ -69,6 +70,8 @@ Rectangle {
     }
 
     onPageActiveChanged:  {
+        mapTileVisible = pageActive
+
         if (pageActive && needsUpdate) {
             needsUpdate = false;
             pinchmap.setCenterLatLon(pinchmap.latitude, pinchmap.longitude);
@@ -333,8 +336,37 @@ Rectangle {
                 property alias source: img.source;
                 property int tileX: cornerTileX + (index % numTilesX)
                 property int tileY: cornerTileY + Math.floor(index / numTilesX)
+
+                Rectangle {
+                    id: progressBar;
+                    property real p: 0;
+                    height: 16;
+                    width: parent.width - 32;
+                    anchors.centerIn: img;
+                    color: "#c0c0c0";
+                    border.width: 1;
+                    border.color: "#000000";
+                    Rectangle {
+                        anchors.left: parent.left;
+                        anchors.margins: 2;
+                        anchors.top: parent.top;
+                        anchors.bottom: parent.bottom;
+                        width: (parent.width - 4) * progressBar.p;
+                        color: "#000000";
+                    }
+                    visible: mapTileVisible
+                }
+                Text {
+                    anchors.top: progressBar.bottom
+                    anchors.left: parent.left
+                    anchors.leftMargin: 16
+                    y: parent.height/2 - 32
+                    text: imageStatusToString(img.status)
+                    visible: mapTileVisible
+                }
+
                 Image {
-                    visible: (img.visible) && (img.status !== Image.Ready)
+                    visible: (img.visible) && (img.status === Image.Null)
                     source: "./images/noimage.png"
                 }
 
@@ -342,9 +374,9 @@ Rectangle {
                 Image {
                     id: img;
                     anchors.fill: parent;
-                    // onProgressChanged: { progressBar.p = progress }
-                    source: pageActive ? tileUrl(tileX, tileY) : "";
-                    visible: pageActive;
+                     onProgressChanged: { progressBar.p = progress }
+                    source: mapTileVisible ? tileUrl(tileX, tileY) : "";
+                    visible: mapTileVisible;
                 }
 
 
