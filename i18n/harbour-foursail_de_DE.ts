@@ -178,13 +178,13 @@
         </translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="867"/>
+        <location filename="../qml/Data.qml" line="868"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation>Unberechtigt</translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="871"/>
+        <location filename="../qml/Data.qml" line="872"/>
         <source>Connection problem</source>
         <translation>Verbindungsproblem</translation>
     </message>
@@ -334,27 +334,27 @@
         <translation>Fotoliste ist leer</translation>
     </message>
     <message id="image-status-ready">
-        <location filename="../qml/PinchMap.qml" line="294"/>
+        <location filename="../qml/PinchMap.qml" line="297"/>
         <source>Ready</source>
         <translation>Bereit</translation>
     </message>
     <message id="image-status-not-set">
-        <location filename="../qml/PinchMap.qml" line="296"/>
+        <location filename="../qml/PinchMap.qml" line="299"/>
         <source>Not Set</source>
         <translation>nicht festgelegt</translation>
     </message>
     <message id="image-status-error">
-        <location filename="../qml/PinchMap.qml" line="298"/>
+        <location filename="../qml/PinchMap.qml" line="301"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message id="image-status-loading">
-        <location filename="../qml/PinchMap.qml" line="300"/>
+        <location filename="../qml/PinchMap.qml" line="303"/>
         <source>Loading ...</source>
         <translation>Lade ...</translation>
     </message>
     <message id="image-status-unknown">
-        <location filename="../qml/PinchMap.qml" line="302"/>
+        <location filename="../qml/PinchMap.qml" line="305"/>
         <source>Unknown</source>
         <translation>Unbekannt</translation>
     </message>

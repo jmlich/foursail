@@ -34,7 +34,7 @@ Page {
         delegate: BackgroundItem {
             id: delegate
 
-            height: personPhoto.height
+            height: Math.max(personPhoto.height, infoColumn.height)
 
             Image {
                 id: personPhoto

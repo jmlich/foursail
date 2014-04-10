@@ -36,24 +36,54 @@ Page {
             id: delegate
 
             width: parent.width
+            height: Math.max(venue_icon_image.height, venue_details_column.height)
 
-            height: contentItem.childrenRect.height
-
-            ShortVenueItem {
-                id: shortVenueItem;
-                venueIcon: (venue.categories[0] !== undefined) ? venue.categories[0].icon : ""
-                venueInfo: venue
+            Image {
+                id: venue_icon_image
+                anchors.left: parent.left;
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.rightMargin: Theme.paddingMedium
+                anchors.leftMargin: Theme.paddingMedium;
+                width: 64;
+                height: 64;
+                source: (venueIcon.prefix + width + venueIcon.suffix)
             }
 
-            onClicked: {
-                var street = (venue.location.address !== undefined) ? venue.location.address : "";
-                var city   = (venue.location.city !== undefined) ? venue.location.city : "";
-                var address = (street !== "") ? (street + ", " + city) : city;
-                var icon = (venue.categories[0] !== undefined) ? venue.categories[0].icon : ""
-                var lat = ((venue.location.lat !== undefined) ? venue.location.lat : 0);
-                var lon = ((venue.location.lng !== undefined) ? venue.location.lng : 0);
+            Column {
+                id: venue_details_column
+                anchors.left: venue_icon_image.right
+                anchors.right: parent.right
+                anchors.margins: Theme.paddingMedium;
+                spacing: Theme.paddingSmall
 
-                checkinDetail(venue.id, venue.name, address, icon.prefix+"64"+icon.suffix, lat, lon)
+                Label {
+                    id: venue_name_label
+                    anchors.left: parent.left
+                    anchors.right: parent.right
+
+                    wrapMode: Text.Wrap
+                    color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
+                    font.pixelSize: Theme.fontSizeMedium
+
+                    text: venueName
+                }
+
+                Label {
+                    id: venue_address_label
+                    anchors.left: parent.left
+                    anchors.right: parent.right
+
+                    wrapMode: Text.Wrap
+                    color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+                    font.pixelSize: Theme.fontSizeSmall
+
+                    text: address
+                }
+            }
+
+
+            onClicked: {
+                checkinDetail(vid, venueName, address, venueIcon.prefix+"64"+venueIcon.suffix, lat, lon)
 
             }
 

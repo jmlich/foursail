@@ -264,7 +264,7 @@ Rectangle {
         var source = "https://api.foursquare.com/v2/venues/" + venue_id+"/like"
         var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale + "&set=" + (value ? "1" : "0");
         console.log("FIXME likeVenue " + venue_id + " " + value)
-//        foursquareDownload(source, params, "POST");
+        //        foursquareDownload(source, params, "POST");
     }
 
     function likeTip(tip_id, value) {
@@ -485,11 +485,11 @@ Rectangle {
                                     var photo = item.user.photo;
                                     var firstName = (item.user.firstName !== undefined) ? item.user.firstName : "";
                                     var lastName = (item.user.lastName !== undefined) ? item.user.lastName : "";
-                                    var venueName = (item.venue.name !== undefined) ? item.venue.name : ""
                                     var createdAt = item.createdAt;
                                     var createdDate = new Date(parseInt(createdAt*1000));
-                                    var venueId = (item.venue.id !== undefined) ? item.venue.id : 0;
 
+                                    var venueId = (item.venue.id !== undefined) ? item.venue.id : 0;
+                                    var venueName = (item.venue.name !== undefined) ? item.venue.name : ""
                                     var street = (item.venue.location.address !== undefined) ? item.venue.location.address : "";
                                     var city   = (item.venue.location.city !== undefined) ? item.venue.location.city : "";
                                     var address = (street !== "") ? (street + ", " + city) : city;
@@ -825,13 +825,26 @@ Rectangle {
                                 listDetailPage.m.clear()
                                 array = item.listItems.items
                                 for(i = 0; i < array.length; ++i) {
-                                    var listItem = array[i];
+                                    var item = array[i];
+
+//                                    console.log(JSON.stringify(item))
+                                    var street = (item.venue.location.address !== undefined) ? item.venue.location.address : "";
+                                    var city = (item.venue.location.city !== undefined) ? item.venue.location.city : "";
 
                                     var listItemData = {
-                                        'liid': listItem.id,
-                                        'photo': listItem.photo,
-                                        'venue': listItem.venue,
-                                        'message': listItem.tip !== undefined ? listItem.tip.text : ""
+                                        'liid': item.id,
+                                        'photo': item.photo,
+
+                                        'vid': ((item.venue.id !== undefined) ? item.venue.id : 0),
+                                        'venueName': ((item.venue.name !== undefined) ? item.venue.name : ""),
+                                        'street':  street,
+                                        'city':   city,
+                                        'address': ((street !== "") ? (street + ", " + city) : city),
+                                        'venueIcon': ((item.venue.categories[0] !== undefined) ? item.venue.categories[0].icon : empty_category_icon),
+                                        'lat': ((item.venue.location.lat !== undefined) ? item.venue.location.lat : 0),
+                                        'lon': ((item.venue.location.lng !== undefined) ? item.venue.location.lng : 0),
+                                        'beenHere': (item.venue.beenHere !== undefined && item.venue.beenHere.marked),
+                                        'venueTip': item.tip !== undefined ? item.tip.text : ""
                                     }
                                     listDetailPage.m.append(listItemData)
                                 }
@@ -841,11 +854,19 @@ Rectangle {
                             var array = resultObject.response.mayorships.items;
                             mayorshipsPage.m.clear();
                             for (i = 0; i < array.length; i++) {
-                                var item = array[i]
+                                var item = array[i];
 
+                                var street = (item.venue.location.address !== undefined) ? item.venue.location.address : "";
+                                var city = (item.venue.location.city !== undefined) ? item.venue.location.city : "";
                                 data = {
-                                    'venue': item.venue
-
+                                    'vid': ((item.venue.id !== undefined) ? item.venue.id : 0),
+                                    'venueName': ((item.venue.name !== undefined) ? item.venue.name : ""),
+                                    'street':  street,
+                                    'city':   city,
+                                    'address': ((street !== "") ? (street + ", " + city) : city),
+                                    'venueIcon': ((item.venue.categories[0] !== undefined) ? item.venue.categories[0].icon : empty_category_icon),
+                                    'lat': ((item.venue.location.lat !== undefined) ? item.venue.location.lat : 0),
+                                    'lon': ((item.venue.location.lng !== undefined) ? item.venue.location.lng : 0),
                                 }
 
                                 mayorshipsPage.m.append(data)
