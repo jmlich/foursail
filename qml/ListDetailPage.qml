@@ -20,6 +20,7 @@ Page {
         id: listView
         model: listmodel
         anchors.fill: parent
+        spacing: Theme.paddingMedium;
 
         header: PageHeader {
             title: listName
@@ -35,7 +36,8 @@ Page {
             id: delegate
 
             width: parent.width
-            height: Math.max(venue_icon_image.height, venue_details_column.height)
+            height: contentItem.childrenRect.height
+
 
             Image {
                 id: venue_icon_image
@@ -52,8 +54,7 @@ Page {
                 id: venue_details_column
                 anchors.left: venue_icon_image.right
                 anchors.right: parent.right
-                anchors.margins: Theme.paddingMedium;
-                spacing: Theme.paddingSmall
+                anchors.margins: Theme.paddingSmall;
 
                 Label {
                     id: venue_name_label
@@ -89,6 +90,7 @@ Page {
                     color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
 
                     text: venueTip
+                    visible: (text !== "")
                 }
 
 

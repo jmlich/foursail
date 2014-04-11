@@ -40,7 +40,6 @@ OTHER_FILES += qml/harbour-foursail.qml \
     qml/ListsPage.qml \
     qml/ListDetailPage.qml \
     qml/AddAndEditListPage.qml \
-    qml/ShortVenueItem.qml \
     qml/PhotosPage.qml \
     qml/PhotoDetailPage.qml \
     qml/MayorshipsPage.qml \

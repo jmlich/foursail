@@ -22,11 +22,11 @@ Page {
         id: listView
         model: listmodel
         anchors.fill: parent
+        spacing: Theme.paddingMedium;
         header: PageHeader {
             //% "Tips"
             title: qsTrId("tips-title")
         }
-        spacing: Theme.paddingMedium;
 
 
         ViewPlaceholder {
@@ -102,21 +102,6 @@ Page {
                           + Format.formatDate(date, Formatter.DurationElapsed)
                 }
 
-                //            Label {
-                //                id: dateLabel
-
-                //                anchors.top: venueAddressLabel.bottom
-                //                anchors.left: itemIcon.right
-                //                anchors.right: parent.right
-                //                anchors.leftMargin: Theme.paddingMedium
-                //                anchors.rightMargin: Theme.paddingMedium
-
-                //                color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
-                //                font.pixelSize: Theme.fontSizeSmall
-                //                wrapMode: Text.WordWrap
-                //                text: F.formatDate(date)
-                //            }
-
                 Label {
                     id: tipLabel
 
@@ -130,6 +115,7 @@ Page {
 
                     text: tipText
                     wrapMode: Text.Wrap
+                    font.pixelSize: Theme.fontSizeSmall
                 }
 
                 onClicked: {
