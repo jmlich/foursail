@@ -413,6 +413,10 @@ ApplicationWindow {
             data.removeFriend(uid);
         }
 
+        onFriendRequest:  {
+            data.friendRequest(uid)
+        }
+
         onShowFriend: {
             profilePage.uid = uid
 

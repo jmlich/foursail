@@ -169,7 +169,7 @@
         <translation>Hiçbir arkadaşınız checkin yapmadı</translation>
     </message>
     <message id="n-notifications" numerus="yes">
-        <location filename="../qml/Data.qml" line="473"/>
+        <location filename="../qml/Data.qml" line="478"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
         <translation type="unfinished">
@@ -177,35 +177,40 @@
         </translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="868"/>
+        <location filename="../qml/Data.qml" line="896"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation>Yetkisin</translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="872"/>
+        <location filename="../qml/Data.qml" line="900"/>
         <source>Connection problem</source>
         <translation>Bağlantı problemi</translation>
     </message>
     <message id="friends-title">
-        <location filename="../qml/FriendsPage.qml" line="29"/>
+        <location filename="../qml/FriendsPage.qml" line="30"/>
         <source>Friends</source>
         <translation>Arkadaşlar</translation>
     </message>
     <message id="friends-empty">
-        <location filename="../qml/FriendsPage.qml" line="35"/>
+        <location filename="../qml/FriendsPage.qml" line="36"/>
         <source>List of friends is empty</source>
         <translation>Arkadaş listesi boş</translation>
     </message>
     <message id="friends-removing">
-        <location filename="../qml/FriendsPage.qml" line="87"/>
+        <location filename="../qml/FriendsPage.qml" line="93"/>
         <source>Removing friend</source>
         <translation>Arkadaş siliniyor</translation>
     </message>
     <message id="friends-remove">
-        <location filename="../qml/FriendsPage.qml" line="115"/>
+        <location filename="../qml/FriendsPage.qml" line="124"/>
         <source>Remove</source>
         <translation>Sil</translation>
+    </message>
+    <message id="friends-add">
+        <location filename="../qml/FriendsPage.qml" line="130"/>
+        <source>Add</source>
+        <translation type="unfinished">Ekle</translation>
     </message>
     <message id="leaderboard-title">
         <location filename="../qml/LeaderboardPage.qml" line="25"/>
@@ -226,7 +231,7 @@
         </translation>
     </message>
     <message id="list-detail-empty">
-        <location filename="../qml/ListDetailPage.qml" line="31"/>
+        <location filename="../qml/ListDetailPage.qml" line="32"/>
         <source>List contains no venues</source>
         <translation>Liste hiçbir mekan içermiyor</translation>
     </message>
@@ -246,9 +251,19 @@
         <translation>Yeni</translation>
     </message>
     <message id="lists-edit">
-        <location filename="../qml/ListsPage.qml" line="136"/>
+        <location filename="../qml/ListsPage.qml" line="139"/>
         <source>Edit</source>
-        <translation>Düzenle</translation>
+        <translation type="unfinished">Düzenle</translation>
+    </message>
+    <message id="lists-follow">
+        <location filename="../qml/ListsPage.qml" line="145"/>
+        <source>Follow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="lists-unfollow">
+        <location filename="../qml/ListsPage.qml" line="152"/>
+        <source>Unfollow</source>
+        <translation type="unfinished"></translation>
     </message>
     <message id="map-title">
         <location filename="../qml/MapPage.qml" line="18"/>
@@ -256,12 +271,12 @@
         <translation>Harita</translation>
     </message>
     <message id="mayorships-title">
-        <location filename="../qml/MayorshipsPage.qml" line="26"/>
+        <location filename="../qml/MayorshipsPage.qml" line="27"/>
         <source>Mayorships</source>
         <translation>Başkanlık</translation>
     </message>
     <message id="mayorships-empty">
-        <location filename="../qml/MayorshipsPage.qml" line="32"/>
+        <location filename="../qml/MayorshipsPage.qml" line="33"/>
         <source>User hasn&apos;t got any mayorships yet</source>
         <oldsource>User hasn&apos;t got any mayorships yet!</oldsource>
         <translation>Kullanıcı heniz başkanlık almadı!</translation>
@@ -442,24 +457,24 @@
         <translation>Yenile</translation>
     </message>
     <message id="recent-checkins-like">
-        <location filename="../qml/RecentCheckinsPage.qml" line="182"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="181"/>
         <source>Like checkin</source>
         <oldsource>Like</oldsource>
         <translation>Beğen</translation>
     </message>
     <message id="recent-checkins-friend-profile">
-        <location filename="../qml/RecentCheckinsPage.qml" line="198"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="197"/>
         <source>Profile</source>
         <translation>Profil</translation>
     </message>
     <message id="recent-checkins-venue-detail">
-        <location filename="../qml/RecentCheckinsPage.qml" line="207"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="206"/>
         <source>Venue</source>
         <oldsource>Venue detail</oldsource>
         <translation>Mekan</translation>
     </message>
     <message id="recent-checkins-dislike">
-        <location filename="../qml/RecentCheckinsPage.qml" line="180"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="179"/>
         <source>Dislike checkin</source>
         <oldsource>Dislike</oldsource>
         <translation>Beğenme</translation>
@@ -490,7 +505,7 @@
         <translation>Yenile</translation>
     </message>
     <message id="tips-title">
-        <location filename="../qml/TipsPage.qml" line="27"/>
+        <location filename="../qml/TipsPage.qml" line="28"/>
         <source>Tips</source>
         <translation>İpuçları</translation>
     </message>
@@ -500,12 +515,12 @@
         <translation>İpucu listedi boş</translation>
     </message>
     <message id="tips-dislike">
-        <location filename="../qml/TipsPage.qml" line="158"/>
+        <location filename="../qml/TipsPage.qml" line="144"/>
         <source>Dislike tip</source>
         <translation>Beğenme</translation>
     </message>
     <message id="tips-like">
-        <location filename="../qml/TipsPage.qml" line="160"/>
+        <location filename="../qml/TipsPage.qml" line="146"/>
         <source>Like tip</source>
         <translation>Beğen</translation>
     </message>

@@ -20,6 +20,7 @@ Page {
         id: listView
         model: listmodel
         anchors.fill: parent
+        spacing: Theme.paddingMedium;
 
         header: PageHeader {
             //% "Mayorships"

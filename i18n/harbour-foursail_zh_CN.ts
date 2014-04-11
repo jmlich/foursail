@@ -169,7 +169,7 @@
         <translation>你的好友中还没有在这里签到的人</translation>
     </message>
     <message id="n-notifications" numerus="yes">
-        <location filename="../qml/Data.qml" line="473"/>
+        <location filename="../qml/Data.qml" line="478"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
         <translation>
@@ -177,35 +177,40 @@
         </translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="868"/>
+        <location filename="../qml/Data.qml" line="896"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation>未授权</translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="872"/>
+        <location filename="../qml/Data.qml" line="900"/>
         <source>Connection problem</source>
         <translation>链接问题</translation>
     </message>
     <message id="friends-title">
-        <location filename="../qml/FriendsPage.qml" line="29"/>
+        <location filename="../qml/FriendsPage.qml" line="30"/>
         <source>Friends</source>
         <translation>好友</translation>
     </message>
     <message id="friends-empty">
-        <location filename="../qml/FriendsPage.qml" line="35"/>
+        <location filename="../qml/FriendsPage.qml" line="36"/>
         <source>List of friends is empty</source>
         <translation>好友列表为空</translation>
     </message>
     <message id="friends-removing">
-        <location filename="../qml/FriendsPage.qml" line="87"/>
+        <location filename="../qml/FriendsPage.qml" line="93"/>
         <source>Removing friend</source>
         <translation>正在移除好友</translation>
     </message>
     <message id="friends-remove">
-        <location filename="../qml/FriendsPage.qml" line="115"/>
+        <location filename="../qml/FriendsPage.qml" line="124"/>
         <source>Remove</source>
         <translation>移除</translation>
+    </message>
+    <message id="friends-add">
+        <location filename="../qml/FriendsPage.qml" line="130"/>
+        <source>Add</source>
+        <translation type="unfinished">添加</translation>
     </message>
     <message id="leaderboard-title">
         <location filename="../qml/LeaderboardPage.qml" line="25"/>
@@ -226,7 +231,7 @@
         </translation>
     </message>
     <message id="list-detail-empty">
-        <location filename="../qml/ListDetailPage.qml" line="31"/>
+        <location filename="../qml/ListDetailPage.qml" line="32"/>
         <source>List contains no venues</source>
         <translation>列表不含任何地点</translation>
     </message>
@@ -246,9 +251,19 @@
         <translation>新建</translation>
     </message>
     <message id="lists-edit">
-        <location filename="../qml/ListsPage.qml" line="136"/>
+        <location filename="../qml/ListsPage.qml" line="139"/>
         <source>Edit</source>
-        <translation>编辑</translation>
+        <translation type="unfinished">编辑</translation>
+    </message>
+    <message id="lists-follow">
+        <location filename="../qml/ListsPage.qml" line="145"/>
+        <source>Follow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="lists-unfollow">
+        <location filename="../qml/ListsPage.qml" line="152"/>
+        <source>Unfollow</source>
+        <translation type="unfinished"></translation>
     </message>
     <message id="map-title">
         <location filename="../qml/MapPage.qml" line="18"/>
@@ -256,12 +271,12 @@
         <translation>地图</translation>
     </message>
     <message id="mayorships-title">
-        <location filename="../qml/MayorshipsPage.qml" line="26"/>
+        <location filename="../qml/MayorshipsPage.qml" line="27"/>
         <source>Mayorships</source>
         <translation>地点霸主</translation>
     </message>
     <message id="mayorships-empty">
-        <location filename="../qml/MayorshipsPage.qml" line="32"/>
+        <location filename="../qml/MayorshipsPage.qml" line="33"/>
         <source>User hasn&apos;t got any mayorships yet</source>
         <oldsource>User hasn&apos;t got any mayorships yet!</oldsource>
         <translation>还没有地点霸主</translation>
@@ -442,24 +457,24 @@
         <translation>刷新</translation>
     </message>
     <message id="recent-checkins-like">
-        <location filename="../qml/RecentCheckinsPage.qml" line="182"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="181"/>
         <source>Like checkin</source>
         <oldsource>Like</oldsource>
         <translation>喜欢</translation>
     </message>
     <message id="recent-checkins-friend-profile">
-        <location filename="../qml/RecentCheckinsPage.qml" line="198"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="197"/>
         <source>Profile</source>
         <translation>简介</translation>
     </message>
     <message id="recent-checkins-venue-detail">
-        <location filename="../qml/RecentCheckinsPage.qml" line="207"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="206"/>
         <source>Venue</source>
         <oldsource>Venue detail</oldsource>
         <translation>地点名称</translation>
     </message>
     <message id="recent-checkins-dislike">
-        <location filename="../qml/RecentCheckinsPage.qml" line="180"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="179"/>
         <source>Dislike checkin</source>
         <oldsource>Dislike</oldsource>
         <translation>不喜欢</translation>
@@ -490,7 +505,7 @@
         <translation>刷新</translation>
     </message>
     <message id="tips-title">
-        <location filename="../qml/TipsPage.qml" line="27"/>
+        <location filename="../qml/TipsPage.qml" line="28"/>
         <source>Tips</source>
         <translation>提示</translation>
     </message>
@@ -500,12 +515,12 @@
         <translation>提示列表为空</translation>
     </message>
     <message id="tips-dislike">
-        <location filename="../qml/TipsPage.qml" line="158"/>
+        <location filename="../qml/TipsPage.qml" line="144"/>
         <source>Dislike tip</source>
         <translation>不喜欢</translation>
     </message>
     <message id="tips-like">
-        <location filename="../qml/TipsPage.qml" line="160"/>
+        <location filename="../qml/TipsPage.qml" line="146"/>
         <source>Like tip</source>
         <translation>喜欢</translation>
     </message>

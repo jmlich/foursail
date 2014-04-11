@@ -297,8 +297,13 @@ Rectangle {
     function removeFriend(uid) {
         var source = "https://api.foursquare.com/v2/users/" + uid + "/unfriend"
         var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale;
-        //foursquareDownload(source, params, "POST");
-        console.log ("remove friend", uid)
+        foursquareDownload(source, params, "POST");
+    }
+
+    function friendRequest(uid) {
+        var source = "https://api.foursquare.com/v2/users/" + uid + "/request"
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale;
+        foursquareDownload(source, params, "POST");
     }
 
     function search(query) {
@@ -746,7 +751,8 @@ Rectangle {
                                     'name': first_name + " " + last_name,
                                     'homeCity': home_city,
                                     'tipsCount': tips_count,
-                                    'contact': contact
+                                    'contact': contact,
+                                    'relationship': ((item.relationship !== undefined) ? item.relationship : "unknown")
                                 };
                                 friendPage.m.append(data);
                             }
@@ -791,7 +797,8 @@ Rectangle {
                                         'name': item.name,
                                         'group': group.name,
                                         'description': item.description,
-                                        'count': item.listItems.count
+                                        'count': item.listItems.count,
+                                        'editable': item.editable
                                     };
                                     listsPage.m.append(data);
                                 }
