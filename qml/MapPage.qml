@@ -10,6 +10,8 @@ Page {
     property alias deviceLat: map.currentPositionLat
     property alias deviceLon: map.currentPositionLon
 
+    property alias targetDragable: map.targetDragable
+
 
 
     PageHeader {

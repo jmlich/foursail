@@ -30,59 +30,64 @@
         <translation>Liste tanımı</translation>
     </message>
     <message id="venue-add-accept">
-        <location filename="../qml/AddVenuePage.qml" line="37"/>
+        <location filename="../qml/AddVenuePage.qml" line="64"/>
         <source>Create</source>
         <translation>Oluştur</translation>
     </message>
     <message id="venue-add-name">
-        <location filename="../qml/AddVenuePage.qml" line="46"/>
+        <location filename="../qml/AddVenuePage.qml" line="73"/>
         <source>Name</source>
         <translation>İsim</translation>
     </message>
     <message id="venue-add-choose-category">
-        <location filename="../qml/AddVenuePage.qml" line="69"/>
+        <location filename="../qml/AddVenuePage.qml" line="96"/>
         <source>Choose category</source>
         <translation>Kategori seç</translation>
     </message>
     <message id="venue-add-address">
-        <location filename="../qml/AddVenuePage.qml" line="84"/>
+        <location filename="../qml/AddVenuePage.qml" line="111"/>
         <source>Address</source>
         <translation>Adres</translation>
     </message>
     <message id="venue-add-cross-street">
-        <location filename="../qml/AddVenuePage.qml" line="91"/>
+        <location filename="../qml/AddVenuePage.qml" line="118"/>
         <source>Cross street</source>
         <translation>Çapraz sokak</translation>
     </message>
     <message id="venue-add-city">
-        <location filename="../qml/AddVenuePage.qml" line="99"/>
+        <location filename="../qml/AddVenuePage.qml" line="126"/>
         <source>City</source>
         <translation>Şehir</translation>
     </message>
     <message id="venue-add-state">
-        <location filename="../qml/AddVenuePage.qml" line="106"/>
+        <location filename="../qml/AddVenuePage.qml" line="133"/>
         <source>State</source>
         <translation>İlçe</translation>
     </message>
     <message id="venue-add-zip">
-        <location filename="../qml/AddVenuePage.qml" line="113"/>
+        <location filename="../qml/AddVenuePage.qml" line="140"/>
         <source>ZIP</source>
         <translation>PK</translation>
     </message>
     <message id="venue-add-phone">
-        <location filename="../qml/AddVenuePage.qml" line="121"/>
+        <location filename="../qml/AddVenuePage.qml" line="148"/>
         <source>Phone</source>
         <translation>Telefon</translation>
     </message>
     <message id="venue-add-twitter">
-        <location filename="../qml/AddVenuePage.qml" line="128"/>
+        <location filename="../qml/AddVenuePage.qml" line="155"/>
         <source>Twitter</source>
         <translation>Twitter</translation>
     </message>
     <message id="venue-add-description">
-        <location filename="../qml/AddVenuePage.qml" line="135"/>
+        <location filename="../qml/AddVenuePage.qml" line="162"/>
         <source>Description</source>
         <translation>Tanım</translation>
+    </message>
+    <message id="venue-add-set-position">
+        <location filename="../qml/AddVenuePage.qml" line="176"/>
+        <source>Set position</source>
+        <translation type="unfinished"></translation>
     </message>
     <message id="badges-title">
         <location filename="../qml/BadgesPage.qml" line="34"/>
@@ -266,7 +271,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message id="map-title">
-        <location filename="../qml/MapPage.qml" line="18"/>
+        <location filename="../qml/MapPage.qml" line="20"/>
         <source>Map</source>
         <translation>Harita</translation>
     </message>
@@ -347,27 +352,27 @@
         <translation>Fotoğraf listesi boş</translation>
     </message>
     <message id="image-status-ready">
-        <location filename="../qml/PinchMap.qml" line="297"/>
+        <location filename="../qml/PinchMap.qml" line="298"/>
         <source>Ready</source>
         <translation>Hazır</translation>
     </message>
     <message id="image-status-not-set">
-        <location filename="../qml/PinchMap.qml" line="299"/>
+        <location filename="../qml/PinchMap.qml" line="300"/>
         <source>Not Set</source>
         <translation>Hazır Değil</translation>
     </message>
     <message id="image-status-error">
-        <location filename="../qml/PinchMap.qml" line="301"/>
+        <location filename="../qml/PinchMap.qml" line="302"/>
         <source>Error</source>
         <translation>Hata</translation>
     </message>
     <message id="image-status-loading">
-        <location filename="../qml/PinchMap.qml" line="303"/>
+        <location filename="../qml/PinchMap.qml" line="304"/>
         <source>Loading ...</source>
         <translation>Yükleniyor...</translation>
     </message>
     <message id="image-status-unknown">
-        <location filename="../qml/PinchMap.qml" line="305"/>
+        <location filename="../qml/PinchMap.qml" line="306"/>
         <source>Unknown</source>
         <translation>Bilinmiyor</translation>
     </message>
@@ -480,29 +485,24 @@
         <translation>Beğenme</translation>
     </message>
     <message id="search-title">
-        <location filename="../qml/SearchVenueDialog.qml" line="26"/>
+        <location filename="../qml/SearchVenueDialog.qml" line="32"/>
         <source>Search</source>
         <translation>Ara</translation>
     </message>
     <message id="search-venue-name">
-        <location filename="../qml/SearchVenueDialog.qml" line="33"/>
+        <location filename="../qml/SearchVenueDialog.qml" line="39"/>
         <source>Venue name</source>
         <translation>Mekan ismi</translation>
     </message>
     <message id="history-title">
-        <location filename="../qml/SelfCheckinsPage.qml" line="27"/>
+        <location filename="../qml/SelfCheckinsPage.qml" line="26"/>
         <source>History</source>
         <translation>Geçmiş</translation>
     </message>
     <message id="history-empty">
-        <location filename="../qml/SelfCheckinsPage.qml" line="34"/>
+        <location filename="../qml/SelfCheckinsPage.qml" line="33"/>
         <source>User didn&apos;t make check in yet</source>
         <translation>Kullanıcı henüz checkin yapmadı</translation>
-    </message>
-    <message id="history-refresh-menu">
-        <location filename="../qml/SelfCheckinsPage.qml" line="40"/>
-        <source>Refresh</source>
-        <translation>Yenile</translation>
     </message>
     <message id="tips-title">
         <location filename="../qml/TipsPage.qml" line="28"/>

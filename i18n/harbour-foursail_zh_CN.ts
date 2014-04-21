@@ -30,59 +30,64 @@
         <translation>列表说明</translation>
     </message>
     <message id="venue-add-accept">
-        <location filename="../qml/AddVenuePage.qml" line="37"/>
+        <location filename="../qml/AddVenuePage.qml" line="64"/>
         <source>Create</source>
         <translation>创建</translation>
     </message>
     <message id="venue-add-name">
-        <location filename="../qml/AddVenuePage.qml" line="46"/>
+        <location filename="../qml/AddVenuePage.qml" line="73"/>
         <source>Name</source>
         <translation>名称</translation>
     </message>
     <message id="venue-add-choose-category">
-        <location filename="../qml/AddVenuePage.qml" line="69"/>
+        <location filename="../qml/AddVenuePage.qml" line="96"/>
         <source>Choose category</source>
         <translation>选择类别</translation>
     </message>
     <message id="venue-add-address">
-        <location filename="../qml/AddVenuePage.qml" line="84"/>
+        <location filename="../qml/AddVenuePage.qml" line="111"/>
         <source>Address</source>
         <translation>地址</translation>
     </message>
     <message id="venue-add-cross-street">
-        <location filename="../qml/AddVenuePage.qml" line="91"/>
+        <location filename="../qml/AddVenuePage.qml" line="118"/>
         <source>Cross street</source>
         <translation>街道</translation>
     </message>
     <message id="venue-add-city">
-        <location filename="../qml/AddVenuePage.qml" line="99"/>
+        <location filename="../qml/AddVenuePage.qml" line="126"/>
         <source>City</source>
         <translation>城市</translation>
     </message>
     <message id="venue-add-state">
-        <location filename="../qml/AddVenuePage.qml" line="106"/>
+        <location filename="../qml/AddVenuePage.qml" line="133"/>
         <source>State</source>
         <translation>省</translation>
     </message>
     <message id="venue-add-zip">
-        <location filename="../qml/AddVenuePage.qml" line="113"/>
+        <location filename="../qml/AddVenuePage.qml" line="140"/>
         <source>ZIP</source>
         <translation>邮政编码</translation>
     </message>
     <message id="venue-add-phone">
-        <location filename="../qml/AddVenuePage.qml" line="121"/>
+        <location filename="../qml/AddVenuePage.qml" line="148"/>
         <source>Phone</source>
         <translation>电话</translation>
     </message>
     <message id="venue-add-twitter">
-        <location filename="../qml/AddVenuePage.qml" line="128"/>
+        <location filename="../qml/AddVenuePage.qml" line="155"/>
         <source>Twitter</source>
         <translation>Twitter</translation>
     </message>
     <message id="venue-add-description">
-        <location filename="../qml/AddVenuePage.qml" line="135"/>
+        <location filename="../qml/AddVenuePage.qml" line="162"/>
         <source>Description</source>
         <translation>简介</translation>
+    </message>
+    <message id="venue-add-set-position">
+        <location filename="../qml/AddVenuePage.qml" line="176"/>
+        <source>Set position</source>
+        <translation type="unfinished"></translation>
     </message>
     <message id="badges-title">
         <location filename="../qml/BadgesPage.qml" line="34"/>
@@ -266,7 +271,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message id="map-title">
-        <location filename="../qml/MapPage.qml" line="18"/>
+        <location filename="../qml/MapPage.qml" line="20"/>
         <source>Map</source>
         <translation>地图</translation>
     </message>
@@ -347,27 +352,27 @@
         <translation>还没有照片</translation>
     </message>
     <message id="image-status-ready">
-        <location filename="../qml/PinchMap.qml" line="297"/>
+        <location filename="../qml/PinchMap.qml" line="298"/>
         <source>Ready</source>
         <translation>准备</translation>
     </message>
     <message id="image-status-not-set">
-        <location filename="../qml/PinchMap.qml" line="299"/>
+        <location filename="../qml/PinchMap.qml" line="300"/>
         <source>Not Set</source>
         <translation>无设置</translation>
     </message>
     <message id="image-status-error">
-        <location filename="../qml/PinchMap.qml" line="301"/>
+        <location filename="../qml/PinchMap.qml" line="302"/>
         <source>Error</source>
         <translation>错误</translation>
     </message>
     <message id="image-status-loading">
-        <location filename="../qml/PinchMap.qml" line="303"/>
+        <location filename="../qml/PinchMap.qml" line="304"/>
         <source>Loading ...</source>
         <translation>载入中……</translation>
     </message>
     <message id="image-status-unknown">
-        <location filename="../qml/PinchMap.qml" line="305"/>
+        <location filename="../qml/PinchMap.qml" line="306"/>
         <source>Unknown</source>
         <translation>未知错误</translation>
     </message>
@@ -480,29 +485,24 @@
         <translation>不喜欢</translation>
     </message>
     <message id="search-title">
-        <location filename="../qml/SearchVenueDialog.qml" line="26"/>
+        <location filename="../qml/SearchVenueDialog.qml" line="32"/>
         <source>Search</source>
         <translation>搜索</translation>
     </message>
     <message id="search-venue-name">
-        <location filename="../qml/SearchVenueDialog.qml" line="33"/>
+        <location filename="../qml/SearchVenueDialog.qml" line="39"/>
         <source>Venue name</source>
         <translation>地点名称</translation>
     </message>
     <message id="history-title">
-        <location filename="../qml/SelfCheckinsPage.qml" line="27"/>
+        <location filename="../qml/SelfCheckinsPage.qml" line="26"/>
         <source>History</source>
         <translation>历史</translation>
     </message>
     <message id="history-empty">
-        <location filename="../qml/SelfCheckinsPage.qml" line="34"/>
+        <location filename="../qml/SelfCheckinsPage.qml" line="33"/>
         <source>User didn&apos;t make check in yet</source>
         <translation>你还没有进行过签到</translation>
-    </message>
-    <message id="history-refresh-menu">
-        <location filename="../qml/SelfCheckinsPage.qml" line="40"/>
-        <source>Refresh</source>
-        <translation>刷新</translation>
     </message>
     <message id="tips-title">
         <location filename="../qml/TipsPage.qml" line="28"/>

@@ -158,12 +158,15 @@ ApplicationWindow {
 
     AddVenuePage {
         id: addVenuePage;
+        deviceLat: positionSource.position.coordinate.latitude;
+        deviceLon: positionSource.position.coordinate.longitude;
+
         onSwitchToCategoriesPage: {
             data.venuesCategories()
             pageStack.push(categoriesPage)
         }
         onAccepted: {
-            data.addVenue(venueName, cid, address,crossStreet, city, state, zip, phone, twitter, description, url);
+            data.addVenue(venueName, cid, address,crossStreet, city, state, zip, phone, twitter, description, url, lat, lon);
             pageStack.replace(checkinDetailPage, PageStackAction.Immediate)
         }
     }

@@ -2,6 +2,7 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 Dialog {
+    id: page
 
     signal switchToCategoriesPage();
 
@@ -19,8 +20,34 @@ Dialog {
     property alias twitter: twitterTextfield.text
     property alias description: descriptionTextfield.text
     property alias url: urlTextfield.text
+    property real lat
+    property real lon
+    property real deviceLat
+    property real deviceLon
 
-    canAccept: ( (!venueNameTextfield.errorHighlight) && (cid !== ""))
+
+
+    MapPage {
+        id: mapPage;
+        lat: page.lat
+        lon: page.lon
+        deviceLat: page.deviceLat
+        deviceLon: page.deviceLon
+        targetDragable: true;
+        onLatChanged: {
+            page.lat = lat;
+        }
+        onLonChanged: {
+            page.lon = lon
+        }
+    }
+
+    onDeviceLatChanged: {
+        mapPage.lat = deviceLat;
+        mapPage.lon = deviceLon
+    }
+
+    canAccept: (!venueNameTextfield.errorHighlight)
 
     SilicaFlickable {
         anchors.fill: parent;
@@ -141,6 +168,15 @@ Dialog {
                 width: parent.width
 //                validator: RegExpValidator { regExp: /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/ }
                 placeholderText: "http://"
+            }
+
+            Button {
+                anchors.horizontalCenter: parent.horizontalCenter
+                //% "Set position"
+                text: qsTrId("venue-add-set-position")
+                onClicked:{
+                    pageStack.push(mapPage)
+                }
             }
 
 

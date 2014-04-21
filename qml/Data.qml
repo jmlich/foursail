@@ -214,7 +214,7 @@ Rectangle {
         foursquareDownload(source, params, "GET");
     }
 
-    function addVenue(venueName, cid, address,crossStreet, city, state, zip, phone, twitter, description, url) {
+    function addVenue(venueName, cid, address,crossStreet, city, state, zip, phone, twitter, description, url, venue_lat, venue_lon) {
         var source = "https://api.foursquare.com/v2/venues/add"
         var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale + "&name="+encodeURIComponent(venueName);
         if (address.length > 0) {
@@ -238,7 +238,7 @@ Rectangle {
         if (twitter.length > 0) {
             params += "&twitter="+encodeURIComponent(twitter)
         }
-        params += "&ll=" + lat + "," + lon
+        params += "&ll=" + venue_lat + "," + venue_lon
         if (cid.length > 0) {
             params += "&primaryCategoryId="+encodeURIComponent(cid)
         }

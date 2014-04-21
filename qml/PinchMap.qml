@@ -16,6 +16,7 @@ Rectangle {
     property int numTilesY: Math.ceil(height/tileSize) + 2;
     property int maxTileNo: Math.pow(2, zoomLevel) - 1;
     property bool showTargetIndicator: true;
+    property bool targetDragable: false;
     property double targetLat
     property double targetLon
 
@@ -488,6 +489,7 @@ Rectangle {
             id: mousearea;
 
             property bool __isPanning: false;
+            property bool __draging: false;
             property int __lastX: -1;
             property int __lastY: -1;
             property int __firstX: -1;
@@ -499,17 +501,20 @@ Rectangle {
             preventStealing: true;
 
             onWheel:  {
-                if (wheel.angleDelta.y > 0) {
-                    setZoomLevelPoint(pinchmap.zoomLevel + 1, wheel.x, wheel.y);
-                } else {
-                    setZoomLevelPoint(pinchmap.zoomLevel - 1, wheel.x, wheel.y);
-                }
+                var zoom_diff = (wheel.angleDelta.y > 0) ? 1 : -1;
+                setZoomLevelPoint(pinchmap.zoomLevel + zoom_diff, wheel.x, wheel.y);
             }
 
 
             onPressed: {
                 pannedManually()
-                __isPanning = true;
+
+                var distance = F.euclidDistance(targetIndicator.x, targetIndicator.y, mouse.x, mouse.y);
+                if (targetDragable && (distance < 80)) { // dragThreshold
+                    __draging = true;
+                } else {
+                    __isPanning = true;
+                }
                 __lastX = mouse.x;
                 __lastY = mouse.y;
                 __firstX = mouse.x;
@@ -518,36 +523,17 @@ Rectangle {
             }
 
             onReleased: {
-                __isPanning = false;
-                if (! __wasClick) {
+                if (__isPanning) {
                     panEnd();
-                } else {
-                    //                var n = mousearea.mapToItem(geocacheDisplayContainer, mouse.x, mouse.y)
-                    //                var geocaches = new Array();
-                    //                var g;
-                    //                while ((g = geocacheDisplayContainer.childAt(n.x, n.y)) != null) {
-                    //                    geocaches.push(g);
-                    //                    g.visible = false;
-                    //                }
-                    //                if (geocaches.length == 1) {
-                    //                    geocaches[0].visible = true;
-                    //                    showAndResetDetailsPage();
-                    //                    controller.geocacheSelected(geocaches[0].cache);
-                    //                } else if (geocaches.length > 1) {
-                    //                    var m = new Array();
-                    //                    var i;
-                    //                    for (i in geocaches) {
-                    //                        console.debug("Found geocache: " + geocaches[i].cache.name);
-                    //                        geocaches[i].visible = true;
-                    //                        m.push(geocaches[i].cache.title);
-                    //                    }
-                    //                    // show selection window
-                    //                    geocacheSelectionDialog.model = m;
-                    //                    geocacheSelectionDialog.fullList = geocaches;
-                    //                    geocacheSelectionDialog.open();
-
-                    //                }
                 }
+                if (__draging) {
+                    var pos = getCoordFromScreenpoint(mouse.x, mouse.y)
+                    targetLat = pos[0]
+                    targetLon = pos[1]
+                }
+
+                __isPanning = false;
+                __draging = false;
 
             }
 
@@ -566,10 +552,16 @@ Rectangle {
                         __wasClick = false;
                     }
                 }
+                if (__draging) {
+                    var pos = getCoordFromScreenpoint(mouse.x, mouse.y)
+                    targetLat = pos[0]
+                    targetLon = pos[1]
+                }
             }
 
             onCanceled: {
                 __isPanning = false;
+                __draging = false;
             }
         }
 
