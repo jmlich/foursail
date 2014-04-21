@@ -34,6 +34,8 @@ Rectangle {
     property url lastCheckinPhoto
     property string lastCheckinId
 
+    property bool debugMode: false;
+
 
     property string foursquare_api_version: "20131016"
     //    property string locale: "en"
@@ -108,6 +110,10 @@ Rectangle {
             lastCheckinDate = (d !== "") ?  new Date(parseInt(d)) : "";
             lastCheckinPhoto = configGet("lastCheckinPhoto","")
             lastCheckinId = configGet("lastCheckinId", "")
+
+
+//            configSet("debugMode", "enabled") // for development purposes
+            debugMode = (configGet("debugMode", "disabled") === "enabled")
 
 
         } catch (e) {
@@ -448,6 +454,18 @@ Rectangle {
 
     }
 
+    function sendDebugInfo(source, params, method, response) {
+        var http = new XMLHttpRequest()
+        var url = "http://pcmlich.fit.vutbr.cz/4sq/"
+        var post_params= "source="+encodeURIComponent(source)
+                + "&params="+encodeURIComponent(params)
+                + "&method="+encodeURIComponent(method)
+                + "&response="+encodeURIComponent(response)
+        http.open("POST", url, true);
+        http.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        http.send(post_params)
+    }
+
     function foursquareDownload(source, params, method) {
         console.log(method + ": " + source + "?" + params)
 
@@ -461,6 +479,10 @@ Rectangle {
             var maxValue = 0;
 
             if (http.readyState === XMLHttpRequest.DONE) {
+                if (debugMode) {
+                    sendDebugInfo(source, params, method, http.responseText);
+                }
+
                 countLoading = Math.max(countLoading-1, 0);
                 if (http.status === 200) {
                     try{
