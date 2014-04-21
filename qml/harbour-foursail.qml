@@ -330,11 +330,6 @@ ApplicationWindow {
             loading: (data.countLoading > 0)
             last_error: data.last_error
 
-            onRefresh: {
-                m.clear();
-                data.checkinHistory("self")
-            }
-
             onCheckinDetail: {
                 checkinDetailPage.venue_id = venue_id;
                 checkinDetailPage.venue_name = name;

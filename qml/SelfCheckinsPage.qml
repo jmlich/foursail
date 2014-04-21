@@ -9,7 +9,6 @@ Page {
     property bool loading;
     property string last_error;
 
-    signal refresh();
     signal switchToRecentCheckins();
     signal switchToNearbyVenues();
     signal checkinDetail(string venue_id, string name, string address, url icon, double lat, double lon)
@@ -34,13 +33,6 @@ Page {
             text: (last_error !== "") ? last_error : qsTrId("history-empty")
         }
 
-        PullDownMenu {
-            MenuItem {
-                //% "Refresh"
-                text: qsTrId("history-refresh-menu")
-                onClicked: refresh()
-            }
-        }
 
         delegate: BackgroundItem {
             id: delegate
