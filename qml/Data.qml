@@ -450,6 +450,9 @@ Rectangle {
         // FIXME
         //        source = "http://pcmlich.fit.vutbr.cz/checkin.json"
 
+//        source = "http://pcmlich.fit.vutbr.cz/4sq/"
+//        params = "idx=100&raw=true"
+//        params = "idx=77&raw=true"
         foursquareDownload(source, params, "POST");
 
     }
@@ -584,13 +587,57 @@ Rectangle {
                             }
                         }
 
-                        if (resultObject.response.checkin !== undefined && resultObject.response.checkin.score !== undefined) {
-                            checkinResultPage.m.clear()
-                            array = resultObject.response.checkin.score.scores
-                            for (i = 0; i < array.length; i++) {
-                                item = array[i];
-                                checkinResultPage.m.append(item)
+                        if (resultObject.response.checkin !== undefined) {
+                            if (resultObject.response.checkin.badges !== undefined) {
+
+                                checkinResultPage.badges_m.clear();
+                                var badges = resultObject.response.checkin.badges.items;
+                                for (var j = 0; j < badges.length; j++) {
+                                    var badge = badges[j];
+                                    console.log(j + ": "+JSON.stringify(badge))
+                                    checkinResultPage.badges_m.append(badge)
+                                }
                             }
+                            if (resultObject.response.checkin.score) {
+                                var scores = resultObject.response.checkin.score.scores;
+                                checkinResultPage.m.clear()
+                                for (j = 0; j < scores.length; j++) {
+                                    item = scores[j];
+                                    checkinResultPage.m.append(item)
+                                }
+                            }
+
+                        }
+                        if (resultObject.response.notifications !== undefined) {
+
+                            array = resultObject.response.notifications;
+                            for (var i = 0; i < array.length; i++) {
+                                var notificationItem = array[i];
+                                switch (notificationItem.type) {
+                                case "message":
+                                    checkinResultPage.message = notificationItem.item.message;
+                                    break;
+                                case "special":
+                                    checkinResultPage.special_message = notificationItem.item.special.message
+                                    break;
+                                case "leaderboard":
+                                    checkinResultPage.leaderboard_m.clear();
+                                    var leaderboard = notificationItem.item.leaderboard
+                                    for (var j = 0; j < leaderboard.length; j++) {
+                                        var item = leaderboard[j]
+                                        checkinResultPage.leaderboard_m.append(item)
+                                    }
+
+                                    break;
+                                case "tip":
+                                    break;
+                                case "mayorship":
+                                    break
+                                case "insights": // show rather scores than insights
+                                    break;
+                                }
+                            }
+
                         }
 
                         if (resultObject.response.checkins !== undefined) {

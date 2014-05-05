@@ -174,7 +174,7 @@
         <translation>Keiner ihrer Freunde hat bisher eingecheckt</translation>
     </message>
     <message id="n-notifications" numerus="yes">
-        <location filename="../qml/Data.qml" line="478"/>
+        <location filename="../qml/Data.qml" line="503"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
         <translation>
@@ -183,13 +183,13 @@
         </translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="896"/>
+        <location filename="../qml/Data.qml" line="965"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation>Unberechtigt</translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="900"/>
+        <location filename="../qml/Data.qml" line="969"/>
         <source>Connection problem</source>
         <translation>Verbindungsproblem</translation>
     </message>
@@ -229,6 +229,7 @@
         <translation>Leaderboard ist leer</translation>
     </message>
     <message id="leaderboard-n-checkins" numerus="yes">
+        <location filename="../qml/CheckinResultPage.qml" line="226"/>
         <location filename="../qml/LeaderboardPage.qml" line="69"/>
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
@@ -527,9 +528,29 @@
         <translation type="unfinished"></translation>
     </message>
     <message id="checkin-result-title">
-        <location filename="../qml/CheckinResultPage.qml" line="27"/>
+        <location filename="../qml/CheckinResultPage.qml" line="46"/>
         <source>Checkin</source>
         <translation> Check-in</translation>
+    </message>
+    <message id="checkin-result-section-header-special">
+        <location filename="../qml/CheckinResultPage.qml" line="60"/>
+        <source>Special</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="checkin-result-section-header-badges">
+        <location filename="../qml/CheckinResultPage.qml" line="78"/>
+        <source>Badges</source>
+        <translation type="unfinished">Abzeichen</translation>
+    </message>
+    <message id="checkin-result-section-header-score">
+        <location filename="../qml/CheckinResultPage.qml" line="134"/>
+        <source>Score</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="checkin-result-section-header-leaderboard">
+        <location filename="../qml/CheckinResultPage.qml" line="187"/>
+        <source>Leaderboard</source>
+        <translation type="unfinished">Leaderboard</translation>
     </message>
 </context>
 </TS>
