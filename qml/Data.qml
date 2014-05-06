@@ -447,12 +447,10 @@ Rectangle {
         }
 
         console.log(source + "?"+params)
-        // FIXME
-        //        source = "http://pcmlich.fit.vutbr.cz/checkin.json"
-
 //        source = "http://pcmlich.fit.vutbr.cz/4sq/"
 //        params = "idx=100&raw=true"
 //        params = "idx=77&raw=true"
+//        params = "idx=302&raw=true"
         foursquareDownload(source, params, "POST");
 
     }

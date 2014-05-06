@@ -218,7 +218,6 @@ Page {
                         anchors.top: leaderboardName.bottom;
                         anchors.left: leaderBoardUserImage.right
                         anchors.right: parent.right
-                        anchors.topMargin: Theme.paddingSmall
                         anchors.leftMargin: Theme.paddingMedium
                         anchors.rightMargin: Theme.paddingMedium
 
