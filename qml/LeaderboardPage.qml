@@ -37,6 +37,18 @@ Page {
             height: Math.max(personPhoto.height, infoColumn.height)
 
             Image {
+                id: personPhotoPlaceHolder
+                source: "./images/blank_boy.png"
+                width: 86;
+                height: 86;
+                anchors.left: parent.left
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.margins: Theme.paddingMedium
+                visible: (personPhoto.status !== Image.Ready)
+            }
+
+
+            Image {
                 id: personPhoto
                 source: photo
                 anchors.left: parent.left

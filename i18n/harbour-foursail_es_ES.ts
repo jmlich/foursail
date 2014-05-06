@@ -174,7 +174,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message id="n-notifications" numerus="yes">
-        <location filename="../qml/Data.qml" line="501"/>
+        <location filename="../qml/Data.qml" line="502"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
         <translation type="unfinished">
@@ -183,13 +183,13 @@
         </translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="963"/>
+        <location filename="../qml/Data.qml" line="965"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="967"/>
+        <location filename="../qml/Data.qml" line="969"/>
         <source>Connection problem</source>
         <translation type="unfinished"></translation>
     </message>
@@ -229,8 +229,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message id="leaderboard-n-checkins" numerus="yes">
-        <location filename="../qml/CheckinResultPage.qml" line="225"/>
-        <location filename="../qml/LeaderboardPage.qml" line="69"/>
+        <location filename="../qml/CheckinResultPage.qml" line="240"/>
+        <location filename="../qml/LeaderboardPage.qml" line="81"/>
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
         <translation type="unfinished">
@@ -548,7 +548,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message id="checkin-result-section-header-leaderboard">
-        <location filename="../qml/CheckinResultPage.qml" line="187"/>
+        <location filename="../qml/CheckinResultPage.qml" line="188"/>
         <source>Leaderboard</source>
         <translation type="unfinished"></translation>
     </message>

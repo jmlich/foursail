@@ -174,21 +174,21 @@
         <translation>Hiçbir arkadaşınız checkin yapmadı</translation>
     </message>
     <message id="n-notifications" numerus="yes">
-        <location filename="../qml/Data.qml" line="501"/>
+        <location filename="../qml/Data.qml" line="502"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n Bildirim</numerusform>
         </translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="963"/>
+        <location filename="../qml/Data.qml" line="965"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation>Yetkisin</translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="967"/>
+        <location filename="../qml/Data.qml" line="969"/>
         <source>Connection problem</source>
         <translation>Bağlantı problemi</translation>
     </message>
@@ -228,12 +228,12 @@
         <translation>Lider panosu boş</translation>
     </message>
     <message id="leaderboard-n-checkins" numerus="yes">
-        <location filename="../qml/CheckinResultPage.qml" line="225"/>
-        <location filename="../qml/LeaderboardPage.qml" line="69"/>
+        <location filename="../qml/CheckinResultPage.qml" line="240"/>
+        <location filename="../qml/LeaderboardPage.qml" line="81"/>
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n check-in</numerusform>
         </translation>
     </message>
     <message id="list-detail-empty">
@@ -259,7 +259,7 @@
     <message id="lists-edit">
         <location filename="../qml/ListsPage.qml" line="139"/>
         <source>Edit</source>
-        <translation type="unfinished">Düzenle</translation>
+        <translation>Düzenle</translation>
     </message>
     <message id="lists-follow">
         <location filename="../qml/ListsPage.qml" line="145"/>
@@ -546,7 +546,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message id="checkin-result-section-header-leaderboard">
-        <location filename="../qml/CheckinResultPage.qml" line="187"/>
+        <location filename="../qml/CheckinResultPage.qml" line="188"/>
         <source>Leaderboard</source>
         <translation type="unfinished">Lider panosu</translation>
     </message>

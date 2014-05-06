@@ -21,6 +21,7 @@ Rectangle {
     property int lastUpdate: 0
 
     property int countLoading: 0;
+    property int lastUnreadCount: 0;
 
     property string last_error: "";
 
@@ -496,9 +497,10 @@ Rectangle {
 
                         if (resultObject.notifications[0].item !== undefined) {
                             var unreadCount = resultObject.notifications[0].item.unreadCount;
-                            if (unreadCount > 0) {
+                            if (unreadCount > lastUnreadCount) {
                                 //% "%n Notifications"
                                 notificationPopup.show(qsTrId("n-notifications", unreadCount))
+                                lastUnreadCount = unreadCount;
                             }
                         }
 

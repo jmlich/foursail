@@ -122,17 +122,17 @@
     <message id="checkin-specials">
         <location filename="../qml/CheckinDetailPage.qml" line="62"/>
         <source>Specials</source>
-        <translation type="unfinished"></translation>
+        <translation>Spezialitäten</translation>
     </message>
     <message id="checkin-dislike-venue-menu">
         <location filename="../qml/CheckinDetailPage.qml" line="71"/>
         <source>Dislike</source>
-        <translation type="unfinished"></translation>
+        <translation>Gefällt mir nicht mehr</translation>
     </message>
     <message id="checkin-like-venue-menu">
         <location filename="../qml/CheckinDetailPage.qml" line="73"/>
         <source>Like</source>
-        <translation type="unfinished"></translation>
+        <translation>Gefällt mir</translation>
     </message>
     <message id="venue-checkin-accept">
         <location filename="../qml/CheckinDetailPage.qml" line="88"/>
@@ -174,7 +174,7 @@
         <translation>Keiner ihrer Freunde hat bisher eingecheckt</translation>
     </message>
     <message id="n-notifications" numerus="yes">
-        <location filename="../qml/Data.qml" line="501"/>
+        <location filename="../qml/Data.qml" line="502"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
         <translation>
@@ -183,13 +183,13 @@
         </translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="963"/>
+        <location filename="../qml/Data.qml" line="965"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation>Unberechtigt</translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="967"/>
+        <location filename="../qml/Data.qml" line="969"/>
         <source>Connection problem</source>
         <translation>Verbindungsproblem</translation>
     </message>
@@ -229,13 +229,13 @@
         <translation>Leaderboard ist leer</translation>
     </message>
     <message id="leaderboard-n-checkins" numerus="yes">
-        <location filename="../qml/CheckinResultPage.qml" line="225"/>
-        <location filename="../qml/LeaderboardPage.qml" line="69"/>
+        <location filename="../qml/CheckinResultPage.qml" line="240"/>
+        <location filename="../qml/LeaderboardPage.qml" line="81"/>
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n Check-in</numerusform>
+            <numerusform>%n Check-ins</numerusform>
         </translation>
     </message>
     <message id="list-detail-empty">
@@ -261,7 +261,7 @@
     <message id="lists-edit">
         <location filename="../qml/ListsPage.qml" line="139"/>
         <source>Edit</source>
-        <translation type="unfinished">Bearbeiten</translation>
+        <translation>Bearbeiten</translation>
     </message>
     <message id="lists-follow">
         <location filename="../qml/ListsPage.qml" line="145"/>
@@ -468,7 +468,7 @@
         <location filename="../qml/RecentCheckinsPage.qml" line="181"/>
         <source>Like checkin</source>
         <oldsource>Like</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Gefällt mir</translation>
     </message>
     <message id="recent-checkins-friend-profile">
         <location filename="../qml/RecentCheckinsPage.qml" line="197"/>
@@ -485,7 +485,7 @@
         <location filename="../qml/RecentCheckinsPage.qml" line="179"/>
         <source>Dislike checkin</source>
         <oldsource>Dislike</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Gefällt mir nicht mehr</translation>
     </message>
     <message id="search-title">
         <location filename="../qml/SearchVenueDialog.qml" line="32"/>
@@ -520,12 +520,12 @@
     <message id="tips-dislike">
         <location filename="../qml/TipsPage.qml" line="144"/>
         <source>Dislike tip</source>
-        <translation type="unfinished"></translation>
+        <translation>Gefällt mir nicht mehr</translation>
     </message>
     <message id="tips-like">
         <location filename="../qml/TipsPage.qml" line="146"/>
         <source>Like tip</source>
-        <translation type="unfinished"></translation>
+        <translation>Gefällt mir</translation>
     </message>
     <message id="checkin-result-title">
         <location filename="../qml/CheckinResultPage.qml" line="46"/>
@@ -535,7 +535,7 @@
     <message id="checkin-result-section-header-specials">
         <location filename="../qml/CheckinResultPage.qml" line="60"/>
         <source>Specials</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Spezialitäten</translation>
     </message>
     <message id="checkin-result-section-header-badges">
         <location filename="../qml/CheckinResultPage.qml" line="78"/>
@@ -548,7 +548,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message id="checkin-result-section-header-leaderboard">
-        <location filename="../qml/CheckinResultPage.qml" line="187"/>
+        <location filename="../qml/CheckinResultPage.qml" line="188"/>
         <source>Leaderboard</source>
         <translation type="unfinished">Leaderboard</translation>
     </message>

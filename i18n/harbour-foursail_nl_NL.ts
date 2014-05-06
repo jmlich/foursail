@@ -11,12 +11,12 @@
     <message id="lists-edit-accept">
         <location filename="../qml/AddAndEditListPage.qml" line="21"/>
         <source>Edit List</source>
-        <translation>Bewerk lijst</translation>
+        <translation>Lijst bewerken</translation>
     </message>
     <message id="lists-create-accept">
         <location filename="../qml/AddAndEditListPage.qml" line="23"/>
         <source>Create List</source>
-        <translation>Creëer lijst</translation>
+        <translation>Lijst maken</translation>
     </message>
     <message id="lists-create-name">
         <location filename="../qml/AddAndEditListPage.qml" line="30"/>
@@ -174,7 +174,7 @@
         <translation>Geen van je vrienden is al ingecheckt</translation>
     </message>
     <message id="n-notifications" numerus="yes">
-        <location filename="../qml/Data.qml" line="501"/>
+        <location filename="../qml/Data.qml" line="502"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
         <translation>
@@ -183,13 +183,13 @@
         </translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="963"/>
+        <location filename="../qml/Data.qml" line="965"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation>Onbevoegd</translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="967"/>
+        <location filename="../qml/Data.qml" line="969"/>
         <source>Connection problem</source>
         <translation>Verbindingsprobleem</translation>
     </message>
@@ -206,7 +206,7 @@
     <message id="friends-removing">
         <location filename="../qml/FriendsPage.qml" line="93"/>
         <source>Removing friend</source>
-        <translation>Verwijderen vriend</translation>
+        <translation>Vriend verwijderen</translation>
     </message>
     <message id="friends-remove">
         <location filename="../qml/FriendsPage.qml" line="124"/>
@@ -229,8 +229,8 @@
         <translation>Scorebord is leeg</translation>
     </message>
     <message id="leaderboard-n-checkins" numerus="yes">
-        <location filename="../qml/CheckinResultPage.qml" line="225"/>
-        <location filename="../qml/LeaderboardPage.qml" line="69"/>
+        <location filename="../qml/CheckinResultPage.qml" line="240"/>
+        <location filename="../qml/LeaderboardPage.qml" line="81"/>
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
         <translation>
@@ -261,7 +261,7 @@
     <message id="lists-edit">
         <location filename="../qml/ListsPage.qml" line="139"/>
         <source>Edit</source>
-        <translation type="unfinished">Bewerk</translation>
+        <translation>Bewerk</translation>
     </message>
     <message id="lists-follow">
         <location filename="../qml/ListsPage.qml" line="145"/>
@@ -548,7 +548,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message id="checkin-result-section-header-leaderboard">
-        <location filename="../qml/CheckinResultPage.qml" line="187"/>
+        <location filename="../qml/CheckinResultPage.qml" line="188"/>
         <source>Leaderboard</source>
         <translation type="unfinished">Scorebord</translation>
     </message>

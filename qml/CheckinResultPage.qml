@@ -132,6 +132,7 @@ Page {
             SectionHeader {
                 //% "Score"
                 text: qsTrId("checkin-result-section-header-score")
+                visible: (model.count > 0)
             }
 
             Repeater {
@@ -185,6 +186,7 @@ Page {
             SectionHeader {
                 //% "Leaderboard"
                 text: qsTrId("checkin-result-section-header-leaderboard")
+                visible: (leaderboard_model.count > 0)
             }
 
             Repeater {
@@ -192,13 +194,26 @@ Page {
                 delegate: BackgroundItem {
                     id: leaderboard_delegate
                     height: Math.max(leaderBoardUserImage.height, leaderboardName.height + leaderboardCheckins.height)
+
+
+                    Image {
+                        id: leaderBoardUserImagePlaceHolder
+                        source: "./images/blank_boy.png"
+                        width: 86;
+                        height: 86;
+                        anchors.left: parent.left
+                        anchors.verticalCenter: parent.verticalCenter
+                        anchors.leftMargin: Theme.paddingMedium
+                        visible: (leaderBoardUserImage.status !== Image.Ready)
+                    }
+
                     Image {
                         id: leaderBoardUserImage
                         anchors.top: parent.top;
                         anchors.left: parent.left;
                         anchors.leftMargin: Theme.paddingMedium;
                         source: user.photo.prefix + width + user.photo.suffix
-                        width: 80
+                        width: 86
                         height: width
                     }
 

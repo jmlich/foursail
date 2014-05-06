@@ -194,6 +194,10 @@ ApplicationWindow {
 
         onAccepted: {
             checkinResultPage.m.clear();
+            checkinResultPage.leaderboard_m.clear();
+            checkinResultPage.badges_m.clear();
+            checkinResultPage.message = "";
+            checkinResultPage.special_message = "";
             data.checkin(venue_id, event, comment, twitter, facebook)
             //            pageStack.push(checkinResultPage)
         }

@@ -87,7 +87,7 @@
     <message id="venue-add-set-position">
         <location filename="../qml/AddVenuePage.qml" line="176"/>
         <source>Set position</source>
-        <translation type="unfinished"></translation>
+        <translation>Aseta sijainti</translation>
     </message>
     <message id="badges-title">
         <location filename="../qml/BadgesPage.qml" line="34"/>
@@ -174,7 +174,7 @@
         <translation>Yksikään ystävistäsi ei ole vielä kirjautunut</translation>
     </message>
     <message id="n-notifications" numerus="yes">
-        <location filename="../qml/Data.qml" line="501"/>
+        <location filename="../qml/Data.qml" line="502"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
         <translation>
@@ -183,13 +183,13 @@
         </translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="963"/>
+        <location filename="../qml/Data.qml" line="965"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation>Ei oikeutta</translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="967"/>
+        <location filename="../qml/Data.qml" line="969"/>
         <source>Connection problem</source>
         <translation>Yhteysongelma</translation>
     </message>
@@ -216,7 +216,7 @@
     <message id="friends-add">
         <location filename="../qml/FriendsPage.qml" line="130"/>
         <source>Add</source>
-        <translation type="unfinished">Lisää</translation>
+        <translation>Lisää</translation>
     </message>
     <message id="leaderboard-title">
         <location filename="../qml/LeaderboardPage.qml" line="25"/>
@@ -229,8 +229,8 @@
         <translation>Tulostaulu on tyhjä</translation>
     </message>
     <message id="leaderboard-n-checkins" numerus="yes">
-        <location filename="../qml/CheckinResultPage.qml" line="225"/>
-        <location filename="../qml/LeaderboardPage.qml" line="69"/>
+        <location filename="../qml/CheckinResultPage.qml" line="240"/>
+        <location filename="../qml/LeaderboardPage.qml" line="81"/>
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
         <translation>
@@ -261,17 +261,17 @@
     <message id="lists-edit">
         <location filename="../qml/ListsPage.qml" line="139"/>
         <source>Edit</source>
-        <translation type="unfinished">Muokkaa</translation>
+        <translation>Muokkaa</translation>
     </message>
     <message id="lists-follow">
         <location filename="../qml/ListsPage.qml" line="145"/>
         <source>Follow</source>
-        <translation type="unfinished"></translation>
+        <translation>Seuraa</translation>
     </message>
     <message id="lists-unfollow">
         <location filename="../qml/ListsPage.qml" line="152"/>
         <source>Unfollow</source>
-        <translation type="unfinished"></translation>
+        <translation>Lopeta seuraaminen</translation>
     </message>
     <message id="map-title">
         <location filename="../qml/MapPage.qml" line="20"/>
@@ -535,22 +535,22 @@
     <message id="checkin-result-section-header-specials">
         <location filename="../qml/CheckinResultPage.qml" line="60"/>
         <source>Specials</source>
-        <translation type="unfinished">Tarjoukset</translation>
+        <translation>Tarjoukset</translation>
     </message>
     <message id="checkin-result-section-header-badges">
         <location filename="../qml/CheckinResultPage.qml" line="78"/>
         <source>Badges</source>
-        <translation type="unfinished">Merkit</translation>
+        <translation>Merkit</translation>
     </message>
     <message id="checkin-result-section-header-score">
         <location filename="../qml/CheckinResultPage.qml" line="134"/>
         <source>Score</source>
-        <translation type="unfinished"></translation>
+        <translation>Pisteet</translation>
     </message>
     <message id="checkin-result-section-header-leaderboard">
-        <location filename="../qml/CheckinResultPage.qml" line="187"/>
+        <location filename="../qml/CheckinResultPage.qml" line="188"/>
         <source>Leaderboard</source>
-        <translation type="unfinished">Tulostaulu</translation>
+        <translation>Tulostaulu</translation>
     </message>
 </context>
 </TS>
