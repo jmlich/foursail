@@ -535,22 +535,22 @@
     <message id="checkin-result-section-header-special">
         <location filename="../qml/CheckinResultPage.qml" line="60"/>
         <source>Special</source>
-        <translation type="unfinished"></translation>
+        <translation>Special</translation>
     </message>
     <message id="checkin-result-section-header-badges">
         <location filename="../qml/CheckinResultPage.qml" line="78"/>
         <source>Badges</source>
-        <translation type="unfinished">Badges</translation>
+        <translation>Badges</translation>
     </message>
     <message id="checkin-result-section-header-score">
         <location filename="../qml/CheckinResultPage.qml" line="134"/>
         <source>Score</source>
-        <translation type="unfinished"></translation>
+        <translation>Score</translation>
     </message>
     <message id="checkin-result-section-header-leaderboard">
         <location filename="../qml/CheckinResultPage.qml" line="187"/>
         <source>Leaderboard</source>
-        <translation type="unfinished">Leaderboard</translation>
+        <translation>Leaderboard</translation>
     </message>
 </context>
 </TS>
