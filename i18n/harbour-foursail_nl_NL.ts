@@ -174,7 +174,7 @@
         <translation>Geen van je vrienden is al ingecheckt</translation>
     </message>
     <message id="n-notifications" numerus="yes">
-        <location filename="../qml/Data.qml" line="503"/>
+        <location filename="../qml/Data.qml" line="501"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
         <translation>
@@ -183,13 +183,13 @@
         </translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="965"/>
+        <location filename="../qml/Data.qml" line="963"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation>Onbevoegd</translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="969"/>
+        <location filename="../qml/Data.qml" line="967"/>
         <source>Connection problem</source>
         <translation>Verbindingsprobleem</translation>
     </message>
@@ -229,7 +229,7 @@
         <translation>Scorebord is leeg</translation>
     </message>
     <message id="leaderboard-n-checkins" numerus="yes">
-        <location filename="../qml/CheckinResultPage.qml" line="226"/>
+        <location filename="../qml/CheckinResultPage.qml" line="225"/>
         <location filename="../qml/LeaderboardPage.qml" line="69"/>
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
@@ -532,10 +532,10 @@
         <source>Checkin</source>
         <translation>Inchecken</translation>
     </message>
-    <message id="checkin-result-section-header-special">
+    <message id="checkin-result-section-header-specials">
         <location filename="../qml/CheckinResultPage.qml" line="60"/>
-        <source>Special</source>
-        <translation type="unfinished"></translation>
+        <source>Specials</source>
+        <translation type="unfinished">Aanbiedingen</translation>
     </message>
     <message id="checkin-result-section-header-badges">
         <location filename="../qml/CheckinResultPage.qml" line="78"/>

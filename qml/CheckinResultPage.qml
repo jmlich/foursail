@@ -56,8 +56,8 @@ Page {
             }
 
             SectionHeader {
-                //% "Special"
-                text: qsTrId("checkin-result-section-header-special")
+                //% "Specials"
+                text: qsTrId("checkin-result-section-header-specials")
                 visible: special_message_label.visible
             }
 
