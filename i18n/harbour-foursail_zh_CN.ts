@@ -87,7 +87,7 @@
     <message id="venue-add-set-position">
         <location filename="../qml/AddVenuePage.qml" line="176"/>
         <source>Set position</source>
-        <translation type="unfinished"></translation>
+        <translation>设定位置</translation>
     </message>
     <message id="badges-title">
         <location filename="../qml/BadgesPage.qml" line="34"/>
@@ -174,7 +174,7 @@
         <translation>你的好友中还没有在这里签到的人</translation>
     </message>
     <message id="n-notifications" numerus="yes">
-        <location filename="../qml/Data.qml" line="502"/>
+        <location filename="../qml/Data.qml" line="503"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
         <translation>
@@ -182,13 +182,13 @@
         </translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="965"/>
+        <location filename="../qml/Data.qml" line="966"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation>未授权</translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="969"/>
+        <location filename="../qml/Data.qml" line="970"/>
         <source>Connection problem</source>
         <translation>链接问题</translation>
     </message>
@@ -215,7 +215,7 @@
     <message id="friends-add">
         <location filename="../qml/FriendsPage.qml" line="130"/>
         <source>Add</source>
-        <translation type="unfinished">添加</translation>
+        <translation>添加</translation>
     </message>
     <message id="leaderboard-title">
         <location filename="../qml/LeaderboardPage.qml" line="25"/>
@@ -264,12 +264,12 @@
     <message id="lists-follow">
         <location filename="../qml/ListsPage.qml" line="145"/>
         <source>Follow</source>
-        <translation type="unfinished"></translation>
+        <translation>添加关注</translation>
     </message>
     <message id="lists-unfollow">
         <location filename="../qml/ListsPage.qml" line="152"/>
         <source>Unfollow</source>
-        <translation type="unfinished"></translation>
+        <translation>取消关注</translation>
     </message>
     <message id="map-title">
         <location filename="../qml/MapPage.qml" line="20"/>
@@ -533,22 +533,22 @@
     <message id="checkin-result-section-header-specials">
         <location filename="../qml/CheckinResultPage.qml" line="60"/>
         <source>Specials</source>
-        <translation type="unfinished">特殊</translation>
+        <translation>特殊</translation>
     </message>
     <message id="checkin-result-section-header-badges">
         <location filename="../qml/CheckinResultPage.qml" line="78"/>
         <source>Badges</source>
-        <translation type="unfinished">徽章</translation>
+        <translation>徽章</translation>
     </message>
     <message id="checkin-result-section-header-score">
         <location filename="../qml/CheckinResultPage.qml" line="134"/>
         <source>Score</source>
-        <translation type="unfinished"></translation>
+        <translation>分数</translation>
     </message>
     <message id="checkin-result-section-header-leaderboard">
         <location filename="../qml/CheckinResultPage.qml" line="188"/>
         <source>Leaderboard</source>
-        <translation type="unfinished">排行榜</translation>
+        <translation>排行榜</translation>
     </message>
 </context>
 </TS>

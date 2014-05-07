@@ -174,7 +174,7 @@
         <translation>Ingen af dine venner har endnu tjekket ind</translation>
     </message>
     <message id="n-notifications" numerus="yes">
-        <location filename="../qml/Data.qml" line="502"/>
+        <location filename="../qml/Data.qml" line="503"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
         <translation>
@@ -183,13 +183,13 @@
         </translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="965"/>
+        <location filename="../qml/Data.qml" line="966"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation>Uautoriseret</translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="969"/>
+        <location filename="../qml/Data.qml" line="970"/>
         <source>Connection problem</source>
         <translation>Netværksproblem</translation>
     </message>

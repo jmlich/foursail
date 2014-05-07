@@ -87,7 +87,7 @@
     <message id="venue-add-set-position">
         <location filename="../qml/AddVenuePage.qml" line="176"/>
         <source>Set position</source>
-        <translation type="unfinished"></translation>
+        <translation>Konum ayarla</translation>
     </message>
     <message id="badges-title">
         <location filename="../qml/BadgesPage.qml" line="34"/>
@@ -174,7 +174,7 @@
         <translation>Hiçbir arkadaşınız checkin yapmadı</translation>
     </message>
     <message id="n-notifications" numerus="yes">
-        <location filename="../qml/Data.qml" line="502"/>
+        <location filename="../qml/Data.qml" line="503"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
         <translation>
@@ -182,13 +182,13 @@
         </translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="965"/>
+        <location filename="../qml/Data.qml" line="966"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation>Yetkisin</translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="969"/>
+        <location filename="../qml/Data.qml" line="970"/>
         <source>Connection problem</source>
         <translation>Bağlantı problemi</translation>
     </message>
@@ -215,7 +215,7 @@
     <message id="friends-add">
         <location filename="../qml/FriendsPage.qml" line="130"/>
         <source>Add</source>
-        <translation type="unfinished">Ekle</translation>
+        <translation>Ekle</translation>
     </message>
     <message id="leaderboard-title">
         <location filename="../qml/LeaderboardPage.qml" line="25"/>
@@ -264,12 +264,12 @@
     <message id="lists-follow">
         <location filename="../qml/ListsPage.qml" line="145"/>
         <source>Follow</source>
-        <translation type="unfinished"></translation>
+        <translation>Takip et</translation>
     </message>
     <message id="lists-unfollow">
         <location filename="../qml/ListsPage.qml" line="152"/>
         <source>Unfollow</source>
-        <translation type="unfinished"></translation>
+        <translation>Takibi bırak</translation>
     </message>
     <message id="map-title">
         <location filename="../qml/MapPage.qml" line="20"/>
@@ -533,22 +533,22 @@
     <message id="checkin-result-section-header-specials">
         <location filename="../qml/CheckinResultPage.qml" line="60"/>
         <source>Specials</source>
-        <translation type="unfinished">Spesialler</translation>
+        <translation>Kampanyalar</translation>
     </message>
     <message id="checkin-result-section-header-badges">
         <location filename="../qml/CheckinResultPage.qml" line="78"/>
         <source>Badges</source>
-        <translation type="unfinished">Rozetler</translation>
+        <translation>Rozetler</translation>
     </message>
     <message id="checkin-result-section-header-score">
         <location filename="../qml/CheckinResultPage.qml" line="134"/>
         <source>Score</source>
-        <translation type="unfinished"></translation>
+        <translation>Skor</translation>
     </message>
     <message id="checkin-result-section-header-leaderboard">
         <location filename="../qml/CheckinResultPage.qml" line="188"/>
         <source>Leaderboard</source>
-        <translation type="unfinished">Lider panosu</translation>
+        <translation>Lider panosu</translation>
     </message>
 </context>
 </TS>
