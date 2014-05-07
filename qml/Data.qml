@@ -342,6 +342,7 @@ Rectangle {
         var source = "https://api.foursquare.com/v2/updates/marknotificationsread"
         var params = "oauth_token=" + accessToken + "&v=" +foursquare_api_version + "&locale="+locale + "&highWatermark=" + timestamp
         foursquareDownload(source, params, "POST");
+        lastUnreadCount = 0;
     }
 
     function addEvent(venue_id,startAt, endAt, name)    {
