@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="nl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl" version="2.1">
 <context>
-    <name></name>
+    <name/>
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="161"/>
         <source>Tap to cancel</source>
-        <translation>Tik om te annuleren</translation>
+        <translation>Tikken om te annuleren</translation>
     </message>
     <message id="lists-edit-accept">
         <location filename="../qml/AddAndEditListPage.qml" line="21"/>
@@ -32,7 +30,7 @@
     <message id="venue-add-accept">
         <location filename="../qml/AddVenuePage.qml" line="64"/>
         <source>Create</source>
-        <translation>Creëer</translation>
+        <translation>Creëren</translation>
     </message>
     <message id="venue-add-name">
         <location filename="../qml/AddVenuePage.qml" line="73"/>
@@ -87,7 +85,7 @@
     <message id="venue-add-set-position">
         <location filename="../qml/AddVenuePage.qml" line="176"/>
         <source>Set position</source>
-        <translation type="unfinished"></translation>
+        <translation>Instellen positie</translation>
     </message>
     <message id="badges-title">
         <location filename="../qml/BadgesPage.qml" line="34"/>
@@ -160,7 +158,7 @@
     <message id="venue-checkin-show-on-map-button">
         <location filename="../qml/CheckinDetailPage.qml" line="153"/>
         <source>Show on Map</source>
-        <translation>Toon op kaart</translation>
+        <translation>Tonen op kaart</translation>
     </message>
     <message id="cover-loading">
         <location filename="../qml/CoverPage.qml" line="69"/>
@@ -177,10 +175,7 @@
         <location filename="../qml/Data.qml" line="503"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
-        <translation>
-            <numerusform>%n melding</numerusform>
-            <numerusform>%n meldingen</numerusform>
-        </translation>
+        <translation><numerusform>%n melding</numerusform><numerusform>%n meldingen</numerusform></translation>
     </message>
     <message id="error-not-authorized">
         <location filename="../qml/Data.qml" line="966"/>
@@ -216,7 +211,7 @@
     <message id="friends-add">
         <location filename="../qml/FriendsPage.qml" line="130"/>
         <source>Add</source>
-        <translation type="unfinished">Toevoegen</translation>
+        <translation>Toevoegen</translation>
     </message>
     <message id="leaderboard-title">
         <location filename="../qml/LeaderboardPage.qml" line="25"/>
@@ -233,10 +228,7 @@
         <location filename="../qml/LeaderboardPage.qml" line="81"/>
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
-        <translation>
-            <numerusform>%n incheck</numerusform>
-            <numerusform>%n inchecks</numerusform>
-        </translation>
+        <translation><numerusform>%n checkin</numerusform><numerusform>%n checkins</numerusform></translation>
     </message>
     <message id="list-detail-empty">
         <location filename="../qml/ListDetailPage.qml" line="32"/>
@@ -261,17 +253,17 @@
     <message id="lists-edit">
         <location filename="../qml/ListsPage.qml" line="139"/>
         <source>Edit</source>
-        <translation>Bewerk</translation>
+        <translation>Bewerken</translation>
     </message>
     <message id="lists-follow">
         <location filename="../qml/ListsPage.qml" line="145"/>
         <source>Follow</source>
-        <translation type="unfinished"></translation>
+        <translation>Volgen</translation>
     </message>
     <message id="lists-unfollow">
         <location filename="../qml/ListsPage.qml" line="152"/>
         <source>Unfollow</source>
-        <translation type="unfinished"></translation>
+        <translation>Ontvolgen</translation>
     </message>
     <message id="map-title">
         <location filename="../qml/MapPage.qml" line="20"/>
@@ -286,8 +278,8 @@
     <message id="mayorships-empty">
         <location filename="../qml/MayorshipsPage.qml" line="33"/>
         <source>User hasn&apos;t got any mayorships yet</source>
-        <oldsource>User hasn&apos;t got any mayorships yet!</oldsource>
-        <translation>Nog geen burgemeesterschappen!</translation>
+        <oldsource>User hasn't got any mayorships yet!</oldsource>
+        <translation>Nog geen burgemeesterschappen</translation>
     </message>
     <message id="nearby-venues-title">
         <location filename="../qml/NearbyVenuesPage.qml" line="36"/>
@@ -307,7 +299,7 @@
     <message id="nearby-venues-recent-checkins-menu">
         <location filename="../qml/NearbyVenuesPage.qml" line="49"/>
         <source>Recent Checkins</source>
-        <translation>Recente inchecks</translation>
+        <translation>Recente checkins</translation>
     </message>
     <message id="nearby-venues-refresh-menu">
         <location filename="../qml/NearbyVenuesPage.qml" line="55"/>
@@ -387,7 +379,7 @@
     <message id="profile-recent-checkins-menu">
         <location filename="../qml/ProfilePage.qml" line="80"/>
         <source>Recent Checkins</source>
-        <translation>Recente inchecks</translation>
+        <translation>Recente checkins</translation>
     </message>
     <message id="profile-nearby-venues-menu">
         <location filename="../qml/ProfilePage.qml" line="86"/>
@@ -442,7 +434,7 @@
     <message id="recent-checkins-title">
         <location filename="../qml/RecentCheckinsPage.qml" line="31"/>
         <source>Recent Checkins</source>
-        <translation>Recente inchecks</translation>
+        <translation>Recente checkins</translation>
     </message>
     <message id="recent-checkins-empty">
         <location filename="../qml/RecentCheckinsPage.qml" line="37"/>
@@ -535,22 +527,22 @@
     <message id="checkin-result-section-header-specials">
         <location filename="../qml/CheckinResultPage.qml" line="60"/>
         <source>Specials</source>
-        <translation type="unfinished">Aanbiedingen</translation>
+        <translation>Aanbiedingen</translation>
     </message>
     <message id="checkin-result-section-header-badges">
         <location filename="../qml/CheckinResultPage.qml" line="78"/>
         <source>Badges</source>
-        <translation type="unfinished">Badges</translation>
+        <translation>Badges</translation>
     </message>
     <message id="checkin-result-section-header-score">
         <location filename="../qml/CheckinResultPage.qml" line="134"/>
         <source>Score</source>
-        <translation type="unfinished"></translation>
+        <translation>Score</translation>
     </message>
     <message id="checkin-result-section-header-leaderboard">
         <location filename="../qml/CheckinResultPage.qml" line="188"/>
         <source>Leaderboard</source>
-        <translation type="unfinished">Scorebord</translation>
+        <translation>Scorebord</translation>
     </message>
 </context>
 </TS>

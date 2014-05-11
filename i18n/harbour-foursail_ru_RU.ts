@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ru">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ru" version="2.1">
 <context>
-    <name></name>
+    <name/>
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="161"/>
         <source>Tap to cancel</source>
@@ -87,7 +85,7 @@
     <message id="venue-add-set-position">
         <location filename="../qml/AddVenuePage.qml" line="176"/>
         <source>Set position</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message id="badges-title">
         <location filename="../qml/BadgesPage.qml" line="34"/>
@@ -177,11 +175,7 @@
         <location filename="../qml/Data.qml" line="503"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
-        <translation>
-            <numerusform>%n Уведомление</numerusform>
-            <numerusform>%n Уведомлений</numerusform>
-            <numerusform>%n Уведомлений</numerusform>
-        </translation>
+        <translation><numerusform>%n Уведомление</numerusform><numerusform>%n Уведомлений</numerusform><numerusform>%n Уведомлений</numerusform></translation>
     </message>
     <message id="error-not-authorized">
         <location filename="../qml/Data.qml" line="966"/>
@@ -217,7 +211,7 @@
     <message id="friends-add">
         <location filename="../qml/FriendsPage.qml" line="130"/>
         <source>Add</source>
-        <translation type="unfinished">Добавить</translation>
+        <translation type="unfinished"/>
     </message>
     <message id="leaderboard-title">
         <location filename="../qml/LeaderboardPage.qml" line="25"/>
@@ -234,11 +228,7 @@
         <location filename="../qml/LeaderboardPage.qml" line="81"/>
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
-        <translation>
-            <numerusform>%n чекин</numerusform>
-            <numerusform>%n чекина(ов)</numerusform>
-            <numerusform>%n чекина(ов)</numerusform>
-        </translation>
+        <translation><numerusform>%n чекин</numerusform><numerusform>%n чекина(ов)</numerusform><numerusform>%n чекина(ов)</numerusform></translation>
     </message>
     <message id="list-detail-empty">
         <location filename="../qml/ListDetailPage.qml" line="32"/>
@@ -268,12 +258,12 @@
     <message id="lists-follow">
         <location filename="../qml/ListsPage.qml" line="145"/>
         <source>Follow</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message id="lists-unfollow">
         <location filename="../qml/ListsPage.qml" line="152"/>
         <source>Unfollow</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message id="map-title">
         <location filename="../qml/MapPage.qml" line="20"/>
@@ -288,7 +278,7 @@
     <message id="mayorships-empty">
         <location filename="../qml/MayorshipsPage.qml" line="33"/>
         <source>User hasn&apos;t got any mayorships yet</source>
-        <oldsource>User hasn&apos;t got any mayorships yet!</oldsource>
+        <oldsource>User hasn't got any mayorships yet!</oldsource>
         <translation>Пользователь не получил никаких мэрств!</translation>
     </message>
     <message id="nearby-venues-title">
@@ -537,22 +527,22 @@
     <message id="checkin-result-section-header-specials">
         <location filename="../qml/CheckinResultPage.qml" line="60"/>
         <source>Specials</source>
-        <translation type="unfinished">Специальное</translation>
+        <translation type="unfinished"/>
     </message>
     <message id="checkin-result-section-header-badges">
         <location filename="../qml/CheckinResultPage.qml" line="78"/>
         <source>Badges</source>
-        <translation type="unfinished">Бейджи</translation>
+        <translation type="unfinished"/>
     </message>
     <message id="checkin-result-section-header-score">
         <location filename="../qml/CheckinResultPage.qml" line="134"/>
         <source>Score</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message id="checkin-result-section-header-leaderboard">
         <location filename="../qml/CheckinResultPage.qml" line="188"/>
         <source>Leaderboard</source>
-        <translation type="unfinished">Список лидеров</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>

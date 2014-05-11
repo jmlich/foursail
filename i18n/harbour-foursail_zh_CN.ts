@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="zh_CN">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_CN" version="2.1">
 <context>
-    <name></name>
+    <name/>
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="161"/>
         <source>Tap to cancel</source>
@@ -177,9 +175,7 @@
         <location filename="../qml/Data.qml" line="503"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
-        <translation>
-            <numerusform>%n条提醒</numerusform>
-        </translation>
+        <translation><numerusform>%n条提醒</numerusform></translation>
     </message>
     <message id="error-not-authorized">
         <location filename="../qml/Data.qml" line="966"/>
@@ -232,9 +228,7 @@
         <location filename="../qml/LeaderboardPage.qml" line="81"/>
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
-        <translation>
-            <numerusform>%n次签到</numerusform>
-        </translation>
+        <translation><numerusform>%n次签到</numerusform></translation>
     </message>
     <message id="list-detail-empty">
         <location filename="../qml/ListDetailPage.qml" line="32"/>
@@ -284,7 +278,7 @@
     <message id="mayorships-empty">
         <location filename="../qml/MayorshipsPage.qml" line="33"/>
         <source>User hasn&apos;t got any mayorships yet</source>
-        <oldsource>User hasn&apos;t got any mayorships yet!</oldsource>
+        <oldsource>User hasn't got any mayorships yet!</oldsource>
         <translation>还没有地点霸主</translation>
     </message>
     <message id="nearby-venues-title">

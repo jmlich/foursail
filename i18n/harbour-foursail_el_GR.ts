@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="el">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.1">
 <context>
-    <name></name>
+    <name/>
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="161"/>
         <source>Tap to cancel</source>
@@ -87,7 +85,7 @@
     <message id="venue-add-set-position">
         <location filename="../qml/AddVenuePage.qml" line="176"/>
         <source>Set position</source>
-        <translation type="unfinished"></translation>
+        <translation>Ορισμός θέσης</translation>
     </message>
     <message id="badges-title">
         <location filename="../qml/BadgesPage.qml" line="34"/>
@@ -117,12 +115,12 @@
     <message id="checkin-listed-menu">
         <location filename="../qml/CheckinDetailPage.qml" line="56"/>
         <source>Listed</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message id="checkin-specials">
         <location filename="../qml/CheckinDetailPage.qml" line="62"/>
         <source>Specials</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message id="checkin-dislike-venue-menu">
         <location filename="../qml/CheckinDetailPage.qml" line="71"/>
@@ -137,7 +135,7 @@
     <message id="venue-checkin-accept">
         <location filename="../qml/CheckinDetailPage.qml" line="88"/>
         <source>Checkin</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message id="venue-checkin-comment">
         <location filename="../qml/CheckinDetailPage.qml" line="136"/>
@@ -171,16 +169,13 @@
         <location filename="../qml/CoverPage.qml" line="80"/>
         <source>Nobody of your friends checked in yet</source>
         <oldsource>FIXME</oldsource>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message id="n-notifications" numerus="yes">
         <location filename="../qml/Data.qml" line="503"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
-        <translation>
-            <numerusform>%n Ειδοποίηση</numerusform>
-            <numerusform>%n Ειδοποιήσεις</numerusform>
-        </translation>
+        <translation><numerusform>%n Ειδοποίηση</numerusform><numerusform>%n Ειδοποιήσεις</numerusform></translation>
     </message>
     <message id="error-not-authorized">
         <location filename="../qml/Data.qml" line="966"/>
@@ -216,32 +211,29 @@
     <message id="friends-add">
         <location filename="../qml/FriendsPage.qml" line="130"/>
         <source>Add</source>
-        <translation type="unfinished">Προσθήκη</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message id="leaderboard-title">
         <location filename="../qml/LeaderboardPage.qml" line="25"/>
         <source>Leaderboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Κατάταξη</translation>
     </message>
     <message id="leaderboard-empty">
         <location filename="../qml/LeaderboardPage.qml" line="31"/>
         <source>Leaderboard is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>Η κατάταξη είναι άδεια</translation>
     </message>
     <message id="leaderboard-n-checkins" numerus="yes">
         <location filename="../qml/CheckinResultPage.qml" line="240"/>
         <location filename="../qml/LeaderboardPage.qml" line="81"/>
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
+        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
     <message id="list-detail-empty">
         <location filename="../qml/ListDetailPage.qml" line="32"/>
         <source>List contains no venues</source>
-        <translation type="unfinished"></translation>
+        <translation>Η λίστα είναι άδεια</translation>
     </message>
     <message id="lists-title">
         <location filename="../qml/ListsPage.qml" line="29"/>
@@ -251,7 +243,7 @@
     <message id="lists-empty">
         <location filename="../qml/ListsPage.qml" line="35"/>
         <source>No lists are available</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεν υπάρχουν λίστες</translation>
     </message>
     <message id="lists-new">
         <location filename="../qml/ListsPage.qml" line="44"/>
@@ -266,12 +258,12 @@
     <message id="lists-follow">
         <location filename="../qml/ListsPage.qml" line="145"/>
         <source>Follow</source>
-        <translation type="unfinished"></translation>
+        <translation>Ακολουθήστε</translation>
     </message>
     <message id="lists-unfollow">
         <location filename="../qml/ListsPage.qml" line="152"/>
         <source>Unfollow</source>
-        <translation type="unfinished"></translation>
+        <translation>Σταματήστε να ακολουθείτε</translation>
     </message>
     <message id="map-title">
         <location filename="../qml/MapPage.qml" line="20"/>
@@ -286,8 +278,8 @@
     <message id="mayorships-empty">
         <location filename="../qml/MayorshipsPage.qml" line="33"/>
         <source>User hasn&apos;t got any mayorships yet</source>
-        <oldsource>User hasn&apos;t got any mayorships yet!</oldsource>
-        <translation type="unfinished"></translation>
+        <oldsource>User hasn't got any mayorships yet!</oldsource>
+        <translation>Δεν υπάρχουν δημαρχίες</translation>
     </message>
     <message id="nearby-venues-title">
         <location filename="../qml/NearbyVenuesPage.qml" line="36"/>
@@ -307,7 +299,7 @@
     <message id="nearby-venues-recent-checkins-menu">
         <location filename="../qml/NearbyVenuesPage.qml" line="49"/>
         <source>Recent Checkins</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message id="nearby-venues-refresh-menu">
         <location filename="../qml/NearbyVenuesPage.qml" line="55"/>
@@ -332,7 +324,7 @@
     <message id="nearby-venues-empty">
         <location filename="../qml/NearbyVenuesPage.qml" line="78"/>
         <source>There is no venue in nearby</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεν υπάρχουν τοποθεσίες τριγύρω</translation>
     </message>
     <message id="notifications-title">
         <location filename="../qml/NotificationsPage.qml" line="31"/>
@@ -357,12 +349,12 @@
     <message id="image-status-ready">
         <location filename="../qml/PinchMap.qml" line="298"/>
         <source>Ready</source>
-        <translation type="unfinished"></translation>
+        <translation>Έτοιμο</translation>
     </message>
     <message id="image-status-not-set">
         <location filename="../qml/PinchMap.qml" line="300"/>
         <source>Not Set</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message id="image-status-error">
         <location filename="../qml/PinchMap.qml" line="302"/>
@@ -387,22 +379,22 @@
     <message id="profile-recent-checkins-menu">
         <location filename="../qml/ProfilePage.qml" line="80"/>
         <source>Recent Checkins</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message id="profile-nearby-venues-menu">
         <location filename="../qml/ProfilePage.qml" line="86"/>
         <source>Nearby Venues</source>
-        <translation type="unfinished">Κοντινές τοποθεσίες</translation>
+        <translation>Κοντινές τοποθεσίες</translation>
     </message>
     <message id="profile-checkins">
         <location filename="../qml/ProfilePage.qml" line="185"/>
         <source>Checkins</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message id="profile-notifications">
         <location filename="../qml/ProfilePage.qml" line="212"/>
         <source>Notifications</source>
-        <translation type="unfinished">Ειδοποιήσεις</translation>
+        <translation>Ειδοποιήσεις</translation>
     </message>
     <message id="profile-badges">
         <location filename="../qml/ProfilePage.qml" line="236"/>
@@ -442,12 +434,12 @@
     <message id="recent-checkins-title">
         <location filename="../qml/RecentCheckinsPage.qml" line="31"/>
         <source>Recent Checkins</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message id="recent-checkins-empty">
         <location filename="../qml/RecentCheckinsPage.qml" line="37"/>
         <source>None of your friends checked in yet</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message id="recent-checkins-my-profile-menu">
         <location filename="../qml/RecentCheckinsPage.qml" line="43"/>
@@ -468,7 +460,7 @@
         <location filename="../qml/RecentCheckinsPage.qml" line="181"/>
         <source>Like checkin</source>
         <oldsource>Like</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Μου αρέσει</translation>
     </message>
     <message id="recent-checkins-friend-profile">
         <location filename="../qml/RecentCheckinsPage.qml" line="197"/>
@@ -485,7 +477,7 @@
         <location filename="../qml/RecentCheckinsPage.qml" line="179"/>
         <source>Dislike checkin</source>
         <oldsource>Dislike</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Δε μου αρέσει</translation>
     </message>
     <message id="search-title">
         <location filename="../qml/SearchVenueDialog.qml" line="32"/>
@@ -505,7 +497,7 @@
     <message id="history-empty">
         <location filename="../qml/SelfCheckinsPage.qml" line="33"/>
         <source>User didn&apos;t make check in yet</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message id="tips-title">
         <location filename="../qml/TipsPage.qml" line="28"/>
@@ -515,42 +507,42 @@
     <message id="tips-empty">
         <location filename="../qml/TipsPage.qml" line="35"/>
         <source>List of tips is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>Η λίστα είναι άδεια</translation>
     </message>
     <message id="tips-dislike">
         <location filename="../qml/TipsPage.qml" line="144"/>
         <source>Dislike tip</source>
-        <translation type="unfinished"></translation>
+        <translation>Δε μου αρέσει</translation>
     </message>
     <message id="tips-like">
         <location filename="../qml/TipsPage.qml" line="146"/>
         <source>Like tip</source>
-        <translation type="unfinished"></translation>
+        <translation>Μου αρέσει</translation>
     </message>
     <message id="checkin-result-title">
         <location filename="../qml/CheckinResultPage.qml" line="46"/>
         <source>Checkin</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message id="checkin-result-section-header-specials">
         <location filename="../qml/CheckinResultPage.qml" line="60"/>
         <source>Specials</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message id="checkin-result-section-header-badges">
         <location filename="../qml/CheckinResultPage.qml" line="78"/>
         <source>Badges</source>
-        <translation type="unfinished">Κονκάρδες</translation>
+        <translation>Κονκάρδες</translation>
     </message>
     <message id="checkin-result-section-header-score">
         <location filename="../qml/CheckinResultPage.qml" line="134"/>
         <source>Score</source>
-        <translation type="unfinished"></translation>
+        <translation>Σκορ</translation>
     </message>
     <message id="checkin-result-section-header-leaderboard">
         <location filename="../qml/CheckinResultPage.qml" line="188"/>
         <source>Leaderboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Κατάταξη</translation>
     </message>
 </context>
 </TS>
