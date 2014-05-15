@@ -26,7 +26,7 @@ Page {
 
     BusyIndicator {
         anchors.centerIn: parent;
-        visible: model.count === 0;
+        visible: (message_text.text === "");
         running: visible;
     }
 
