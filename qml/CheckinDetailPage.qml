@@ -14,9 +14,11 @@ Dialog {
     property double deviceLat;
     property double deviceLon;
 
+
     property bool venue_liked: false
 
     property alias comment: comment_textarea.text
+    property alias image: checkinImage.source
     property alias twitter: twitter_switch.checked
     property alias facebook: facebook_switch.checked
 
@@ -33,6 +35,14 @@ Dialog {
         deviceLon: page.deviceLon
     }
 
+    ImagesPage {
+        id: imagesPage
+
+        onImageSelected: {
+            checkinImage.source = url
+            pageStack.navigateBack (PageStackAction.Animated)
+        }
+    }
 
 
     SilicaFlickable {
@@ -136,6 +146,35 @@ Dialog {
                 placeholderText: qsTrId("venue-checkin-comment")
             }
 
+            Row
+            {
+                anchors.horizontalCenter: parent.horizontalCenter
+                spacing: 20
+
+                Image {
+                    id: checkinImage
+                    height: 80
+                    width: 80
+
+                    visible: source != ""
+                }
+
+                IconButton {
+                    icon.source: "image://Theme/icon-m-clear"
+                    visible: checkinImage.source != ""
+                    onClicked: checkinImage.source = ""
+                }
+            }
+
+            Button {
+                //% "Add image"
+                text: qsTrId("venue-checkin-add-image")
+                anchors.horizontalCenter: parent.horizontalCenter
+                onClicked: {
+                    pageStack.push(imagesPage)
+                }
+            }
+
             TextSwitch {
                 id: facebook_switch
                 //% "Share to Facebook"
@@ -156,8 +195,6 @@ Dialog {
                     pageStack.push(mapPage)
                 }
             }
-
-
         }
     }
 }

@@ -199,6 +199,10 @@ ApplicationWindow {
             checkinResultPage.message = "";
             checkinResultPage.special_message = "";
             data.checkin(venue_id, event, comment, twitter, facebook)
+            if (image != "") {
+                //TODO post image
+            }
+
             //            pageStack.push(checkinResultPage)
         }
 

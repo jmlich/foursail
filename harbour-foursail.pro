@@ -43,7 +43,8 @@ OTHER_FILES += qml/harbour-foursail.qml \
     qml/PhotosPage.qml \
     qml/PhotoDetailPage.qml \
     qml/MayorshipsPage.qml \
-    qml/ProfilePage.qml
+    qml/ProfilePage.qml \
+    qml/ImagesPage.qml
 
 QT += webkit
 
