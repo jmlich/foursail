@@ -12,7 +12,8 @@ CONFIG += sailfishapp
 
 SOURCES += src/harbour-foursail.cpp \
     src/networkaccessmanagerfactory.cpp \
-    src/customnetworkaccessmanager.cpp
+    src/customnetworkaccessmanager.cpp \
+    src/utils.cpp
 
 OTHER_FILES += qml/harbour-foursail.qml \
     qml/CoverPage.qml \
@@ -50,7 +51,8 @@ QT += webkit
 
 HEADERS += \
     src/networkaccessmanagerfactory.h \
-    src/customnetworkaccessmanager.h
+    src/customnetworkaccessmanager.h \
+    src/utils.h
 
 
 

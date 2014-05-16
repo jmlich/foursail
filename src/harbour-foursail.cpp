@@ -39,6 +39,7 @@
 
 #include <sailfishapp.h>
 #include "networkaccessmanagerfactory.h"
+#include "utils.h"
 
 
 int main(int argc, char *argv[])
@@ -70,6 +71,8 @@ int main(int argc, char *argv[])
         view->rootContext()->setContextProperty("locale","en");
     }
 
+	Utils *utils = new Utils;
+	view->rootContext ()->setContextProperty ("utils", utils);
 
     view->engine()->setNetworkAccessManagerFactory(&namFactory);
     view->setSource(SailfishApp::pathTo("qml/harbour-foursail.qml"));

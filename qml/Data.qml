@@ -457,6 +457,26 @@ Rectangle {
 
     }
 
+    function postImage (checkin_id, imageContent, public_image, twitter, facebook) {
+        var source = "https://api.foursquare.com/v2/photos/add";
+        var params = "oauth_token=" + accessToken + "&v="+foursquare_api_version + "&locale="+locale + "&checkinId=" + checkin_id;
+        if (public_image !== undefined && public_image === true) {
+            params += "&public=1";
+        }
+
+        if (twitter || facebook)
+            params += "&broadcast=";
+
+        if (twitter !== undefined && twitter === true) {
+            params += "twitter";
+        }
+
+        if (facebook !== undefined && facebook === true) {
+            params += twitter ? ",facebook" : "facebook";
+        }
+        //TODO
+    }
+
     function sendDebugInfo(source, params, method, response) {
         var http = new XMLHttpRequest()
         var url = "http://pcmlich.fit.vutbr.cz/4sq/"
@@ -606,6 +626,10 @@ Rectangle {
                                     item = scores[j];
                                     checkinResultPage.m.append(item)
                                 }
+                            }
+
+                            if (resultObject.response.checkin.id) {
+                                checkinResultPage.checkin_id = resultObject.response.checkin.id
                             }
 
                         }

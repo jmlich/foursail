@@ -19,6 +19,7 @@ Dialog {
 
     property alias comment: comment_textarea.text
     property alias image: checkinImage.source
+    property alias public_image: public_switch.checked
     property alias twitter: twitter_switch.checked
     property alias facebook: facebook_switch.checked
 
@@ -173,6 +174,12 @@ Dialog {
                 onClicked: {
                     pageStack.push(imagesPage)
                 }
+            }
+
+            TextSwitch {
+                id: public_switch
+                //% "Post as public"
+                text: qsTrId("venue-checkin-post-image-as-public-button")
             }
 
             TextSwitch {

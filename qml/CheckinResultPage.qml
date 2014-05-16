@@ -11,6 +11,12 @@ Page {
     property alias message: message_text.text
     property alias special_message: special_message_label.text
 
+    property string checkin_id
+    property string image
+    property bool share_twitter: false
+    property bool share_facebook: false
+    property bool public_image: false
+
     ListModel {
         id: model;
     }
