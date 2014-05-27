@@ -33,4 +33,6 @@ Files:
 - '%{_datadir}/%{name}/qml'
 - '%{_bindir}'
 - /usr/share/harbour-foursail/i18n
-PkgBR: [libqtwebkit5-devel]
+PkgBR:
+- libqtwebkit5-devel
+- qt5-qttools-linguist
