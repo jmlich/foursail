@@ -95,7 +95,7 @@ Rectangle {
 
     onGpsReadyChanged: {
         if (gpsReady) {
-            if (requestNearbyVenues) {
+            if (requestNearbyVenues  && (accessToken !== "") ) {
                 nearbyVenues_fetch();
                 requestNearbyVenues = false;
             }
