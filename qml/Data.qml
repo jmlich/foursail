@@ -27,7 +27,9 @@ Rectangle {
 
     property real lat
     property real lon
-    property bool posReady: false;
+
+    property bool gpsReady: false;
+    property bool gpsRunning: false;
     property bool requestNearbyVenues: false;
 
     property string lastCheckin
@@ -91,12 +93,30 @@ Rectangle {
         return result;
     }
 
-    onPosReadyChanged: {
-        if ( posReady && requestNearbyVenues && (accessToken !== "") ) {
-            nearbyVenues();
+    onGpsReadyChanged: {
+        if (gpsReady) {
+            if (requestNearbyVenues) {
+                nearbyVenues_fetch();
+                requestNearbyVenues = false;
+            }
+            gpsRunning = false;
+            gpsReady = false;
         }
-
     }
+
+    function nearbyVenues() {
+        requestNearbyVenues = true;
+        if (!gpsRunning) {
+            gpsRunning = true;
+        }
+    }
+
+    function nearbyVenues_fetch() {
+        var source = "https://api.foursquare.com/v2/venues/search"
+        var params = "oauth_token=" + accessToken+"&ll="+lat+","+lon+"&intent=checkin" + "&v="+foursquare_api_version + "&locale="+locale;
+        foursquareDownload(source, params, "GET");
+    }
+
 
 
     Component.onCompleted: {
@@ -198,22 +218,6 @@ Rectangle {
 
     }
 
-    function nearbyVenues() {
-        if (posReady) {
-            nearbyVenues_fetch();
-            requestNearbyVenues = false;
-            posReady = false;
-        } else {
-            requestNearbyVenues = true;
-        }
-    }
-
-    function nearbyVenues_fetch() {
-        requestNearbyVenues = false;
-        var source = "https://api.foursquare.com/v2/venues/search"
-        var params = "oauth_token=" + accessToken+"&ll="+lat+","+lon+"&intent=checkin" + "&v="+foursquare_api_version + "&locale="+locale;
-        foursquareDownload(source, params, "GET");
-    }
 
     function venuesCategories() {
         var source = "https://api.foursquare.com/v2/venues/categories"
