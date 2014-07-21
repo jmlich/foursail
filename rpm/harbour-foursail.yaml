@@ -1,6 +1,6 @@
 Name: harbour-foursail
 Summary: Simple foursquare client with basic functions.
-Version: 0.7.6
+Version: 0.7.7
 Release: 1
 Group: Qt/Qt
 URL: https://gitorious.org/foursail
@@ -33,4 +33,6 @@ Files:
 - '%{_datadir}/%{name}/qml'
 - '%{_bindir}'
 - /usr/share/harbour-foursail/i18n
-PkgBR: [libqtwebkit5-devel]
+PkgBR:
+- libqtwebkit5-devel
+- qt5-qttools-linguist

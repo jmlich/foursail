@@ -35,7 +35,7 @@
     <message id="venue-add-name">
         <location filename="../qml/AddVenuePage.qml" line="73"/>
         <source>Name</source>
-        <translation>Nazwa</translation>
+        <translation>Nazwa miejsca</translation>
     </message>
     <message id="venue-add-choose-category">
         <location filename="../qml/AddVenuePage.qml" line="96"/>
@@ -141,7 +141,7 @@
         <location filename="../qml/CheckinDetailPage.qml" line="136"/>
         <source>Write your comment here.</source>
         <oldsource>Comment</oldsource>
-        <translation>Napisz komentarz w tym miejscu.</translation>
+        <translation>Napisz tutaj komentarz.</translation>
     </message>
     <message id="venue-checkin-share-to-facebook-button">
         <location filename="../qml/CheckinDetailPage.qml" line="142"/>
@@ -228,7 +228,7 @@
         <location filename="../qml/LeaderboardPage.qml" line="81"/>
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
-        <translation><numerusform>%n meldunek</numerusform><numerusform>%n meldunki</numerusform><numerusform>%n meldunków</numerusform></translation>
+        <translation><numerusform>%n zameldowanie</numerusform><numerusform>%n zameldowania</numerusform><numerusform>%n zameldowań</numerusform></translation>
     </message>
     <message id="list-detail-empty">
         <location filename="../qml/ListDetailPage.qml" line="32"/>
@@ -273,7 +273,7 @@
     <message id="mayorships-title">
         <location filename="../qml/MayorshipsPage.qml" line="27"/>
         <source>Mayorships</source>
-        <translation>Teki burmistrza</translation>
+        <translation>Burmistrzostwa</translation>
     </message>
     <message id="mayorships-empty">
         <location filename="../qml/MayorshipsPage.qml" line="33"/>
@@ -465,7 +465,7 @@
     <message id="recent-checkins-friend-profile">
         <location filename="../qml/RecentCheckinsPage.qml" line="197"/>
         <source>Profile</source>
-        <translation>Mój profil</translation>
+        <translation>Profil</translation>
     </message>
     <message id="recent-checkins-venue-detail">
         <location filename="../qml/RecentCheckinsPage.qml" line="206"/>
@@ -522,7 +522,7 @@
     <message id="checkin-result-title">
         <location filename="../qml/CheckinResultPage.qml" line="46"/>
         <source>Checkin</source>
-        <translation>Zamelduj się</translation>
+        <translation>Zameldowałeś się</translation>
     </message>
     <message id="checkin-result-section-header-specials">
         <location filename="../qml/CheckinResultPage.qml" line="60"/>

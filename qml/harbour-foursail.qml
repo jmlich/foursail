@@ -556,7 +556,7 @@ ApplicationWindow {
     PositionSource {
         id: positionSource
         updateInterval: 1000
-        active: !data.posReady
+        active: data.gpsRunning
         onPositionChanged: {
 
             if (position.latitudeValid && ((new Date().getTime()-position.timestamp.getTime()) < 60000)) { // position could be valid but very old
@@ -565,11 +565,8 @@ ApplicationWindow {
                 data.lat = coord.latitude;
                 data.lon = coord.longitude;
 
-                data.posReady = true;
+                data.gpsReady = true;
             }
-        }
-        onActiveChanged: {
-            console.log("gps status: "+ active)
         }
     }
 
