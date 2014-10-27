@@ -133,7 +133,7 @@ Rectangle {
             lastCheckinId = configGet("lastCheckinId", "")
 
 
-//            configSet("debugMode", "enabled") // for development purposes
+            //            configSet("debugMode", "enabled") // for development purposes
             debugMode = (configGet("debugMode", "disabled") === "enabled")
 
 
@@ -453,10 +453,10 @@ Rectangle {
         }
 
         console.log(source + "?"+params)
-//        source = "http://pcmlich.fit.vutbr.cz/4sq/"
-//        params = "idx=100&raw=true"
-//        params = "idx=77&raw=true"
-//        params = "idx=302&raw=true"
+        //        source = "http://pcmlich.fit.vutbr.cz/4sq/"
+        //        params = "idx=100&raw=true"
+        //        params = "idx=77&raw=true"
+        //        params = "idx=302&raw=true"
         foursquareDownload(source, params, "POST");
 
     }
@@ -727,9 +727,11 @@ Rectangle {
                         if (resultObject.response.notifications !== undefined) {
                             notificationsPage.m.clear()
                             array = resultObject.response.notifications.items;
-                            for (i = 0; i < array.length; i++) {
-                                item = array[i];
-                                notificationsPage.m.append(item)
+                            if (array !== undefined) {
+                                for (i = 0; i < array.length; i++) {
+                                    item = array[i];
+                                    notificationsPage.m.append(item)
+                                }
                             }
                         }
 
@@ -908,7 +910,7 @@ Rectangle {
                                 for(i = 0; i < array.length; ++i) {
                                     var item = array[i];
 
-//                                    console.log(JSON.stringify(item))
+                                    //                                    console.log(JSON.stringify(item))
                                     var street = (item.venue.location.address !== undefined) ? item.venue.location.address : "";
                                     var city = (item.venue.location.city !== undefined) ? item.venue.location.city : "";
 
