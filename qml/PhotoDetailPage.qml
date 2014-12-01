@@ -67,7 +67,13 @@ Page {
                 }
 
                 onStatusChanged: {
-                    if (status === Image.Ready) {
+                    if ((status === Image.Ready) && (imageItem.width !== 0)) { // The width is 0 when Image.Ready ? Why?
+                        fitToScreen()
+                        loadedAnimation.start()
+                    }
+                }
+                onWidthChanged: {
+                    if ((status === Image.Ready) && (imageItem.width !== 0)) {
                         fitToScreen()
                         loadedAnimation.start()
                     }

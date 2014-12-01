@@ -10,8 +10,14 @@ Dialog {
     signal saveHistory(string str);
 
 
-    canAccept: (searchTextField.text !== "")
+    canAccept: (searchTextField.text.length > 0)
 
+
+    onStatusChanged: {
+        if (status === PageStatus.Activating) {
+            searchTextField.text = "";
+        }
+    }
 
     SilicaFlickable {
         anchors.fill: parent;
@@ -31,6 +37,7 @@ Dialog {
                 width: parent.width
                 //% "Venue name"
                 placeholderText: qsTrId("search-venue-name")
+                EnterKey.enabled: text.length > 0
                 EnterKey.onClicked: {
                     searchDialog.accept()
                 }
@@ -49,7 +56,7 @@ Dialog {
                         color: parent.highlighted ? Theme.highlightColor : Theme.primaryColor
                     }
 
-                    onClicked: searchString = value;
+                    onClicked: searchTextField.text = value;
                 }
 
             }
@@ -58,19 +65,19 @@ Dialog {
     }
 
     onAccepted: {
-        search(searchString);
+        search(searchTextField.text);
 
         var found = false;
 
         for (var i = 0; i < searchHistory.count; i++) {
             var item = searchHistory.get(i);
-            if (item.value === searchString) {
+            if (item.value === searchTextField.text) {
                 found = true;
                 break;
             }
         }
         if (!found) {
-            searchHistory.insert(0, {"value": searchString})
+            searchHistory.insert(0, {"value": searchTextField.text})
 
             var arr = []
             for (var i = 0; ((i < searchHistory.count) && (i < 15)); i++) {
@@ -78,8 +85,6 @@ Dialog {
             }
             saveHistory(JSON.stringify(arr));
         }
-
-        searchString = "";
 
     }
 

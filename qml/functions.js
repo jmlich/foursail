@@ -102,6 +102,12 @@ function getDistanceTo(lat, lon, tlat, tlon) {
     return 6371000.0 * c;
 }
 
+function euclidDistance(a_x, a_y, b_x, b_y) {
+    var d_x = a_x-b_x;
+    var d_y = a_y-b_y;
+    return Math.sqrt(d_x*d_x + d_y*d_y)
+}
+
 function lineIntersection(Ax, Ay, Bx, By, Cx, Cy, Dx, Dy) {
 
     //  Fail if either line is undefined.

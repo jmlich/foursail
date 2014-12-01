@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="de">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.1">
 <context>
-    <name></name>
+    <name/>
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="161"/>
         <source>Tap to cancel</source>
@@ -30,59 +28,64 @@
         <translation>Listen Beschreibung</translation>
     </message>
     <message id="venue-add-accept">
-        <location filename="../qml/AddVenuePage.qml" line="37"/>
+        <location filename="../qml/AddVenuePage.qml" line="64"/>
         <source>Create</source>
         <translation>Erstellen</translation>
     </message>
     <message id="venue-add-name">
-        <location filename="../qml/AddVenuePage.qml" line="46"/>
+        <location filename="../qml/AddVenuePage.qml" line="73"/>
         <source>Name</source>
         <translation>Name</translation>
     </message>
     <message id="venue-add-choose-category">
-        <location filename="../qml/AddVenuePage.qml" line="69"/>
+        <location filename="../qml/AddVenuePage.qml" line="96"/>
         <source>Choose category</source>
         <translation>Kategorie auswählen</translation>
     </message>
     <message id="venue-add-address">
-        <location filename="../qml/AddVenuePage.qml" line="84"/>
+        <location filename="../qml/AddVenuePage.qml" line="111"/>
         <source>Address</source>
         <translation>Adresse</translation>
     </message>
     <message id="venue-add-cross-street">
-        <location filename="../qml/AddVenuePage.qml" line="91"/>
+        <location filename="../qml/AddVenuePage.qml" line="118"/>
         <source>Cross street</source>
         <translation>Querstraße</translation>
     </message>
     <message id="venue-add-city">
-        <location filename="../qml/AddVenuePage.qml" line="99"/>
+        <location filename="../qml/AddVenuePage.qml" line="126"/>
         <source>City</source>
         <translation>Stadt</translation>
     </message>
     <message id="venue-add-state">
-        <location filename="../qml/AddVenuePage.qml" line="106"/>
+        <location filename="../qml/AddVenuePage.qml" line="133"/>
         <source>State</source>
         <translation>Land</translation>
     </message>
     <message id="venue-add-zip">
-        <location filename="../qml/AddVenuePage.qml" line="113"/>
+        <location filename="../qml/AddVenuePage.qml" line="140"/>
         <source>ZIP</source>
         <translation>PLZ</translation>
     </message>
     <message id="venue-add-phone">
-        <location filename="../qml/AddVenuePage.qml" line="121"/>
+        <location filename="../qml/AddVenuePage.qml" line="148"/>
         <source>Phone</source>
         <translation>Telefon</translation>
     </message>
     <message id="venue-add-twitter">
-        <location filename="../qml/AddVenuePage.qml" line="128"/>
+        <location filename="../qml/AddVenuePage.qml" line="155"/>
         <source>Twitter</source>
         <translation>Twitter</translation>
     </message>
     <message id="venue-add-description">
-        <location filename="../qml/AddVenuePage.qml" line="135"/>
+        <location filename="../qml/AddVenuePage.qml" line="162"/>
         <source>Description</source>
         <translation>Beschreibung</translation>
+    </message>
+    <message id="venue-add-set-position">
+        <location filename="../qml/AddVenuePage.qml" line="176"/>
+        <source>Set position</source>
+        <translation>Position setzen</translation>
     </message>
     <message id="badges-title">
         <location filename="../qml/BadgesPage.qml" line="34"/>
@@ -117,17 +120,17 @@
     <message id="checkin-specials">
         <location filename="../qml/CheckinDetailPage.qml" line="62"/>
         <source>Specials</source>
-        <translation type="unfinished"></translation>
+        <translation>Spezialitäten</translation>
     </message>
     <message id="checkin-dislike-venue-menu">
         <location filename="../qml/CheckinDetailPage.qml" line="71"/>
         <source>Dislike</source>
-        <translation type="unfinished"></translation>
+        <translation>Gefällt mir nicht mehr</translation>
     </message>
     <message id="checkin-like-venue-menu">
         <location filename="../qml/CheckinDetailPage.qml" line="73"/>
         <source>Like</source>
-        <translation type="unfinished"></translation>
+        <translation>Gefällt mir</translation>
     </message>
     <message id="venue-checkin-accept">
         <location filename="../qml/CheckinDetailPage.qml" line="88"/>
@@ -169,44 +172,46 @@
         <translation>Keiner ihrer Freunde hat bisher eingecheckt</translation>
     </message>
     <message id="n-notifications" numerus="yes">
-        <location filename="../qml/Data.qml" line="473"/>
+        <location filename="../qml/Data.qml" line="503"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
-        <translation>
-            <numerusform>%1 Benachrichtigung</numerusform>
-            <numerusform>%1 Benachrichtigungen</numerusform>
-        </translation>
+        <translation><numerusform>%1 Benachrichtigung</numerusform><numerusform>%1 Benachrichtigungen</numerusform></translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="867"/>
+        <location filename="../qml/Data.qml" line="966"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation>Unberechtigt</translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="871"/>
+        <location filename="../qml/Data.qml" line="970"/>
         <source>Connection problem</source>
         <translation>Verbindungsproblem</translation>
     </message>
     <message id="friends-title">
-        <location filename="../qml/FriendsPage.qml" line="29"/>
+        <location filename="../qml/FriendsPage.qml" line="30"/>
         <source>Friends</source>
         <translation>Freunde</translation>
     </message>
     <message id="friends-empty">
-        <location filename="../qml/FriendsPage.qml" line="35"/>
+        <location filename="../qml/FriendsPage.qml" line="36"/>
         <source>List of friends is empty</source>
         <translation>Freundesliste ist leer</translation>
     </message>
     <message id="friends-removing">
-        <location filename="../qml/FriendsPage.qml" line="87"/>
+        <location filename="../qml/FriendsPage.qml" line="93"/>
         <source>Removing friend</source>
         <translation>Entferne Freund</translation>
     </message>
     <message id="friends-remove">
-        <location filename="../qml/FriendsPage.qml" line="115"/>
+        <location filename="../qml/FriendsPage.qml" line="124"/>
         <source>Remove</source>
         <translation>Entfernen</translation>
+    </message>
+    <message id="friends-add">
+        <location filename="../qml/FriendsPage.qml" line="130"/>
+        <source>Add</source>
+        <translation>Hinzufügen</translation>
     </message>
     <message id="leaderboard-title">
         <location filename="../qml/LeaderboardPage.qml" line="25"/>
@@ -219,16 +224,14 @@
         <translation>Leaderboard ist leer</translation>
     </message>
     <message id="leaderboard-n-checkins" numerus="yes">
-        <location filename="../qml/LeaderboardPage.qml" line="69"/>
+        <location filename="../qml/CheckinResultPage.qml" line="240"/>
+        <location filename="../qml/LeaderboardPage.qml" line="81"/>
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
+        <translation><numerusform>%n Check-in</numerusform><numerusform>%n Check-ins</numerusform></translation>
     </message>
     <message id="list-detail-empty">
-        <location filename="../qml/ListDetailPage.qml" line="31"/>
+        <location filename="../qml/ListDetailPage.qml" line="32"/>
         <source>List contains no venues</source>
         <translation>Ortsliste ist leer</translation>
     </message>
@@ -248,24 +251,34 @@
         <translation>Neu</translation>
     </message>
     <message id="lists-edit">
-        <location filename="../qml/ListsPage.qml" line="136"/>
+        <location filename="../qml/ListsPage.qml" line="139"/>
         <source>Edit</source>
         <translation>Bearbeiten</translation>
     </message>
+    <message id="lists-follow">
+        <location filename="../qml/ListsPage.qml" line="145"/>
+        <source>Follow</source>
+        <translation>folgen</translation>
+    </message>
+    <message id="lists-unfollow">
+        <location filename="../qml/ListsPage.qml" line="152"/>
+        <source>Unfollow</source>
+        <translation>nicht mehr folgen</translation>
+    </message>
     <message id="map-title">
-        <location filename="../qml/MapPage.qml" line="18"/>
+        <location filename="../qml/MapPage.qml" line="20"/>
         <source>Map</source>
         <translation>Karte</translation>
     </message>
     <message id="mayorships-title">
-        <location filename="../qml/MayorshipsPage.qml" line="26"/>
+        <location filename="../qml/MayorshipsPage.qml" line="27"/>
         <source>Mayorships</source>
         <translation>Bürgermeisterschaften</translation>
     </message>
     <message id="mayorships-empty">
-        <location filename="../qml/MayorshipsPage.qml" line="32"/>
+        <location filename="../qml/MayorshipsPage.qml" line="33"/>
         <source>User hasn&apos;t got any mayorships yet</source>
-        <oldsource>User hasn&apos;t got any mayorships yet!</oldsource>
+        <oldsource>User hasn't got any mayorships yet!</oldsource>
         <translation>Der Benutzer hat noch keine Bürgermeisterschaften</translation>
     </message>
     <message id="nearby-venues-title">
@@ -334,27 +347,27 @@
         <translation>Fotoliste ist leer</translation>
     </message>
     <message id="image-status-ready">
-        <location filename="../qml/PinchMap.qml" line="294"/>
+        <location filename="../qml/PinchMap.qml" line="298"/>
         <source>Ready</source>
         <translation>Bereit</translation>
     </message>
     <message id="image-status-not-set">
-        <location filename="../qml/PinchMap.qml" line="296"/>
+        <location filename="../qml/PinchMap.qml" line="300"/>
         <source>Not Set</source>
         <translation>nicht festgelegt</translation>
     </message>
     <message id="image-status-error">
-        <location filename="../qml/PinchMap.qml" line="298"/>
+        <location filename="../qml/PinchMap.qml" line="302"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message id="image-status-loading">
-        <location filename="../qml/PinchMap.qml" line="300"/>
+        <location filename="../qml/PinchMap.qml" line="304"/>
         <source>Loading ...</source>
         <translation>Lade ...</translation>
     </message>
     <message id="image-status-unknown">
-        <location filename="../qml/PinchMap.qml" line="302"/>
+        <location filename="../qml/PinchMap.qml" line="306"/>
         <source>Unknown</source>
         <translation>Unbekannt</translation>
     </message>
@@ -444,55 +457,50 @@
         <translation>neu laden</translation>
     </message>
     <message id="recent-checkins-like">
-        <location filename="../qml/RecentCheckinsPage.qml" line="182"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="181"/>
         <source>Like checkin</source>
         <oldsource>Like</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Gefällt mir</translation>
     </message>
     <message id="recent-checkins-friend-profile">
-        <location filename="../qml/RecentCheckinsPage.qml" line="198"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="197"/>
         <source>Profile</source>
         <translation>Profil</translation>
     </message>
     <message id="recent-checkins-venue-detail">
-        <location filename="../qml/RecentCheckinsPage.qml" line="207"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="206"/>
         <source>Venue</source>
         <oldsource>Venue detail</oldsource>
         <translation>Ortsnamen</translation>
     </message>
     <message id="recent-checkins-dislike">
-        <location filename="../qml/RecentCheckinsPage.qml" line="180"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="179"/>
         <source>Dislike checkin</source>
         <oldsource>Dislike</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Gefällt mir nicht mehr</translation>
     </message>
     <message id="search-title">
-        <location filename="../qml/SearchVenueDialog.qml" line="26"/>
+        <location filename="../qml/SearchVenueDialog.qml" line="32"/>
         <source>Search</source>
         <translation>Suche</translation>
     </message>
     <message id="search-venue-name">
-        <location filename="../qml/SearchVenueDialog.qml" line="33"/>
+        <location filename="../qml/SearchVenueDialog.qml" line="39"/>
         <source>Venue name</source>
         <translation>Ortsnamen</translation>
     </message>
     <message id="history-title">
-        <location filename="../qml/SelfCheckinsPage.qml" line="27"/>
+        <location filename="../qml/SelfCheckinsPage.qml" line="26"/>
         <source>History</source>
         <translation>Chronik</translation>
     </message>
     <message id="history-empty">
-        <location filename="../qml/SelfCheckinsPage.qml" line="34"/>
+        <location filename="../qml/SelfCheckinsPage.qml" line="33"/>
         <source>User didn&apos;t make check in yet</source>
         <translation>Benutzer hat bis jetzt nicht eingecheckt</translation>
     </message>
-    <message id="history-refresh-menu">
-        <location filename="../qml/SelfCheckinsPage.qml" line="40"/>
-        <source>Refresh</source>
-        <translation>neu laden</translation>
-    </message>
     <message id="tips-title">
-        <location filename="../qml/TipsPage.qml" line="27"/>
+        <location filename="../qml/TipsPage.qml" line="28"/>
         <source>Tips</source>
         <translation>Tipps</translation>
     </message>
@@ -502,19 +510,39 @@
         <translation>Liste mit Tipps ist leer</translation>
     </message>
     <message id="tips-dislike">
-        <location filename="../qml/TipsPage.qml" line="158"/>
+        <location filename="../qml/TipsPage.qml" line="144"/>
         <source>Dislike tip</source>
-        <translation type="unfinished"></translation>
+        <translation>Gefällt mir nicht mehr</translation>
     </message>
     <message id="tips-like">
-        <location filename="../qml/TipsPage.qml" line="160"/>
+        <location filename="../qml/TipsPage.qml" line="146"/>
         <source>Like tip</source>
-        <translation type="unfinished"></translation>
+        <translation>Gefällt mir</translation>
     </message>
     <message id="checkin-result-title">
-        <location filename="../qml/CheckinResultPage.qml" line="27"/>
+        <location filename="../qml/CheckinResultPage.qml" line="46"/>
         <source>Checkin</source>
         <translation> Check-in</translation>
+    </message>
+    <message id="checkin-result-section-header-specials">
+        <location filename="../qml/CheckinResultPage.qml" line="60"/>
+        <source>Specials</source>
+        <translation>Spezialitäten</translation>
+    </message>
+    <message id="checkin-result-section-header-badges">
+        <location filename="../qml/CheckinResultPage.qml" line="78"/>
+        <source>Badges</source>
+        <translation>Abzeichen</translation>
+    </message>
+    <message id="checkin-result-section-header-score">
+        <location filename="../qml/CheckinResultPage.qml" line="134"/>
+        <source>Score</source>
+        <translation>Punkte</translation>
+    </message>
+    <message id="checkin-result-section-header-leaderboard">
+        <location filename="../qml/CheckinResultPage.qml" line="188"/>
+        <source>Leaderboard</source>
+        <translation>Leaderboard</translation>
     </message>
 </context>
 </TS>

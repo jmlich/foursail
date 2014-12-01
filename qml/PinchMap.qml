@@ -16,6 +16,7 @@ Rectangle {
     property int numTilesY: Math.ceil(height/tileSize) + 2;
     property int maxTileNo: Math.pow(2, zoomLevel) - 1;
     property bool showTargetIndicator: true;
+    property bool targetDragable: false;
     property double targetLat
     property double targetLon
 
@@ -34,6 +35,7 @@ Rectangle {
     property bool rotationEnabled: false
 
     property bool pageActive: false;
+    property bool mapTileVisible: pageActive
 
     onTargetLatChanged: { latitude = targetLat;  }
     onTargetLonChanged: { longitude = targetLon; }
@@ -69,6 +71,8 @@ Rectangle {
     }
 
     onPageActiveChanged:  {
+        mapTileVisible = pageActive
+
         if (pageActive && needsUpdate) {
             needsUpdate = false;
             pinchmap.setCenterLatLon(pinchmap.latitude, pinchmap.longitude);
@@ -333,8 +337,37 @@ Rectangle {
                 property alias source: img.source;
                 property int tileX: cornerTileX + (index % numTilesX)
                 property int tileY: cornerTileY + Math.floor(index / numTilesX)
+
+                Rectangle {
+                    id: progressBar;
+                    property real p: 0;
+                    height: 16;
+                    width: parent.width - 32;
+                    anchors.centerIn: img;
+                    color: "#c0c0c0";
+                    border.width: 1;
+                    border.color: "#000000";
+                    Rectangle {
+                        anchors.left: parent.left;
+                        anchors.margins: 2;
+                        anchors.top: parent.top;
+                        anchors.bottom: parent.bottom;
+                        width: (parent.width - 4) * progressBar.p;
+                        color: "#000000";
+                    }
+                    visible: mapTileVisible
+                }
+                Text {
+                    anchors.top: progressBar.bottom
+                    anchors.left: parent.left
+                    anchors.leftMargin: 16
+                    y: parent.height/2 - 32
+                    text: imageStatusToString(img.status)
+                    visible: mapTileVisible
+                }
+
                 Image {
-                    visible: (img.visible) && (img.status !== Image.Ready)
+                    visible: (img.visible) && (img.status === Image.Null)
                     source: "./images/noimage.png"
                 }
 
@@ -342,9 +375,9 @@ Rectangle {
                 Image {
                     id: img;
                     anchors.fill: parent;
-                    // onProgressChanged: { progressBar.p = progress }
-                    source: pageActive ? tileUrl(tileX, tileY) : "";
-                    visible: pageActive;
+                     onProgressChanged: { progressBar.p = progress }
+                    source: mapTileVisible ? tileUrl(tileX, tileY) : "";
+                    visible: mapTileVisible;
                 }
 
 
@@ -456,6 +489,7 @@ Rectangle {
             id: mousearea;
 
             property bool __isPanning: false;
+            property bool __draging: false;
             property int __lastX: -1;
             property int __lastY: -1;
             property int __firstX: -1;
@@ -467,17 +501,20 @@ Rectangle {
             preventStealing: true;
 
             onWheel:  {
-                if (wheel.angleDelta.y > 0) {
-                    setZoomLevelPoint(pinchmap.zoomLevel + 1, wheel.x, wheel.y);
-                } else {
-                    setZoomLevelPoint(pinchmap.zoomLevel - 1, wheel.x, wheel.y);
-                }
+                var zoom_diff = (wheel.angleDelta.y > 0) ? 1 : -1;
+                setZoomLevelPoint(pinchmap.zoomLevel + zoom_diff, wheel.x, wheel.y);
             }
 
 
             onPressed: {
                 pannedManually()
-                __isPanning = true;
+
+                var distance = F.euclidDistance(targetIndicator.x, targetIndicator.y, mouse.x, mouse.y);
+                if (targetDragable && (distance < 80)) { // dragThreshold
+                    __draging = true;
+                } else {
+                    __isPanning = true;
+                }
                 __lastX = mouse.x;
                 __lastY = mouse.y;
                 __firstX = mouse.x;
@@ -486,36 +523,17 @@ Rectangle {
             }
 
             onReleased: {
-                __isPanning = false;
-                if (! __wasClick) {
+                if (__isPanning) {
                     panEnd();
-                } else {
-                    //                var n = mousearea.mapToItem(geocacheDisplayContainer, mouse.x, mouse.y)
-                    //                var geocaches = new Array();
-                    //                var g;
-                    //                while ((g = geocacheDisplayContainer.childAt(n.x, n.y)) != null) {
-                    //                    geocaches.push(g);
-                    //                    g.visible = false;
-                    //                }
-                    //                if (geocaches.length == 1) {
-                    //                    geocaches[0].visible = true;
-                    //                    showAndResetDetailsPage();
-                    //                    controller.geocacheSelected(geocaches[0].cache);
-                    //                } else if (geocaches.length > 1) {
-                    //                    var m = new Array();
-                    //                    var i;
-                    //                    for (i in geocaches) {
-                    //                        console.debug("Found geocache: " + geocaches[i].cache.name);
-                    //                        geocaches[i].visible = true;
-                    //                        m.push(geocaches[i].cache.title);
-                    //                    }
-                    //                    // show selection window
-                    //                    geocacheSelectionDialog.model = m;
-                    //                    geocacheSelectionDialog.fullList = geocaches;
-                    //                    geocacheSelectionDialog.open();
-
-                    //                }
                 }
+                if (__draging) {
+                    var pos = getCoordFromScreenpoint(mouse.x, mouse.y)
+                    targetLat = pos[0]
+                    targetLon = pos[1]
+                }
+
+                __isPanning = false;
+                __draging = false;
 
             }
 
@@ -534,10 +552,16 @@ Rectangle {
                         __wasClick = false;
                     }
                 }
+                if (__draging) {
+                    var pos = getCoordFromScreenpoint(mouse.x, mouse.y)
+                    targetLat = pos[0]
+                    targetLon = pos[1]
+                }
             }
 
             onCanceled: {
                 __isPanning = false;
+                __draging = false;
             }
         }
 

@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="zh_CN">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_CN" version="2.1">
 <context>
-    <name></name>
+    <name/>
     <message id="components-la-tap-to-cancel">
         <location filename="../qml/NotificationPopup.qml" line="161"/>
         <source>Tap to cancel</source>
@@ -30,59 +28,64 @@
         <translation>列表说明</translation>
     </message>
     <message id="venue-add-accept">
-        <location filename="../qml/AddVenuePage.qml" line="37"/>
+        <location filename="../qml/AddVenuePage.qml" line="64"/>
         <source>Create</source>
         <translation>创建</translation>
     </message>
     <message id="venue-add-name">
-        <location filename="../qml/AddVenuePage.qml" line="46"/>
+        <location filename="../qml/AddVenuePage.qml" line="73"/>
         <source>Name</source>
         <translation>名称</translation>
     </message>
     <message id="venue-add-choose-category">
-        <location filename="../qml/AddVenuePage.qml" line="69"/>
+        <location filename="../qml/AddVenuePage.qml" line="96"/>
         <source>Choose category</source>
         <translation>选择类别</translation>
     </message>
     <message id="venue-add-address">
-        <location filename="../qml/AddVenuePage.qml" line="84"/>
+        <location filename="../qml/AddVenuePage.qml" line="111"/>
         <source>Address</source>
         <translation>地址</translation>
     </message>
     <message id="venue-add-cross-street">
-        <location filename="../qml/AddVenuePage.qml" line="91"/>
+        <location filename="../qml/AddVenuePage.qml" line="118"/>
         <source>Cross street</source>
         <translation>街道</translation>
     </message>
     <message id="venue-add-city">
-        <location filename="../qml/AddVenuePage.qml" line="99"/>
+        <location filename="../qml/AddVenuePage.qml" line="126"/>
         <source>City</source>
         <translation>城市</translation>
     </message>
     <message id="venue-add-state">
-        <location filename="../qml/AddVenuePage.qml" line="106"/>
+        <location filename="../qml/AddVenuePage.qml" line="133"/>
         <source>State</source>
         <translation>省</translation>
     </message>
     <message id="venue-add-zip">
-        <location filename="../qml/AddVenuePage.qml" line="113"/>
+        <location filename="../qml/AddVenuePage.qml" line="140"/>
         <source>ZIP</source>
         <translation>邮政编码</translation>
     </message>
     <message id="venue-add-phone">
-        <location filename="../qml/AddVenuePage.qml" line="121"/>
+        <location filename="../qml/AddVenuePage.qml" line="148"/>
         <source>Phone</source>
         <translation>电话</translation>
     </message>
     <message id="venue-add-twitter">
-        <location filename="../qml/AddVenuePage.qml" line="128"/>
+        <location filename="../qml/AddVenuePage.qml" line="155"/>
         <source>Twitter</source>
         <translation>Twitter</translation>
     </message>
     <message id="venue-add-description">
-        <location filename="../qml/AddVenuePage.qml" line="135"/>
+        <location filename="../qml/AddVenuePage.qml" line="162"/>
         <source>Description</source>
         <translation>简介</translation>
+    </message>
+    <message id="venue-add-set-position">
+        <location filename="../qml/AddVenuePage.qml" line="176"/>
+        <source>Set position</source>
+        <translation>设定位置</translation>
     </message>
     <message id="badges-title">
         <location filename="../qml/BadgesPage.qml" line="34"/>
@@ -169,43 +172,46 @@
         <translation>你的好友中还没有在这里签到的人</translation>
     </message>
     <message id="n-notifications" numerus="yes">
-        <location filename="../qml/Data.qml" line="473"/>
+        <location filename="../qml/Data.qml" line="503"/>
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
-        <translation>
-            <numerusform>%n条提醒</numerusform>
-        </translation>
+        <translation><numerusform>%n条提醒</numerusform></translation>
     </message>
     <message id="error-not-authorized">
-        <location filename="../qml/Data.qml" line="867"/>
+        <location filename="../qml/Data.qml" line="966"/>
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
         <translation>未授权</translation>
     </message>
     <message id="error-connection-problem">
-        <location filename="../qml/Data.qml" line="871"/>
+        <location filename="../qml/Data.qml" line="970"/>
         <source>Connection problem</source>
         <translation>链接问题</translation>
     </message>
     <message id="friends-title">
-        <location filename="../qml/FriendsPage.qml" line="29"/>
+        <location filename="../qml/FriendsPage.qml" line="30"/>
         <source>Friends</source>
         <translation>好友</translation>
     </message>
     <message id="friends-empty">
-        <location filename="../qml/FriendsPage.qml" line="35"/>
+        <location filename="../qml/FriendsPage.qml" line="36"/>
         <source>List of friends is empty</source>
         <translation>好友列表为空</translation>
     </message>
     <message id="friends-removing">
-        <location filename="../qml/FriendsPage.qml" line="87"/>
+        <location filename="../qml/FriendsPage.qml" line="93"/>
         <source>Removing friend</source>
         <translation>正在移除好友</translation>
     </message>
     <message id="friends-remove">
-        <location filename="../qml/FriendsPage.qml" line="115"/>
+        <location filename="../qml/FriendsPage.qml" line="124"/>
         <source>Remove</source>
         <translation>移除</translation>
+    </message>
+    <message id="friends-add">
+        <location filename="../qml/FriendsPage.qml" line="130"/>
+        <source>Add</source>
+        <translation>添加</translation>
     </message>
     <message id="leaderboard-title">
         <location filename="../qml/LeaderboardPage.qml" line="25"/>
@@ -218,15 +224,14 @@
         <translation>排行榜为空</translation>
     </message>
     <message id="leaderboard-n-checkins" numerus="yes">
-        <location filename="../qml/LeaderboardPage.qml" line="69"/>
+        <location filename="../qml/CheckinResultPage.qml" line="240"/>
+        <location filename="../qml/LeaderboardPage.qml" line="81"/>
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
-        <translation>
-            <numerusform>%n次签到</numerusform>
-        </translation>
+        <translation><numerusform>%n次签到</numerusform></translation>
     </message>
     <message id="list-detail-empty">
-        <location filename="../qml/ListDetailPage.qml" line="31"/>
+        <location filename="../qml/ListDetailPage.qml" line="32"/>
         <source>List contains no venues</source>
         <translation>列表不含任何地点</translation>
     </message>
@@ -246,24 +251,34 @@
         <translation>新建</translation>
     </message>
     <message id="lists-edit">
-        <location filename="../qml/ListsPage.qml" line="136"/>
+        <location filename="../qml/ListsPage.qml" line="139"/>
         <source>Edit</source>
         <translation>编辑</translation>
     </message>
+    <message id="lists-follow">
+        <location filename="../qml/ListsPage.qml" line="145"/>
+        <source>Follow</source>
+        <translation>添加关注</translation>
+    </message>
+    <message id="lists-unfollow">
+        <location filename="../qml/ListsPage.qml" line="152"/>
+        <source>Unfollow</source>
+        <translation>取消关注</translation>
+    </message>
     <message id="map-title">
-        <location filename="../qml/MapPage.qml" line="18"/>
+        <location filename="../qml/MapPage.qml" line="20"/>
         <source>Map</source>
         <translation>地图</translation>
     </message>
     <message id="mayorships-title">
-        <location filename="../qml/MayorshipsPage.qml" line="26"/>
+        <location filename="../qml/MayorshipsPage.qml" line="27"/>
         <source>Mayorships</source>
         <translation>地点霸主</translation>
     </message>
     <message id="mayorships-empty">
-        <location filename="../qml/MayorshipsPage.qml" line="32"/>
+        <location filename="../qml/MayorshipsPage.qml" line="33"/>
         <source>User hasn&apos;t got any mayorships yet</source>
-        <oldsource>User hasn&apos;t got any mayorships yet!</oldsource>
+        <oldsource>User hasn't got any mayorships yet!</oldsource>
         <translation>还没有地点霸主</translation>
     </message>
     <message id="nearby-venues-title">
@@ -332,27 +347,27 @@
         <translation>还没有照片</translation>
     </message>
     <message id="image-status-ready">
-        <location filename="../qml/PinchMap.qml" line="294"/>
+        <location filename="../qml/PinchMap.qml" line="298"/>
         <source>Ready</source>
         <translation>准备</translation>
     </message>
     <message id="image-status-not-set">
-        <location filename="../qml/PinchMap.qml" line="296"/>
+        <location filename="../qml/PinchMap.qml" line="300"/>
         <source>Not Set</source>
         <translation>无设置</translation>
     </message>
     <message id="image-status-error">
-        <location filename="../qml/PinchMap.qml" line="298"/>
+        <location filename="../qml/PinchMap.qml" line="302"/>
         <source>Error</source>
         <translation>错误</translation>
     </message>
     <message id="image-status-loading">
-        <location filename="../qml/PinchMap.qml" line="300"/>
+        <location filename="../qml/PinchMap.qml" line="304"/>
         <source>Loading ...</source>
         <translation>载入中……</translation>
     </message>
     <message id="image-status-unknown">
-        <location filename="../qml/PinchMap.qml" line="302"/>
+        <location filename="../qml/PinchMap.qml" line="306"/>
         <source>Unknown</source>
         <translation>未知错误</translation>
     </message>
@@ -442,55 +457,50 @@
         <translation>刷新</translation>
     </message>
     <message id="recent-checkins-like">
-        <location filename="../qml/RecentCheckinsPage.qml" line="182"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="181"/>
         <source>Like checkin</source>
         <oldsource>Like</oldsource>
         <translation>喜欢</translation>
     </message>
     <message id="recent-checkins-friend-profile">
-        <location filename="../qml/RecentCheckinsPage.qml" line="198"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="197"/>
         <source>Profile</source>
         <translation>简介</translation>
     </message>
     <message id="recent-checkins-venue-detail">
-        <location filename="../qml/RecentCheckinsPage.qml" line="207"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="206"/>
         <source>Venue</source>
         <oldsource>Venue detail</oldsource>
         <translation>地点名称</translation>
     </message>
     <message id="recent-checkins-dislike">
-        <location filename="../qml/RecentCheckinsPage.qml" line="180"/>
+        <location filename="../qml/RecentCheckinsPage.qml" line="179"/>
         <source>Dislike checkin</source>
         <oldsource>Dislike</oldsource>
         <translation>不喜欢</translation>
     </message>
     <message id="search-title">
-        <location filename="../qml/SearchVenueDialog.qml" line="26"/>
+        <location filename="../qml/SearchVenueDialog.qml" line="32"/>
         <source>Search</source>
         <translation>搜索</translation>
     </message>
     <message id="search-venue-name">
-        <location filename="../qml/SearchVenueDialog.qml" line="33"/>
+        <location filename="../qml/SearchVenueDialog.qml" line="39"/>
         <source>Venue name</source>
         <translation>地点名称</translation>
     </message>
     <message id="history-title">
-        <location filename="../qml/SelfCheckinsPage.qml" line="27"/>
+        <location filename="../qml/SelfCheckinsPage.qml" line="26"/>
         <source>History</source>
         <translation>历史</translation>
     </message>
     <message id="history-empty">
-        <location filename="../qml/SelfCheckinsPage.qml" line="34"/>
+        <location filename="../qml/SelfCheckinsPage.qml" line="33"/>
         <source>User didn&apos;t make check in yet</source>
         <translation>你还没有进行过签到</translation>
     </message>
-    <message id="history-refresh-menu">
-        <location filename="../qml/SelfCheckinsPage.qml" line="40"/>
-        <source>Refresh</source>
-        <translation>刷新</translation>
-    </message>
     <message id="tips-title">
-        <location filename="../qml/TipsPage.qml" line="27"/>
+        <location filename="../qml/TipsPage.qml" line="28"/>
         <source>Tips</source>
         <translation>提示</translation>
     </message>
@@ -500,19 +510,39 @@
         <translation>提示列表为空</translation>
     </message>
     <message id="tips-dislike">
-        <location filename="../qml/TipsPage.qml" line="158"/>
+        <location filename="../qml/TipsPage.qml" line="144"/>
         <source>Dislike tip</source>
         <translation>不喜欢</translation>
     </message>
     <message id="tips-like">
-        <location filename="../qml/TipsPage.qml" line="160"/>
+        <location filename="../qml/TipsPage.qml" line="146"/>
         <source>Like tip</source>
         <translation>喜欢</translation>
     </message>
     <message id="checkin-result-title">
-        <location filename="../qml/CheckinResultPage.qml" line="27"/>
+        <location filename="../qml/CheckinResultPage.qml" line="46"/>
         <source>Checkin</source>
         <translation>签到</translation>
+    </message>
+    <message id="checkin-result-section-header-specials">
+        <location filename="../qml/CheckinResultPage.qml" line="60"/>
+        <source>Specials</source>
+        <translation>特殊</translation>
+    </message>
+    <message id="checkin-result-section-header-badges">
+        <location filename="../qml/CheckinResultPage.qml" line="78"/>
+        <source>Badges</source>
+        <translation>徽章</translation>
+    </message>
+    <message id="checkin-result-section-header-score">
+        <location filename="../qml/CheckinResultPage.qml" line="134"/>
+        <source>Score</source>
+        <translation>分数</translation>
+    </message>
+    <message id="checkin-result-section-header-leaderboard">
+        <location filename="../qml/CheckinResultPage.qml" line="188"/>
+        <source>Leaderboard</source>
+        <translation>排行榜</translation>
     </message>
 </context>
 </TS>

@@ -115,9 +115,8 @@ Page {
                     anchors.leftMargin: Theme.paddingMedium;
                     anchors.rightMargin: Theme.paddingMedium
                     wrapMode: Text.Wrap
-                    color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
-                    font.pixelSize: Theme.fontSizeMedium
-                    font.bold: true
+                    color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
+                    font.pixelSize: Theme.fontSizeSmall
                     text: shout
                     visible: (shout !== "")
                     height: visible ? paintedHeight : 0

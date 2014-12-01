@@ -13,6 +13,7 @@ Page {
 
     signal refresh();
     signal removeFriend(string uid);
+    signal friendRequest(string uid)
     signal showFriend(string uid)
 
     ListModel {
@@ -81,6 +82,11 @@ Page {
                 text: homeCity
             }
 
+            function addFriend() {
+                friendRequest ( uid );
+            }
+
+
             function remove() {
                 var idx = index
                 //% "Removing friend"
@@ -101,6 +107,7 @@ Page {
                 listView.currentIndex = index;
                 if (!listView.contextMenu)
                     listView.contextMenu = friendContextMenuComponent.createObject()
+                listView.contextMenu.relationship = relationship;
                 listView.contextMenu.show(delegate)
             }
         }
@@ -110,10 +117,21 @@ Page {
         Component {
             id: friendContextMenuComponent
             ContextMenu {
+                property string relationship: "none";
                 MenuItem {
+
                     //% "Remove"
                     text: qsTrId("friends-remove");
+                    visible: (relationship === "friend");
                     onClicked: listView.currentItem.remove();
+                }
+                MenuItem {
+                    //% "Add"
+                    text: qsTrId("friends-add");
+                    visible: ((relationship !== "friend") && (relationship !== "self"));
+                    onClicked: {
+                        onClicked: listView.currentItem.addFriend();
+                    }
                 }
             }
         }

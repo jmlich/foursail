@@ -20,6 +20,7 @@ Page {
         id: listView
         model: listmodel
         anchors.fill: parent
+        spacing: Theme.paddingMedium;
 
         header: PageHeader {
             title: listName
@@ -35,17 +36,69 @@ Page {
             id: delegate
 
             width: parent.width
-
             height: contentItem.childrenRect.height
 
-            ShortVenueItem {
-                id: shortVenueItem;
-                venueIcon: (venue.categories[0] !== undefined) ? venue.categories[0].icon : ""
-                venueInfo: venue
+
+            Image {
+                id: venue_icon_image
+                anchors.left: parent.left;
+                anchors.top: parent.top
+                anchors.rightMargin: Theme.paddingMedium
+                anchors.leftMargin: Theme.paddingMedium;
+                width: 64;
+                height: 64;
+                source: (venueIcon.prefix + width + venueIcon.suffix)
+            }
+
+            Column {
+                id: venue_details_column
+                anchors.left: venue_icon_image.right
+                anchors.right: parent.right
+                anchors.margins: Theme.paddingSmall;
+
+                Label {
+                    id: venue_name_label
+                    anchors.left: parent.left
+                    anchors.right: parent.right
+
+                    wrapMode: Text.Wrap
+                    color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
+                    font.pixelSize: Theme.fontSizeMedium
+
+                    text: venueName
+                }
+
+                Label {
+                    id: venue_address_label
+                    anchors.left: parent.left
+                    anchors.right: parent.right
+
+                    wrapMode: Text.Wrap
+                    color: delegate.highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor
+                    font.pixelSize: Theme.fontSizeSmall
+
+                    text: address
+                }
+
+                Text {
+                    id: listItemText;
+                    anchors.right: parent.right
+                    anchors.left: parent.left
+
+                    wrapMode: Text.Wrap
+
+                    font.pixelSize: Theme.fontSizeSmall
+                    color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
+
+                    text: venueTip
+                    visible: (text !== "")
+                }
+
+
             }
 
             Text {
-                id: listItemText;
+                id: listItemMessage;
                 anchors.top: shortVenueItem.bottom
                 anchors.right: shortVenueItem.right
                 anchors.left: shortVenueItem.left
@@ -59,22 +112,19 @@ Page {
 
             Image {
                 anchors.rightMargin: Theme.paddingMedium
-                anchors.top: shortVenueItem.top
-                anchors.right: shortVenueItem.right
-                source: (venue.beenHere !== undefined && venue.beenHere.marked) ? "./images/icon-m-framework-done.png" : ""
+                anchors.top: venue_details_column.top
+                anchors.right: venue_details_column.right
+                source: (beenHere) ? "./images/icon-m-framework-done.png" : ""
             }
+
+
 
             onClicked: {
-                var street = (venue.location.address !== undefined) ? venue.location.address : "";
-                var city   = (venue.location.city !== undefined) ? venue.location.city : "";
-                var address = (street !== "") ? (street + ", " + city) : city;
-                var icon = (venue.categories[0] !== undefined) ? venue.categories[0].icon : ""
-                var lat = ((venue.location.lat !== undefined) ? venue.location.lat : 0);
-                var lon = ((venue.location.lng !== undefined) ? venue.location.lng : 0);
-
-                checkinDetail(venue.id, venue.name, address, icon.prefix+"64"+icon.suffix, lat, lon)
+                checkinDetail(vid, venueName, address, venueIcon.prefix+"64"+venueIcon.suffix, lat, lon)
 
             }
+
+
 
         }
 

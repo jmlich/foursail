@@ -21,18 +21,23 @@ Rectangle {
     property int lastUpdate: 0
 
     property int countLoading: 0;
+    property int lastUnreadCount: 0;
 
     property string last_error: "";
 
     property real lat
     property real lon
-    property bool posReady: false;
+
+    property bool gpsReady: false;
+    property bool gpsRunning: false;
     property bool requestNearbyVenues: false;
 
     property string lastCheckin
     property date lastCheckinDate
     property url lastCheckinPhoto
     property string lastCheckinId
+
+    property bool debugMode: false;
 
 
     property string foursquare_api_version: "20131016"
@@ -88,12 +93,30 @@ Rectangle {
         return result;
     }
 
-    onPosReadyChanged: {
-        if ( posReady && requestNearbyVenues && (accessToken !== "") ) {
-            nearbyVenues();
+    onGpsReadyChanged: {
+        if (gpsReady) {
+            if (requestNearbyVenues  && (accessToken !== "") ) {
+                nearbyVenues_fetch();
+                requestNearbyVenues = false;
+            }
+            gpsRunning = false;
+            gpsReady = false;
         }
-
     }
+
+    function nearbyVenues() {
+        requestNearbyVenues = true;
+        if (!gpsRunning) {
+            gpsRunning = true;
+        }
+    }
+
+    function nearbyVenues_fetch() {
+        var source = "https://api.foursquare.com/v2/venues/search"
+        var params = "oauth_token=" + accessToken+"&ll="+lat+","+lon+"&intent=checkin" + "&v="+foursquare_api_version + "&locale="+locale;
+        foursquareDownload(source, params, "GET");
+    }
+
 
 
     Component.onCompleted: {
@@ -108,6 +131,10 @@ Rectangle {
             lastCheckinDate = (d !== "") ?  new Date(parseInt(d)) : "";
             lastCheckinPhoto = configGet("lastCheckinPhoto","")
             lastCheckinId = configGet("lastCheckinId", "")
+
+
+            //            configSet("debugMode", "enabled") // for development purposes
+            debugMode = (configGet("debugMode", "disabled") === "enabled")
 
 
         } catch (e) {
@@ -191,22 +218,6 @@ Rectangle {
 
     }
 
-    function nearbyVenues() {
-        if (posReady) {
-            nearbyVenues_fetch();
-            requestNearbyVenues = false;
-            posReady = false;
-        } else {
-            requestNearbyVenues = true;
-        }
-    }
-
-    function nearbyVenues_fetch() {
-        requestNearbyVenues = false;
-        var source = "https://api.foursquare.com/v2/venues/search"
-        var params = "oauth_token=" + accessToken+"&ll="+lat+","+lon+"&intent=checkin" + "&v="+foursquare_api_version + "&locale="+locale;
-        foursquareDownload(source, params, "GET");
-    }
 
     function venuesCategories() {
         var source = "https://api.foursquare.com/v2/venues/categories"
@@ -214,7 +225,7 @@ Rectangle {
         foursquareDownload(source, params, "GET");
     }
 
-    function addVenue(venueName, cid, address,crossStreet, city, state, zip, phone, twitter, description, url) {
+    function addVenue(venueName, cid, address,crossStreet, city, state, zip, phone, twitter, description, url, venue_lat, venue_lon) {
         var source = "https://api.foursquare.com/v2/venues/add"
         var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale + "&name="+encodeURIComponent(venueName);
         if (address.length > 0) {
@@ -238,7 +249,7 @@ Rectangle {
         if (twitter.length > 0) {
             params += "&twitter="+encodeURIComponent(twitter)
         }
-        params += "&ll=" + lat + "," + lon
+        params += "&ll=" + venue_lat + "," + venue_lon
         if (cid.length > 0) {
             params += "&primaryCategoryId="+encodeURIComponent(cid)
         }
@@ -264,7 +275,7 @@ Rectangle {
         var source = "https://api.foursquare.com/v2/venues/" + venue_id+"/like"
         var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale + "&set=" + (value ? "1" : "0");
         console.log("FIXME likeVenue " + venue_id + " " + value)
-//        foursquareDownload(source, params, "POST");
+        //        foursquareDownload(source, params, "POST");
     }
 
     function likeTip(tip_id, value) {
@@ -297,8 +308,13 @@ Rectangle {
     function removeFriend(uid) {
         var source = "https://api.foursquare.com/v2/users/" + uid + "/unfriend"
         var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale;
-        //foursquareDownload(source, params, "POST");
-        console.log ("remove friend", uid)
+        foursquareDownload(source, params, "POST");
+    }
+
+    function friendRequest(uid) {
+        var source = "https://api.foursquare.com/v2/users/" + uid + "/request"
+        var params = "oauth_token=" + accessToken+ "&v="+foursquare_api_version + "&locale="+locale;
+        foursquareDownload(source, params, "POST");
     }
 
     function search(query) {
@@ -330,6 +346,7 @@ Rectangle {
         var source = "https://api.foursquare.com/v2/updates/marknotificationsread"
         var params = "oauth_token=" + accessToken + "&v=" +foursquare_api_version + "&locale="+locale + "&highWatermark=" + timestamp
         foursquareDownload(source, params, "POST");
+        lastUnreadCount = 0;
     }
 
     function addEvent(venue_id,startAt, endAt, name)    {
@@ -436,11 +453,24 @@ Rectangle {
         }
 
         console.log(source + "?"+params)
-        // FIXME
-        //        source = "http://pcmlich.fit.vutbr.cz/checkin.json"
-
+        //        source = "http://pcmlich.fit.vutbr.cz/4sq/"
+        //        params = "idx=100&raw=true"
+        //        params = "idx=77&raw=true"
+        //        params = "idx=302&raw=true"
         foursquareDownload(source, params, "POST");
 
+    }
+
+    function sendDebugInfo(source, params, method, response) {
+        var http = new XMLHttpRequest()
+        var url = "http://pcmlich.fit.vutbr.cz/4sq/"
+        var post_params= "source="+encodeURIComponent(source)
+                + "&params="+encodeURIComponent(params)
+                + "&method="+encodeURIComponent(method)
+                + "&response="+encodeURIComponent(response)
+        http.open("POST", url, true);
+        http.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        http.send(post_params)
     }
 
     function foursquareDownload(source, params, method) {
@@ -456,6 +486,10 @@ Rectangle {
             var maxValue = 0;
 
             if (http.readyState === XMLHttpRequest.DONE) {
+                if (debugMode) {
+                    sendDebugInfo(source, params, method, http.responseText);
+                }
+
                 countLoading = Math.max(countLoading-1, 0);
                 if (http.status === 200) {
                     try{
@@ -468,9 +502,10 @@ Rectangle {
 
                         if (resultObject.notifications[0].item !== undefined) {
                             var unreadCount = resultObject.notifications[0].item.unreadCount;
-                            if (unreadCount > 0) {
+                            if (unreadCount > lastUnreadCount) {
                                 //% "%n Notifications"
                                 notificationPopup.show(qsTrId("n-notifications", unreadCount))
+                                lastUnreadCount = unreadCount;
                             }
                         }
 
@@ -485,11 +520,11 @@ Rectangle {
                                     var photo = item.user.photo;
                                     var firstName = (item.user.firstName !== undefined) ? item.user.firstName : "";
                                     var lastName = (item.user.lastName !== undefined) ? item.user.lastName : "";
-                                    var venueName = (item.venue.name !== undefined) ? item.venue.name : ""
                                     var createdAt = item.createdAt;
                                     var createdDate = new Date(parseInt(createdAt*1000));
-                                    var venueId = (item.venue.id !== undefined) ? item.venue.id : 0;
 
+                                    var venueId = (item.venue.id !== undefined) ? item.venue.id : 0;
+                                    var venueName = (item.venue.name !== undefined) ? item.venue.name : ""
                                     var street = (item.venue.location.address !== undefined) ? item.venue.location.address : "";
                                     var city   = (item.venue.location.city !== undefined) ? item.venue.location.city : "";
                                     var address = (street !== "") ? (street + ", " + city) : city;
@@ -557,13 +592,57 @@ Rectangle {
                             }
                         }
 
-                        if (resultObject.response.checkin !== undefined && resultObject.response.checkin.score !== undefined) {
-                            checkinResultPage.m.clear()
-                            array = resultObject.response.checkin.score.scores
-                            for (i = 0; i < array.length; i++) {
-                                item = array[i];
-                                checkinResultPage.m.append(item)
+                        if (resultObject.response.checkin !== undefined) {
+                            if (resultObject.response.checkin.badges !== undefined) {
+
+                                checkinResultPage.badges_m.clear();
+                                var badges = resultObject.response.checkin.badges.items;
+                                for (var j = 0; j < badges.length; j++) {
+                                    var badge = badges[j];
+                                    console.log(j + ": "+JSON.stringify(badge))
+                                    checkinResultPage.badges_m.append(badge)
+                                }
                             }
+                            if (resultObject.response.checkin.score) {
+                                var scores = resultObject.response.checkin.score.scores;
+                                checkinResultPage.m.clear()
+                                for (j = 0; j < scores.length; j++) {
+                                    item = scores[j];
+                                    checkinResultPage.m.append(item)
+                                }
+                            }
+
+                        }
+                        if (resultObject.response.notifications !== undefined) {
+
+                            array = resultObject.response.notifications;
+                            for (var i = 0; i < array.length; i++) {
+                                var notificationItem = array[i];
+                                switch (notificationItem.type) {
+                                case "message":
+                                    checkinResultPage.message = notificationItem.item.message;
+                                    break;
+                                case "special":
+                                    checkinResultPage.special_message = notificationItem.item.special.message
+                                    break;
+                                case "leaderboard":
+                                    checkinResultPage.leaderboard_m.clear();
+                                    var leaderboard = notificationItem.item.leaderboard
+                                    for (var j = 0; j < leaderboard.length; j++) {
+                                        var item = leaderboard[j]
+                                        checkinResultPage.leaderboard_m.append(item)
+                                    }
+
+                                    break;
+                                case "tip":
+                                    break;
+                                case "mayorship":
+                                    break
+                                case "insights": // show rather scores than insights
+                                    break;
+                                }
+                            }
+
                         }
 
                         if (resultObject.response.checkins !== undefined) {
@@ -648,9 +727,11 @@ Rectangle {
                         if (resultObject.response.notifications !== undefined) {
                             notificationsPage.m.clear()
                             array = resultObject.response.notifications.items;
-                            for (i = 0; i < array.length; i++) {
-                                item = array[i];
-                                notificationsPage.m.append(item)
+                            if (array !== undefined) {
+                                for (i = 0; i < array.length; i++) {
+                                    item = array[i];
+                                    notificationsPage.m.append(item)
+                                }
                             }
                         }
 
@@ -746,7 +827,8 @@ Rectangle {
                                     'name': first_name + " " + last_name,
                                     'homeCity': home_city,
                                     'tipsCount': tips_count,
-                                    'contact': contact
+                                    'contact': contact,
+                                    'relationship': ((item.relationship !== undefined) ? item.relationship : "unknown")
                                 };
                                 friendPage.m.append(data);
                             }
@@ -791,7 +873,8 @@ Rectangle {
                                         'name': item.name,
                                         'group': group.name,
                                         'description': item.description,
-                                        'count': item.listItems.count
+                                        'count': item.listItems.count,
+                                        'editable': item.editable
                                     };
                                     listsPage.m.append(data);
                                 }
@@ -825,13 +908,26 @@ Rectangle {
                                 listDetailPage.m.clear()
                                 array = item.listItems.items
                                 for(i = 0; i < array.length; ++i) {
-                                    var listItem = array[i];
+                                    var item = array[i];
+
+                                    //                                    console.log(JSON.stringify(item))
+                                    var street = (item.venue.location.address !== undefined) ? item.venue.location.address : "";
+                                    var city = (item.venue.location.city !== undefined) ? item.venue.location.city : "";
 
                                     var listItemData = {
-                                        'liid': listItem.id,
-                                        'photo': listItem.photo,
-                                        'venue': listItem.venue,
-                                        'message': listItem.tip !== undefined ? listItem.tip.text : ""
+                                        'liid': item.id,
+                                        'photo': item.photo,
+
+                                        'vid': ((item.venue.id !== undefined) ? item.venue.id : 0),
+                                        'venueName': ((item.venue.name !== undefined) ? item.venue.name : ""),
+                                        'street':  street,
+                                        'city':   city,
+                                        'address': ((street !== "") ? (street + ", " + city) : city),
+                                        'venueIcon': ((item.venue.categories[0] !== undefined) ? item.venue.categories[0].icon : empty_category_icon),
+                                        'lat': ((item.venue.location.lat !== undefined) ? item.venue.location.lat : 0),
+                                        'lon': ((item.venue.location.lng !== undefined) ? item.venue.location.lng : 0),
+                                        'beenHere': (item.venue.beenHere !== undefined && item.venue.beenHere.marked),
+                                        'venueTip': item.tip !== undefined ? item.tip.text : ""
                                     }
                                     listDetailPage.m.append(listItemData)
                                 }
@@ -841,11 +937,19 @@ Rectangle {
                             var array = resultObject.response.mayorships.items;
                             mayorshipsPage.m.clear();
                             for (i = 0; i < array.length; i++) {
-                                var item = array[i]
+                                var item = array[i];
 
+                                var street = (item.venue.location.address !== undefined) ? item.venue.location.address : "";
+                                var city = (item.venue.location.city !== undefined) ? item.venue.location.city : "";
                                 data = {
-                                    'venue': item.venue
-
+                                    'vid': ((item.venue.id !== undefined) ? item.venue.id : 0),
+                                    'venueName': ((item.venue.name !== undefined) ? item.venue.name : ""),
+                                    'street':  street,
+                                    'city':   city,
+                                    'address': ((street !== "") ? (street + ", " + city) : city),
+                                    'venueIcon': ((item.venue.categories[0] !== undefined) ? item.venue.categories[0].icon : empty_category_icon),
+                                    'lat': ((item.venue.location.lat !== undefined) ? item.venue.location.lat : 0),
+                                    'lon': ((item.venue.location.lng !== undefined) ? item.venue.location.lng : 0),
                                 }
 
                                 mayorshipsPage.m.append(data)

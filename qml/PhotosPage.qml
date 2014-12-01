@@ -55,7 +55,7 @@ Page {
                 width: 128;
                 height: 128
                 anchors.centerIn: photoItem
-                visible: (photoItem.state !== Image.Ready)
+                visible: (photoItem.status !== Image.Ready)
             }
 
             Image {
@@ -70,7 +70,6 @@ Page {
                 fillMode: Image.PreserveAspectCrop
                 opacity: delegate.highlighted ? 0.5 : 1;
             }
-
 
             onClicked: {
                 showPhotoDetail(photo_large);

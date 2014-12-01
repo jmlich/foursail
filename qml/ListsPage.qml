@@ -117,7 +117,7 @@ Page {
                     listView.contextMenu.listId = model.listId;
                     listView.contextMenu.name = model.name;
                     listView.contextMenu.description = model.description;
-
+                    listView.contextMenu.editable = model.editable;
                     listView.contextMenu.show(myListItem)
                 }
             }
@@ -128,13 +128,30 @@ Page {
         Component {
             id: contextMenuComponent
             ContextMenu {
+                property bool editable: false;
+
                 property string listId;
                 property string name;
                 property string description;
                 MenuItem {
+                    visible: editable
                     //% "Edit"
                     text: qsTrId("lists-edit");
                     onClicked: switchToAddAndEditList(listId, name, description)
+                }
+
+                MenuItem {
+                    //% "Follow"
+                    text: qsTrId("lists-follow");
+                    visible: false;
+//                    onClicked: switchToAddAndEditList(listId, name, description)
+                }
+
+                MenuItem {
+                    //% "Unfollow"
+                    text: qsTrId("lists-unfollow");
+                    visible: false;
+//                    onClicked: switchToAddAndEditList(listId, name, description)
                 }
             }
         }

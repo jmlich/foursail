@@ -158,12 +158,15 @@ ApplicationWindow {
 
     AddVenuePage {
         id: addVenuePage;
+        deviceLat: positionSource.position.coordinate.latitude;
+        deviceLon: positionSource.position.coordinate.longitude;
+
         onSwitchToCategoriesPage: {
             data.venuesCategories()
             pageStack.push(categoriesPage)
         }
         onAccepted: {
-            data.addVenue(venueName, cid, address,crossStreet, city, state, zip, phone, twitter, description, url);
+            data.addVenue(venueName, cid, address,crossStreet, city, state, zip, phone, twitter, description, url, lat, lon);
             pageStack.replace(checkinDetailPage, PageStackAction.Immediate)
         }
     }
@@ -191,6 +194,10 @@ ApplicationWindow {
 
         onAccepted: {
             checkinResultPage.m.clear();
+            checkinResultPage.leaderboard_m.clear();
+            checkinResultPage.badges_m.clear();
+            checkinResultPage.message = "";
+            checkinResultPage.special_message = "";
             data.checkin(venue_id, event, comment, twitter, facebook)
             //            pageStack.push(checkinResultPage)
         }
@@ -330,11 +337,6 @@ ApplicationWindow {
             loading: (data.countLoading > 0)
             last_error: data.last_error
 
-            onRefresh: {
-                m.clear();
-                data.checkinHistory("self")
-            }
-
             onCheckinDetail: {
                 checkinDetailPage.venue_id = venue_id;
                 checkinDetailPage.venue_name = name;
@@ -411,6 +413,10 @@ ApplicationWindow {
         }
         onRemoveFriend: {
             data.removeFriend(uid);
+        }
+
+        onFriendRequest:  {
+            data.friendRequest(uid)
         }
 
         onShowFriend: {
@@ -529,7 +535,7 @@ ApplicationWindow {
     PositionSource {
         id: positionSource
         updateInterval: 1000
-        active: !data.posReady
+        active: data.gpsRunning
         onPositionChanged: {
 
             if (position.latitudeValid && ((new Date().getTime()-position.timestamp.getTime()) < 60000)) { // position could be valid but very old
@@ -538,11 +544,8 @@ ApplicationWindow {
                 data.lat = coord.latitude;
                 data.lon = coord.longitude;
 
-                data.posReady = true;
+                data.gpsReady = true;
             }
-        }
-        onActiveChanged: {
-            console.log("gps status: "+ active)
         }
     }
 
