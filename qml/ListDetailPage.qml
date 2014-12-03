@@ -79,6 +79,7 @@ Page {
 
                     text: address
                 }
+
                 Text {
                     id: listItemText;
                     anchors.right: parent.right
@@ -94,6 +95,19 @@ Page {
                 }
 
 
+            }
+
+            Text {
+                id: listItemMessage;
+                anchors.top: shortVenueItem.bottom
+                anchors.right: shortVenueItem.right
+                anchors.left: shortVenueItem.left
+                anchors.leftMargin: Theme.paddingMedium * 2 + 64
+
+                font.pixelSize: Theme.fontSizeSmall
+                color: Theme.primaryColor
+
+                text: message !== undefined ? message : ""
             }
 
             Image {
