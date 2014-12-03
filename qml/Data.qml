@@ -479,6 +479,82 @@ Rectangle {
             params += twitter ? ",facebook" : "facebook";
         }
         //TODO
+        console.log(source + "?" + params)
+
+        var http = new XMLHttpRequest()
+        http.open("POST", source+"?"+params, true);
+
+
+        http.onreadystatechange = function() {
+            //            console.log("http.status: " + http.readyState + " " + http.status + " " + http.statusText)
+            var maxValue = 0;
+
+            if (http.readyState === XMLHttpRequest.DONE) {
+                if (debugMode) {
+                    sendDebugInfo(source, params, method, http.responseText);
+                }
+
+                countLoading = Math.max(countLoading-1, 0);
+                if (http.status === 200) {
+                    try{
+                        var result = http.responseText;
+                        console.log (result)
+                        var resultObject = JSON.parse(result)
+                        if (resultObject.meta.code >= 400 && resultObject.meta.code < 500) {
+                            accessToken = "";
+                            return;
+                        }
+                    } catch(e) {
+                        console.log("foursquareDownload: parse failed: " + e)
+                    }
+                    if (countLoading == 0) {
+                        last_error = "";
+                    }
+
+                    //                              ajaxstatus = "ready"
+                } else if (http.status === 401) {
+                    console.log("http.status: 401 not authorized")
+                    accessToken = "";
+                    //% "Unauthorized"
+                    last_error = qsTrId("error-not-authorized");
+
+                } else if (http.status === 0){
+                    //% "Connection problem"
+                    last_error = qsTrId("error-connection-problem"); // http.statusText;
+                    countLoading = 0;
+                } else {
+                    //                              ajaxstatus = "failed"
+
+                    console.log("error in onreadystatechange: " + http.status + " " + http.statusText + ", " + http.getAllResponseHeaders() + "," +http.responseText)
+                }
+                //                console.log("silent quit (ajaxstatus = ready or failed)")
+                //                if (appMode === "silent") {
+                //                    Qt.quit();
+                //                }
+
+            }
+
+        }
+        //        http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        countLoading++;
+
+        var boundary = '---------------------------';
+        boundary += Math.floor(Math.random()*32768);
+        boundary += Math.floor(Math.random()*32768);
+        boundary += Math.floor(Math.random()*32768);
+        http.setRequestHeader("Content-Type", 'multipart/form-data; boundary=' + boundary);
+        var body = '';
+        body += 'Content-Disposition: form-data; name="image"; filename="img.jpg"';
+        body += '\r\n'
+        body += 'Content-Type: image/jpeg'
+        body += '\r\n\r\n'
+        body += imageContent
+        body += '\r\n'
+        body += '--' + boundary + '--'
+        body += '\r\n'
+        console.log (body)
+        http.setRequestHeader('Content-length', body.length);
+        http.send(body);
     }
 
     function sendDebugInfo(source, params, method, response) {

@@ -190,7 +190,7 @@ ApplicationWindow {
 
         onCheckin_idChanged: {
             if (image != "") {
-                data.postImage (checkin_id, utils.getFileContent(image), public_image, share_twitter, share_facebook)
+                photoUploader.uploadPhoto(image, checkin_id, public_image, data.accessToken)
             }
         }
     }
