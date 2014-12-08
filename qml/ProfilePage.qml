@@ -18,8 +18,8 @@ Page {
     property alias lists_count: lists_count_label.text
     property alias photos_count: photos_count_label.text;
     property alias notifications_count: notifications_count_label.text
-    property int scores_recent
-    property int scores_max
+//    property int scores_recent
+//    property int scores_max
 
 
     signal switchToHistory();
@@ -29,7 +29,7 @@ Page {
     signal switchToNotifications();
     signal switchToTips();
     signal switchToFriends();
-    signal switchToLeaderboard();
+//    signal switchToLeaderboard();
     signal switchToLists();
     signal switchToPhotos();
     signal switchToMayorships();
@@ -49,8 +49,8 @@ Page {
         lists_count_label.text = "";
         photos_count_label.text = "";
         notifications_count_label.text = "";
-        scores_recent = 0;
-        scores_max = 1;
+//        scores_recent = 0;
+//        scores_max = 1;
     }
 
     BusyIndicator {
@@ -110,7 +110,9 @@ Page {
 
                     anchors.left: userPhoto.right
                     anchors.right: parent.right
-                    anchors.bottom: userPhoto.verticalCenter
+//                    anchors.bottom: userPhoto.verticalCenter
+//                    anchors.verticalCenter: userPhoto.verticalCenter
+                    anchors.top: userPhoto.top;
                     anchors.margins: Theme.paddingMedium
                     wrapMode: Text.WordWrap
 
@@ -119,43 +121,45 @@ Page {
                     color: Theme.secondaryColor;
                 }
 
-                Rectangle {
-                    // score
-                    anchors.left: userPhoto.right;
-                    anchors.right: parent.right;
-                    anchors.top: userHomeCity.bottom
-                    anchors.margins: Theme.paddingMedium
-                    height: scores_label.height;
+                /// deprecated
 
-                    border.width:  1
-                    border.color: Theme.rgba(Theme.highlightBackgroundColor, 0.5)
-                    color: "transparent"
-                    visible: (scores_label !== "")
+//                Rectangle {
+//                    // score
+//                    anchors.left: userPhoto.right;
+//                    anchors.right: parent.right;
+//                    anchors.top: userHomeCity.bottom
+//                    anchors.margins: Theme.paddingMedium
+//                    height: scores_label.height;
 
-                    Rectangle {
-                        anchors.top: parent.top
-                        anchors.bottom: parent.bottom;
-                        anchors.left: parent.left;
-                        color: Theme.rgba(Theme.highlightBackgroundColor, 0.3)
+//                    border.width:  1
+//                    border.color: Theme.rgba(Theme.highlightBackgroundColor, 0.5)
+//                    color: "transparent"
+//                    visible: (scores_label !== "")
 
-                        width: (scores_recent*parent.width/scores_max)
+//                    Rectangle {
+//                        anchors.top: parent.top
+//                        anchors.bottom: parent.bottom;
+//                        anchors.left: parent.left;
+//                        color: Theme.rgba(Theme.highlightBackgroundColor, 0.3)
 
-                        Label {
+//                        width: (scores_recent*parent.width/scores_max)
 
-                            color: Theme.primaryColor
-                            id: scores_label
-                            anchors.leftMargin:Theme.paddingMedium
-                            anchors.left: parent.left;
-                            text: scores_recent + " / " + scores_max
-                        }
-                    }
+//                        Label {
+
+//                            color: Theme.primaryColor
+//                            id: scores_label
+//                            anchors.leftMargin:Theme.paddingMedium
+//                            anchors.left: parent.left;
+//                            text: scores_recent + " / " + scores_max
+//                        }
+//                    }
 
 
-                    MouseArea {
-                        anchors.fill: parent;
-                        onClicked: switchToLeaderboard()
-                    }
-                }
+//                    MouseArea {
+//                        anchors.fill: parent;
+//                        onClicked: switchToLeaderboard()
+//                    }
+//                }
 
                 Image {
                     anchors.fill: userPhoto

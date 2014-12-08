@@ -310,10 +310,10 @@ ApplicationWindow {
 
         }
 
-        onSwitchToLeaderboard:  {
-            data.leaderboard()
-            pageStack.push(leaderboardPage)
-        }
+//        onSwitchToLeaderboard:  {
+//            data.leaderboard()
+//            pageStack.push(leaderboardPage)
+//        }
 
         onSwitchToMayorships: {
             data.mayorships(uid)

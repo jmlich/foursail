@@ -14,7 +14,6 @@ Rectangle {
 
     property string clientID: "ATG2VZ5I2E4IELFPC2U2HWU5WRFNRL2BAHXUEBZ5UHTM00D2"
 
-
     property int dbEstimatedSize: 100;
 
     property string accessToken
@@ -738,6 +737,8 @@ Rectangle {
                         if (resultObject.response.user !== undefined) {
                             user = resultObject.response.user;
 
+//                            console.log(JSON.stringify(user))
+
                             profilePage.friends_count = user.friends.count;
                             profilePage.profile_photo_url = user.photo.prefix + "128x128" + user.photo.suffix;
                             profilePage.user_name = ((user.firstName !== undefined) ? (user.firstName + " ") : "") + ((user.lastName !== undefined) ?  user.lastName : "")
@@ -748,8 +749,8 @@ Rectangle {
                             profilePage.checkins_count  = user.checkins.count
                             profilePage.lists_count  = user.lists.count
                             profilePage.photos_count  = user.photos.count
-                            profilePage.scores_recent = user.scores.recent
-                            profilePage.scores_max = user.scores.max
+                            //                            profilePage.scores_recent = user.scores.recent
+                            //                            profilePage.scores_max = user.scores.max
                             profilePage.notifications_count = (resultObject.notifications[0].item !== undefined) ? resultObject.notifications[0].item.unreadCount : 0 ;
 
                         }
@@ -834,32 +835,34 @@ Rectangle {
                             }
                         }
 
-                        if (resultObject.response.leaderboard !== undefined) {
-                            leaderboardPage.m.clear();
-                            array = resultObject.response.leaderboard.items;
-                            for (i = 0; i < array.length; ++i) {
-                                item = array[i];
-                                var user = item.user;
-                                var uid = user.id;
-                                var first_name = (user.firstName !== undefined) ? user.firstName : "";
-                                var last_name = (user.lastName !== undefined) ? user.lastName : "";
-                                var photo = user.photo;
-                                var checkins_count = item.scores.checkinsCount;
-                                var score_max = item.scores.max;
-                                var score_recent = item.scores.recent;
-                                var rank = item.rank;
-                                data = {
-                                    'uid': uid,
-                                    'photo': photo.prefix + "86x86" + photo.suffix,
-                                    'name': first_name + " " + last_name,
-                                    'score_max': score_max,
-                                    'checkins_count' : checkins_count,
-                                    'score_recent': score_recent,
-                                    'rank': rank
-                                };
-                                leaderboardPage.m.append(data);
-                            }
-                        }
+//                        if (resultObject.response.leaderboard !== undefined) {
+//                            leaderboardPage.m.clear();
+//                            array = resultObject.response.leaderboard.items;
+//                            for (i = 0; i < array.length; ++i) {
+//                                item = array[i];
+//                                var user = item.user;
+//                                var uid = user.id;
+//                                var first_name = (user.firstName !== undefined) ? user.firstName : "";
+//                                var last_name = (user.lastName !== undefined) ? user.lastName : "";
+//                                var photo = user.photo;
+//                                var checkins_count = item.scores.checkinsCount;
+//                                var score_max = item.scores.max;
+//                                var score_recent = item.scores.recent;
+
+//                                var rank = item.rank;
+//                                data = {
+//                                    'uid': uid,
+//                                    'photo': photo.prefix + "86x86" + photo.suffix,
+//                                    'name': first_name + " " + last_name,
+//                                    'score_max': score_max,
+//                                    'checkins_count' : checkins_count,
+//                                    'score_recent': score_recent,
+//                                    'rank': rank
+//                                };
+//                                leaderboardPage.m.append(data);
+//                            }
+//                        }
+
                         if (resultObject.response.lists !== undefined) {
                             listsPage.m.clear();
                             array = resultObject.response.lists.groups;
