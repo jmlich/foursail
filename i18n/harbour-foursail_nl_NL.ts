@@ -1,6 +1,8 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="nl">
 <context>
-    <name/>
+    <name></name>
     <message id="components-la-tap-to-cancel">
         <source>Tap to cancel</source>
         <translation>Tikken om te annuleren</translation>
@@ -56,7 +58,7 @@
     </message>
     <message id="venue-add-phone">
         <source>Phone</source>
-        <translation>Telefoon</translation>
+        <translation>Telebarn</translation>
     </message>
     <message id="venue-add-twitter">
         <source>Twitter</source>
@@ -141,7 +143,10 @@
     <message id="n-notifications" numerus="yes">
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
-        <translation><numerusform>%n melding</numerusform><numerusform>%n meldingen</numerusform></translation>
+        <translation>
+            <numerusform>%n melding</numerusform>
+            <numerusform>%n meldingen</numerusform>
+        </translation>
     </message>
     <message id="error-not-authorized">
         <source>Unauthorized</source>
@@ -183,7 +188,10 @@
     <message id="leaderboard-n-checkins" numerus="yes">
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
-        <translation><numerusform>%n checkin</numerusform><numerusform>%n checkins</numerusform></translation>
+        <translation>
+            <numerusform>%n checkin</numerusform>
+            <numerusform>%n checkins</numerusform>
+        </translation>
     </message>
     <message id="list-detail-empty">
         <source>List contains no venues</source>
@@ -223,7 +231,7 @@
     </message>
     <message id="mayorships-empty">
         <source>User hasn&apos;t got any mayorships yet</source>
-        <oldsource>User hasn't got any mayorships yet!</oldsource>
+        <oldsource>User hasn&apos;t got any mayorships yet!</oldsource>
         <translation>Nog geen burgemeesterschappen</translation>
     </message>
     <message id="nearby-venues-title">
@@ -423,7 +431,7 @@
     </message>
     <message id="checkin-result-section-header-specials">
         <source>Specials</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Aanbiedingen</translation>
     </message>
     <message id="checkin-result-section-header-badges">
         <source>Badges</source>

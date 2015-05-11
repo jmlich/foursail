@@ -1,6 +1,8 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="el">
 <context>
-    <name/>
+    <name></name>
     <message id="components-la-tap-to-cancel">
         <source>Tap to cancel</source>
         <translation>Πατήστε για ακύρωση</translation>
@@ -92,11 +94,11 @@
     </message>
     <message id="checkin-listed-menu">
         <source>Listed</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="checkin-specials">
         <source>Specials</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="checkin-dislike-venue-menu">
         <source>Dislike</source>
@@ -108,7 +110,7 @@
     </message>
     <message id="venue-checkin-accept">
         <source>Checkin</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="venue-checkin-comment">
         <source>Write your comment here.</source>
@@ -136,12 +138,15 @@
     <message id="cover-no-checkins">
         <source>Nobody of your friends checked in yet</source>
         <oldsource>FIXME</oldsource>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="n-notifications" numerus="yes">
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
-        <translation><numerusform>%n Ειδοποίηση</numerusform><numerusform>%n Ειδοποιήσεις</numerusform></translation>
+        <translation>
+            <numerusform>%n Ειδοποίηση</numerusform>
+            <numerusform>%n Ειδοποιήσεις</numerusform>
+        </translation>
     </message>
     <message id="error-not-authorized">
         <source>Unauthorized</source>
@@ -183,7 +188,10 @@
     <message id="leaderboard-n-checkins" numerus="yes">
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message id="list-detail-empty">
         <source>List contains no venues</source>
@@ -223,7 +231,7 @@
     </message>
     <message id="mayorships-empty">
         <source>User hasn&apos;t got any mayorships yet</source>
-        <oldsource>User hasn't got any mayorships yet!</oldsource>
+        <oldsource>User hasn&apos;t got any mayorships yet!</oldsource>
         <translation>Δεν υπάρχουν δημαρχίες</translation>
     </message>
     <message id="nearby-venues-title">
@@ -240,7 +248,7 @@
     </message>
     <message id="nearby-venues-recent-checkins-menu">
         <source>Recent Checkins</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="nearby-venues-refresh-menu">
         <source>Refresh</source>
@@ -284,7 +292,7 @@
     </message>
     <message id="image-status-not-set">
         <source>Not Set</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="image-status-error">
         <source>Error</source>
@@ -304,7 +312,7 @@
     </message>
     <message id="profile-recent-checkins-menu">
         <source>Recent Checkins</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="profile-nearby-venues-menu">
         <source>Nearby Venues</source>
@@ -312,7 +320,7 @@
     </message>
     <message id="profile-checkins">
         <source>Checkins</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="profile-notifications">
         <source>Notifications</source>
@@ -348,11 +356,11 @@
     </message>
     <message id="recent-checkins-title">
         <source>Recent Checkins</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="recent-checkins-empty">
         <source>None of your friends checked in yet</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="recent-checkins-my-profile-menu">
         <source>My Profile</source>
@@ -399,7 +407,7 @@
     </message>
     <message id="history-empty">
         <source>User didn&apos;t make check in yet</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="tips-title">
         <source>Tips</source>
@@ -419,11 +427,11 @@
     </message>
     <message id="checkin-result-title">
         <source>Checkin</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="checkin-result-section-header-specials">
         <source>Specials</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message id="checkin-result-section-header-badges">
         <source>Badges</source>

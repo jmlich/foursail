@@ -1,6 +1,8 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="tr" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="tr">
 <context>
-    <name/>
+    <name></name>
     <message id="components-la-tap-to-cancel">
         <source>Tap to cancel</source>
         <translation>İptal etmek için dokun</translation>
@@ -141,7 +143,9 @@
     <message id="n-notifications" numerus="yes">
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
-        <translation><numerusform>%n Bildirim</numerusform><numerusform>%n Bildirimler</numerusform></translation>
+        <translation>
+            <numerusform>%n Bildirim</numerusform>
+        </translation>
     </message>
     <message id="error-not-authorized">
         <source>Unauthorized</source>
@@ -183,7 +187,9 @@
     <message id="leaderboard-n-checkins" numerus="yes">
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
-        <translation><numerusform>%n check-in</numerusform><numerusform>%n check-ins</numerusform></translation>
+        <translation>
+            <numerusform>%n check-in</numerusform>
+        </translation>
     </message>
     <message id="list-detail-empty">
         <source>List contains no venues</source>
@@ -223,7 +229,7 @@
     </message>
     <message id="mayorships-empty">
         <source>User hasn&apos;t got any mayorships yet</source>
-        <oldsource>User hasn't got any mayorships yet!</oldsource>
+        <oldsource>User hasn&apos;t got any mayorships yet!</oldsource>
         <translation>Kullanıcı heniz başkanlık almadı!</translation>
     </message>
     <message id="nearby-venues-title">
@@ -423,7 +429,7 @@
     </message>
     <message id="checkin-result-section-header-specials">
         <source>Specials</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Spesialler</translation>
     </message>
     <message id="checkin-result-section-header-badges">
         <source>Badges</source>
