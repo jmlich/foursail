@@ -39,6 +39,7 @@
 
 #include <sailfishapp.h>
 #include "networkaccessmanagerfactory.h"
+#include "photouploader.h"
 
 
 int main(int argc, char *argv[])
@@ -70,6 +71,8 @@ int main(int argc, char *argv[])
         view->rootContext()->setContextProperty("locale","en");
     }
 
+	PhotoUploader *uploader = new PhotoUploader;
+	view->rootContext ()->setContextProperty ("photoUploader", uploader);
 
     view->engine()->setNetworkAccessManagerFactory(&namFactory);
     view->setSource(SailfishApp::pathTo("qml/harbour-foursail.qml"));

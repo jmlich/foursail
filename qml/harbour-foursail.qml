@@ -187,6 +187,12 @@ ApplicationWindow {
 
     CheckinResultPage {
         id: checkinResultPage;
+
+        onCheckin_idChanged: {
+            if (image != "") {
+                photoUploader.uploadPhoto(image, checkin_id, public_image, data.accessToken)
+            }
+        }
     }
 
     CheckinDetailPage {
@@ -198,8 +204,23 @@ ApplicationWindow {
             checkinResultPage.badges_m.clear();
             checkinResultPage.message = "";
             checkinResultPage.special_message = "";
-            data.checkin(venue_id, event, comment, twitter, facebook)
-            //            pageStack.push(checkinResultPage)
+
+            checkinResultPage.checkin_id = "";
+            checkinResultPage.image = image
+            checkinResultPage.share_twitter = false
+            checkinResultPage.share_facebook = false
+            checkinResultPage.public_image = false
+
+            if (image != "") {
+                data.checkin(venue_id, event, comment, false, false)
+                checkinResultPage.share_twitter = twitter
+                checkinResultPage.share_facebook = facebook
+                checkinResultPage.public_image = public_image
+            } else {
+                data.checkin(venue_id, event, comment, twitter, facebook)
+            }
+
+//            pageStack.push(checkinResultPage)
         }
 
         onSwitchToPhotos: {
