@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="cs" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="cs">
 <context>
     <name/>
     <message id="components-la-tap-to-cancel">
@@ -423,7 +423,7 @@
     </message>
     <message id="checkin-result-section-header-specials">
         <source>Specials</source>
-        <translation type="unfinished"/>
+        <translation>Speciály</translation>
     </message>
     <message id="checkin-result-section-header-badges">
         <source>Badges</source>
@@ -436,6 +436,22 @@
     <message id="checkin-result-section-header-leaderboard">
         <source>Leaderboard</source>
         <translation>Žebříček</translation>
+    </message>
+    <message id="venue-checkin-add-image">
+        <source>Add image</source>
+        <translation>Přidat obrázek</translation>
+    </message>
+    <message id="venue-checkin-post-image-as-public-button">
+        <source>Post as public</source>
+        <translation>Poslat jako veřejné</translation>
+    </message>
+    <message id="images-title">
+        <source>Images</source>
+        <translation>Obrázky</translation>
+    </message>
+    <message id="images-from-camera-menu">
+        <source>From camera</source>
+        <translation>Z fotoaparátu</translation>
     </message>
 </context>
 </TS>
