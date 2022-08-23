@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 
     QTranslator translator;
 
-    if (translator.load(QLatin1String("harbour-foursail_") + QLocale::system().name(), SailfishApp::pathTo(QString("i18n")).toLocalFile())) {
+    if (translator.load(QLocale(), QLatin1String("harbour-foursail"), QLatin1String("_"), SailfishApp::pathTo(QString("i18n")).toLocalFile()) ) {
         app->installTranslator(&translator);
         view->rootContext()->setContextProperty("locale", QLocale::system().bcp47Name());
     } else {
