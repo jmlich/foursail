@@ -445,5 +445,21 @@
         <source>Leaderboard</source>
         <translation>Leaderboard</translation>
     </message>
+    <message id="venue-checkin-add-image">
+        <source>Add image</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="venue-checkin-post-image-as-public-button">
+        <source>Post as public</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="images-title">
+        <source>Images</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="images-from-camera-menu">
+        <source>From camera</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>
