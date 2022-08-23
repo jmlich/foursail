@@ -1,447 +1,441 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="tr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="tr" version="2.1">
 <context>
-    <name></name>
+    <name/>
     <message id="components-la-tap-to-cancel">
         <source>Tap to cancel</source>
-        <translation>İptal etmek için dokun</translation>
+        <translation type="vanished">İptal etmek için dokun</translation>
     </message>
     <message id="lists-edit-accept">
         <source>Edit List</source>
-        <translation>Listeyi Düzenle</translation>
+        <translation type="vanished">Listeyi Düzenle</translation>
     </message>
     <message id="lists-create-accept">
         <source>Create List</source>
-        <translation>Liste Oluştur</translation>
+        <translation type="vanished">Liste Oluştur</translation>
     </message>
     <message id="lists-create-name">
         <source>List name</source>
         <oldsource>List Name</oldsource>
-        <translation>Liste ismi</translation>
+        <translation type="vanished">Liste ismi</translation>
     </message>
     <message id="lists-create-description">
         <source>List description</source>
-        <translation>Liste tanımı</translation>
+        <translation type="vanished">Liste tanımı</translation>
     </message>
     <message id="venue-add-accept">
         <source>Create</source>
-        <translation>Oluştur</translation>
+        <translation type="vanished">Oluştur</translation>
     </message>
     <message id="venue-add-name">
         <source>Name</source>
-        <translation>İsim</translation>
+        <translation type="vanished">İsim</translation>
     </message>
     <message id="venue-add-choose-category">
         <source>Choose category</source>
-        <translation>Kategori seç</translation>
+        <translation type="vanished">Kategori seç</translation>
     </message>
     <message id="venue-add-address">
         <source>Address</source>
-        <translation>Adres</translation>
+        <translation type="vanished">Adres</translation>
     </message>
     <message id="venue-add-cross-street">
         <source>Cross street</source>
-        <translation>Çapraz sokak</translation>
+        <translation type="vanished">Çapraz sokak</translation>
     </message>
     <message id="venue-add-city">
         <source>City</source>
-        <translation>Şehir</translation>
+        <translation type="vanished">Şehir</translation>
     </message>
     <message id="venue-add-state">
         <source>State</source>
-        <translation>İlçe</translation>
+        <translation type="vanished">İlçe</translation>
     </message>
     <message id="venue-add-zip">
         <source>ZIP</source>
-        <translation>PK</translation>
+        <translation type="vanished">PK</translation>
     </message>
     <message id="venue-add-phone">
         <source>Phone</source>
-        <translation>Telefon</translation>
+        <translation type="vanished">Telefon</translation>
     </message>
     <message id="venue-add-twitter">
         <source>Twitter</source>
-        <translation>Twitter</translation>
+        <translation type="vanished">Twitter</translation>
     </message>
     <message id="venue-add-description">
         <source>Description</source>
-        <translation>Tanım</translation>
+        <translation type="vanished">Tanım</translation>
     </message>
     <message id="venue-add-set-position">
         <source>Set position</source>
-        <translation>Konum ayarla</translation>
+        <translation type="vanished">Konum ayarla</translation>
     </message>
     <message id="badges-title">
         <source>Badges</source>
-        <translation>Rozetler</translation>
+        <translation type="vanished">Rozetler</translation>
     </message>
     <message id="badges-empty">
         <source>List of badges is empty</source>
-        <translation>Rozet listesi boş</translation>
+        <translation type="vanished">Rozet listesi boş</translation>
     </message>
     <message id="categories-title">
         <source>Categories</source>
-        <translation>Kategoriler</translation>
+        <translation type="vanished">Kategoriler</translation>
     </message>
     <message id="checkin-photos-menu">
         <source>Photos</source>
-        <translation>Fotoğraflar</translation>
+        <translation type="vanished">Fotoğraflar</translation>
     </message>
     <message id="checkin-tips-menu">
         <source>Tips</source>
-        <translation>İpuçları</translation>
+        <translation type="vanished">İpuçları</translation>
     </message>
     <message id="checkin-listed-menu">
         <source>Listed</source>
-        <translation>Listelendi</translation>
+        <translation type="vanished">Listelendi</translation>
     </message>
     <message id="checkin-specials">
         <source>Specials</source>
-        <translation>Spesialler</translation>
+        <translation type="vanished">Spesialler</translation>
     </message>
     <message id="checkin-dislike-venue-menu">
         <source>Dislike</source>
-        <translation>Beğenmeyi bırak</translation>
+        <translation type="vanished">Beğenmeyi bırak</translation>
     </message>
     <message id="checkin-like-venue-menu">
         <source>Like</source>
-        <translation>Beğen</translation>
+        <translation type="vanished">Beğen</translation>
     </message>
     <message id="venue-checkin-accept">
         <source>Checkin</source>
-        <translation>Checkin</translation>
+        <translation type="vanished">Checkin</translation>
     </message>
     <message id="venue-checkin-comment">
         <source>Write your comment here.</source>
         <oldsource>Comment</oldsource>
-        <translation>Yorumunuzu buraya yazın.</translation>
+        <translation type="vanished">Yorumunuzu buraya yazın.</translation>
     </message>
     <message id="venue-checkin-share-to-facebook-button">
         <source>Share to Facebook</source>
         <oldsource>Share to facebook</oldsource>
-        <translation>Facebook&apos;ta paylaş</translation>
+        <translation type="vanished">Facebook&apos;ta paylaş</translation>
     </message>
     <message id="venue-checkin-share-to-twitter-button">
         <source>Share to Twitter</source>
         <oldsource>Share to twitter</oldsource>
-        <translation>Twitter&apos;da paylaş</translation>
+        <translation type="vanished">Twitter&apos;da paylaş</translation>
     </message>
     <message id="venue-checkin-show-on-map-button">
         <source>Show on Map</source>
-        <translation>Haritada göster</translation>
+        <translation type="vanished">Haritada göster</translation>
     </message>
     <message id="cover-loading">
         <source>Loading ...</source>
-        <translation>Yükleniyor...</translation>
+        <translation type="vanished">Yükleniyor...</translation>
     </message>
     <message id="cover-no-checkins">
         <source>Nobody of your friends checked in yet</source>
         <oldsource>FIXME</oldsource>
-        <translation>Hiçbir arkadaşınız checkin yapmadı</translation>
+        <translation type="vanished">Hiçbir arkadaşınız checkin yapmadı</translation>
     </message>
     <message id="n-notifications" numerus="yes">
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
-        <translation>
-            <numerusform>%n Bildirim</numerusform>
-        </translation>
+        <translation type="vanished"><numerusform>%n Bildirim</numerusform><numerusform>%n Bildirimler</numerusform></translation>
     </message>
     <message id="error-not-authorized">
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
-        <translation>Yetkisin</translation>
+        <translation type="vanished">Yetkisin</translation>
     </message>
     <message id="error-connection-problem">
         <source>Connection problem</source>
-        <translation>Bağlantı problemi</translation>
+        <translation type="vanished">Bağlantı problemi</translation>
     </message>
     <message id="friends-title">
         <source>Friends</source>
-        <translation>Arkadaşlar</translation>
+        <translation type="vanished">Arkadaşlar</translation>
     </message>
     <message id="friends-empty">
         <source>List of friends is empty</source>
-        <translation>Arkadaş listesi boş</translation>
+        <translation type="vanished">Arkadaş listesi boş</translation>
     </message>
     <message id="friends-removing">
         <source>Removing friend</source>
-        <translation>Arkadaş siliniyor</translation>
+        <translation type="vanished">Arkadaş siliniyor</translation>
     </message>
     <message id="friends-remove">
         <source>Remove</source>
-        <translation>Sil</translation>
+        <translation type="vanished">Sil</translation>
     </message>
     <message id="friends-add">
         <source>Add</source>
-        <translation>Ekle</translation>
+        <translation type="vanished">Ekle</translation>
     </message>
     <message id="leaderboard-title">
         <source>Leaderboard</source>
-        <translation>Lider panosu</translation>
+        <translation type="vanished">Lider panosu</translation>
     </message>
     <message id="leaderboard-empty">
         <source>Leaderboard is empty</source>
-        <translation>Lider panosu boş</translation>
+        <translation type="vanished">Lider panosu boş</translation>
     </message>
     <message id="leaderboard-n-checkins" numerus="yes">
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
-        <translation>
-            <numerusform>%n check-in</numerusform>
-        </translation>
+        <translation type="vanished"><numerusform>%n check-in</numerusform><numerusform>%n check-ins</numerusform></translation>
     </message>
     <message id="list-detail-empty">
         <source>List contains no venues</source>
-        <translation>Liste hiçbir mekan içermiyor</translation>
+        <translation type="vanished">Liste hiçbir mekan içermiyor</translation>
     </message>
     <message id="lists-title">
         <source>Lists</source>
-        <translation>Listeler</translation>
+        <translation type="vanished">Listeler</translation>
     </message>
     <message id="lists-empty">
         <source>No lists are available</source>
-        <translation>Liste yok</translation>
+        <translation type="vanished">Liste yok</translation>
     </message>
     <message id="lists-new">
         <source>New</source>
-        <translation>Yeni</translation>
+        <translation type="vanished">Yeni</translation>
     </message>
     <message id="lists-edit">
         <source>Edit</source>
-        <translation>Düzenle</translation>
+        <translation type="vanished">Düzenle</translation>
     </message>
     <message id="lists-follow">
         <source>Follow</source>
-        <translation>Takip et</translation>
+        <translation type="vanished">Takip et</translation>
     </message>
     <message id="lists-unfollow">
         <source>Unfollow</source>
-        <translation>Takibi bırak</translation>
+        <translation type="vanished">Takibi bırak</translation>
     </message>
     <message id="map-title">
         <source>Map</source>
-        <translation>Harita</translation>
+        <translation type="vanished">Harita</translation>
     </message>
     <message id="mayorships-title">
         <source>Mayorships</source>
-        <translation>Başkanlık</translation>
+        <translation type="vanished">Başkanlık</translation>
     </message>
     <message id="mayorships-empty">
         <source>User hasn&apos;t got any mayorships yet</source>
-        <oldsource>User hasn&apos;t got any mayorships yet!</oldsource>
-        <translation>Kullanıcı heniz başkanlık almadı!</translation>
+        <oldsource>User hasn't got any mayorships yet!</oldsource>
+        <translation type="vanished">Kullanıcı heniz başkanlık almadı!</translation>
     </message>
     <message id="nearby-venues-title">
         <source>Nearby Venues</source>
-        <translation>Yakındaki Mekanlar</translation>
+        <translation type="vanished">Yakındaki Mekanlar</translation>
     </message>
     <message id="search-results-title">
         <source>Search results</source>
-        <translation>Arama sonuçları</translation>
+        <translation type="vanished">Arama sonuçları</translation>
     </message>
     <message id="nearby-venues-my-profile-menu">
         <source>My Profile</source>
-        <translation>Profilim</translation>
+        <translation type="vanished">Profilim</translation>
     </message>
     <message id="nearby-venues-recent-checkins-menu">
         <source>Recent Checkins</source>
-        <translation>Son Checkinler</translation>
+        <translation type="vanished">Son Checkinler</translation>
     </message>
     <message id="nearby-venues-refresh-menu">
         <source>Refresh</source>
-        <translation>Yenile</translation>
+        <translation type="vanished">Yenile</translation>
     </message>
     <message id="nearby-venues-nearby-venues-menu">
         <source>Nearby Venues</source>
-        <translation>Yakın Mekanlar</translation>
+        <translation type="vanished">Yakın Mekanlar</translation>
     </message>
     <message id="nearby-venues-search-menu">
         <source>Search</source>
-        <translation>Ara</translation>
+        <translation type="vanished">Ara</translation>
     </message>
     <message id="nearby-venues-add">
         <source>Add</source>
-        <translation>Ekle</translation>
+        <translation type="vanished">Ekle</translation>
     </message>
     <message id="nearby-venues-empty">
         <source>There is no venue in nearby</source>
-        <translation>Yakınlarda mekan yok</translation>
+        <translation type="vanished">Yakınlarda mekan yok</translation>
     </message>
     <message id="notifications-title">
         <source>Notifications</source>
-        <translation>Bildirimler</translation>
+        <translation type="vanished">Bildirimler</translation>
     </message>
     <message id="notifications-empty">
         <source>You have no notifications</source>
-        <translation>Bildiriminiz yok</translation>
+        <translation type="vanished">Bildiriminiz yok</translation>
     </message>
     <message id="photos-title">
         <source>Photos</source>
-        <translation>Fotoğraflar</translation>
+        <translation type="vanished">Fotoğraflar</translation>
     </message>
     <message id="photos-empty">
         <source>List of photos is empty</source>
-        <translation>Fotoğraf listesi boş</translation>
+        <translation type="vanished">Fotoğraf listesi boş</translation>
     </message>
     <message id="image-status-ready">
         <source>Ready</source>
-        <translation>Hazır</translation>
+        <translation type="vanished">Hazır</translation>
     </message>
     <message id="image-status-not-set">
         <source>Not Set</source>
-        <translation>Hazır Değil</translation>
+        <translation type="vanished">Hazır Değil</translation>
     </message>
     <message id="image-status-error">
         <source>Error</source>
-        <translation>Hata</translation>
+        <translation type="vanished">Hata</translation>
     </message>
     <message id="image-status-loading">
         <source>Loading ...</source>
-        <translation>Yükleniyor...</translation>
+        <translation type="vanished">Yükleniyor...</translation>
     </message>
     <message id="image-status-unknown">
         <source>Unknown</source>
-        <translation>Bilinmiyor</translation>
+        <translation type="vanished">Bilinmiyor</translation>
     </message>
     <message id="profile-my-profile-menu">
         <source>My Profile</source>
-        <translation>Profilim</translation>
+        <translation type="vanished">Profilim</translation>
     </message>
     <message id="profile-recent-checkins-menu">
         <source>Recent Checkins</source>
-        <translation>Son Checkinler</translation>
+        <translation type="vanished">Son Checkinler</translation>
     </message>
     <message id="profile-nearby-venues-menu">
         <source>Nearby Venues</source>
-        <translation>Yakındaki Mekanlar</translation>
+        <translation type="vanished">Yakındaki Mekanlar</translation>
     </message>
     <message id="profile-checkins">
         <source>Checkins</source>
-        <translation>Checkins</translation>
+        <translation type="vanished">Checkins</translation>
     </message>
     <message id="profile-notifications">
         <source>Notifications</source>
-        <translation>Bildirimler</translation>
+        <translation type="vanished">Bildirimler</translation>
     </message>
     <message id="profile-badges">
         <source>Badges</source>
-        <translation>Rozetler</translation>
+        <translation type="vanished">Rozetler</translation>
     </message>
     <message id="profile-mayorships">
         <source>Mayorships</source>
-        <translation>Başkanlıklar</translation>
+        <translation type="vanished">Başkanlıklar</translation>
     </message>
     <message id="profile-tips">
         <source>Tips</source>
-        <translation>İpuçları</translation>
+        <translation type="vanished">İpuçları</translation>
     </message>
     <message id="profile-friends">
         <source>Friends</source>
-        <translation>Arkadaşlar</translation>
+        <translation type="vanished">Arkadaşlar</translation>
     </message>
     <message id="profile-lists">
         <source>Lists</source>
-        <translation>Listeler</translation>
+        <translation type="vanished">Listeler</translation>
     </message>
     <message id="profile-photos">
         <source>Photos</source>
-        <translation>Fotoğraflar</translation>
+        <translation type="vanished">Fotoğraflar</translation>
     </message>
     <message id="tap-to-show">
         <source>Tap to show</source>
-        <translation>Görmek için dokun</translation>
+        <translation type="vanished">Görmek için dokun</translation>
     </message>
     <message id="recent-checkins-title">
         <source>Recent Checkins</source>
-        <translation>Son Checkinler</translation>
+        <translation type="vanished">Son Checkinler</translation>
     </message>
     <message id="recent-checkins-empty">
         <source>None of your friends checked in yet</source>
-        <translation>Hiçbir arkadaşınız checkin yapmadı</translation>
+        <translation type="vanished">Hiçbir arkadaşınız checkin yapmadı</translation>
     </message>
     <message id="recent-checkins-my-profile-menu">
         <source>My Profile</source>
-        <translation>Profilim</translation>
+        <translation type="vanished">Profilim</translation>
     </message>
     <message id="recent-checkins-nearby-venues-menu">
         <source>Nearby Venues</source>
-        <translation>Yakınlardaki Mekanlar</translation>
+        <translation type="vanished">Yakınlardaki Mekanlar</translation>
     </message>
     <message id="recent-checkins-refresh-menu">
         <source>Refresh</source>
-        <translation>Yenile</translation>
+        <translation type="vanished">Yenile</translation>
     </message>
     <message id="recent-checkins-like">
         <source>Like checkin</source>
         <oldsource>Like</oldsource>
-        <translation>Beğen</translation>
+        <translation type="vanished">Beğen</translation>
     </message>
     <message id="recent-checkins-friend-profile">
         <source>Profile</source>
-        <translation>Profil</translation>
+        <translation type="vanished">Profil</translation>
     </message>
     <message id="recent-checkins-venue-detail">
         <source>Venue</source>
         <oldsource>Venue detail</oldsource>
-        <translation>Mekan</translation>
+        <translation type="vanished">Mekan</translation>
     </message>
     <message id="recent-checkins-dislike">
         <source>Dislike checkin</source>
         <oldsource>Dislike</oldsource>
-        <translation>Beğenme</translation>
+        <translation type="vanished">Beğenme</translation>
     </message>
     <message id="search-title">
         <source>Search</source>
-        <translation>Ara</translation>
+        <translation type="vanished">Ara</translation>
     </message>
     <message id="search-venue-name">
         <source>Venue name</source>
-        <translation>Mekan ismi</translation>
+        <translation type="vanished">Mekan ismi</translation>
     </message>
     <message id="history-title">
         <source>History</source>
-        <translation>Geçmiş</translation>
+        <translation type="vanished">Geçmiş</translation>
     </message>
     <message id="history-empty">
         <source>User didn&apos;t make check in yet</source>
-        <translation>Kullanıcı henüz checkin yapmadı</translation>
+        <translation type="vanished">Kullanıcı henüz checkin yapmadı</translation>
     </message>
     <message id="tips-title">
         <source>Tips</source>
-        <translation>İpuçları</translation>
+        <translation type="vanished">İpuçları</translation>
     </message>
     <message id="tips-empty">
         <source>List of tips is empty</source>
-        <translation>İpucu listedi boş</translation>
+        <translation type="vanished">İpucu listedi boş</translation>
     </message>
     <message id="tips-dislike">
         <source>Dislike tip</source>
-        <translation>Beğenme</translation>
+        <translation type="vanished">Beğenme</translation>
     </message>
     <message id="tips-like">
         <source>Like tip</source>
-        <translation>Beğen</translation>
+        <translation type="vanished">Beğen</translation>
     </message>
     <message id="checkin-result-title">
         <source>Checkin</source>
-        <translation>Checkin</translation>
+        <translation type="vanished">Checkin</translation>
     </message>
     <message id="checkin-result-section-header-specials">
         <source>Specials</source>
-        <translation type="unfinished">Spesialler</translation>
+        <translation type="unfinished"/>
     </message>
     <message id="checkin-result-section-header-badges">
         <source>Badges</source>
-        <translation>Rozetler</translation>
+        <translation type="vanished">Rozetler</translation>
     </message>
     <message id="checkin-result-section-header-score">
         <source>Score</source>
-        <translation>Skor</translation>
+        <translation type="vanished">Skor</translation>
     </message>
     <message id="checkin-result-section-header-leaderboard">
         <source>Leaderboard</source>
-        <translation>Lider panosu</translation>
+        <translation type="vanished">Lider panosu</translation>
     </message>
 </context>
 </TS>

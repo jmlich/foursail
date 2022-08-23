@@ -1,449 +1,441 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="fr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.1">
 <context>
-    <name></name>
+    <name/>
     <message id="components-la-tap-to-cancel">
         <source>Tap to cancel</source>
-        <translation>Appuyer pour annuler</translation>
+        <translation type="vanished">Appuyer pour annuler</translation>
     </message>
     <message id="lists-edit-accept">
         <source>Edit List</source>
-        <translation>Editer la list</translation>
+        <translation type="vanished">Editer la list</translation>
     </message>
     <message id="lists-create-accept">
         <source>Create List</source>
-        <translation>Créer la list</translation>
+        <translation type="vanished">Créer la list</translation>
     </message>
     <message id="lists-create-name">
         <source>List name</source>
         <oldsource>List Name</oldsource>
-        <translation>Nom de la liste</translation>
+        <translation type="vanished">Nom de la liste</translation>
     </message>
     <message id="lists-create-description">
         <source>List description</source>
-        <translation>Description de la liste</translation>
+        <translation type="vanished">Description de la liste</translation>
     </message>
     <message id="venue-add-accept">
         <source>Create</source>
-        <translation>Créer</translation>
+        <translation type="vanished">Créer</translation>
     </message>
     <message id="venue-add-name">
         <source>Name</source>
-        <translation>Nom de l&apos;endroit</translation>
+        <translation type="vanished">Nom de l&apos;endroit</translation>
     </message>
     <message id="venue-add-choose-category">
         <source>Choose category</source>
-        <translation>Choisir une catégorie</translation>
+        <translation type="vanished">Choisir une catégorie</translation>
     </message>
     <message id="venue-add-address">
         <source>Address</source>
-        <translation>Adresse</translation>
+        <translation type="vanished">Adresse</translation>
     </message>
     <message id="venue-add-cross-street">
         <source>Cross street</source>
-        <translation>Rue</translation>
+        <translation type="vanished">Rue</translation>
     </message>
     <message id="venue-add-city">
         <source>City</source>
-        <translation>Ville</translation>
+        <translation type="vanished">Ville</translation>
     </message>
     <message id="venue-add-state">
         <source>State</source>
-        <translation>Département</translation>
+        <translation type="vanished">Département</translation>
     </message>
     <message id="venue-add-zip">
         <source>ZIP</source>
-        <translation>Code postal</translation>
+        <translation type="vanished">Code postal</translation>
     </message>
     <message id="venue-add-phone">
         <source>Phone</source>
-        <translation>Téléphone</translation>
+        <translation type="vanished">Téléphone</translation>
     </message>
     <message id="venue-add-twitter">
         <source>Twitter</source>
-        <translation>Twitter</translation>
+        <translation type="vanished">Twitter</translation>
     </message>
     <message id="venue-add-description">
         <source>Description</source>
-        <translation>Description</translation>
+        <translation type="vanished">Description</translation>
     </message>
     <message id="venue-add-set-position">
         <source>Set position</source>
-        <translation>Repérer la position</translation>
+        <translation type="vanished">Repérer la position</translation>
     </message>
     <message id="badges-title">
         <source>Badges</source>
-        <translation>Badges</translation>
+        <translation type="vanished">Badges</translation>
     </message>
     <message id="badges-empty">
         <source>List of badges is empty</source>
-        <translation>La liste de badges est vide</translation>
+        <translation type="vanished">La liste de badges est vide</translation>
     </message>
     <message id="categories-title">
         <source>Categories</source>
-        <translation>Catégories</translation>
+        <translation type="vanished">Catégories</translation>
     </message>
     <message id="checkin-photos-menu">
         <source>Photos</source>
-        <translation>Photos</translation>
+        <translation type="vanished">Photos</translation>
     </message>
     <message id="checkin-tips-menu">
         <source>Tips</source>
-        <translation>Conseils</translation>
+        <translation type="vanished">Conseils</translation>
     </message>
     <message id="checkin-listed-menu">
         <source>Listed</source>
-        <translation>Listé</translation>
+        <translation type="vanished">Listé</translation>
     </message>
     <message id="checkin-specials">
         <source>Specials</source>
-        <translation>Spécials</translation>
+        <translation type="vanished">Spécials</translation>
     </message>
     <message id="checkin-dislike-venue-menu">
         <source>Dislike</source>
-        <translation>J&apos;aime pas</translation>
+        <translation type="vanished">J&apos;aime pas</translation>
     </message>
     <message id="checkin-like-venue-menu">
         <source>Like</source>
-        <translation>J&apos;aime</translation>
+        <translation type="vanished">J&apos;aime</translation>
     </message>
     <message id="venue-checkin-accept">
         <source>Checkin</source>
-        <translation>Enregistrer</translation>
+        <translation type="vanished">Enregistrer</translation>
     </message>
     <message id="venue-checkin-comment">
         <source>Write your comment here.</source>
         <oldsource>Comment</oldsource>
-        <translation>Ecrivez vos commentaires ici</translation>
+        <translation type="vanished">Ecrivez vos commentaires ici</translation>
     </message>
     <message id="venue-checkin-share-to-facebook-button">
         <source>Share to Facebook</source>
         <oldsource>Share to facebook</oldsource>
-        <translation>Partagez sur Facebook</translation>
+        <translation type="vanished">Partagez sur Facebook</translation>
     </message>
     <message id="venue-checkin-share-to-twitter-button">
         <source>Share to Twitter</source>
         <oldsource>Share to twitter</oldsource>
-        <translation>Partagez sur Twitter</translation>
+        <translation type="vanished">Partagez sur Twitter</translation>
     </message>
     <message id="venue-checkin-show-on-map-button">
         <source>Show on Map</source>
-        <translation>Voir sur la carte</translation>
+        <translation type="vanished">Voir sur la carte</translation>
     </message>
     <message id="cover-loading">
         <source>Loading ...</source>
-        <translation>Chargement ...</translation>
+        <translation type="vanished">Chargement ...</translation>
     </message>
     <message id="cover-no-checkins">
         <source>Nobody of your friends checked in yet</source>
         <oldsource>FIXME</oldsource>
-        <translation>Aucun de vos amis n&apos;ont encore marqué cet endroit</translation>
+        <translation type="vanished">Aucun de vos amis n&apos;ont encore marqué cet endroit</translation>
     </message>
     <message id="n-notifications" numerus="yes">
         <source>%n Notifications</source>
         <oldsource>%n Notification(s)</oldsource>
-        <translation>
-            <numerusform>%n Notifications</numerusform>
-            <numerusform>%n Notifications</numerusform>
-        </translation>
+        <translation type="vanished"><numerusform>%n Notifications</numerusform><numerusform>%n Notifications</numerusform><numerusform>%n Notifications</numerusform></translation>
     </message>
     <message id="error-not-authorized">
         <source>Unauthorized</source>
         <oldsource>Not authorized</oldsource>
-        <translation>Non authorisé</translation>
+        <translation type="vanished">Non authorisé</translation>
     </message>
     <message id="error-connection-problem">
         <source>Connection problem</source>
-        <translation>Problème de connexion</translation>
+        <translation type="vanished">Problème de connexion</translation>
     </message>
     <message id="friends-title">
         <source>Friends</source>
-        <translation>Amis</translation>
+        <translation type="vanished">Amis</translation>
     </message>
     <message id="friends-empty">
         <source>List of friends is empty</source>
-        <translation>La liste d&apos;amis est vide</translation>
+        <translation type="vanished">La liste d&apos;amis est vide</translation>
     </message>
     <message id="friends-removing">
         <source>Removing friend</source>
-        <translation>Retirer des amis</translation>
+        <translation type="vanished">Retirer des amis</translation>
     </message>
     <message id="friends-remove">
         <source>Remove</source>
-        <translation>Supprimer</translation>
+        <translation type="vanished">Supprimer</translation>
     </message>
     <message id="friends-add">
         <source>Add</source>
-        <translation>Ajouter</translation>
+        <translation type="vanished">Ajouter</translation>
     </message>
     <message id="leaderboard-title">
         <source>Leaderboard</source>
-        <translation>Tableau</translation>
+        <translation type="vanished">Tableau</translation>
     </message>
     <message id="leaderboard-empty">
         <source>Leaderboard is empty</source>
-        <translation>Tableau vide</translation>
+        <translation type="vanished">Tableau vide</translation>
     </message>
     <message id="leaderboard-n-checkins" numerus="yes">
         <source>%n checkins</source>
         <oldsource>%n checkin(s)</oldsource>
-        <translation>
-            <numerusform>%n enregistrement</numerusform>
-            <numerusform>%n enregistrement</numerusform>
-        </translation>
+        <translation type="vanished"><numerusform>%n enregistrement</numerusform><numerusform>%n enregistrement</numerusform><numerusform>%n enregistrement</numerusform></translation>
     </message>
     <message id="list-detail-empty">
         <source>List contains no venues</source>
-        <translation>La liste contient aucun endroit</translation>
+        <translation type="vanished">La liste contient aucun endroit</translation>
     </message>
     <message id="lists-title">
         <source>Lists</source>
-        <translation>Listes</translation>
+        <translation type="vanished">Listes</translation>
     </message>
     <message id="lists-empty">
         <source>No lists are available</source>
-        <translation>Aucunes listes n&apos;est disponible</translation>
+        <translation type="vanished">Aucunes listes n&apos;est disponible</translation>
     </message>
     <message id="lists-new">
         <source>New</source>
-        <translation>Nouvelle liste</translation>
+        <translation type="vanished">Nouvelle liste</translation>
     </message>
     <message id="lists-edit">
         <source>Edit</source>
-        <translation>Editer</translation>
+        <translation type="vanished">Editer</translation>
     </message>
     <message id="lists-follow">
         <source>Follow</source>
-        <translation>Suivre</translation>
+        <translation type="vanished">Suivre</translation>
     </message>
     <message id="lists-unfollow">
         <source>Unfollow</source>
-        <translation>Ne plus suivre</translation>
+        <translation type="vanished">Ne plus suivre</translation>
     </message>
     <message id="map-title">
         <source>Map</source>
-        <translation>Carte</translation>
+        <translation type="vanished">Carte</translation>
     </message>
     <message id="mayorships-title">
         <source>Mayorships</source>
-        <translation>Gouvernance</translation>
+        <translation type="vanished">Gouvernance</translation>
     </message>
     <message id="mayorships-empty">
         <source>User hasn&apos;t got any mayorships yet</source>
-        <oldsource>User hasn&apos;t got any mayorships yet!</oldsource>
-        <translation>Pas encore de gouvernance</translation>
+        <oldsource>User hasn't got any mayorships yet!</oldsource>
+        <translation type="vanished">Pas encore de gouvernance</translation>
     </message>
     <message id="nearby-venues-title">
         <source>Nearby Venues</source>
-        <translation>Lieux aux alentours</translation>
+        <translation type="vanished">Lieux aux alentours</translation>
     </message>
     <message id="search-results-title">
         <source>Search results</source>
-        <translation>Résultats de recherche</translation>
+        <translation type="vanished">Résultats de recherche</translation>
     </message>
     <message id="nearby-venues-my-profile-menu">
         <source>My Profile</source>
-        <translation>Mon profil</translation>
+        <translation type="vanished">Mon profil</translation>
     </message>
     <message id="nearby-venues-recent-checkins-menu">
         <source>Recent Checkins</source>
-        <translation>Enregistrements récents</translation>
+        <translation type="vanished">Enregistrements récents</translation>
     </message>
     <message id="nearby-venues-refresh-menu">
         <source>Refresh</source>
-        <translation>Rafraîchir</translation>
+        <translation type="vanished">Rafraîchir</translation>
     </message>
     <message id="nearby-venues-nearby-venues-menu">
         <source>Nearby Venues</source>
-        <translation>Lieux aux alentours</translation>
+        <translation type="vanished">Lieux aux alentours</translation>
     </message>
     <message id="nearby-venues-search-menu">
         <source>Search</source>
-        <translation>Recherche</translation>
+        <translation type="vanished">Recherche</translation>
     </message>
     <message id="nearby-venues-add">
         <source>Add</source>
-        <translation>Ajouter</translation>
+        <translation type="vanished">Ajouter</translation>
     </message>
     <message id="nearby-venues-empty">
         <source>There is no venue in nearby</source>
-        <translation>Il n&apos;y pas d&apos;endroit aux alentours</translation>
+        <translation type="vanished">Il n&apos;y pas d&apos;endroit aux alentours</translation>
     </message>
     <message id="notifications-title">
         <source>Notifications</source>
-        <translation>Notifications</translation>
+        <translation type="vanished">Notifications</translation>
     </message>
     <message id="notifications-empty">
         <source>You have no notifications</source>
-        <translation>Vous n&apos;avez pas de notifications</translation>
+        <translation type="vanished">Vous n&apos;avez pas de notifications</translation>
     </message>
     <message id="photos-title">
         <source>Photos</source>
-        <translation>Photos</translation>
+        <translation type="vanished">Photos</translation>
     </message>
     <message id="photos-empty">
         <source>List of photos is empty</source>
-        <translation>Pas encore de Photos</translation>
+        <translation type="vanished">Pas encore de Photos</translation>
     </message>
     <message id="image-status-ready">
         <source>Ready</source>
-        <translation>Prêt</translation>
+        <translation type="vanished">Prêt</translation>
     </message>
     <message id="image-status-not-set">
         <source>Not Set</source>
-        <translation>Pas prêt</translation>
+        <translation type="vanished">Pas prêt</translation>
     </message>
     <message id="image-status-error">
         <source>Error</source>
-        <translation>Erreur</translation>
+        <translation type="vanished">Erreur</translation>
     </message>
     <message id="image-status-loading">
         <source>Loading ...</source>
-        <translation>Chargement ...</translation>
+        <translation type="vanished">Chargement ...</translation>
     </message>
     <message id="image-status-unknown">
         <source>Unknown</source>
-        <translation>Erreur inconnue</translation>
+        <translation type="vanished">Erreur inconnue</translation>
     </message>
     <message id="profile-my-profile-menu">
         <source>My Profile</source>
-        <translation>Mon profil</translation>
+        <translation type="vanished">Mon profil</translation>
     </message>
     <message id="profile-recent-checkins-menu">
         <source>Recent Checkins</source>
-        <translation>Enregistrements récents</translation>
+        <translation type="vanished">Enregistrements récents</translation>
     </message>
     <message id="profile-nearby-venues-menu">
         <source>Nearby Venues</source>
-        <translation>Lieux aux alentours</translation>
+        <translation type="vanished">Lieux aux alentours</translation>
     </message>
     <message id="profile-checkins">
         <source>Checkins</source>
-        <translation>Enregistrements</translation>
+        <translation type="vanished">Enregistrements</translation>
     </message>
     <message id="profile-notifications">
         <source>Notifications</source>
-        <translation>Notifications</translation>
+        <translation type="vanished">Notifications</translation>
     </message>
     <message id="profile-badges">
         <source>Badges</source>
-        <translation>Badges</translation>
+        <translation type="vanished">Badges</translation>
     </message>
     <message id="profile-mayorships">
         <source>Mayorships</source>
-        <translation>Gouvrnance</translation>
+        <translation type="vanished">Gouvrnance</translation>
     </message>
     <message id="profile-tips">
         <source>Tips</source>
-        <translation>Conseils</translation>
+        <translation type="vanished">Conseils</translation>
     </message>
     <message id="profile-friends">
         <source>Friends</source>
-        <translation>Amis</translation>
+        <translation type="vanished">Amis</translation>
     </message>
     <message id="profile-lists">
         <source>Lists</source>
-        <translation>Listes</translation>
+        <translation type="vanished">Listes</translation>
     </message>
     <message id="profile-photos">
         <source>Photos</source>
-        <translation>Photos</translation>
+        <translation type="vanished">Photos</translation>
     </message>
     <message id="tap-to-show">
         <source>Tap to show</source>
-        <translation>Appuyez pour voir</translation>
+        <translation type="vanished">Appuyez pour voir</translation>
     </message>
     <message id="recent-checkins-title">
         <source>Recent Checkins</source>
-        <translation>Enregistrements récents</translation>
+        <translation type="vanished">Enregistrements récents</translation>
     </message>
     <message id="recent-checkins-empty">
         <source>None of your friends checked in yet</source>
-        <translation>Auncun de vos amis n&apos;ont enregistrer cet endroit</translation>
+        <translation type="vanished">Auncun de vos amis n&apos;ont enregistrer cet endroit</translation>
     </message>
     <message id="recent-checkins-my-profile-menu">
         <source>My Profile</source>
-        <translation>Mon profil</translation>
+        <translation type="vanished">Mon profil</translation>
     </message>
     <message id="recent-checkins-nearby-venues-menu">
         <source>Nearby Venues</source>
-        <translation>Lieux aux alentours</translation>
+        <translation type="vanished">Lieux aux alentours</translation>
     </message>
     <message id="recent-checkins-refresh-menu">
         <source>Refresh</source>
-        <translation>Rafraîchir</translation>
+        <translation type="vanished">Rafraîchir</translation>
     </message>
     <message id="recent-checkins-like">
         <source>Like checkin</source>
         <oldsource>Like</oldsource>
-        <translation>J&apos;aime</translation>
+        <translation type="vanished">J&apos;aime</translation>
     </message>
     <message id="recent-checkins-friend-profile">
         <source>Profile</source>
-        <translation>Profile</translation>
+        <translation type="vanished">Profile</translation>
     </message>
     <message id="recent-checkins-venue-detail">
         <source>Venue</source>
         <oldsource>Venue detail</oldsource>
-        <translation>Endroit</translation>
+        <translation type="vanished">Endroit</translation>
     </message>
     <message id="recent-checkins-dislike">
         <source>Dislike checkin</source>
         <oldsource>Dislike</oldsource>
-        <translation>J&apos;aime pas</translation>
+        <translation type="vanished">J&apos;aime pas</translation>
     </message>
     <message id="search-title">
         <source>Search</source>
-        <translation>Recherche</translation>
+        <translation type="vanished">Recherche</translation>
     </message>
     <message id="search-venue-name">
         <source>Venue name</source>
-        <translation>Nom du lieu</translation>
+        <translation type="vanished">Nom du lieu</translation>
     </message>
     <message id="history-title">
         <source>History</source>
-        <translation>Historique</translation>
+        <translation type="vanished">Historique</translation>
     </message>
     <message id="history-empty">
         <source>User didn&apos;t make check in yet</source>
-        <translation>Vous n&apos;avez encore auncun enregistrement</translation>
+        <translation type="vanished">Vous n&apos;avez encore auncun enregistrement</translation>
     </message>
     <message id="tips-title">
         <source>Tips</source>
-        <translation>Conseils</translation>
+        <translation type="vanished">Conseils</translation>
     </message>
     <message id="tips-empty">
         <source>List of tips is empty</source>
-        <translation>La liste des conseils est vide</translation>
+        <translation type="vanished">La liste des conseils est vide</translation>
     </message>
     <message id="tips-dislike">
         <source>Dislike tip</source>
-        <translation>J&apos;aime pas</translation>
+        <translation type="vanished">J&apos;aime pas</translation>
     </message>
     <message id="tips-like">
         <source>Like tip</source>
-        <translation>J&apos;aime</translation>
+        <translation type="vanished">J&apos;aime</translation>
     </message>
     <message id="checkin-result-title">
         <source>Checkin</source>
-        <translation>Enregistrer</translation>
+        <translation type="vanished">Enregistrer</translation>
     </message>
     <message id="checkin-result-section-header-specials">
         <source>Specials</source>
-        <translation type="unfinished">Spécials</translation>
+        <translation type="unfinished"/>
     </message>
     <message id="checkin-result-section-header-badges">
         <source>Badges</source>
-        <translation>Badges</translation>
+        <translation type="vanished">Badges</translation>
     </message>
     <message id="checkin-result-section-header-score">
         <source>Score</source>
-        <translation>Score</translation>
+        <translation type="vanished">Score</translation>
     </message>
     <message id="checkin-result-section-header-leaderboard">
         <source>Leaderboard</source>
-        <translation>Tableau</translation>
+        <translation type="vanished">Tableau</translation>
     </message>
 </context>
 </TS>
