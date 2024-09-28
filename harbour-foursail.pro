@@ -47,7 +47,7 @@ OTHER_FILES += qml/harbour-foursail.qml \
     qml/ProfilePage.qml \
     qml/ImagesPage.qml
 
-QT += webkit network
+QT += network
 
 HEADERS += \
     src/networkaccessmanagerfactory.h \
@@ -67,13 +67,13 @@ defineReplace(prependAll) {
 
 LRELEASE = lrelease
 
-TRANSLATIONS = $$prependAll(LANGUAGES, $$PWD/i18n/harbour-foursail_,.ts)
+#TRANSLATIONS = $$prependAll(LANGUAGES, $$PWD/i18n/harbour-foursail_,.ts)
 
-updateqm.input = TRANSLATIONS
-updateqm.output = $$OUT_PWD/${QMAKE_FILE_BASE}.qm
-updateqm.commands = $$LRELEASE -idbased -silent ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_BASE}.qm
-updateqm.CONFIG += no_link target_predeps
-QMAKE_EXTRA_COMPILERS += updateqm
+#updateqm.input = TRANSLATIONS
+#updateqm.output = $$OUT_PWD/${QMAKE_FILE_BASE}.qm
+#updateqm.commands = $$LRELEASE -idbased -silent ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_BASE}.qm
+#updateqm.CONFIG += no_link target_predeps
+#QMAKE_EXTRA_COMPILERS += updateqm
 
 qmfiles.files = $$prependAll(LANGUAGES, $$OUT_PWD/harbour-foursail_,.qm)
 qmfiles.path = /usr/share/$${TARGET}/i18n

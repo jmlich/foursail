@@ -34,5 +34,4 @@ Files:
 - '%{_bindir}'
 - /usr/share/harbour-foursail/i18n
 PkgBR:
-- libqtwebkit5-devel
 - qt5-qttools-linguist

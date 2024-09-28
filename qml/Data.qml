@@ -1,8 +1,8 @@
 import QtQuick.LocalStorage 2.0 as Sql
 import QtQuick 2.0
-import QtWebKit 3.0
 import Sailfish.Silica 1.0
-
+// FIXME AMBER WEB
+// https://sailfishos.org/develop/docs/amber-web-authorization/amber-web-authorization-oauth2.html/
 Rectangle {
 
     id: data
@@ -172,50 +172,50 @@ Rectangle {
     }
 
     function auth_refresh() {
-        webview.url =  "https://foursquare.com/oauth2/authenticate?client_id="+clientID+"&response_type=token&redirect_uri=http://www.rar.cz/4sq-sailfish/&display=touch"
+//        webview.url =  "https://foursquare.com/oauth2/authenticate?client_id="+clientID+"&response_type=token&redirect_uri=http://www.rar.cz/4sq-sailfish/&display=touch"
         data.visible = true;
     }
 
 
-    WebView {
-        id: webview
-        anchors.fill: parent;
+//    WebView {
+//        id: webview
+//        anchors.fill: parent;
 
-        onLoadingChanged: {
-            console.log("webview"  + loading)
-            if (loading) {
-                countLoading++;
+//        onLoadingChanged: {
+//            console.log("webview"  + loading)
+//            if (loading) {
+//                countLoading++;
 
-            } else {
-                countLoading--;
+//            } else {
+//                countLoading--;
 
-                var str = url.toString();
-                var i = str.indexOf("access_token", 0)
-                if (i > 0) {
-                    var t = str.substr(i+13,str.length)
-                    accessToken = t;
-                    data.visible = false;
-                } else {
-                    if (str.indexOf("foursquare.com",0) <= 0) {
-                        console.log("authentication error")
-                        auth_refresh();
-                    } else {
-                        console.log("web page of foursquare.com")
-                    }
-                }
+//                var str = url.toString();
+//                var i = str.indexOf("access_token", 0)
+//                if (i > 0) {
+//                    var t = str.substr(i+13,str.length)
+//                    accessToken = t;
+//                    data.visible = false;
+//                } else {
+//                    if (str.indexOf("foursquare.com",0) <= 0) {
+//                        console.log("authentication error")
+//                        auth_refresh();
+//                    } else {
+//                        console.log("web page of foursquare.com")
+//                    }
+//                }
 
-            }
-        }
+//            }
+//        }
 
-        BusyIndicator {
-            id: webviewBusyIndicator
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.bottom: parent.bottom
-            visible: webview.loading;
-            running: true;
-        }
+//        BusyIndicator {
+//            id: webviewBusyIndicator
+//            anchors.horizontalCenter: parent.horizontalCenter
+//            anchors.bottom: parent.bottom
+//            visible: webview.loading;
+//            running: true;
+//        }
 
-    }
+//    }
 
 
     function venuesCategories() {
